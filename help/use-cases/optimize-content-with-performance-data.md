@@ -1,22 +1,21 @@
 ---
 title: 성능 데이터를 기반으로 콘텐츠 최적화
-description: CJA 및 AEM MCP 서버를 함께 사용하여 도구 간에 전환하지 않고도 성과가 낮은 콘텐츠를 식별하고 업데이트합니다.
+description: 하나의 AI 세션에서 CJA과 AEM을 함께 사용하면 도구를 전환하지 않고도 전환되지 않는 캠페인을 찾고 원인을 진단하고 콘텐츠를 업데이트할 수 있습니다.
 index: false
-source-git-commit: 63f5958eaa227ea21fa5b193a2ac76a69fd349cb
+source-git-commit: 135f151c50464461c48fa09d4a7efad20b96cc73
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 3%
+source-wordcount: '1093'
+ht-degree: 1%
 
 ---
 
 
 # 성능 데이터를 기반으로 콘텐츠 최적화
-
-<!-- last-modified: 2026-05-21 -->
+<!-- last-modified: 2026-06-08 -->
 
 ![성능 데이터를 기반으로 콘텐츠 최적화](https://placehold.co/1600x900?text=Optimize+Content+Based+on+Performance+Data)
 
-컨텐츠 성능 데이터와 컨텐츠 업데이트 간의 루프를 닫는다는 것은 일반적으로 analytics와 CMS 간에 전환하는 것을 의미합니다. 이 연습에서는 동일한 AI 세션에서 Customer Journey Analytics과 AEM을 연결하여 성과가 낮은 페이지를 표시하고 대화를 종료하지 않고 업데이트하는 방법을 보여줍니다.
+캠페인 성과 데이터와 콘텐츠 업데이트 간의 루프를 닫는다는 것은 일반적으로 분석 도구와 CMS 간에 전환하는 것을 의미합니다. 이 연습에서는 동일한 AI 세션에서 Customer Journey Analytics과 AEM을 연결하는 방법을 보여 줍니다. 즉, 전환에 차이가 있는 캠페인을 표시하고, 이러한 캠페인을 유발하는 요소를 진단하고, 콘텐츠를 검사하고, 타깃팅된 추천을 받고, 대화를 종료하지 않고 변경 사항을 적용하는 것입니다.
 
 | | |
 | --- | --- |
@@ -26,6 +25,7 @@ ht-degree: 3%
 | 사전 요구 사항 | MCP 호환 AI 클라이언트, CJA 액세스, AEM as a Cloud Service 액세스 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **수행할 수 있는 추가** 섹션이 다음과 같습니다.
+
 
 ## 시작하기에 앞서
 
@@ -83,110 +83,99 @@ Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경�
 >
 >일부 도구는 실행 전에 승인을 묻는 메시지를 표시합니다. 요청을 검토하고 승인 또는 거절합니다. 확인 없이는 아무 작업도 수행되지 않습니다.
 
-## 1단계: 성과가 낮은 콘텐츠 식별
 
-CX 엔터프라이즈 MCP 게이트웨이를 사용하여 Customer Journey Analytics의 참여 및 전환 지표에 따라 페이지 등급을 매깁니다. 목표는 주의가 필요한 명확하고 우선 순위가 지정된 콘텐츠 목록입니다.
+## 1단계: 전환 간격이 있는 캠페인 찾기
 
-```
-Show me the 10 pages with the lowest engagement rate over the last 60 days.
-```
-
-+++예제 응답 보기
-
-최하위 참여 페이지(2026년 3월 22일 - 5월 21일):
-
-| 순위 | 페이지 | 참여율 | 바운스 비율 | 평균 페이지에서 시간 |
-| --- | --- | --- | --- | --- |
-| 1 | /en/products/analytics | 8.2% | 74% | 0:42 |
-| 2 | /en/resources/whitepapers | 9.1% | 71% | 0:38 |
-| 3 | /en/solutions/retail | 10.4% | 69% | 0:51 |
-| 4 | /en/blog/2025-q4-recapp | 11.0% | 68% | 0:44 |
-| 5-10 | ... | 12.3-14.1% | 63-67% | 0:35-1:10 |
-
-사이트 평균 참여율은 34.7%입니다. 이 페이지는 평균보다 2~4배 낮습니다.
-
-+++
-
-## 2단계: AEM에서 컨텐츠 검토
-
-AI 세션을 종료하지 않고 AEM에서 해당 페이지의 현재 상태를 가져옵니다. 내용이 말하는 것을 이해하는 것은 무엇을 변화시켜야 하는지를 아는 첫 단계이다.
+CJA을 사용하여 클릭스루는 강하지만 전환율이 낮은 캠페인을 표시합니다. 이 패턴(높은 의도의 낮은 완료)은 일반적으로 랜딩 페이지의 콘텐츠 또는 경험 문제를 가리킵니다.
 
 ```
-Show me the current content on the /en/products/analytics page in AEM.
+Which campaigns have strong click-through but low conversion in the last 30 days?
 ```
 
 +++예제 응답 보기
 
-**페이지:** `/en/products/analytics`
-**마지막 수정 날짜:** T. MacMillan의 2026년 4월 30일
-**상태:** 게시됨
-
-**영웅 섹션:**
-Headline: &quot;모든 팀을 위한 데이터 기반 결정&quot;
-서브헤드라인: &quot;Adobe Analytics은 조직에 적용할 수 있는 통찰력을 제공합니다.&quot;
-CTA: &quot;데모 요청&quot; → /contact/demo
-
-**본문:** 3개의 기능 블록 뒤에 고객 로고 스트립과 보조 CTA이 옵니다. 비디오 또는 대화형 요소가 없습니다. 페이지가 21일 동안 업데이트되지 않았습니다.
-
-**Meta 설명:** &quot;Adobe Analytics: 엔터프라이즈 팀을 위한 실시간 보고 및 AI 인사이트&quot;
+![CJA에서 클릭스루가 높지만 전환율이 낮은 AI 클라이언트 표시 캠페인](../assets/use-cases/optimize-content-with-performance-data/optimize-content-step1-campaigns.png)
 
 +++
 
-## 3단계: 타깃팅된 업데이트
 
-성능 데이터와 현재 콘텐츠를 보고 데이터가 공개한 내용에 기반을 둔 업데이트를 수행합니다.
+
+## 2단계: 근본 원인 진단
+
+차이를 유발하는 것이 무엇인지 이해하기 위해 후속 작업을 수행하십시오. 드롭오프가 특정 장치 유형, 대상 세그먼트 또는 컨텐츠 상호 작용에 집중되는지 묻습니다.
 
 ```
-Update the hero headline on the analytics product page to Make faster decisions with AI-powered analytics.
+What's causing the conversion drop-off, is it device, segment, or content?
 ```
 
 +++예제 응답 보기
 
-**제안된 변경 내용:**
-
-| 필드 | 현재 값 | 새 값 |
-| --- | --- | --- |
-| 영웅 제목 | 모든 팀을 위한 데이터 기반 의사 결정 | AI 기반 분석으로 더 빠른 의사 결정 |
-
-페이지: `/en/products/analytics`
-
-이 변경 사항을 확인하시겠습니까? &quot;예&quot;라고 답장을 보내면 AEM에 업데이트가 기록됩니다. 페이지는 명시적으로 다시 게시할 때까지 현재 상태로 게시된 상태로 유지됩니다.
+![AI 클라이언트가 장치, 세그먼트 및 콘텐츠 인자별로 전환 드롭오프를 진단](../assets/use-cases/optimize-content-with-performance-data/optimize-content-step2-diagnosis.png)
 
 +++
+
+
+
+## 3단계: AEM에서 컨텐츠 검토
+
+성과가 낮은 캠페인이 식별되면 동일한 세션에서 AEM에서 랜딩 페이지를 가져옵니다. 페이지에 현재 나와 있는 내용을 확인하는 것은 변경할 내용을 이해하는 시작점입니다.
+
+```
+Show me the Bali Surf Camp page.
+```
+
++++예제 응답 보기
+
+![AEM에서 랜딩 페이지의 현재 콘텐츠를 표시하는 AI 클라이언트](../assets/use-cases/optimize-content-with-performance-data/optimize-content-step3-page-content.png)
+
++++
+
+
+
+## 4단계: 타깃팅된 권장 사항 가져오기
+
+데이터에 표시된 내용을 페이지의 내용과 연결하도록 AI 클라이언트에 요청합니다. 두 소스 모두에서 AI가 드롭오프의 원인이 될 수 있는 콘텐츠 섹션과 변경할 콘텐츠를 식별하는 이유입니다.
+
+```
+Which content sections are underperforming, and what changes would you recommend?
+```
+
++++예제 응답 보기
+
+![성과가 낮은 콘텐츠 섹션을 식별하고 특정 변경 사항을 추천하는 AI 클라이언트](../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step4.gif)
+
++++
+
+
+
+## 5단계: 변경 사항 적용 및 검토
+
+AI 클라이언트에게 권장 사항을 기반으로 최적화된 페이지 버전을 제작하도록 요청하고 변경된 사항과 이유를 요약합니다.
+
+```
+Create an optimized version of the Bali Surf Camp page and summarize the proposed changes.
+```
+
++++예제 응답 보기
+
+![AI 클라이언트가 페이지의 최적화된 버전을 만들고 변경 내용을 요약](../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step5.gif)
+
++++
+
 
 >[!CAUTION]
 >
->메시지가 표시되면 각 콘텐츠 변경을 확인합니다. 라이브 페이지에 대한 업데이트를 승인하기 전에 전체 차이를 검토하십시오.
+>확인하기 전에 제안된 변경 사항의 전체 요약을 검토하십시오. AEM Content MCP 서버는 AEM 환경에 변경 사항을 기록합니다. 페이지는 명시적으로 다시 게시할 때까지 게시된 상태로 유지됩니다.
 
-## 4단계: 유효성 검사 및 게시
-
-업데이트에 만족하면 모든 변경 사항을 확인하고 콘텐츠를 프로모션하여 루프를 닫습니다.
-
-```
-Show me a summary of all changes made in this session.
-```
-
-+++예제 응답 보기
-
-**세션 요약 — 2026년 5월 21일:**
-
-| 페이지 | 변경 | 상태 |
-| --- | --- | --- |
-| /en/products/analytics | 영웅 헤드라인 업데이트됨 | 저장됨, 게시 취소됨 |
-
-1페이지가 업데이트되었습니다. 확인되면 게시할 준비가 되었습니다.
-
-**낮은 참여 목록에서 남은 항목:** 9페이지가 이 세션에서 업데이트되지 않았습니다. 다음 페이지로 계속 진행하시겠습니까? 아니면 게시하기 전에 일괄 검토를 위해 론치를 만드시겠습니까?
-
-+++
 
 ## 수행한 작업
 
-단일 AI 세션에서 Customer Journey Analytics 및 AEM을 연결하고 성능 데이터를 사용하여 콘텐츠 변경 사항을 직접 알렸습니다. 도구를 전환하지 않고 지표에서 업데이트로 이동하여 analytics insight과 게시된 콘텐츠 간의 피드백 루프를 단축했습니다. 이는 수십 페이지에 달하는 주의가 필요하고 수동 교차 도구 워크플로우가 지연을 만들 수 있는 캠페인 규모에서 가장 중요합니다.
+단일 AI 세션에서 Customer Journey Analytics과 AEM을 연결하고 도구를 전환하지 않고 캠페인 데이터에서 배포된 콘텐츠 변경 사항으로 이동했습니다. 전환 간격이 있는 캠페인을 식별하고, 근본 원인을 진단하고, 랜딩 페이지를 검사하고, 데이터와 콘텐츠 모두에 기반을 둔 타겟팅 권장 사항을 수신하고, 동일한 대화에서 변경 사항을 적용했습니다. 이렇게 하면 analytics insight과 게시된 콘텐츠 간의 피드백 루프가 짧아지고, 동일한 세션에서 성과가 낮은 페이지 수로 확장됩니다.
+
 
 ## 수행할 수 있는 작업 더 보기
 
-CJA 및 AEM MCP 서버는 문제 식별부터 배송 수정 사항까지의 전체 주기를 함께 지원합니다. 동일한 세션에서 시도할 수 있는 프롬프트를 보려면 아래 시나리오를 확장하십시오.
+CJA과 AEM이 동일한 세션에 연결되어 있으므로 문제 식별부터 배송 수정 사항까지의 전체 주기를 처리할 수 있습니다. 시도할 수 있는 프롬프트를 보려면 아래 시나리오를 확장하십시오.
 
 +++성능을 저해하는 콘텐츠 찾기
 
@@ -195,7 +184,7 @@ CJA 및 AEM MCP 서버는 문제 식별부터 배송 수정 사항까지의 전�
 **프롬프트**
 
 ```
-Show me the 10 pages with the lowest conversion rate this quarter.
+Which campaigns have the highest traffic but lowest conversion rate this quarter?
 ```
 
 ```
@@ -203,42 +192,42 @@ Which pages have a high bounce rate but also high traffic?
 ```
 
 ```
-Compare engagement rates for blog posts versus product pages.
+Compare engagement rates for landing pages across email and paid social campaigns.
 ```
 
 ```
-Find AEM pages that haven't been updated in over 60 days.
+Find AEM pages linked from active campaigns that haven't been updated in over 60 days.
 ```
 
 +++
 
 +++데이터가 수정하라고 지시하는 사항 수정
 
-성과가 낮은 항목을 알게 되면 다음 단계에서 타깃팅된 변경을 수행합니다. 이러한 프롬프트를 통해 성능 데이터가 공개한 내용을 기반으로 헤드라인, CTA 및 메타 설명을 업데이트할 수 있습니다.
+성과가 낮은 항목을 알게 되면 성능 데이터가 공개한 내용에 따라 타겟팅된 변경을 수행합니다. 이러한 프롬프트를 통해 진단에 따라 특정 섹션을 업데이트할 수 있습니다.
 
 **프롬프트**
 
 ```
-Update the CTA on the /en/solutions/retail page to 'See how it works'.
+Update the CTA on the [page name] page to better match the campaign audience.
 ```
 
 ```
-Add a note to the hero subheadline on the analytics page: Now with AI-powered anomaly detection.
+Rewrite the hero headline on the [page name] page to address the mobile drop-off.
 ```
 
 ```
-Update the meta description on all pages in /en/products/ that contain the word 'legacy'.
+Add a trust signal to the [page name] page above the conversion form.
 ```
 
 ```
-Which pages updated in this session still need their CTAs reviewed?
+Which pages updated in this session still need to be published?
 ```
 
 +++
 
 +++다음 캠페인 전에 개선 사항 발송
 
-세션 중간에 변경한 사항이 신속하게 쌓일 수 있습니다. 이러한 프롬프트는 준비된 항목을 검토하고, 볼 수 있는 론치로 그룹 업데이트를 검토하고, 캠페인이 라이브로 전환되기 전에 완전히 홍보하는 데 도움이 됩니다.
+세션 중간에 변경한 사항이 신속하게 쌓일 수 있습니다. 이러한 프롬프트는 준비된 항목을 검토하고, 검토를 위해 그룹 업데이트를 검토하고, 캠페인이 라이브로 전환되기 전에 깔끔하게 프로모션하는 데 도움이 됩니다.
 
 **프롬프트**
 
@@ -255,17 +244,19 @@ Give me a summary of all changes made in this session.
 ```
 
 ```
-Promote everything in the current launch to production.
+Publish all confirmed changes and share the updated URLs.
 ```
 
 +++
+
+
 
 ## 추가 정보
 
 | 리소스 | 찾을 내용 |
 | --- | --- |
-| [Analytics MCP 설명서](https://developer.adobe.com/analytics-mcp/docs/) | CJA MCP 설정 및 도구 참조 |
-| [AEM as a Cloud Service 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service) | 전체 AEM 설명서 |
+| [CJA MCP 서버 설명서](https://developer.adobe.com/analytics-mcp/docs/cja/) | CJA MCP 설정 및 도구 참조 |
+| [AEM Content MCP 서버 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | AEM Content MCP 설치 및 사용 안내서 |
 | [AI 레지스트리의 CJA MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp) | CJA MCP 서버 도구 및 가용성 |
 | [AI 레지스트리의 AEM Content MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp) | AEM Content MCP 서버 도구 및 가용성 |
 | [MCP 서버](../tools/mcp-servers.md) | AI 클라이언트를 Adobe MCP 서버에 연결 |

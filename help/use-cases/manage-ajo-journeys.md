@@ -2,17 +2,16 @@
 title: 고객에게 영향을 미치기 전에 여정 문제 파악
 description: CX Enterprise MCP Gateway를 사용하여 활성 AJO 여정을 모니터링하고, 캠페인 구성을 검토하고, 고객에게 도달하기 전에 운영 문제를 파악할 수 있습니다.
 index: false
-source-git-commit: 63f5958eaa227ea21fa5b193a2ac76a69fd349cb
+source-git-commit: 135f151c50464461c48fa09d4a7efad20b96cc73
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1008'
 ht-degree: 3%
 
 ---
 
 
 # 고객에게 영향을 미치기 전에 여정 문제 파악
-
-<!-- last-modified: 2026-06-02 -->
+<!-- last-modified: 2026-06-08 -->
 
 ![AJO 여정 검토](https://placehold.co/1600x900?text=Review+AJO+Journeys)
 
@@ -26,6 +25,7 @@ ht-degree: 3%
 | 사전 요구 사항 | MCP 호환 AI 클라이언트, AJO 액세스 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **수행할 수 있는 추가** 섹션이 다음과 같습니다.
+
 
 ## 시작하기에 앞서
 
@@ -72,6 +72,7 @@ https://cx-enterprise.adobe.io/mcp
 >
 >일부 도구는 실행 전에 승인을 묻는 메시지를 표시합니다. 요청을 검토하고 승인 또는 거절합니다. 확인 없이는 아무 작업도 수행되지 않습니다.
 
+
 ## 1단계: 활성 여정 및 그 목적 살펴보기
 
 먼저 활성 여정 인벤토리와 그 뒤에 있는 비즈니스 목표를 요청합니다. 특정 여정으로 이동하기 전에 전체 사진을 볼 수 있습니다.
@@ -85,6 +86,8 @@ What customer journeys are currently available and what business objectives do t
 ![사용 가능한 고객 여정 및 비즈니스 목표를 나열하는 AI 클라이언트](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step1.gif)
 
 +++
+
+
 
 ## 2단계: 여정의 단계 및 고객 경험 검토
 
@@ -100,9 +103,11 @@ Walk me through the [journey name] journey and explain the customer experience.
 
 +++
 
+
 >[!NOTE]
 >
 >`[journey name]`을(를) 1단계 결과의 여정 이름으로 바꾸십시오.
+
 
 ## 3단계: 캠페인, 대상자 및 목표 검토
 
@@ -118,6 +123,8 @@ Show me our campaigns, the audiences they target, and the outcomes they're desig
 
 +++
 
+
+
 ## 4단계: 캠페인과 여정이 연결되는 방식 이해
 
 AI 고객에게 캠페인과 여정 간의 점을 연결하고 공유 참여 목표를 위해 함께 작동하는 방식을 설명합니다.
@@ -131,6 +138,8 @@ How do our campaigns and journeys work together to improve customer engagement?
 ![캠페인과 여정 간의 관계를 설명하는 AI 클라이언트](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step4-connection.png)
 
 +++
+
+
 
 ## 5단계: 우선 순위가 지정된 권장 사항 가져오기
 
@@ -146,13 +155,16 @@ If you were our lifecycle marketing manager, what would you prioritize next and 
 
 +++
 
+
 >[!NOTE]
 >
 >AJO MCP 서버는 여정 및 캠페인 정보를 노출하지만 여정, 캠페인 또는 콘텐츠를 수정할 수 없습니다. 권장 사항을 구현하려면 AJO 애플리케이션으로 직접 이동하거나, 동일한 세션에서 콘텐츠를 변경하기 위해 AEM Content MCP 서버를 연결합니다.
 
+
 ## 수행한 작업
 
-AI 클라이언트를 Adobe Journey Optimizer에 연결하고 5개의 프롬프트를 통해 여정 및 캠페인 포트폴리오의 전체 그림을 빌드했습니다. 활성 여정 및 비즈니스 목표를 인벤토리하고, 특정 여정에 대한 단계별 고객 경험을 검토하고, 활성 캠페인을 대상과 의도한 결과에 매핑하고, 캠페인과 여정이 어떻게 연결되는지 이해했으며, 다음에 집중할 위치에 대한 우선 순위 추천을 받았습니다. 이를 통해 라이프사이클 마케팅 및 캠페인 관리자는 AJO 인터페이스를 열지 않고도 전략적으로 볼 수 있습니다.
+AI 클라이언트를 Adobe Journey Optimizer에 연결하고 5개의 프롬프트를 통해 여정 및 캠페인 포트폴리오의 전체 그림을 빌드했습니다. 활성 여정 및 해당 비즈니스 목표를 인벤토리하고, 특정 여정에 대한 단계별 고객 경험을 검토하고, 활성 캠페인을 대상과 의도한 결과에 매핑하고, 캠페인과 여정이 함께 작동하는 방식을 이해하고, 다음에 집중할 위치에 대한 우선 순위 추천을 받았습니다. 이를 통해 라이프사이클 마케팅 및 캠페인 관리자는 AJO 인터페이스를 열지 않고도 전략적으로 볼 수 있습니다.
+
 
 ## 수행할 수 있는 작업 더 보기
 
@@ -233,6 +245,8 @@ What channel configurations are set up in our AJO environment?
 ```
 
 +++
+
+
 
 ## 추가 정보
 

@@ -2,7 +2,7 @@
 title: 크로스 채널 캠페인 검토 실행
 description: 단일 AI 세션에서 CX 엔터프라이즈 MCP 게이트웨이를 사용하면 여정, 대상 및 성능 전반에 걸쳐 AJO, CJA 및 Real-Time CDP 캠페인 상태를 전체적으로 확인할 수 있습니다.
 index: false
-source-git-commit: 63f5958eaa227ea21fa5b193a2ac76a69fd349cb
+source-git-commit: 14488b494c454ce6d1207e2d21024749d93db669
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 4%
@@ -99,6 +99,7 @@ AJO 조직에서 8개의 활성 여정을 찾았습니다.
 
 +++
 
+
 ## 2단계: 대상 활성화 상태 확인
 
 여정을 볼 때 해당 캠페인을 지원하는 대상이 대상으로 올바르게 이동하는지 확인하십시오.
@@ -122,6 +123,7 @@ Show me the activation status for the high-value loyalty segment.
 
 +++
 
+
 ## 3단계: CJA에서 성능 지표 가져오기
 
 여정 및 대상 컨텍스트를 설정한 상태에서 CJA을 사용하여 이러한 캠페인이 전환하는 방식과 참여 감소 위치를 평가합니다.
@@ -143,6 +145,7 @@ Show me click-through and conversion rates for the [campaign name] campaign over
 통합 전환율: 3.8%. 이메일 CTR은 이전 30일 기간에 비해 1.2% 증가했습니다. 푸시 전환은 균일합니다.
 
 +++
+
 
 ## 4단계: 캠페인 상태 요약 합성
 
@@ -170,6 +173,7 @@ Give me a summary of our campaign health: what is running, which audiences are a
 감지된 심각한 문제가 없습니다. 다음 선거 운동 시작 전에 영장실질심사에서 두 가지 항목.
 
 +++
+
 
 이 경우 다중 서버 접근 방식이 효과를 발휘합니다. 즉, 단일 대화에서 여정 구성, 대상 상태 및 성능 데이터에 대한 AI 클라이언트 사유가 됩니다.
 
@@ -199,6 +203,7 @@ For each flag you identified, what should I do and where should I go to do it?
 어떤 것부터 시작하시겠습니까?
 
 +++
+
 
 ## 수행한 작업
 
@@ -280,13 +285,14 @@ Which channel has the highest conversion rate across all active campaigns?
 
 +++
 
+
 ## 추가 정보
 
 | 리소스 | 찾을 내용 |
 | --- | --- |
 | [AJO 설명서](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home) | 전체 AJO 애플리케이션 설명서 |
 | [Analytics MCP 설명서](https://developer.adobe.com/analytics-mcp/docs/) | CJA MCP 설정 및 도구 참조 |
-| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) | RTCDP MCP 설치 안내서 |
+| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) | RTCDP MCP 설치 안내서 |
 | [AI 레지스트리의 AJO MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/ajo-mcp-server) | AJO MCP 서버 도구 및 가용성 |
 | [AI 레지스트리의 CJA MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp) | CJA MCP 서버 도구 및 가용성 |
 | [MCP 서버](../tools/mcp-servers.md) | AI 클라이언트를 Adobe MCP 서버에 연결 |
