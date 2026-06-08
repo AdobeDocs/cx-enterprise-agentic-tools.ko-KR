@@ -2,7 +2,7 @@
 title: 안심하고 AEM as a Cloud Service에 배포
 description: AI 클라이언트를 종료하지 않고 환경 상태를 확인하고 파이프라인 내역을 검토하고 배포를 트리거하거나 관리합니다.
 index: false
-source-git-commit: 63f5958eaa227ea21fa5b193a2ac76a69fd349cb
+source-git-commit: 14488b494c454ce6d1207e2d21024749d93db669
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 1%
@@ -130,6 +130,7 @@ What is the status of the production environment?
 
 +++
 
+
 ## 2단계: 파이프라인 실행 검토
 
 최신 파이프라인 내역을 검토하여 다음 릴리스를 차단하기 전에 배포 패턴을 이해하고 오류를 포착합니다.
@@ -144,6 +145,7 @@ Show me the last five pipeline runs for the production pipeline.
 
 +++
 
+
 ## 3단계: 파이프라인 트리거
 
 AI 클라이언트에서 직접 파이프라인 실행을 시작합니다. 서버는 타겟 환경을 확인하고 시작하기 전에 승인을 요청합니다.
@@ -157,6 +159,7 @@ Run the Fullstack pipeline against dev environment of WKND sandbox program.
 ![파이프라인 트리거 확인 및 실행 중인 파이프라인이 반영된 Cloud Manager UI를 표시하는 AI 클라이언트](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step3.gif)
 
 +++
+
 
 >[!CAUTION]
 >
@@ -175,6 +178,7 @@ What is the status of the triggered pipeline?
 ![트리거된 파이프라인 실행 상태를 표시하는 AI 클라이언트](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step4-01-ai.png)
 
 +++
+
 
 ## 수행한 작업
 
@@ -267,6 +271,7 @@ Pull the step logs for the last failed run. I need to see exactly what the quali
 ```
 
 +++
+
 
 ## 추가 정보
 

@@ -2,7 +2,7 @@
 title: 보고서를 작성하지 않고 캠페인 통찰력 표시
 description: CX 엔터프라이즈 MCP 게이트웨이를 사용하면 Customer Journey Analytics 성능 관련 질문을 일반 언어로 작성하고 Report Builders를 탐색하지 않고도 답변을 얻을 수 있습니다.
 index: false
-source-git-commit: 63f5958eaa227ea21fa5b193a2ac76a69fd349cb
+source-git-commit: 14488b494c454ce6d1207e2d21024749d93db669
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 0%
@@ -86,6 +86,7 @@ What data views are available in my CJA account?
 
 +++
 
+
 ## 2단계: 캠페인 성과 데이터 가져오기
 
 식별된 데이터 보기에서 매출 및 전환율별로 캠페인 성과를 요청합니다. AI는 기술 ID 없이 데이터 보기에서 지표 및 차원 이름을 확인합니다.
@@ -99,6 +100,7 @@ For '[data view name]', show me the top campaigns by revenue and conversion rate
 ![옴니채널 - 다중 산업 데이터 보기에서 매출 및 전환율별로 상위 캠페인을 표시하는 AI 클라이언트](../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step2.gif)
 
 +++
+
 
 >[!NOTE]
 >
@@ -118,6 +120,7 @@ What factors are driving the results for these campaign groups?
 
 +++
 
+
 ## 4단계: 특정 캠페인 유형 드릴아웃
 
 세그먼트 수준 분류를 요청하여 특정 검색 결과에 대한 후속 작업을 수행합니다. 이렇게 하면 캠페인 유형 내에서 성과를 유도하는 고객 유형이 표시됩니다.
@@ -132,6 +135,7 @@ Break down Promotional Email Campaigns by Customer Segment and explain what's dr
 
 +++
 
+
 ## 5단계: 찾은 항목 실행
 
 세션에서 표시된 모든 사항을 기반으로 우선 순위가 지정된 권장 사항을 요청합니다. 비즈니스 가치 평가를 요청하면 가장 먼저 행동할 위치를 결정하는 데 도움이 됩니다.
@@ -145,6 +149,7 @@ Based on these findings, recommend the highest-impact actions to increase revenu
 ![비즈니스 가치가 예상되는 우선 순위가 지정된 작업을 추천하는 AI 클라이언트](../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step5.gif)
 
 +++
+
 
 >[!NOTE]
 >
@@ -261,6 +266,7 @@ Save this analysis as a Workspace project for executive reporting.
 ```
 
 +++
+
 
 ## 추가 정보
 

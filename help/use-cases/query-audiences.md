@@ -2,7 +2,7 @@
 title: 대상자 및 대상자 활성화 위치 이해
 description: CX 엔터프라이즈 MCP 게이트웨이를 사용하여 대상자 활성화 상태를 모니터링하고, 대상 상태를 확인하고, 캠페인에 영향을 미치기 전에 문제를 확인할 수 있습니다.
 index: false
-source-git-commit: 63f5958eaa227ea21fa5b193a2ac76a69fd349cb
+source-git-commit: 14488b494c454ce6d1207e2d21024749d93db669
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 2%
@@ -82,6 +82,7 @@ What audiences are currently available and what customer behaviors do they repre
 
 +++
 
+
 ## 2단계: 가장 중요한 세그먼트 식별
 
 대상 지형을 보고 어떤 세그먼트가 가장 큰지, 그리고 무엇이 이 세그먼트들을 전략적으로 가치 있게 만드는지 질문하십시오.
@@ -95,6 +96,7 @@ Which audiences are the largest and what makes them valuable?
 ![가장 큰 대상을 식별하고 무엇이 이러한 대상을 귀중하게 하는지 설명하는 AI 클라이언트](../assets/use-cases/query-audiences/query-audiences-step2.gif)
 
 +++
+
 
 ## 3단계: 활성화 및 대상 검토
 
@@ -110,6 +112,7 @@ Where are our audiences currently being activated and to which destinations?
 
 +++
 
+
 ## 4단계: 전략적 추천 받기
 
 CX 엔터프라이즈 MCP 게이트웨이의 RTCDP 도구는 읽기 전용이며 활성화 상태, 대상 상태 및 데이터 흐름 데이터를 표시하지만 구성을 수정하지는 않습니다. 문제를 식별하면 애플리케이션에서 수정 사항이 발생합니다.
@@ -123,6 +126,7 @@ If you were our audience strategist, what would you prioritize next and why?
 ![우선 순위가 지정된 대상 전략 권장 사항을 제공하는 AI 클라이언트](../assets/use-cases/query-audiences/query-audiences-step4.gif)
 
 +++
+
 
 >[!NOTE]
 >
@@ -219,6 +223,7 @@ Are there any audiences using a non-default merge policy that could cause profil
 ```
 
 +++
+
 
 ## 추가 정보
 

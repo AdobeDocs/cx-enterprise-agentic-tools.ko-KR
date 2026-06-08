@@ -2,7 +2,7 @@
 title: 최신 컨텐츠 유지 및 업데이트 전달 속도 향상
 description: AEM Content MCP 서버를 사용하여 도구 간에 전환하지 않고도 AEM 콘텐츠를 찾고, 검토하고, 업데이트하고, 게시할 수 있습니다.
 index: false
-source-git-commit: 63f5958eaa227ea21fa5b193a2ac76a69fd349cb
+source-git-commit: 14488b494c454ce6d1207e2d21024749d93db669
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 1%
@@ -88,6 +88,7 @@ From WKND Dev environment, find all ski related content.
 
 +++
 
+
 ## 2단계: 특정 페이지 검토
 
 관련 콘텐츠를 찾은 후에는 AI 클라이언트에게 특정 페이지를 보여달라고 요청합니다. 이름이나 경로로 페이지를 참조할 수 있습니다. MCP 서버가 참조를 확인하고 콘텐츠 구조를 반환합니다.
@@ -102,6 +103,7 @@ Show me the US English Home Page.
 
 +++
 
+
 ## 3단계: 콘텐츠 개선
 
 페이지 콘텐츠를 볼 때 AI 클라이언트에게 개선 사항을 제안하거나 적용하도록 요청합니다. AI는 현재 페이지가 말하는 내용에 근거한 복사 변경 사항을 제안하고 아무것도 작성하기 전에 확인을 요청할 수 있습니다.
@@ -115,6 +117,7 @@ Improve the Hero CTAs.
 ![변경 내용을 적용하기 전에 확인 프롬프트와 함께 향상된 Hero CTA 복사본을 제안하는 AI 클라이언트](../assets/use-cases/manage-aem-content/manage-aem-content-step3.gif)
 
 +++
+
 
 >[!CAUTION]
 >
@@ -133,6 +136,7 @@ Publish the changes and share the URL.
 ![페이지가 게시되었음을 확인하고 라이브 URL을 반환하는 AI 클라이언트](../assets/use-cases/manage-aem-content/manage-aem-content-step4.gif)
 
 +++
+
 
 ## 수행한 작업
 
@@ -253,6 +257,7 @@ Promote the May Updates launch to production.
 ```
 
 +++
+
 
 ## 추가 정보
 
