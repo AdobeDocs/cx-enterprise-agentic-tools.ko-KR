@@ -2,9 +2,9 @@
 title: 무생식 도구
 description: 빌더를 위한 MCP 서버, 에이전트 기술 및 API를 비교하고 Adobe CX 엔터프라이즈 워크플로우에 적합한 에이전트 도구를 선택합니다.
 index: false
-source-git-commit: 63f5958eaa227ea21fa5b193a2ac76a69fd349cb
+source-git-commit: 3c29bfeeef3d2cb523724db02448aaa77cdf8900
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '671'
 ht-degree: 1%
 
 ---
@@ -38,6 +38,80 @@ CARDS
   {image = ../assets/apis-card.png}
 
 -->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="MCP Servers">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="mcp-servers.md" title="MCP 서버" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="../assets/mcp-servers-card.png" alt="MCP 서버"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="mcp-servers.md" target="_blank" rel="referrer" title="MCP 서버">MCP 서버</a>
+                    </p>
+                    <p class="is-size-6">호환되는 모든 AI 클라이언트를 Adobe CX 엔터프라이즈 데이터 및 워크플로우에 연결합니다. 코딩이 필요하지 않습니다.</p>
+                </div>
+                <a href="mcp-servers.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">MCP 서버 탐색</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Agent Skills">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="agent-skills.md" title="에이전트 스킬" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="../assets/agent-skills-card.png" alt="에이전트 스킬"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="agent-skills.md" target="_blank" rel="referrer" title="에이전트 스킬">에이전트 기술</a>
+                    </p>
+                    <p class="is-size-6">Adobe에서 제공하는 워크플로 지침은 에이전트에게 CX 엔터프라이즈 작업을 일관되게 안내합니다.</p>
+                </div>
+                <a href="agent-skills.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">에이전트 기술 살펴보기</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="APIs for Builders">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="apis.md" title="빌더용 API" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="../assets/apis-card.png" alt="빌더용 API"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        빌더용 <a href="apis.md" target="_blank" rel="referrer" title="빌더용 API">API</a>
+                    </p>
+                    <p class="is-size-6">Adobe 제품을 구동하는 동일한 API를 사용하여 사용자 정의 애플리케이션 및 통합을 구축할 수 있습니다.</p>
+                </div>
+                <a href="apis.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">빌더를 위한 API 탐색</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
 
 ## 무생식 도구 비교
 
@@ -85,7 +159,7 @@ MCP 서버를 AI 도구와 Adobe 사이의 라이브 와이어로 생각해 보�
 
 [에이전트 스킬 탐색](agent-skills.md)
 
->[!TAB 빌더용  API]
+>빌더용 [!TAB API]
 
 API는 기본 구성단위입니다. 개발자는 Adobe의 자체 제품을 구동하는 동일한 API를 사용하여 Adobe 데이터 및 작업에 직접 프로그래밍 방식으로 액세스할 수 있습니다. 이를 사용하여 일정, 조건 및 스택에 따라 실행되는 항목을 빌드합니다.
 
