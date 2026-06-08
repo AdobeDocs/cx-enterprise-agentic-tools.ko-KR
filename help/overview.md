@@ -14,7 +14,7 @@ ht-degree: 1%
 
 <!-- last-modified: 2026-05-08 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3491235/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3491251/?captions=kor&learn=on&enablevpops)
 
 AI에게 **Adobe CX Enterprise** 데이터, 워크플로 및 자동화에 대한 직통 회선을 제공합니다. 호환되는 AI 클라이언트 또는 개발 도구에서 **일반 언어**&#x200B;로 캠페인을 쿼리하고, 대상을 활성화하고, 여정을 관리합니다.
 
