@@ -269,4 +269,4 @@ Save this analysis as a Workspace project for executive reporting.
 | [CJA MCP 서버 설명서](https://developer.adobe.com/analytics-mcp/docs/cja/) | 전체 도구 참조 및 설정 안내서 |
 | [CJA MCP 사용 안내서](https://developer.adobe.com/analytics-mcp/docs/guides/) | 자세한 사용 안내서 |
 | [AI 레지스트리의 CJA MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp) | CJA MCP 서버 도구 및 가용성 |
-| [Customer Journey Analytics 설명서](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-landing) | 전체 CJA 애플리케이션 설명서 |
+| [Customer Journey Analytics 설명서](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-landing) | 전체 CJA 애플리케이션 설명서 |

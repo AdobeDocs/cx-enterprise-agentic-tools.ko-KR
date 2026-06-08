@@ -258,8 +258,8 @@ Promote the May Updates launch to production.
 
 | 리소스 | 찾을 내용 |
 | --- | --- |
-| [AEM Content MCP 서버 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | MCP 서버 설치 및 사용 안내서 |
+| [AEM Content MCP 서버 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | MCP 서버 설치 및 사용 안내서 |
 | [AI 레지스트리의 AEM Content MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp) | 도구 목록 및 가용성 |
-| [AEM as a Cloud Service 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service) | 전체 AEM 애플리케이션 설명서 |
-| [AEM 콘텐츠 조각](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments) | 콘텐츠 조각 작성 참조 |
+| [AEM as a Cloud Service 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service) | 전체 AEM 애플리케이션 설명서 |
+| [AEM 콘텐츠 조각](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments) | 콘텐츠 조각 작성 참조 |
 | [MCP 서버](../tools/mcp-servers.md) | AI 클라이언트를 Adobe MCP 서버에 연결 |

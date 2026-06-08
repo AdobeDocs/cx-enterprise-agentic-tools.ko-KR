@@ -273,5 +273,5 @@ Pull the step logs for the last failed run. I need to see exactly what the quali
 | 리소스 | 찾을 내용 |
 | --- | --- |
 | [AEM Cloud Manager 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/introduction-to-cloud-manager) | 전체 Cloud Manager 애플리케이션 설명서 |
-| [AEM as a Cloud Service 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service) | 전체 AEM 애플리케이션 설명서 |
+| [AEM as a Cloud Service 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service) | 전체 AEM 애플리케이션 설명서 |
 | [MCP 서버](../tools/mcp-servers.md) | AI 클라이언트를 Adobe MCP 서버에 연결 |
