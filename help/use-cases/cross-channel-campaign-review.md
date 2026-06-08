@@ -292,7 +292,7 @@ Which channel has the highest conversion rate across all active campaigns?
 | --- | --- |
 | [AJO 설명서](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home) | 전체 AJO 애플리케이션 설명서 |
 | [Analytics MCP 설명서](https://developer.adobe.com/analytics-mcp/docs/) | CJA MCP 설정 및 도구 참조 |
-| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) | RTCDP MCP 설치 안내서 |
+| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) | RTCDP MCP 설치 안내서 |
 | [AI 레지스트리의 AJO MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/ajo-mcp-server) | AJO MCP 서버 도구 및 가용성 |
 | [AI 레지스트리의 CJA MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp) | CJA MCP 서버 도구 및 가용성 |
 | [MCP 서버](../tools/mcp-servers.md) | AI 클라이언트를 Adobe MCP 서버에 연결 |
