@@ -38,7 +38,7 @@ CX 엔터프라이즈 게이트웨이는 AI 클라이언트를 각 애플리케�
 | --- | --- |
 | Adobe Journey Optimizer | [여정, 캠페인 및 채널 구성 검토](https://developer.adobe.com/ai-registry/#/mcp/ajo-mcp-server) |
 | Customer Journey Analytics | [보고서 쿼리, 데이터 보기 검색, 작성 작업 공간](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp) |
-| Real-Time CDP | [대상, 활성화 상태 및 데이터 흐름 상태 확인](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp)&#x200B;(비공개 베타) |
+| Real-Time CDP | [대상, 활성화 상태 및 데이터 흐름 상태 확인](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp)&#x200B;(비공개 베타) |
 
 >[!TAB 연결]
 
@@ -77,21 +77,21 @@ CARDS
   {target = _blank}
   {image = ../assets/mcp-analytics-card.png}
 
-* https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service
+* https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service
   {title = AEM Content}
   {description = Tools for managing pages, content fragments, assets, and launches in Adobe Experience Manager as a Cloud Service using natural language.}
   {cta = View documentation}
   {target = _blank}
   {image = ../assets/mcp-aem-card.png}
 
-* https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service
+* https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service
   {title = AEM Content (Read-Only)}
   {description = Tools for discovering and querying pages, content fragments, and launches in AEM as a Cloud Service. No write access.}
   {cta = View documentation}
   {target = _blank}
   {image = ../assets/mcp-aem-card.png}
 
-* https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager
+* https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager
   {title = AEM Cloud Manager}
   {description = Tools for managing Cloud Manager programs, environments, pipelines, and repositories from your IDE using natural language.}
   {cta = View documentation}
@@ -128,7 +128,7 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service" title="AEM 컨텐츠" target="_blank" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service" title="AEM 컨텐츠" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="../assets/mcp-aem-card.png" alt="AEM 컨텐츠"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -137,11 +137,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service" target="_blank" rel="referrer" title="AEM 컨텐츠">AEM 컨텐츠</a>
+                        <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service" target="_blank" rel="referrer" title="AEM 컨텐츠">AEM 컨텐츠</a>
                     </p>
                     <p class="is-size-6">자연어를 사용하여 Adobe Experience Manager as a Cloud Service에서 페이지, 콘텐츠 조각, 에셋 및 시작을 관리하는 도구입니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">설명서 보기</span>
                 </a>
             </div>
@@ -151,7 +151,7 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service" title="AEM 컨텐츠(읽기 전용)" target="_blank" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service" title="AEM 컨텐츠(읽기 전용)" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="../assets/mcp-aem-card.png" alt="AEM 컨텐츠(읽기 전용)"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -160,11 +160,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service" target="_blank" rel="referrer" title="AEM 컨텐츠(읽기 전용)">AEM 컨텐츠(읽기 전용)</a>
+                        <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service" target="_blank" rel="referrer" title="AEM 컨텐츠(읽기 전용)">AEM 컨텐츠(읽기 전용)</a>
                     </p>
                     <p class="is-size-6">AEM as a Cloud Service에서 페이지, 콘텐츠 조각 및 시작을 검색하고 쿼리하기 위한 도구입니다. 쓰기 액세스 권한이 없습니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">설명서 보기</span>
                 </a>
             </div>
@@ -201,11 +201,11 @@ CARDS
 
 | 서버 | 엔드포인트 | 도구 |
 | --- | --- | --- |
-| [CX 엔터프라이즈 MCP 게이트웨이](#cx-enterprise-mcp-gateway) | `https://cx-enterprise.adobe.io/mcp` | · [Adobe Journey Optimizer 도구](https://developer.adobe.com/ai-registry/#/mcp/ajo-mcp-server)<br>· [Customer Journey Analytics 도구](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp)<br>· [Real-Time CDP 도구](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) |
+| [CX 엔터프라이즈 MCP 게이트웨이](#cx-enterprise-mcp-gateway) | `https://cx-enterprise.adobe.io/mcp` | · [Adobe Journey Optimizer 도구](https://developer.adobe.com/ai-registry/#/mcp/ajo-mcp-server)<br>· [Customer Journey Analytics 도구](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp)<br>· [Real-Time CDP 도구](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) |
 | [Adobe Analytics](https://developer.adobe.com/analytics-mcp/docs/aa/) | `https://aa-mcp.adobe.io/mcp` | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/adobe-analytics-mcp) |
 | [AEM Cloud Manager](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) | `https://mcp.adobeaemcloud.com/adobe/mcp/cloudmanager` | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/aem-cloud-manager-mcp) |
-| [AEM 컨텐츠](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content` | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp) |
-| [AEM 컨텐츠(읽기 전용)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly` | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp-readonly) |
+| [AEM 컨텐츠](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content` | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp) |
+| [AEM 컨텐츠(읽기 전용)](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly` | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp-readonly) |
 
 ## AI 클라이언트에 연결
 
