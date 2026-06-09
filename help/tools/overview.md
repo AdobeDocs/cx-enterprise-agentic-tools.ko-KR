@@ -3,7 +3,7 @@ title: 무생식 도구
 description: 빌더를 위한 MCP 서버, 에이전트 기술 및 API를 비교하고 Adobe CX 엔터프라이즈 워크플로우에 적합한 에이전트 도구를 선택합니다.
 last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: 76a2dc291781d0555e0b128eb6c0e226759f5cc8
+source-git-commit: 8f499ad7baf1b5d08dfac90511d0c76e8372c08b
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 0%

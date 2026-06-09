@@ -3,7 +3,7 @@ title: 빌더용 API
 description: Adobe CX Enterprise API를 사용하여 맞춤형 애플리케이션 및 통합을 구축할 수 있습니다.
 last-substantial-update: 2026-06-02T00:00:00Z
 index: false
-source-git-commit: a130fc470e97f2316e2ea72ebda47b9fc4ad9b33
+source-git-commit: 8f499ad7baf1b5d08dfac90511d0c76e8372c08b
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 11%
@@ -11,7 +11,7 @@ ht-degree: 11%
 ---
 
 
-# 빌더용 API
+# 빌더를 위한 API
 
 <!-- last-modified: 2026-06-02 -->
 
@@ -107,7 +107,7 @@ API 프로젝트 설정, 인증 및 자격 증명 관리.
 
 ![Adobe CX Enterprise API에 연결하는 IDE](../assets/hero-connect-apis.gif)
 
-클라우드 코드, 커서 및 OpenAI 코드와 같은 코딩 에이전트는 Adobe CX Enterprise API를 사용하여 빌드하는 데 적합합니다. 프로젝트에 OpenAPI 사양을 추가하면 에이전트는 끝점을 찾고 요청을 생성하며 수동 배선 없이 API 동작에 대한 이유를 파악할 수 있습니다. 시작하려면 Adobe Developer Console에서 인증된 자격 증명과 프로젝트에 추가된 API 설명서, 이렇게 두 가지가 필요합니다.
+Claude Code, Cursor 및 OpenAI Codex와 같은 코딩 에이전트는 Adobe CX Enterprise API를 사용하는 데 적합합니다. 프로젝트에 OpenAPI 사양을 추가하면 에이전트는 끝점을 찾고 요청을 생성하며 수동 배선 없이 API 동작에 대한 이유를 파악할 수 있습니다. 시작하려면 Adobe Developer Console에서 인증된 자격 증명과 프로젝트에 추가된 API 설명서, 이렇게 두 가지가 필요합니다.
 
 ### Adobe Developer Console에서 API 자격 증명 설정
 

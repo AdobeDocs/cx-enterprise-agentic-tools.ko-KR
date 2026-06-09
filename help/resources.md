@@ -3,7 +3,7 @@ title: 리소스
 description: 모든 Adobe CX 엔터프라이즈 에이전트 도구 설명서, 레지스트리, API 및 개발자 안내서를 위한 단일 진입점입니다.
 last-substantial-update: 2026-05-08T00:00:00Z
 index: false
-source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
+source-git-commit: 8f499ad7baf1b5d08dfac90511d0c76e8372c08b
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 16%
@@ -42,7 +42,7 @@ Adobe CX 엔터프라이즈 에이전트 도구 작업을 위한 모든 주요 A
 | [Adobe 기술 저장소](https://github.com/adobe/skills) | 모든 에이전트 기술, 설치 방법 및 구현 세부 정보에 대한 표준 소스 |
 | [Adobe AI 레지스트리: 에이전트 기술](https://developer.adobe.com/ai-registry/?type=skill) | 메타데이터 및 가용성 상태와 함께 사용 가능한 에이전트 기술의 전체 카탈로그 |
 
-## 빌더용 API
+## 빌더를 위한 API
 
 | 리소스 | 찾을 내용 |
 |---|---|

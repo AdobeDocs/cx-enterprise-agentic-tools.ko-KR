@@ -3,7 +3,7 @@ title: MCP 서버
 description: Model Context Protocol 서버를 사용하여 MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로우에 연결합니다.
 index: false
 last-substantial-update: 2026-06-09T00:00:00Z
-source-git-commit: 76a2dc291781d0555e0b128eb6c0e226759f5cc8
+source-git-commit: 8f499ad7baf1b5d08dfac90511d0c76e8372c08b
 workflow-type: tm+mt
 source-wordcount: '2078'
 ht-degree: 3%
@@ -120,7 +120,7 @@ Adobe Target MCP는 공개 베타 버전입니다. 현재 사용 가능한 모�
 
 수동으로 구성하기 전에 [Adobe AI 레지스트리](https://developer.adobe.com/ai-registry/?type=connector)에서 AI 클라이언트 및 Adobe 응용 프로그램에 대한 관리되는 커넥터를 확인하십시오. 관리되는 커넥터는 인증을 자동으로 처리합니다. 클라이언트와 애플리케이션에 커넥터를 사용할 수 있는 경우 아래 수동 단계 대신 커넥터를 사용하십시오.
 
-아래 단계에서는 CX 엔터프라이즈 MCP 엔드포인트를 예로 사용합니다. 동일한 프로세스가 모든 Adobe MCP 서버에 적용됩니다. — 연결할 서버의 끝점 URL에서 교체합니다.
+아래 단계에서는 CX 엔터프라이즈 MCP 엔드포인트를 예로 사용합니다. 동일한 프로세스가 모든 Adobe MCP 서버에 적용됩니다. 연결하려는 서버의 끝점 URL에서 교체합니다.
 
 ![Adobe MCP 서버에 연결하는 AI 에이전트](../assets/hero-connect-mcp-servers.gif)
 
@@ -243,7 +243,7 @@ Microsoft Copilot Studio는 자동으로 Power Platform 사용자 지정 커넥�
 1. Copilot Studio에서 에이전트를 엽니다.
 2. **도구** 페이지로 이동합니다.
 3. **도구 추가 > 새 도구 > 모델 컨텍스트 프로토콜**&#x200B;을 선택합니다.
-4. MCP 온보딩 마법사에서 서버 세부 사항을 입력합니다(예: CX 엔터프라이즈 MCP:
+4. MCP 온보딩 마법사에서 서버 세부 사항을 입력합니다. 예를 들어 CX 엔터프라이즈 MCP 의 경우:
    - **서버 이름:** `Adobe CX Enterprise`
    - **서버 URL:** `https://cx-enterprise.adobe.io/mcp`
 5. 인증을 **OAuth 2.0**(으)로 설정하고 Adobe IMS 인증 및 토큰 URL로 구성합니다.

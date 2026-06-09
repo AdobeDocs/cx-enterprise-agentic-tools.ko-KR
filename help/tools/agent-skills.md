@@ -3,7 +3,7 @@ title: 에이전트 스킬
 description: AI 에이전트에게 CX 엔터프라이즈 작업을 일관되게 안내하는 Adobe에서 선별된 워크플로 및 지침입니다.
 last-substantial-update: 2026-05-19T00:00:00Z
 index: false
-source-git-commit: a130fc470e97f2316e2ea72ebda47b9fc4ad9b33
+source-git-commit: 8f499ad7baf1b5d08dfac90511d0c76e8372c08b
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 1%
