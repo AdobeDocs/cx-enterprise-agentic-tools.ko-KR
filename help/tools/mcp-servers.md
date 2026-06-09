@@ -3,9 +3,9 @@ title: MCP 서버
 description: Model Context Protocol 서버를 사용하여 MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로우에 연결합니다.
 index: false
 last-substantial-update: 2026-06-09T00:00:00Z
-source-git-commit: a580957c41e750578b03688bb7ef980103a97781
+source-git-commit: ec08b7ff646519ceb10bd3431e0c0d5db8f3367f
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1970'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 <!-- last-modified: 2026-06-09 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3491329/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3491320/?learn=on&enablevpops)
 
 Adobe CX Enterprise MCP 서버는 호환되는 AI 클라이언트를 Adobe 데이터 및 워크플로에 직접 제어하고 액세스할 수 있도록 합니다. 한 번 연결하면 AI 환경을 종료하지 않고도 일반 언어로 캠페인 성과를 쿼리하고, 대상을 활성화하고, 여정을 검토하고, 콘텐츠를 관리하는 등의 작업을 수행할 수 있습니다. MCP 서버는 AI 클라이언트와 Adobe의 기본 시스템 사이에 위치하기 때문에 조직의 액세스 제어 및 데이터 거버넌스가 유효한 동안 자연어 유연성을 얻을 수 있습니다.
 
@@ -33,7 +33,7 @@ Adobe MCP 서버는 개방형 [모델 컨텍스트 프로토콜](https://modelco
 
 **끝점 한 개. 여러 CX 엔터프라이즈 응용 프로그램입니다.**
 
-한 번 연결하면 AI 클라이언트가 조직의 라이센스를 기반으로 CX 엔터프라이즈 애플리케이션에 액세스할 수 있습니다.
+한 번 연결하면 AI 클라이언트가 조직의 라이센스를 기반으로 CX 엔터프라이즈 애플리케이션에 액세스할 수 있습니다. 조직을 활성화하려면 [cxo-mcp-feedback@adobe.com](mailto:cxo-mcp-feedback@adobe.com)에 전자 메일을 보내 액세스를 요청하세요.
 
 ```
 https://cx-enterprise.adobe.io/mcp
@@ -50,7 +50,7 @@ https://cx-enterprise.adobe.io/mcp
 
 >[!NOTE]
 >
->각 CX 엔터프라이즈 애플리케이션에 대한 액세스는 조직의 권한 및 Adobe Admin Console에서의 사용자 권한을 기반으로 합니다.
+>각 CX 엔터프라이즈 애플리케이션에 대한 액세스는 조직의 권한 및 Adobe Admin Console에서의 사용자 권한을 기반으로 합니다. 조직에 CX Enterprise MCP를 사용하려면 [cxo-mcp-feedback@adobe.com](mailto:cxo-mcp-feedback@adobe.com)에 전자 메일을 보내십시오.
 
 >[!TAB Experience Manager]
 
@@ -58,13 +58,13 @@ Adobe Experience Manager에는 다양한 워크플로우에 대한 여러 MCP �
 
 | MCP 서버 | 엔드포인트 | 수행 가능한 작업 |
 | --- | --- | --- |
-| [AEM(코드 모드)](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/aem` | 자연어 조회, 읽기, 쓰기 및 삭제를 통해 AEM에 직접 REST API 액세스 |
+| [AEM(코드 모드)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/aem` | 자연어 조회, 읽기, 쓰기 및 삭제를 통해 AEM에 직접 REST API 액세스 |
 | [AEM Cloud Manager](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) | `https://mcp.adobeaemcloud.com/adobe/mcp/cloudmanager` | 프로그램, 환경, 파이프라인 및 저장소 관리 |
-| [AEM 컨텐츠](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content` | 페이지, 콘텐츠 조각, 에셋 및 론치 관리 |
-| [AEM 컨텐츠(읽기 전용)](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly` | 쓰기 액세스 권한 없이 페이지, 콘텐츠 조각 및 시작 검색 및 쿼리 |
+| [AEM 컨텐츠](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content` | 페이지, 콘텐츠 조각, 에셋 및 론치 관리 |
+| [AEM 컨텐츠(읽기 전용)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly` | 쓰기 액세스 권한 없이 페이지, 콘텐츠 조각 및 시작 검색 및 쿼리 |
 | [AEM 문서 작성]&#x200B;(TODO: 유효성 검사) | `https://mcp.adobeaemcloud.com/adobe/mcp/da` | 문서 작성에서 파일, 버전 내역 및 미디어 참조 관리 |
 | [AEM Experience Governance](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/experience-governance-mcp-server) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-governance` | 브랜드 가이드라인 및 규정 준수 규칙에 따라 컨텐츠 및 이미지 평가 |
-| [AEM Experience Production](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/overview) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-production` | AI 기반의 콘텐츠 브리핑을 사용하여 규모에 맞게 AEM 페이지 변환 및 생성 |
+| [AEM Experience Production](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/overview) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-production` | AI 기반의 콘텐츠 브리핑을 사용하여 규모에 맞게 AEM 페이지 변환 및 생성 |
 
 >[!NOTE]
 >
@@ -82,17 +82,13 @@ Adobe Experience Manager에는 다양한 워크플로우에 대한 여러 MCP �
 
 >[!TAB Marketo Engage]
 
->[!NOTE]
->
->Marketo Engage MCP는 Adobe IMS가 아닌 Marketo 기반 서비스 자격 증명을 사용합니다. 인증 설정 지침은 [Marketo Engage MCP 서버 설명서](https://experienceleague.adobe.com/ko/docs/marketo-developer/marketo/mcp-server)를 참조하세요.
-
 | MCP 서버 | 엔드포인트 | 수행 가능한 작업 |
 | --- | --- | --- |
-| [Marketo Engage](https://experienceleague.adobe.com/ko/docs/marketo-developer/marketo/mcp-server) | `https://marketo-mcp.adobe.io/mcp` | 프로그램, 캠페인, 리드, 스마트 목록, 이메일 및 양식 관리 |
+| [Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server) | `https://marketo-mcp.adobe.io/mcp` | 프로그램, 캠페인, 리드, 스마트 목록, 이메일 및 양식 관리 |
 
 >[!NOTE]
 >
->액세스는 Marketo Engage 구독과 API 사용자의 권한에 따라 다릅니다.
+>Marketo Engage MCP는 Adobe IMS가 아닌 Marketo 기반 서비스 자격 증명을 사용합니다. 인증 설정에 대해서는 [Marketo Engage MCP 서버 설명서](https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server)를 참조하세요. 액세스는 Marketo Engage 구독과 API 사용자의 권한에 따라 다릅니다.
 
 >[!TAB Target]
 
@@ -100,7 +96,7 @@ Adobe Target MCP는 공개 베타 버전입니다. 현재 사용 가능한 모�
 
 | MCP 서버 | 엔드포인트 | 수행 가능한 작업 |
 | --- | --- | --- |
-| [Adobe Target](https://experienceleague.adobe.com/ko/docs/target/using/mcp/target-mcp) | `https://targetmcp.adobe.io/mcp` | 활동, 오퍼, 대상, mbox 및 성과 보고서 검토 |
+| [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp) | `https://targetmcp.adobe.io/mcp` | 활동, 오퍼, 대상, mbox 및 성과 보고서 검토 |
 
 >[!NOTE]
 >
@@ -292,11 +288,6 @@ CARDS
   {title = Optimize content based on performance data}
   {description = Combine CX Enterprise MCP and AEM Content MCP Server to find underperforming content and update it in one session.}
   {cta = Start walkthrough}
-
-* ../use-cases/cross-channel-campaign-review.md
-  {title = Run a cross-channel campaign review}
-  {description = Use CX Enterprise MCP for a unified view of AJO, CJA, and Real-Time CDP campaign health in one AI session.}
-  {cta = Start walkthrough}
 -->
 
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -416,33 +407,12 @@ CARDS
             </div>
         </div>
     </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Run a cross-channel campaign review">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="../use-cases/cross-channel-campaign-review.md" title="크로스 채널 캠페인 검토 실행" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://placehold.co/1600x900?text=Cross-Channel+Campaign+Review" alt="크로스 채널 캠페인 검토 실행"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="../use-cases/cross-channel-campaign-review.md" target="_blank" rel="referrer" title="크로스 채널 캠페인 검토 실행">크로스 채널 캠페인 검토 실행</a>
-                    </p>
-                    <p class="is-size-6">하나의 AI 세션에서 AJO, CJA 및 Real-Time CDP 캠페인 상태를 통합적으로 보려면 CX Enterprise MCP를 사용하십시오.</p>
-                </div>
-                <a href="../use-cases/cross-channel-campaign-review.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">연습 시작</span>
-                </a>
-            </div>
-        </div>
-    </div>
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-## 문제 해결
+## 도움이 더 필요하십니까?
+
+MCP 연결에는 인증, 조직 선택 및 애플리케이션 수준 권한이 포함됩니다. 어떤 것이 예상대로 작동하지 않는 경우 이러한 단계는 가장 일반적인 원인을 다룹니다.
 
 +++Adobe 조직 전환
 

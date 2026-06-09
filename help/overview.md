@@ -3,9 +3,9 @@ title: Adobe CX 엔터프라이즈 에이전트 툴
 description: MCP 서버, 에이전트 기술 및 API를 사용하여 AI 에이전트 및 개발 도구를 Adobe CX Enterprise 기능에 연결합니다.
 last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: 270aed67540f7347850aece70cebddc9b40b9de8
+source-git-commit: ec08b7ff646519ceb10bd3431e0c0d5db8f3367f
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '585'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 <!-- last-modified: 2026-06-08 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3491251/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3491235/?learn=on&enablevpops)
 
 AI가 Adobe CX Enterprise의 동료가 되도록 합니다. AI 클라이언트를 캠페인, 대상자, 여정 및 컨텐츠에 연결하고 이미 사용하는 도구에서 일반 언어로 상호 작용합니다. 시작하는 데 필요한 새 인터페이스, 컨텍스트 전환, 코딩이 없습니다.
 
@@ -141,7 +141,7 @@ CARDS
 
 [에이전트 스킬 탐색](tools/agent-skills.md)
 
->[!TAB 빌더용  API]
+>빌더용 [!TAB API]
 
 Adobe 제품을 실행하는 동일한 API에 직접 프로그래밍 방식으로 액세스합니다. 사용자 정의 애플리케이션 및 통합을 구축하여 팀이 특정 CX 엔터프라이즈 워크플로우에 대한 액세스 권한을 집중하고 관리할 수 있도록 합니다.
 
@@ -160,11 +160,6 @@ Adobe CX 엔터프라이즈 에이전트 툴의 실제 모습에 대해 알아�
 <!--
 CARDS
 
-* use-cases/cross-channel-campaign-review.md
-  {title = Run a cross-channel campaign review}
-  {description = Review AJO journey status, Real-Time CDP audience activation, and CJA performance data in one AI session. Uses CX Enterprise MCP.}
-  {cta = Start walkthrough}
-
 * use-cases/analyze-campaign-performance.md
   {title = Analyze campaign performance}
   {description = Surface Customer Journey Analytics comparisons and conversion trends through plain-language questions. Uses CX Enterprise MCP.}
@@ -178,29 +173,6 @@ CARDS
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Run a cross-channel campaign review">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="use-cases/cross-channel-campaign-review.md" title="크로스 채널 캠페인 검토 실행" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://placehold.co/1600x900?text=Cross-Channel+Campaign+Review" alt="크로스 채널 캠페인 검토 실행"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="use-cases/cross-channel-campaign-review.md" target="_blank" rel="referrer" title="크로스 채널 캠페인 검토 실행">크로스 채널 캠페인 검토 실행</a>
-                    </p>
-                    <p class="is-size-6">하나의 AI 세션에서 AJO 여정 상태, Real-Time CDP 대상 활성화 및 CJA 성능 데이터를 검토합니다. CX 엔터프라이즈 MCP 사용</p>
-                </div>
-                <a href="use-cases/cross-channel-campaign-review.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">연습 시작</span>
-                </a>
-            </div>
-        </div>
-    </div>
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Analyze campaign performance">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
