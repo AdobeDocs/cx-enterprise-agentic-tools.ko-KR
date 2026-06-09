@@ -3,10 +3,10 @@ title: 빌더용 API
 description: Adobe CX Enterprise API를 사용하여 맞춤형 애플리케이션 및 통합을 구축할 수 있습니다.
 last-substantial-update: 2026-06-02T00:00:00Z
 index: false
-source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
+source-git-commit: 9318512ab3280356be3f64a17f5320e30a9c4f8d
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 23%
+source-wordcount: '935'
+ht-degree: 24%
 
 ---
 
@@ -20,8 +20,6 @@ ht-degree: 23%
 Adobe CX Enterprise API를 사용하면 개발자와 AI 지원 코딩 에이전트 툴이 Adobe 데이터 및 워크플로우에 직접 액세스할 수 있습니다. 이를 사용하여 사용자 정의 애플리케이션을 구축하고, 통합을 자동화하고, Adobe 기능을 자체 시스템에 임베드할 수 있습니다. API는 시스템 통합에 대한 완전한 프로그래밍 방식 제어가 필요하거나 Adobe 데이터 위에 애플리케이션을 구축하는 경우 올바른 선택입니다. Adobe 워크플로에 대한 에이전트 기반 대화 액세스는 [MCP 서버](mcp-servers.md)를 참조하십시오.
 
 ## Adobe CX 엔터프라이즈 API
-
-Adobe CX Enterprise API는 Adobe Experience Platform, Journey Optimizer 및 Customer Journey Analytics과 같은 제품을 지원하는 핵심 데이터 및 작업을 제공합니다. 각 API는 API 우선 설계를 따르며, 개발자와 AI 지원 코딩 에이전트 툴이 Adobe에서 내부적으로 사용하는 동일한 기능에 직접 프로그래밍 방식으로 액세스할 수 있도록 합니다. 이를 사용하여 맞춤형 애플리케이션을 구축하고, 워크플로우를 자동화하고, Adobe 데이터를 자체 시스템에 통합합니다.
 
 <!--
 CARDS
@@ -68,7 +66,7 @@ CARDS
   {target = _blank}
   {image = ../assets/apis-cxenterprise-card.png}
 
-* https://experienceleague.adobe.com/ko/docs/experience-platform/privacy/home
+* https://experienceleague.adobe.com/en/docs/experience-platform/privacy/home
   {title = Privacy}
   {description = Privacy workflows, data governance, and data subject requests.}
   {cta = Explore API}
@@ -398,19 +396,6 @@ CARDS
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-
-## 빌더와 MCP 서버용 API
-
-시스템 통합을 완벽하게 제어해야 하거나 사용자 정의 애플리케이션을 빌드하고 있는 경우 API를 사용하십시오. AI 에이전트가 Adobe 워크플로와 직접 작동하도록 하려면 MCP 서버를 사용합니다.
-
-| | API | MCP 서버 |
-| --- | --- | --- |
-| 직접 시스템 통합 | 예 | 때때로 |
-| 에이전트 친화적인 오케스트레이션 | 제한적 | 예 |
-| 원시 데이터 액세스 | 예 | 보통 추상화 |
-| 사용자 정의 애플리케이션 개발 | 기본 사용 사례 | 보조 |
-| AI 지원 워크플로 | 지원됨 | 기본 사용 사례 |
-
 ## 빌더를 위한 API 시작
 
 ![Adobe CX Enterprise API에 연결하는 IDE](../assets/hero-connect-apis.gif)
@@ -500,3 +485,15 @@ project/
 **현재 사양 유지**
 
 Adobe에서 새 API 버전을 게시할 때 새 스냅숏을 `/specs`에 다운로드하고 날짜를 `README.md`로 업데이트한 다음 인덱스와 `AGENTS.md`을(를) 다시 생성합니다.
+
+## 빌더와 MCP 서버용 API
+
+시스템 통합을 완벽하게 제어해야 하거나 사용자 정의 애플리케이션을 빌드하고 있는 경우 API를 사용하십시오. AI 에이전트가 Adobe 워크플로와 직접 작동하도록 하려면 MCP 서버를 사용합니다.
+
+| | API | MCP 서버 |
+| --- | --- | --- |
+| 직접 시스템 통합 | 예 | 때때로 |
+| 에이전트 친화적인 오케스트레이션 | 제한적 | 예 |
+| 원시 데이터 액세스 | 예 | 보통 추상화 |
+| 사용자 정의 애플리케이션 개발 | 기본 사용 사례 | 보조 |
+| AI 지원 워크플로 | 지원됨 | 기본 사용 사례 |

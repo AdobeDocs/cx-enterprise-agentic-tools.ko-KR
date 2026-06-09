@@ -3,10 +3,10 @@ title: 에이전트 스킬
 description: AI 에이전트에게 CX 엔터프라이즈 작업을 일관되게 안내하는 Adobe에서 선별된 워크플로 및 지침입니다.
 last-substantial-update: 2026-05-19T00:00:00Z
 index: false
-source-git-commit: 1681b6de9d0459ed9d5420f77048778712cd0004
+source-git-commit: 1d568bb9c3d948a0470c0f5d110ebb8fa696a53c
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 6%
+source-wordcount: '635'
+ht-degree: 7%
 
 ---
 
@@ -19,11 +19,9 @@ ht-degree: 6%
 
 에이전트 기술은 Adobe에서 제공하는 워크플로우로, AI 에이전트에게 Adobe CX Enterprise 작업을 안정적으로 완료하기 위한 단계별 지침을 제공합니다. 각 에이전트 스킬은 도메인의 전문 지식 및 모범 사례를 인코딩하여 에이전트가 즉흥할 필요 없이 일관되고 검증된 결과를 생성하도록 합니다. 에이전트 기술은 특히 매번 세부 메시지를 확인해야 하는 작업에 대해 대화 간에 반복 가능하고 안내되는 동작을 원하는 경우 적합합니다. MCP 서버 및 API를 보완합니다. 에이전트 기술은 에이전트 작동 방식을 정의합니다. MCP 서버 및 API는 기본 액세스를 제공합니다.
 
-모든 에이전트 기술은 에이전트 기술 문서, 설치 및 구현 세부 정보의 기본 소스인 [Adobe 기술 GitHub 저장소](https://github.com/adobe/skills)에서 유지 관리됩니다.
-
 ## Adobe CX 엔터프라이즈 에이전트 기술
 
-모든 에이전트 기술은 [Adobe 기술 GitHub 저장소](https://github.com/adobe/skills)에서 유지됩니다. 아래 기능 영역을 선택하여 해당 워크플로우에 대한 기술을 살펴보십시오.
+아래 기능 영역을 선택하여 해당 워크플로우에 대한 기술을 살펴보십시오.
 
 <!--
 CARDS
@@ -183,9 +181,6 @@ CARDS
     </div>
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
-
-
-전체 스킬 세부 정보, 설치 방법 및 소스 코드는 [Adobe 스킬 GitHub 저장소](https://github.com/adobe/skills)를 참조하십시오.
 
 ## 에이전트 스킬 작동 방식
 
