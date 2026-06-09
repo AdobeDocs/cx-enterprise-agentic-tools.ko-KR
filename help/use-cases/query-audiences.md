@@ -230,7 +230,7 @@ Are there any audiences using a non-default merge policy that could cause profil
 
 | 리소스 | 찾을 내용 |
 | --- | --- |
-| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) | MCP 서버 설정 및 도구 참조 |
+| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) | MCP 서버 설정 및 도구 참조 |
 | [Adobe AI 레지스트리](https://developer.adobe.com/ai-registry/?type=mcp) | MCP 서버 메타데이터 및 가용성 |
 | [Real-Time CDP 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) | 전체 Real-Time CDP 애플리케이션 설명서 |
 | [AEP 대상 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/destinations/home) | 전체 대상 참조 |
