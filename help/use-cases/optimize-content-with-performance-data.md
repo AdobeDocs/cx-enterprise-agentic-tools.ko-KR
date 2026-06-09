@@ -20,8 +20,8 @@ ht-degree: 2%
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| CX 엔터프라이즈 애플리케이션 | [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview), [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/introduction) |
-| 무생식 도구 | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers), [AEM Content MCP 서버](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) |
+| CX 엔터프라이즈 애플리케이션 | [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview), [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/introduction) |
+| 무생식 도구 | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers), [AEM Content MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) |
 | 대상자 | 캠페인 관리자, 콘텐츠 전략가, 마케팅 운영 |
 | 사전 요구 사항 | MCP 호환 AI 클라이언트, CJA 액세스, AEM as a Cloud Service 액세스 |
 
@@ -257,7 +257,7 @@ Publish all confirmed changes and share the updated URLs.
 | 리소스 | 찾을 내용 |
 | --- | --- |
 | [CJA MCP 서버 설명서](https://developer.adobe.com/analytics-mcp/docs/cja/) | CJA MCP 설정 및 도구 참조 |
-| [AEM Content MCP 서버 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | AEM Content MCP 설치 및 사용 안내서 |
+| [AEM Content MCP 서버 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | AEM Content MCP 설치 및 사용 안내서 |
 | [AI 레지스트리의 CJA MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp) | CJA MCP 서버 도구 및 가용성 |
 | [AI 레지스트리의 AEM Content MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp) | AEM Content MCP 서버 도구 및 가용성 |
 | [MCP 서버](../tools/mcp-servers.md) | AI 클라이언트를 Adobe MCP 서버에 연결 |
