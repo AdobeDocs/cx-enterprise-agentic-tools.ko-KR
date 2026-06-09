@@ -3,7 +3,7 @@ title: Adobe CX 엔터프라이즈 에이전트 툴
 description: MCP 서버, 에이전트 기술 및 API를 사용하여 AI 에이전트 및 개발 도구를 Adobe CX Enterprise 기능에 연결합니다.
 last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: 94c7d3c6b0542b6e27d8775f78acf40a1b1cae91
+source-git-commit: 76a2dc291781d0555e0b128eb6c0e226759f5cc8
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 <!-- last-modified: 2026-06-08 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3491251/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3491235/?learn=on&enablevpops)
 
 AI가 Adobe CX Enterprise의 동료가 되도록 합니다. AI 클라이언트를 캠페인, 대상자, 여정 및 컨텐츠에 연결합니다. 이미 사용하는 도구에서 일반 언어로 사용자와 상호 작용합니다. 시작하는 데 필요한 새 인터페이스, 컨텍스트 전환, 코딩이 없습니다.
 
@@ -49,7 +49,7 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="tools/mcp-servers.md" title="MCP 서버" target="_blank" rel="referrer">
+                    <a href="tools/mcp-servers.md" title="MCP 서버">
                         <img class="is-bordered-r-small" src="assets/mcp-servers-card.png" alt="MCP 서버"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -58,11 +58,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="tools/mcp-servers.md" target="_blank" rel="referrer" title="MCP 서버">MCP 서버</a>
+                        <a href="tools/mcp-servers.md" title="MCP 서버">MCP 서버</a>
                     </p>
                     <p class="is-size-6">MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로우에 연결합니다. AI 도구를 종료하지 않고 데이터를 쿼리하고, 캠페인을 분석하고 대상에 액세스합니다.</p>
                 </div>
-                <a href="tools/mcp-servers.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="tools/mcp-servers.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">MCP 서버 탐색</span>
                 </a>
             </div>
@@ -72,7 +72,7 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="tools/agent-skills.md" title="에이전트 스킬" target="_blank" rel="referrer">
+                    <a href="tools/agent-skills.md" title="에이전트 스킬">
                         <img class="is-bordered-r-small" src="assets/agent-skills-card.png" alt="에이전트 스킬"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -81,11 +81,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="tools/agent-skills.md" target="_blank" rel="referrer" title="에이전트 스킬">에이전트 기술</a>
+                        <a href="tools/agent-skills.md" title="에이전트 스킬">에이전트 기술</a>
                     </p>
                     <p class="is-size-6">Adobe에서 제공하는 워크플로우로 에이전트에게 CX 엔터프라이즈 작업을 안내합니다. 한 번 인코딩되고 일관되게 적용되는 도메인 전문 지식.</p>
                 </div>
-                <a href="tools/agent-skills.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="tools/agent-skills.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">에이전트 기술 살펴보기</span>
                 </a>
             </div>
@@ -95,7 +95,7 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="tools/apis.md" title="빌더용 API" target="_blank" rel="referrer">
+                    <a href="tools/apis.md" title="빌더용 API">
                         <img class="is-bordered-r-small" src="assets/apis-card.png" alt="빌더용 API"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -104,11 +104,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        빌더용 <a href="tools/apis.md" target="_blank" rel="referrer" title="빌더용 API">API</a>
+                        빌더용 <a href="tools/apis.md" title="빌더용 API">API</a>
                     </p>
                     <p class="is-size-6">클라우드 코드 및 커서와 같은 에이전틱 코딩 툴을 사용하여 맞춤형 Adobe CX 엔터프라이즈 애플리케이션을 구축할 수 있습니다.</p>
                 </div>
-                <a href="tools/apis.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="tools/apis.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">빌더를 위한 API 탐색</span>
                 </a>
             </div>
@@ -141,7 +141,7 @@ CARDS
 
 [에이전트 스킬 탐색](tools/agent-skills.md)
 
->[!TAB 빌더용  API]
+>빌더용 [!TAB API]
 
 Adobe 제품을 실행하는 동일한 API에 직접 프로그래밍 방식으로 액세스합니다. 사용자 정의 애플리케이션 및 통합을 구축하여 팀이 특정 CX 엔터프라이즈 워크플로우에 대한 액세스 권한을 집중하고 관리할 수 있도록 합니다.
 
@@ -177,7 +177,7 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="use-cases/analyze-campaign-performance.md" title="캠페인 성과 분석" target="_blank" rel="referrer">
+                    <a href="use-cases/analyze-campaign-performance.md" title="캠페인 성과 분석">
                         <img class="is-bordered-r-small" src="assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step5-02-actions.png" alt="캠페인 성과 분석"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -186,11 +186,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="use-cases/analyze-campaign-performance.md" target="_blank" rel="referrer" title="캠페인 성과 분석">캠페인 성과 분석</a>
+                        <a href="use-cases/analyze-campaign-performance.md" title="캠페인 성과 분석">캠페인 성과 분석</a>
                     </p>
                     <p class="is-size-6">일반 언어 질문을 통해 Customer Journey Analytics 비교 및 전환 트렌드를 표시합니다. CX 엔터프라이즈 MCP 사용</p>
                 </div>
-                <a href="use-cases/analyze-campaign-performance.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="use-cases/analyze-campaign-performance.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">연습 시작</span>
                 </a>
             </div>
@@ -200,7 +200,7 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="use-cases/manage-aem-content.md" title="AI를 사용하여 AEM 콘텐츠 관리" target="_blank" rel="referrer">
+                    <a href="use-cases/manage-aem-content.md" title="AI를 사용하여 AEM 콘텐츠 관리">
                         <img class="is-bordered-r-small" src="assets/use-cases/manage-aem-content/manage-aem-content-step4-02-product.png" alt="AI를 사용하여 AEM 콘텐츠 관리"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -209,11 +209,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="use-cases/manage-aem-content.md" target="_blank" rel="referrer" title="AI를 사용하여 AEM 콘텐츠 관리">AI로 AEM 콘텐츠 관리</a>
+                        <a href="use-cases/manage-aem-content.md" title="AI를 사용하여 AEM 콘텐츠 관리">AI로 AEM 콘텐츠 관리</a>
                     </p>
                     <p class="is-size-6">자연어를 사용하여 AEM에서 페이지 및 콘텐츠 조각을 검색, 업데이트 및 게시할 수 있습니다.</p>
                 </div>
-                <a href="use-cases/manage-aem-content.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="use-cases/manage-aem-content.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">연습 시작</span>
                 </a>
             </div>
