@@ -3,9 +3,9 @@ title: 고객에게 영향을 미치기 전에 여정 문제 파악
 description: CX Enterprise MCP Gateway를 사용하여 활성 AJO 여정을 모니터링하고, 캠페인 구성을 검토하고, 고객에게 도달하기 전에 운영 문제를 파악할 수 있습니다.
 last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
+source-git-commit: 270aed67540f7347850aece70cebddc9b40b9de8
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1009'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 # 고객에게 영향을 미치기 전에 여정 문제 파악
 <!-- last-modified: 2026-06-08 -->
 
-![AJO 여정 검토](https://placehold.co/1600x900?text=Review+AJO+Journeys)
+![AI 클라이언트가 실행 요약으로 캠페인 및 여정 전략을 요약](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step5-02-exe-summary.png)
 
 활성화된 여정, 해당 변수를 유도하는 조건 및 캠페인이 정상적으로 구성되는 방식에 대한 명확한 그림을 얻는다는 것은 Adobe Journey Optimizer을 열고 해당 인터페이스를 탐색한다는 의미입니다. 이 연습에서는 CX Enterprise MCP Gateway를 사용하여 일반 언어 질문을 통해 AJO 여정 및 캠페인 데이터를 쿼리하여 AI 클라이언트를 통해 동일한 가시성을 얻는 방법을 보여 줍니다.
 

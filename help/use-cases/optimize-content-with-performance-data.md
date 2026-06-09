@@ -3,9 +3,9 @@ title: 성능 데이터를 기반으로 콘텐츠 최적화
 description: 하나의 AI 세션에서 CJA과 AEM을 함께 사용하면 도구를 전환하지 않고도 전환되지 않는 캠페인을 찾고 원인을 진단하고 콘텐츠를 업데이트할 수 있습니다.
 last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
+source-git-commit: 270aed67540f7347850aece70cebddc9b40b9de8
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1089'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 # 성능 데이터를 기반으로 콘텐츠 최적화
 <!-- last-modified: 2026-06-08 -->
 
-![성능 데이터를 기반으로 콘텐츠 최적화](https://placehold.co/1600x900?text=Optimize+Content+Based+on+Performance+Data)
+![AI 클라이언트가 원본 페이지와 업데이트된 페이지 콘텐츠를 나란히 비교](../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step5-03-page-compare.png)
 
 캠페인 성과 데이터와 콘텐츠 업데이트 간의 루프를 닫는다는 것은 일반적으로 분석 도구와 CMS 간에 전환하는 것을 의미합니다. 이 연습에서는 동일한 AI 세션에서 Customer Journey Analytics과 AEM을 연결하는 방법을 보여 줍니다. 즉, 전환에 차이가 있는 캠페인을 표시하고, 이러한 캠페인을 유발하는 요소를 진단하고, 콘텐츠를 검사하고, 타깃팅된 추천을 받고, 대화를 종료하지 않고 변경 사항을 적용하는 것입니다.
 

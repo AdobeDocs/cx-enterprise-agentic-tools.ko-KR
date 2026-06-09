@@ -3,7 +3,7 @@ title: 보고서를 작성하지 않고 캠페인 통찰력 표시
 description: CX 엔터프라이즈 MCP 게이트웨이를 사용하면 Customer Journey Analytics 성능 관련 질문을 일반 언어로 작성하고 Report Builders를 탐색하지 않고도 답변을 얻을 수 있습니다.
 last-substantial-update: 2026-06-02T00:00:00Z
 index: false
-source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
+source-git-commit: 270aed67540f7347850aece70cebddc9b40b9de8
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- last-modified: 2026-06-02 -->
 
-![캠페인 성과 분석](https://placehold.co/1600x900?text=Analyze+Campaign+Performance)
+![캠페인 성과를 개선하기 위한 권장된 다음 단계를 보여주는 AI 클라이언트](../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step5-02-actions.png)
 
 한 때 별도의 도구로 보고서를 작성해야 했던 캠페인 분석이 이제 대화로 바뀌었습니다. 이 연습에서는 AI 클라이언트를 Customer Journey Analytics(CJA)에 연결하고 일반 언어로 성능 질문을 하는 방법을 보여 줍니다. 따라서 수동으로 보고서를 작성할 필요 없이 insight으로 이동하는 시간이 단축됩니다.
 

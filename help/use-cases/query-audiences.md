@@ -3,9 +3,9 @@ title: 대상자 및 대상자 활성화 위치 이해
 description: CX 엔터프라이즈 MCP 게이트웨이를 사용하여 대상자 활성화 상태를 모니터링하고, 대상 상태를 확인하고, 캠페인에 영향을 미치기 전에 문제를 확인할 수 있습니다.
 last-substantial-update: 2026-06-04T00:00:00Z
 index: false
-source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
+source-git-commit: 270aed67540f7347850aece70cebddc9b40b9de8
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '898'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 <!-- last-modified: 2026-06-04 -->
 
-![자연어를 사용하여 대상자 쿼리](https://placehold.co/1600x900?text=Query+Audiences)
+![활성화 권장 사항을 통해 우선 순위가 지정된 대상 전략을 제공하는 AI 클라이언트](../assets/use-cases/query-audiences/query-audiences-step4-02-summary.png)
 
 활성화된 대상, 유입되는 대상 및 대상이 정상인지 여부를 이해하면 일반적으로 Real-Time CDP을 열고 여러 화면을 탐색할 수 있습니다. 이 연습에서는 RTCDP MCP 서버를 사용하여 AI 클라이언트를 통해 동일한 답변을 얻는 방법을 보여 줍니다. 일반 언어 질문을 통해 대상 구성, 활성화 상태 및 데이터 흐름 상태를 표시합니다.
 
