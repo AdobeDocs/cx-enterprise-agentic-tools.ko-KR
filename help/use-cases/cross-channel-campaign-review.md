@@ -3,7 +3,7 @@ title: 크로스 채널 캠페인 검토 실행
 description: 단일 AI 세션에서 CX 엔터프라이즈 MCP를 사용하여 여정, 대상 및 성능 전반에 걸친 AJO, CJA 및 Real-Time CDP 캠페인 상태를 통합적으로 파악할 수 있습니다.
 last-substantial-update: 2026-06-09T00:00:00Z
 index: false
-source-git-commit: 94c7d3c6b0542b6e27d8775f78acf40a1b1cae91
+source-git-commit: ed47f1547e6949fc71417e7d99d83802ae3c2134
 workflow-type: tm+mt
 source-wordcount: '1458'
 ht-degree: 5%
@@ -21,10 +21,10 @@ ht-degree: 5%
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| **CX 엔터프라이즈 애플리케이션** | [Adobe Journey Optimizer](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home), [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview), [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) |
-| **에이전트 도구** | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers) |
-| **대상자** | 캠페인 관리자, 마케팅 운영 |
-| **필수 구성 요소** | MCP 호환 AI 클라이언트, AJO, CJA 및 Real-Time CDP 액세스 |
+| CX 엔터프라이즈 애플리케이션 | [Adobe Journey Optimizer](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home), [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview), [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) |
+| 무생식 도구 | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers) |
+| 대상자 | 캠페인 관리자, 마케팅 운영 |
+| 사전 요구 사항 | MCP 호환 AI 클라이언트, AJO, CJA 및 Real-Time CDP 액세스 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **수행할 수 있는 추가** 섹션이 다음과 같습니다.
 
@@ -293,7 +293,7 @@ Which channel has the highest conversion rate across all active campaigns?
 | --- | --- |
 | [AJO 설명서](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home) | 전체 AJO 애플리케이션 설명서 |
 | [Analytics MCP 설명서](https://developer.adobe.com/analytics-mcp/docs/) | CJA MCP 설정 및 도구 참조 |
-| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) | RTCDP MCP 설치 안내서 |
+| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) | RTCDP MCP 설치 안내서 |
 | [AI 레지스트리의 AJO MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/ajo-mcp-server) | AJO MCP 서버 도구 및 가용성 |
 | [AI 레지스트리의 CJA MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp) | CJA MCP 서버 도구 및 가용성 |
 | [MCP 서버](../tools/mcp-servers.md) | AI 클라이언트를 Adobe MCP 서버에 연결 |

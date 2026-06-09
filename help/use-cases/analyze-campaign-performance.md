@@ -3,7 +3,7 @@ title: 보고서를 작성하지 않고 캠페인 통찰력 표시
 description: CX Enterprise MCP 를 사용하여 Customer Journey Analytics 성능 관련 질문에 대해 일반 언어로 질문하고 Report Builders를 탐색하지 않고도 답변을 얻을 수 있습니다.
 last-substantial-update: 2026-06-09T00:00:00Z
 index: false
-source-git-commit: 94c7d3c6b0542b6e27d8775f78acf40a1b1cae91
+source-git-commit: ed47f1547e6949fc71417e7d99d83802ae3c2134
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 0%
@@ -21,10 +21,10 @@ ht-degree: 0%
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| **CX 엔터프라이즈 애플리케이션** | [Customer Journey Analytics(CJA)](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview) |
-| **에이전트 도구** | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers) |
-| **대상자** | 분석가, 캠페인 관리자 |
-| **필수 구성 요소** | MCP 호환 AI 클라이언트, CJA 액세스 |
+| CX 엔터프라이즈 애플리케이션 | [Customer Journey Analytics(CJA)](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
+| 무생식 도구 | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers) |
+| 대상자 | 분석가, 캠페인 관리자 |
+| 사전 요구 사항 | MCP 호환 AI 클라이언트, CJA 액세스 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **수행할 수 있는 추가** 섹션이 다음과 같습니다.
 
@@ -276,4 +276,4 @@ Save this analysis as a Workspace project for executive reporting.
 | [CJA MCP 서버 설명서](https://developer.adobe.com/analytics-mcp/docs/cja/) | 전체 도구 참조 및 설정 안내서 |
 | [CJA MCP 사용 안내서](https://developer.adobe.com/analytics-mcp/docs/guides/) | 자세한 사용 안내서 |
 | [AI 레지스트리의 CJA MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp) | CJA MCP 서버 도구 및 가용성 |
-| [Customer Journey Analytics 설명서](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-landing) | 전체 CJA 애플리케이션 설명서 |
+| [Customer Journey Analytics 설명서](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-landing) | 전체 CJA 애플리케이션 설명서 |

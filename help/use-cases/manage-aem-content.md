@@ -3,7 +3,7 @@ title: 최신 컨텐츠 유지 및 업데이트 전달 속도 향상
 description: AEM Content MCP 서버를 사용하여 도구 간에 전환하지 않고도 AEM 콘텐츠를 찾고, 검토하고, 업데이트하고, 게시할 수 있습니다.
 last-substantial-update: 2026-06-09T00:00:00Z
 index: false
-source-git-commit: 94c7d3c6b0542b6e27d8775f78acf40a1b1cae91
+source-git-commit: ed47f1547e6949fc71417e7d99d83802ae3c2134
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 2%
@@ -21,10 +21,10 @@ ht-degree: 2%
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| **CX 엔터프라이즈 애플리케이션** | [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/introduction) |
-| **에이전트 도구** | [AEM 콘텐츠 MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) |
-| **대상자** | 콘텐츠 관리자, 마케팅 팀 |
-| **필수 구성 요소** | MCP 호환 AI 클라이언트, AEM as a Cloud Service 액세스 |
+| CX 엔터프라이즈 애플리케이션 | [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/introduction) |
+| 무생식 도구 | [AEM 콘텐츠 MCP 서버](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) |
+| 대상자 | 콘텐츠 관리자, 마케팅 팀 |
+| 사전 요구 사항 | MCP 호환 AI 클라이언트, AEM as a Cloud Service 액세스 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **수행할 수 있는 추가** 섹션이 다음과 같습니다.
 
@@ -264,8 +264,8 @@ Promote the May Updates launch to production.
 
 | 리소스 | 찾을 내용 |
 | --- | --- |
-| [AEM Content MCP 서버 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | MCP 서버 설치 및 사용 안내서 |
+| [AEM Content MCP 서버 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | MCP 서버 설치 및 사용 안내서 |
 | [AI 레지스트리의 AEM Content MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp) | 도구 목록 및 가용성 |
-| [AEM as a Cloud Service 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service) | 전체 AEM 애플리케이션 설명서 |
-| [AEM 콘텐츠 조각](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments) | 콘텐츠 조각 작성 참조 |
+| [AEM as a Cloud Service 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service) | 전체 AEM 애플리케이션 설명서 |
+| [AEM 콘텐츠 조각](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments) | 콘텐츠 조각 작성 참조 |
 | [MCP 서버](../tools/mcp-servers.md) | AI 클라이언트를 Adobe MCP 서버에 연결 |
