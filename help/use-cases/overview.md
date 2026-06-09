@@ -1,8 +1,9 @@
 ---
 title: 실행 중인 에이전트 도구
 description: 실제 비즈니스 워크플로우에 적용되는 Adobe CX 엔터프라이즈 에이전트 도구를 보여 주는 단계별 연습입니다.
+last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: 689ace21360ceed512cdd5869bd4f972014ff219
+source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 0%

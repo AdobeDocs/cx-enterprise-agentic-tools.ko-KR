@@ -1,8 +1,9 @@
 ---
 title: 리소스
 description: 모든 Adobe CX 엔터프라이즈 에이전트 도구 설명서, 레지스트리, API 및 개발자 안내서를 위한 단일 진입점입니다.
+last-substantial-update: 2026-05-08T00:00:00Z
 index: false
-source-git-commit: 63f5958eaa227ea21fa5b193a2ac76a69fd349cb
+source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 16%

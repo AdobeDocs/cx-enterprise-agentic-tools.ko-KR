@@ -1,8 +1,9 @@
 ---
 title: 빌더용 API
 description: Adobe CX Enterprise API를 사용하여 맞춤형 애플리케이션 및 통합을 구축할 수 있습니다.
+last-substantial-update: 2026-06-02T00:00:00Z
 index: false
-source-git-commit: 3c29bfeeef3d2cb523724db02448aaa77cdf8900
+source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 23%

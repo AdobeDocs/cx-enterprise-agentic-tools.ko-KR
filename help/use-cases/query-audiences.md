@@ -1,8 +1,9 @@
 ---
 title: 대상자 및 대상자 활성화 위치 이해
 description: CX 엔터프라이즈 MCP 게이트웨이를 사용하여 대상자 활성화 상태를 모니터링하고, 대상 상태를 확인하고, 캠페인에 영향을 미치기 전에 문제를 확인할 수 있습니다.
+last-substantial-update: 2026-06-04T00:00:00Z
 index: false
-source-git-commit: 14488b494c454ce6d1207e2d21024749d93db669
+source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 2%

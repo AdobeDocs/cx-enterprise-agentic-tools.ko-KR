@@ -1,8 +1,9 @@
 ---
 title: 성능 데이터를 기반으로 콘텐츠 최적화
 description: 하나의 AI 세션에서 CJA과 AEM을 함께 사용하면 도구를 전환하지 않고도 전환되지 않는 캠페인을 찾고 원인을 진단하고 콘텐츠를 업데이트할 수 있습니다.
+last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: 135f151c50464461c48fa09d4a7efad20b96cc73
+source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 1%

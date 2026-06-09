@@ -1,8 +1,9 @@
 ---
 title: 안심하고 AEM as a Cloud Service에 배포
 description: AI 클라이언트를 종료하지 않고 환경 상태를 확인하고 파이프라인 내역을 검토하고 배포를 트리거하거나 관리합니다.
+last-substantial-update: 2026-05-21T00:00:00Z
 index: false
-source-git-commit: 14488b494c454ce6d1207e2d21024749d93db669
+source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 1%
