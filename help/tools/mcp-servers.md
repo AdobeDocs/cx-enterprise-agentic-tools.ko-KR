@@ -3,7 +3,7 @@ title: MCP 서버
 description: Model Context Protocol 서버를 사용하여 MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로우에 연결합니다.
 index: false
 last-substantial-update: 2026-06-09T00:00:00Z
-source-git-commit: 0fb630143968f07246f2a693cec5c8c3432f64f2
+source-git-commit: e37222abaf2d2502dfbc2f8588ae9ece94fffbd1
 workflow-type: tm+mt
 source-wordcount: '2078'
 ht-degree: 3%
@@ -128,7 +128,7 @@ Adobe Target MCP는 공개 베타 버전입니다. 현재 사용 가능한 모�
 
 >[!TAB 클라우드.ai]
 
-### ![권장](../assets/icons/star.svg) 관리되는 커넥터 사용
+### <img src="../assets/icons/star.svg" width="24" height="24" alt="권장"> 관리되는 커넥터 사용
 
 [Adobe AI 레지스트리](https://developer.adobe.com/ai-registry/?type=connector)&#x200B;(으)로 이동하여 Adobe 응용 프로그램을 검색합니다. 클라우드 커넥터(예: [Adobe Experience Manager 커넥터](https://developer.adobe.com/ai-registry/#/connectors/adobe-experience-manager-connector))가 나열되면 아래 단계 대신 해당 설정 지침을 따르십시오.
 
@@ -198,7 +198,7 @@ Adobe MCP 서버를 커서 `mcp.json` 구성 파일에 추가한 다음 **설정
 
 >[!TAB ChatGPT]
 
-### ![권장](../assets/badge-recommended.svg) 관리되는 커넥터 사용
+### <img src="../assets/icons/star.svg" width="24" height="24" alt="권장"> 관리되는 커넥터 사용
 
 [Adobe AI 레지스트리](https://developer.adobe.com/ai-registry/?type=connector)&#x200B;(으)로 이동하여 Adobe 응용 프로그램을 검색합니다. ChatGPT 커넥터가 나열되면 아래 단계 대신 설정 지침을 따르십시오.
 

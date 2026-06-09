@@ -3,9 +3,9 @@ title: 에이전트 스킬
 description: AI 에이전트에게 CX 엔터프라이즈 작업을 일관되게 안내하는 Adobe에서 선별된 워크플로 및 지침입니다.
 last-substantial-update: 2026-05-19T00:00:00Z
 index: false
-source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
+source-git-commit: 1681b6de9d0459ed9d5420f77048778712cd0004
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '697'
 ht-degree: 6%
 
 ---
@@ -24,8 +24,6 @@ ht-degree: 6%
 ## Adobe CX 엔터프라이즈 에이전트 기술
 
 모든 에이전트 기술은 [Adobe 기술 GitHub 저장소](https://github.com/adobe/skills)에서 유지됩니다. 아래 기능 영역을 선택하여 해당 워크플로우에 대한 기술을 살펴보십시오.
-
-### Adobe 애플리케이션
 
 <!--
 CARDS
