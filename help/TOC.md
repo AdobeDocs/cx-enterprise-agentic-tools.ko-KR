@@ -3,9 +3,9 @@ user-guide-title: Adobe CX 엔터프라이즈 에이전트 툴
 breadcrumb-title: 무생식 도구
 user-guide-description: MCP 서버, 에이전트 기술 및 API를 사용하여 AI 에이전트 및 개발 도구를 Adobe CX Enterprise 기능에 연결합니다.
 index: false
-source-git-commit: 3c29bfeeef3d2cb523724db02448aaa77cdf8900
+source-git-commit: ec08b7ff646519ceb10bd3431e0c0d5db8f3367f
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '90'
 ht-degree: 5%
 
 ---
@@ -28,5 +28,4 @@ ht-degree: 5%
    + [고객에게 영향을 미치기 전에 여정 문제 파악](/help/use-cases/manage-ajo-journeys.md)
    + [최신 컨텐츠 유지 및 업데이트 전달 속도 향상](/help/use-cases/manage-aem-content.md)
    + [성능 데이터를 기반으로 콘텐츠 최적화](/help/use-cases/optimize-content-with-performance-data.md)
-   + [크로스 채널 캠페인 검토 실행](/help/use-cases/cross-channel-campaign-review.md)
    + [안심하고 AEM as a Cloud Service에 배포](/help/use-cases/aem-cloud-manager-mcp.md)
