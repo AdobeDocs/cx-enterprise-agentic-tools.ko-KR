@@ -3,10 +3,10 @@ title: 고객에게 영향을 미치기 전에 여정 문제 파악
 description: CX Enterprise MCP를 사용하여 활성 AJO 여정을 모니터링하고, 캠페인 구성을 검토하고, 고객에게 도달하기 전에 운영 문제를 파악할 수 있습니다.
 last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: ed47f1547e6949fc71417e7d99d83802ae3c2134
+source-git-commit: 6a2b8b54eb9fe040f5f9defa9e6681e46a5e65cf
 workflow-type: tm+mt
-source-wordcount: '1013'
-ht-degree: 3%
+source-wordcount: '984'
+ht-degree: 2%
 
 ---
 
@@ -253,7 +253,5 @@ What channel configurations are set up in our AJO environment?
 
 | 리소스 | 찾을 내용 |
 | --- | --- |
-| [AI 레지스트리의 AJO MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/ajo-mcp-server) | AJO MCP 서버 도구 및 가용성 |
-| [AJO 설명서](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home) | 전체 AJO 애플리케이션 설명서 |
-| [AJO API](https://developer.adobe.com/journey-optimizer-apis/) | 사용자 정의 통합을 위한 AJO API 참조 |
-| [AJO 자습서](https://experienceleague.adobe.com/ko/docs/journey-optimizer-learn/tutorials/overview) | 비디오 튜토리얼 및 학습 경로 |
+| [AI 레지스트리의 AJO MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/ajo-mcp-server){target="_blank"} | AJO MCP 서버 도구 및 가용성 |
+| [AJO 설명서](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home){target="_blank"} | 전체 AJO 애플리케이션 설명서 |
