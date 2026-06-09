@@ -278,4 +278,4 @@ Pull the step logs for the last failed run. I need to see exactly what the quali
 
 | 리소스 | 찾을 내용 |
 | --- | --- |
-| [AEM as a Cloud Service 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service){target="_blank"} | 전체 AEM 애플리케이션 설명서 |
+| [AEM as a Cloud Service 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service){target="_blank"} | 전체 AEM 애플리케이션 설명서 |
