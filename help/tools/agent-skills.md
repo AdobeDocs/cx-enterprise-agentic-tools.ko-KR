@@ -3,10 +3,10 @@ title: 에이전트 스킬
 description: AI 에이전트에게 CX 엔터프라이즈 작업을 일관되게 안내하는 Adobe에서 선별된 워크플로 및 지침입니다.
 last-substantial-update: 2026-05-19T00:00:00Z
 index: false
-source-git-commit: 9a3b90f5f1238e780a0f40b082623cd8da0e71a5
+source-git-commit: a130fc470e97f2316e2ea72ebda47b9fc4ad9b33
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 3%
+source-wordcount: '440'
+ht-degree: 1%
 
 ---
 
@@ -57,17 +57,13 @@ Creative Cloud을 사용한 일괄 사진 편집, 템플릿에서의 디자인, 
 
 >[!ENDTABS]
 
-## 에이전트 스킬 작동 방식
+## 에이전트 스킬 추가
 
 ![에이전트 기술 작동 방식](../assets/hero-connect-agent-skills.gif)
 
 에이전트 스킬은 Adobe 에이전트 도구를 사용하여 작업을 완료하는 방법을 AI 에이전트에게 알려 주는 지침 세트입니다. 에이전트가 스킬을 로드할 때, 즉흥적으로 처리하지 않고 해당 워크플로우를 따릅니다.
 
-- 에이전트는 매번 동일한 방식으로 작업을 완료합니다
-- 도메인 전문 지식은 한 번 인코딩되어 대화에서 재사용됩니다.
-- 스킬은 여러 에이전트 툴과 작업을 하나의 워크플로우로 연결할 수 있습니다
-
-## 시작하기
+### 에이전트 스킬 설치
 
 사용하는 AI 클라이언트를 기반으로 에이전트 스킬이 설치됩니다. 일부 클라이언트는 명령줄에서 직접 설치를 지원합니다.
 
@@ -86,12 +82,3 @@ Creative Cloud을 사용한 일괄 사진 편집, 템플릿에서의 디자인, 
 - **클라우드 코드**: `claude /plugin list`
 - **노드 환경**: `npx skills list`
 - **GitHub CLI**: `gh upskill list`
-
-## 에이전트 기술과 MCP 서버 및 Builders용 API 비교
-
-| | 에이전트 스킬 | MCP 서버 | 빌더용 API |
-| --- | --- | --- | --- |
-| 용도 | 안내식 워크플로우 및 모범 사례 | Adobe 데이터 및 워크플로우 액세스 | 직접 시스템 통합 |
-| 도메인 전문 지식 인코딩 | 예 | 아니오 | 아니오 |
-| 코딩 필요 | 아니요 | 아니오 | 예 |
-| 다음에 최적 | 반복 가능한 안내 작업 | 데이터 쿼리 및 워크플로우 작업 | 사용자 정의 애플리케이션 개발 |
