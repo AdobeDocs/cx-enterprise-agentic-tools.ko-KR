@@ -3,9 +3,9 @@ title: 실행 중인 에이전트 도구
 description: 실제 비즈니스 워크플로우에 적용되는 Adobe CX 엔터프라이즈 에이전트 도구를 보여 주는 단계별 연습입니다.
 last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: ec08b7ff646519ceb10bd3431e0c0d5db8f3367f
+source-git-commit: 94c7d3c6b0542b6e27d8775f78acf40a1b1cae91
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -195,35 +195,3 @@ CARDS
     </div>
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
-
-## 일반적인 질문
-
-+++AI 클라이언트에서 Adobe 데이터를 쿼리하려면 어떻게 합니까?
-
-MCP 서버를 사용합니다. AI 클라이언트를 관련 Adobe MCP 서버 엔드포인트에 연결한 다음 자연어로 질문합니다. 서버가 요청을 Adobe API 호출로 변환하고 구조화된 결과를 반환합니다.
-
-시작하려면 [MCP 서버](../tools/mcp-servers.md)를 참조하세요.
-
-+++
-
-+++여러 Adobe 애플리케이션을 연결하는 워크플로우를 빌드하려면 어떻게 해야 합니까?
-
-단일 AI 세션에서 여러 MCP 서버에 연결하거나 맞춤형 다중 애플리케이션 오케스트레이션에 Adobe API를 사용합니다.
-
-[빌더용 API](../tools/apis.md) 및 [MCP 서버](../tools/mcp-servers.md)를 참조하십시오.
-
-+++
-
-+++에이전트가 Adobe 모범 사례를 따르도록 하려면 어떻게 해야 합니까?
-
-에이전트 기술을 사용합니다. 스킬은 Adobe 도메인의 전문 지식을 인코딩하여 에이전트가 작업을 일관되게 완료합니다.
-
-[에이전트 기술](../tools/agent-skills.md)을 참조하세요.
-
-+++
-
-+++어떤 AI 클라이언트가 Adobe MCP 서버와 작동합니까?
-
-모든 MCP 호환 클라이언트. Claude Code, Claude.ai, Cursor, ChatGPT 및 Google Gemini는 모두 MCP를 지원합니다. 전체 클라이언트 비교 및 설정 링크는 [MCP 서버](../tools/mcp-servers.md)를 참조하십시오.
-
-+++

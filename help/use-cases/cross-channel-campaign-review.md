@@ -1,12 +1,12 @@
 ---
 title: 크로스 채널 캠페인 검토 실행
-description: 단일 AI 세션에서 CX 엔터프라이즈 MCP 게이트웨이를 사용하면 여정, 대상 및 성능 전반에 걸쳐 AJO, CJA 및 Real-Time CDP 캠페인 상태를 전체적으로 확인할 수 있습니다.
-last-substantial-update: 2026-05-21T00:00:00Z
+description: 단일 AI 세션에서 CX 엔터프라이즈 MCP를 사용하여 여정, 대상 및 성능 전반에 걸친 AJO, CJA 및 Real-Time CDP 캠페인 상태를 통합적으로 파악할 수 있습니다.
+last-substantial-update: 2026-06-09T00:00:00Z
 index: false
-source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
+source-git-commit: 94c7d3c6b0542b6e27d8775f78acf40a1b1cae91
 workflow-type: tm+mt
-source-wordcount: '1433'
-ht-degree: 4%
+source-wordcount: '1458'
+ht-degree: 5%
 
 ---
 
@@ -19,12 +19,12 @@ ht-degree: 4%
 
 캠페인 상태에 대한 전체 그림에는 AJO의 활성 여정, Real-Time CDP의 대상 활성화 상태 및 CJA의 성능 지표와 같은 여러 시스템의 데이터가 필요합니다. 이 연습에서는 세 가지 를 단일 AI 세션에서 모두 연결하는 방법을 보여 주기 때문에 세 가지 개별 도구가 아닌 한 대화에서 여정 상태에서 대상 상태로 전환하고 성능 트렌드를 볼 수 있습니다.
 
-| | |
+| 시나리오 세부 정보 | |
 | --- | --- |
-| CX 엔터프라이즈 애플리케이션 | Adobe Journey Optimizer, Customer Journey Analytics, Real-Time CDP |
-| 무생식 도구 | CX 엔터프라이즈 MCP 게이트웨이 |
-| 대상자 | 캠페인 관리자, 마케팅 운영 |
-| 사전 요구 사항 | MCP 호환 AI 클라이언트, AJO, CJA 및 Real-Time CDP 액세스 |
+| **CX 엔터프라이즈 애플리케이션** | [Adobe Journey Optimizer](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home), [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview), [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) |
+| **에이전트 도구** | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers) |
+| **대상자** | 캠페인 관리자, 마케팅 운영 |
+| **필수 구성 요소** | MCP 호환 AI 클라이언트, AJO, CJA 및 Real-Time CDP 액세스 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **수행할 수 있는 추가** 섹션이 다음과 같습니다.
 
@@ -34,7 +34,7 @@ ht-degree: 4%
 
 >[!TAB 클라우드.ai]
 
-CX 엔터프라이즈 MCP 게이트웨이를 사용자 지정 커넥터로 연결합니다. 하나의 연결을 통해 AJO, CJA 및 Real-Time CDP 도구에 액세스할 수 있습니다.
+CX 엔터프라이즈 MCP 를 사용자 정의 커넥터로 연결합니다. 하나의 연결을 통해 AJO, CJA 및 Real-Time CDP 도구에 액세스할 수 있습니다.
 
 1. Cloud.ai의 **설정 > 통합**(으)로 이동합니다.
 2. **사용자 지정 커넥터 추가**&#x200B;를 선택하고 서버 URL을 입력하십시오. `https://cx-enterprise.adobe.io/mcp`
@@ -44,7 +44,7 @@ CX 엔터프라이즈 MCP 게이트웨이를 사용자 지정 커넥터로 연�
 
 >[!TAB ChatGPT]
 
-ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교육 계획 필요)를 사용하여 CX 엔터프라이즈 MCP 게이트웨이를 연결합니다.
+ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교육 계획 필요)를 사용하여 CX 엔터프라이즈 MCP를 연결합니다.
 
 1. **ChatGPT 설정**&#x200B;에서 **개발자 모드**&#x200B;를 사용하도록 설정합니다.
 2. **설정 > 통합**(으)로 이동하여 **사용자 지정 커넥터 추가 > 원격 MCP 서버**&#x200B;를 선택합니다.
@@ -55,7 +55,7 @@ ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교�
 
 >[!TAB 기타 AI 클라이언트]
 
-Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 CX 엔터프라이즈 MCP 게이트웨이에 연결합니다.
+Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 CX 엔터프라이즈 MCP에 연결:
 
 ```
 https://cx-enterprise.adobe.io/mcp
@@ -87,14 +87,14 @@ AJO 조직에서 8개의 활성 여정을 찾았습니다.
 
 | 여정 | 채널 | 마지막 수정일 |
 | --- | --- | --- |
-| 시작 시리즈 - 새 멤버 | 이메일, 푸시 | 2026년 5월 18일 |
+| 시작 시리즈: 새로운 멤버 | 이메일, 푸시 | 2026년 5월 18일 |
 | 구매 후 후속 작업 | 이메일, SMS | 2026년 5월 14일 |
 | 충성도 재참여 | 이메일 | 2026년 5월 20일 |
-| 포기한 장바구니 — 24시간 | 이메일, SMS | 2026년 5월 10일 |
+| 포기한 장바구니: 24시간 | 이메일, SMS | 2026년 5월 10일 |
 | 봄 프로모션 | 이메일, 푸시 | 2026년 5월 19일 |
-| Win-Back — 90일 비활성 | 이메일 | 2026년 4월 28일 |
+| Win-Back: 90일 비활성 | 이메일 | 2026년 4월 28일 |
 | 생일 보상 | 이메일 | 2026년 4월 15일 |
-| 재참여 — 푸시 옵트아웃 | SMS | 2026년 5월 12일 |
+| 재참여: 푸시 옵트아웃 | SMS | 2026년 5월 12일 |
 
 지난 7일 동안 3개의 여정이 수정되었습니다. 이 중 하나라도 자세히 알고 싶으신가요?
 
@@ -111,7 +111,7 @@ Show me the activation status for the high-value loyalty segment.
 
 +++예제 응답 보기
 
-**높은 값 충성도 세그먼트** — 대상 간 활성화 상태:
+**높은 값 충성도 세그먼트**: 대상 간 활성화 상태:
 
 | 대상 | 상태 | 마지막으로 성공한 실행 | 대상자 크기 |
 | --- | --- | --- | --- |
@@ -136,7 +136,7 @@ Show me click-through and conversion rates for the [campaign name] campaign over
 
 +++예제 응답 보기
 
-**충성도 재참여 캠페인** — 2026년 4월 21일부터 5월 21일까지:
+**충성도 재참여 캠페인**: 2026년 4월 21일부터 5월 21일까지:
 
 | 채널 | 전송 횟수 | CTR | 전환 | 콘브 속도 |
 | --- | --- | --- | --- | --- |
@@ -169,7 +169,7 @@ Give me a summary of our campaign health: what is running, which audiences are a
 **주의 플래그:**
 
 - Win-Back 여정(90일 비활성)는 23일 전에 마지막으로 수정되었으며 최근에 검토되지 않았습니다.
-- 푸시 전환율은 3회 연속 균일했습니다. 메시징이나 타이밍을 검토할 가치가 있습니다.
+- 푸시 전환율은 3회 연속 고정되어 메시징 또는 타이밍을 검토할 가치가 있습니다.
 
 감지된 심각한 문제가 없습니다. 다음 선거 운동 시작 전에 영장실질심사에서 두 가지 항목.
 
