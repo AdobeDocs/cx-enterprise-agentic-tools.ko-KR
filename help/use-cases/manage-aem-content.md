@@ -3,9 +3,9 @@ title: 최신 컨텐츠 유지 및 업데이트 전달 속도 향상
 description: AEM Content MCP 서버를 사용하여 도구 간에 전환하지 않고도 AEM 콘텐츠를 찾고, 검토하고, 업데이트하고, 게시할 수 있습니다.
 last-substantial-update: 2026-05-22T00:00:00Z
 index: false
-source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
+source-git-commit: 270aed67540f7347850aece70cebddc9b40b9de8
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1020'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 <!-- last-modified: 2026-05-22 -->
 
-![AI로 AEM 콘텐츠 관리](https://placehold.co/1600x900?text=Manage+AEM+Content+with+AI)
+![페이지가 게시되었음을 확인하고 라이브 URL을 반환하는 AI 클라이언트](../assets/use-cases/manage-aem-content/manage-aem-content-step4-02-product.png)
 
 페이지 찾기, 컨텐츠 검토에서 업데이트 및 게시에 이르기까지 Adobe Experience Manager에서 컨텐츠 작업을 수행하려면 일반적으로 AEM 인터페이스를 직접 탐색해야 합니다. 이 연습에서는 AEM Content MCP Server를 사용하여 AI 클라이언트를 통해 이러한 작업을 처리하는 방법을 보여 주므로, 도구 간에 컨텍스트 전환 없이 콘텐츠 팀이 더 빠르게 이동할 수 있습니다.
 
@@ -264,8 +264,8 @@ Promote the May Updates launch to production.
 
 | 리소스 | 찾을 내용 |
 | --- | --- |
-| [AEM Content MCP 서버 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | MCP 서버 설치 및 사용 안내서 |
+| [AEM Content MCP 서버 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | MCP 서버 설치 및 사용 안내서 |
 | [AI 레지스트리의 AEM Content MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp) | 도구 목록 및 가용성 |
-| [AEM as a Cloud Service 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service) | 전체 AEM 애플리케이션 설명서 |
-| [AEM 콘텐츠 조각](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments) | 콘텐츠 조각 작성 참조 |
+| [AEM as a Cloud Service 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service) | 전체 AEM 애플리케이션 설명서 |
+| [AEM 콘텐츠 조각](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments) | 콘텐츠 조각 작성 참조 |
 | [MCP 서버](../tools/mcp-servers.md) | AI 클라이언트를 Adobe MCP 서버에 연결 |
