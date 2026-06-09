@@ -3,9 +3,9 @@ title: 성능 데이터를 기반으로 콘텐츠 최적화
 description: 하나의 AI 세션에서 CJA과 AEM을 함께 사용하면 도구를 전환하지 않고도 전환되지 않는 캠페인을 찾고 원인을 진단하고 콘텐츠를 업데이트할 수 있습니다.
 last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: ed47f1547e6949fc71417e7d99d83802ae3c2134
+source-git-commit: 6a2b8b54eb9fe040f5f9defa9e6681e46a5e65cf
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1071'
 ht-degree: 2%
 
 ---
@@ -256,8 +256,5 @@ Publish all confirmed changes and share the updated URLs.
 
 | 리소스 | 찾을 내용 |
 | --- | --- |
-| [CJA MCP 서버 설명서](https://developer.adobe.com/analytics-mcp/docs/cja/) | CJA MCP 설정 및 도구 참조 |
-| [AEM Content MCP 서버 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | AEM Content MCP 설치 및 사용 안내서 |
-| [AI 레지스트리의 CJA MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp) | CJA MCP 서버 도구 및 가용성 |
-| [AI 레지스트리의 AEM Content MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp) | AEM Content MCP 서버 도구 및 가용성 |
-| [MCP 서버](../tools/mcp-servers.md) | AI 클라이언트를 Adobe MCP 서버에 연결 |
+| [AI 레지스트리의 CJA MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp){target="_blank"} | CJA MCP 서버 도구 및 가용성 |
+| [AI 레지스트리의 AEM Content MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp){target="_blank"} | AEM Content MCP 서버 도구 및 가용성 |

@@ -3,9 +3,9 @@ title: MCP 서버
 description: Model Context Protocol 서버를 사용하여 MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로우에 연결합니다.
 index: false
 last-substantial-update: 2026-06-09T00:00:00Z
-source-git-commit: 25d2a09ed7ca8357fd4d9eff93233732fe81a2d5
+source-git-commit: 0fb630143968f07246f2a693cec5c8c3432f64f2
 workflow-type: tm+mt
-source-wordcount: '2084'
+source-wordcount: '2078'
 ht-degree: 3%
 
 ---
@@ -62,7 +62,7 @@ Adobe Experience Manager에는 다양한 워크플로우에 대한 여러 MCP �
 | [AEM Cloud Manager](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) | `https://mcp.adobeaemcloud.com/adobe/mcp/cloudmanager` | 프로그램, 환경, 파이프라인 및 저장소 관리 |
 | [AEM 컨텐츠](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content` | 페이지, 콘텐츠 조각, 에셋 및 론치 관리 |
 | [AEM 컨텐츠(읽기 전용)](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly` | 쓰기 액세스 권한 없이 페이지, 콘텐츠 조각 및 시작 검색 및 쿼리 |
-| [AEM 문서 작성]&#x200B;(TODO: 유효성 검사) | `https://mcp.adobeaemcloud.com/adobe/mcp/da` | 문서 작성에서 파일, 버전 내역 및 미디어 참조 관리 |
+| AEM 문서 작성 | `https://mcp.adobeaemcloud.com/adobe/mcp/da` | 문서 작성에서 파일, 버전 내역 및 미디어 참조 관리 |
 | [AEM Experience Governance](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/experience-governance-mcp-server) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-governance` | 브랜드 가이드라인 및 규정 준수 규칙에 따라 컨텐츠 및 이미지 평가 |
 | [AEM Experience Production](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/overview) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-production` | AI 기반의 콘텐츠 브리핑을 사용하여 규모에 맞게 AEM 페이지 변환 및 생성 |
 
@@ -74,7 +74,7 @@ Adobe Experience Manager에는 다양한 워크플로우에 대한 여러 MCP �
 
 | MCP 서버 | 엔드포인트 | 수행 가능한 작업 |
 | --- | --- | --- |
-| [Adobe Marketing Agent]&#x200B;(TODO: 유효성 검사) | `https://aep-ai-ama.adobe.io/mcp` | AEP 애플리케이션 전반에 걸쳐 대상 분석, AEP 진단 및 AJO B2B 여정 구축 통합 |
+| Adobe Marketing Agent | `https://aep-ai-ama.adobe.io/mcp` | AEP 애플리케이션 전반에 걸쳐 대상 분석, AEP 진단 및 AJO B2B 여정 구축 통합 |
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ Adobe Target MCP는 공개 베타 버전입니다. 현재 사용 가능한 모�
 
 | MCP 서버 | 엔드포인트 | 수행 가능한 작업 |
 | --- | --- | --- |
-| [Adobe Workfront]&#x200B;(TODO: 유효성 검사) | `https://mcp.prod.us-west-2.aws.wfk8s.com/mcp/v1/workfront` | 작업, 프로젝트, 계획 기록, 통찰력 및 콘텐츠 승인 관리 |
+| Adobe Workfront | `https://mcp.prod.us-west-2.aws.wfk8s.com/mcp/v1/workfront` | 작업, 프로젝트, 계획 기록, 통찰력 및 콘텐츠 승인 관리 |
 
 >[!NOTE]
 >
