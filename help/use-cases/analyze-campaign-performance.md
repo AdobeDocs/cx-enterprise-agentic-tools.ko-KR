@@ -21,7 +21,7 @@ ht-degree: 0%
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| **CX 엔터프라이즈 애플리케이션** | [Customer Journey Analytics(CJA)](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
+| **CX 엔터프라이즈 애플리케이션** | [Customer Journey Analytics(CJA)](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview) |
 | **에이전트 도구** | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers) |
 | **대상자** | 분석가, 캠페인 관리자 |
 | **필수 구성 요소** | MCP 호환 AI 클라이언트, CJA 액세스 |
@@ -276,4 +276,4 @@ Save this analysis as a Workspace project for executive reporting.
 | [CJA MCP 서버 설명서](https://developer.adobe.com/analytics-mcp/docs/cja/) | 전체 도구 참조 및 설정 안내서 |
 | [CJA MCP 사용 안내서](https://developer.adobe.com/analytics-mcp/docs/guides/) | 자세한 사용 안내서 |
 | [AI 레지스트리의 CJA MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp) | CJA MCP 서버 도구 및 가용성 |
-| [Customer Journey Analytics 설명서](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-landing) | 전체 CJA 애플리케이션 설명서 |
+| [Customer Journey Analytics 설명서](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-landing) | 전체 CJA 애플리케이션 설명서 |
