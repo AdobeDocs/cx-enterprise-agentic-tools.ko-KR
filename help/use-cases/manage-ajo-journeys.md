@@ -3,7 +3,7 @@ title: 고객에게 영향을 미치기 전에 여정 문제 파악
 description: CX Enterprise MCP를 사용하여 활성 AJO 여정을 모니터링하고, 캠페인 구성을 검토하고, 고객에게 도달하기 전에 운영 문제를 파악할 수 있습니다.
 last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: 94c7d3c6b0542b6e27d8775f78acf40a1b1cae91
+source-git-commit: ed47f1547e6949fc71417e7d99d83802ae3c2134
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 3%
@@ -20,10 +20,10 @@ ht-degree: 3%
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| **CX 엔터프라이즈 애플리케이션** | [Adobe Journey Optimizer(AJO)](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home) |
-| **에이전트 도구** | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers) |
-| **대상자** | 캠페인 관리자, 마케터 |
-| **필수 구성 요소** | MCP 호환 AI 클라이언트, AJO 액세스 |
+| CX 엔터프라이즈 애플리케이션 | [Adobe Journey Optimizer(AJO)](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home) |
+| 무생식 도구 | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers) |
+| 대상자 | 캠페인 관리자, 마케터 |
+| 사전 요구 사항 | MCP 호환 AI 클라이언트, AJO 액세스 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **수행할 수 있는 추가** 섹션이 다음과 같습니다.
 

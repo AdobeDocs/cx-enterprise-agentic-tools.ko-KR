@@ -3,7 +3,7 @@ title: 안심하고 AEM as a Cloud Service에 배포
 description: AI 클라이언트를 종료하지 않고 환경 상태를 확인하고 파이프라인 내역을 검토하고 배포를 트리거하거나 관리합니다.
 last-substantial-update: 2026-06-09T00:00:00Z
 index: false
-source-git-commit: 94c7d3c6b0542b6e27d8775f78acf40a1b1cae91
+source-git-commit: ed47f1547e6949fc71417e7d99d83802ae3c2134
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 2%
@@ -21,10 +21,10 @@ Adobe Experience Manager 환경 관리는 일반적으로 Cloud Manager에 로�
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| **CX 엔터프라이즈 애플리케이션** | [Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/introduction-to-cloud-manager) |
-| **에이전트 도구** | [AEM Cloud Manager MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) |
-| **대상자** | 개발자, DevOps, 운영 팀 |
-| **필수 구성 요소** | MCP 호환 AI 클라이언트, AEM Cloud Manager 액세스 |
+| CX 엔터프라이즈 애플리케이션 | [Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/introduction-to-cloud-manager) |
+| 무생식 도구 | [AEM Cloud Manager MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) |
+| 대상자 | 개발자, DevOps, 운영 팀 |
+| 사전 요구 사항 | MCP 호환 AI 클라이언트, AEM Cloud Manager 액세스 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **다시 시도하라는 메시지** 섹션이 표시됩니다.
 

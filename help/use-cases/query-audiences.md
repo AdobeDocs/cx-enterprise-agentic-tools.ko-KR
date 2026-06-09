@@ -3,7 +3,7 @@ title: 대상자 및 대상자 활성화 위치 이해
 description: CX Enterprise MCP 를 사용하여 대상자 활성화 상태를 모니터링하고, 대상 상태를 확인하고, 문제가 캠페인에 영향을 미치기 전에 문제를 파악할 수 있습니다.
 last-substantial-update: 2026-06-09T00:00:00Z
 index: false
-source-git-commit: 94c7d3c6b0542b6e27d8775f78acf40a1b1cae91
+source-git-commit: ed47f1547e6949fc71417e7d99d83802ae3c2134
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 3%
@@ -21,10 +21,10 @@ ht-degree: 3%
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| **CX 엔터프라이즈 애플리케이션** | [Real-Time Customer Data Platform(Real-Time CDP)](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) |
-| **에이전트 도구** | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers) |
-| **대상자** | 마케터, 분석가, 운영자 |
-| **필수 구성 요소** | MCP 호환 AI 클라이언트, Real-Time CDP 액세스 |
+| CX 엔터프라이즈 애플리케이션 | [Real-Time Customer Data Platform(Real-Time CDP)](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) |
+| 무생식 도구 | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers) |
+| 대상자 | 마케터, 분석가, 운영자 |
+| 사전 요구 사항 | MCP 호환 AI 클라이언트, Real-Time CDP 액세스 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **수행할 수 있는 추가** 섹션이 다음과 같습니다.
 

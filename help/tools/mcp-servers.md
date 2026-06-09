@@ -3,7 +3,7 @@ title: MCP 서버
 description: Model Context Protocol 서버를 사용하여 MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로우에 연결합니다.
 index: false
 last-substantial-update: 2026-06-09T00:00:00Z
-source-git-commit: 9c62818daecf3c20230457da5b9b8086d954260f
+source-git-commit: 25d2a09ed7ca8357fd4d9eff93233732fe81a2d5
 workflow-type: tm+mt
 source-wordcount: '2084'
 ht-degree: 3%
@@ -128,7 +128,7 @@ Adobe Target MCP는 공개 베타 버전입니다. 현재 사용 가능한 모�
 
 >[!TAB 클라우드.ai]
 
-### ![권장](../assets/badge-recommended.svg) 관리되는 커넥터 사용
+### ![권장](../assets/icons/star.svg) 관리되는 커넥터 사용
 
 [Adobe AI 레지스트리](https://developer.adobe.com/ai-registry/?type=connector)&#x200B;(으)로 이동하여 Adobe 응용 프로그램을 검색합니다. 클라우드 커넥터(예: [Adobe Experience Manager 커넥터](https://developer.adobe.com/ai-registry/#/connectors/adobe-experience-manager-connector))가 나열되면 아래 단계 대신 해당 설정 지침을 따르십시오.
 
