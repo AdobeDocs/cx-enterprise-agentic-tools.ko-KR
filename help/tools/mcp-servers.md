@@ -3,10 +3,10 @@ title: MCP 서버
 description: Model Context Protocol 서버를 사용하여 MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로우에 연결합니다.
 index: false
 last-substantial-update: 2026-06-09T00:00:00Z
-source-git-commit: 36c10d31072f13be42e508944a3ce742818e88b4
+source-git-commit: 76242d3d26596139c0ea7c2e81b698a4ef891370
 workflow-type: tm+mt
-source-wordcount: '2068'
-ht-degree: 2%
+source-wordcount: '2296'
+ht-degree: 4%
 
 ---
 
@@ -15,221 +15,104 @@ ht-degree: 2%
 
 <!-- last-modified: 2026-06-09 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3491329/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3491320/?learn=on&enablevpops)
 
 Adobe CX Enterprise MCP 서버는 호환되는 AI 클라이언트를 Adobe 데이터 및 워크플로에 직접 제어하고 액세스할 수 있도록 합니다. 한 번 연결하면 AI 환경을 종료하지 않고도 일반 언어로 캠페인 성과를 쿼리하고, 대상을 활성화하고, 여정을 검토하고, 콘텐츠를 관리하는 등의 작업을 수행할 수 있습니다. MCP 서버는 AI 클라이언트와 Adobe의 기본 시스템 사이에 위치하기 때문에 조직의 액세스 제어 및 데이터 거버넌스가 유효한 동안 자연어 유연성을 얻을 수 있습니다.
 
 Adobe MCP 서버는 개방형 [모델 컨텍스트 프로토콜](https://modelcontextprotocol.io/docs/getting-started/intro) 표준을 따릅니다. 모든 MCP 호환 AI 클라이언트는 모든 Adobe MCP 서버에 연결합니다.
 
-## CX 엔터프라이즈 MCP
+## Adobe 서버
 
 ![CX 엔터프라이즈 MCP는 AI 클라이언트를 전체 Adobe CX 엔터프라이즈 제품군 내의 도구에 연결합니다](../assets/mcp-gateway-hero.gif)
 
-**끝점 한 개. 여러 CX 엔터프라이즈 응용 프로그램입니다.**
-
-한 번 연결하면 AI 클라이언트가 조직의 라이센스를 기반으로 CX 엔터프라이즈 애플리케이션에 액세스할 수 있습니다. 사용 가능한 도구는 각 애플리케이션에 별도의 연결이 필요하지 않고 Adobe 권한에 따라 자동으로 결정됩니다.
+엔드포인트, 기능 및 사용 가능한 도구를 보려면 애플리케이션을 선택하십시오.
 
 >[!BEGINTABS]
 
->[!TAB CX 엔터프라이즈 애플리케이션]
+>[!TAB CX 엔터프라이즈 MCP]
 
-각 애플리케이션의 도구는 조직의 Adobe 라이센스를 기반으로 사용할 수 있습니다.
+**끝점 한 개. 여러 CX 엔터프라이즈 응용 프로그램입니다.**
 
-| 애플리케이션 | 수행 가능한 작업 |
-| --- | --- |
-| Adobe Journey Optimizer | [여정, 캠페인 및 채널 구성 검토](https://developer.adobe.com/ai-registry/#/mcp/ajo-mcp-server) |
-| Customer Journey Analytics | [보고서 쿼리, 데이터 보기 검색, 작성 작업 공간](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp) |
-| Real-Time CDP | [대상, 활성화 상태 및 데이터 흐름 상태 확인](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp)&#x200B;(비공개 베타) |
-
-응용 프로그램이 여기에 나열되지 않으면 아래의 [MCP 서버 전체 목록](#adobe-cx-enterprise-mcp-servers)을 참조하십시오.
-
->[!TAB 연결]
-
-애플리케이션별 MCP 엔드포인트를 사용할 때마다 CX 엔터프라이즈 MCP 엔드포인트를 사용하십시오.
+한 번 연결하면 AI 클라이언트가 조직의 라이센스를 기반으로 CX 엔터프라이즈 애플리케이션에 액세스할 수 있습니다.
 
 ```
 https://cx-enterprise.adobe.io/mcp
 ```
 
-메시지가 표시되면 Adobe ID에 로그인하고 Adobe 애플리케이션에 연결된 IMS 조직을 선택합니다. 잘못된 조직을 선택하는 것은 누락된 도구 또는 인증 오류의 가장 일반적인 원인입니다.
+| 애플리케이션 | 수행 가능한 작업 | 도구 |
+| --- | --- | --- |
+| Adobe Journey Optimizer | 여정, 캠페인 및 채널 구성 검토 | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/ajo-mcp-server) |
+| Adobe Journey Optimizer B2B edition | B2B 여정, 계정 프로그램, 구매 그룹 및 개인화 관리 | TODO: 유효성 검사 |
+| Customer Journey Analytics | 보고서 쿼리, 데이터 보기 검색 및 작업 공간 작성 | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp) |
+| Real-Time CDP | 대상자 활성화 상태, 대상 상태 및 데이터 흐름 상태 확인 | [도구 보기](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) |
+| Adobe Analytics | 보고서 세트 검색, 세그먼트 작성 및 작업 영역 만들기 | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/adobe-analytics-mcp) |
+| Adobe Experience Platform | 데이터 세트 검색, 스키마 검색 및 샌드박스 관리 | — |
 
-전체 설치 지침은 아래의 [AI 클라이언트에 연결](#connect-to-your-ai-client)을 참조하십시오.
+>[!TAB Experience Manager]
+
+Adobe Experience Manager에는 다양한 워크플로우에 대한 여러 MCP 서버가 있습니다.
+
+| MCP 서버 | 엔드포인트 | 수행 가능한 작업 | 도구 |
+| --- | --- | --- | --- |
+| [AEM 컨텐츠](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content` | 페이지, 콘텐츠 조각, 에셋 및 론치 관리 | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp) |
+| [AEM 컨텐츠(읽기 전용)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly` | 쓰기 액세스 권한 없이 페이지, 콘텐츠 조각 및 시작 검색 및 쿼리 | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp-readonly) |
+| [AEM Cloud Manager](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) | `https://mcp.adobeaemcloud.com/adobe/mcp/cloudmanager` | 프로그램, 환경, 파이프라인 및 저장소 관리 | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/aem-cloud-manager-mcp) |
+| [AEM(코드 모드)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/aem` | 자연어 조회, 읽기, 쓰기 및 삭제를 통해 AEM에 직접 REST API 액세스 | — |
+| [AEM 문서 작성]&#x200B;(TODO: 유효성 검사) | `https://mcp.adobeaemcloud.com/adobe/mcp/da` | 문서 작성에서 파일, 버전 내역 및 미디어 참조 관리 | — |
+| [AEM Experience Governance](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/experience-governance-mcp-server) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-governance` | 브랜드 가이드라인 및 규정 준수 규칙에 따라 컨텐츠 및 이미지 평가 | — |
+| [AEM Experience Production](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/overview) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-production` | AI 기반의 콘텐츠 브리핑을 사용하여 규모에 맞게 AEM 페이지 변환 및 생성 | — |
+
+>[!TAB Target]
+
+Adobe Target MCP는 공개 베타 버전입니다. 현재 사용 가능한 모든 도구는 읽기 전용입니다. 쓰기 툴은 일반 공급 예정
+
+| MCP 서버 | 엔드포인트 | 수행 가능한 작업 | 도구 |
+| --- | --- | --- | --- |
+| [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp) | `https://targetmcp.adobe.io/mcp` | 활동, 오퍼, 대상, mbox 및 성과 보고서 검토 | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/target-mcp) |
+
+>[!TAB Marketo Engage]
+
+>[!NOTE]
+>
+>Marketo Engage MCP는 Adobe IMS가 아닌 Marketo 기반 서비스 자격 증명을 사용합니다. 인증 설정 지침은 [Marketo Engage MCP 서버 설명서](https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server)를 참조하세요.
+
+| MCP 서버 | 엔드포인트 | 수행 가능한 작업 | 도구 |
+| --- | --- | --- | --- |
+| [Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server) | `https://marketo-mcp.adobe.io/mcp` | 프로그램, 캠페인, 리드, 스마트 목록, 이메일 및 양식 관리 | TODO: 유효성 검사 |
+
+>[!TAB Experience Platform]
+
+| MCP 서버 | 엔드포인트 | 수행 가능한 작업 | 도구 |
+| --- | --- | --- | --- |
+| [Adobe Marketing Agent]&#x200B;(TODO: 유효성 검사) | `https://aep-ai-ama.adobe.io/mcp` | AEP 애플리케이션 전반에 걸쳐 대상 분석, AEP 진단 및 AJO B2B 여정 구축 통합 | TODO: 유효성 검사 |
+
+>[!TAB Workfront]
+
+| MCP 서버 | 엔드포인트 | 수행 가능한 작업 | 도구 |
+| --- | --- | --- | --- |
+| [Adobe Workfront]&#x200B;(TODO: 유효성 검사) | `https://mcp.prod.us-west-2.aws.wfk8s.com/mcp/v1/workfront` | 작업, 프로젝트, 계획 기록, 통찰력 및 콘텐츠 승인 관리 | TODO: 유효성 검사 |
 
 >[!ENDTABS]
 
-## Adobe CX 엔터프라이즈 MCP 서버
+## MCP 서버 엔드포인트
 
-아래 나열된 서버는 직접 연결됩니다. AJO, Customer Journey Analytics 및 Real-Time CDP의 경우 위의 [CX Enterprise MCP](#cx-enterprise-mcp)를 사용합니다.
-
-<!--
-CARDS
-
-* #cx-enterprise-mcp
-  {title = CX Enterprise MCP}
-  {description = One connection to AJO, CJA, and Real-Time CDP. Your AI client gets access to the applications your organization is licensed for — automatically.}
-  {cta = Connect}
-  {image = ../assets/mcp-cxenterprise-card.png}
-
-* https://developer.adobe.com/ai-registry/#/mcp/adobe-analytics-mcp
-  {title = Adobe Analytics}
-  {description = Tools for report suite discovery, dimension and metric analysis, segment authoring, and workspace creation in Adobe Analytics.}
-  {cta = View in AI Registry}
-  {target = _blank}
-  {image = ../assets/mcp-analytics-card.png}
-
-* https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp
-  {title = AEM Content}
-  {description = Tools for managing pages, content fragments, assets, and launches in Adobe Experience Manager as a Cloud Service using natural language.}
-  {cta = View in AI Registry}
-  {target = _blank}
-  {image = ../assets/mcp-aem-card.png}
-
-* https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp-readonly
-  {title = AEM Content (Read-Only)}
-  {description = Tools for discovering and querying pages, content fragments, and launches in AEM as a Cloud Service. No write access.}
-  {cta = View in AI Registry}
-  {target = _blank}
-  {image = ../assets/mcp-aem-card.png}
-
-* https://developer.adobe.com/ai-registry/#/mcp/aem-cloud-manager-mcp
-  {title = AEM Cloud Manager}
-  {description = Tools for managing Cloud Manager programs, environments, pipelines, and repositories from your IDE using natural language.}
-  {cta = View in AI Registry}
-  {target = _blank}
-  {image = ../assets/mcp-aem-card.png}
-
--->
-<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
-<div class="columns">
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="CX Enterprise MCP">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="#cx-enterprise-mcp" title="CX 엔터프라이즈 MCP" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="../assets/mcp-cxenterprise-card.png" alt="CX 엔터프라이즈 MCP"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="#cx-enterprise-mcp" target="_blank" rel="referrer" title="CX 엔터프라이즈 MCP">CX 엔터프라이즈 MCP</a>
-                    </p>
-                    <p class="is-size-6">AJO, CJA 및 Real-Time CDP에 대한 하나의 연결입니다. AI 클라이언트는 조직에서 라이센스를 받은 애플리케이션에 자동으로 액세스할 수 있습니다.</p>
-                </div>
-                <a href="#cx-enterprise-mcp" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">연결</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Adobe Analytics">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="https://developer.adobe.com/ai-registry/#/mcp/adobe-analytics-mcp" title="Adobe Analytics" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="../assets/mcp-analytics-card.png" alt="Adobe Analytics"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://developer.adobe.com/ai-registry/#/mcp/adobe-analytics-mcp" target="_blank" rel="referrer" title="Adobe Analytics">Adobe Analytics</a>
-                    </p>
-                    <p class="is-size-6">Adobe Analytics의 보고서 세트 검색, 차원 및 지표 분석, 세그먼트 작성 및 작업 공간 생성을 위한 도구입니다.</p>
-                </div>
-                <a href="https://developer.adobe.com/ai-registry/#/mcp/adobe-analytics-mcp" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">AI 레지스트리에서 보기</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="AEM Content">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp" title="AEM 컨텐츠" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="../assets/mcp-aem-card.png" alt="AEM 컨텐츠"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp" target="_blank" rel="referrer" title="AEM 컨텐츠">AEM 컨텐츠</a>
-                    </p>
-                    <p class="is-size-6">자연어를 사용하여 Adobe Experience Manager as a Cloud Service에서 페이지, 콘텐츠 조각, 에셋 및 시작을 관리하는 도구입니다.</p>
-                </div>
-                <a href="https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">AI 레지스트리에서 보기</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="AEM Content (Read-Only)">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp-readonly" title="AEM 컨텐츠(읽기 전용)" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="../assets/mcp-aem-card.png" alt="AEM 컨텐츠(읽기 전용)"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp-readonly" target="_blank" rel="referrer" title="AEM 컨텐츠(읽기 전용)">AEM 컨텐츠(읽기 전용)</a>
-                    </p>
-                    <p class="is-size-6">AEM as a Cloud Service에서 페이지, 콘텐츠 조각 및 시작을 검색하고 쿼리하기 위한 도구입니다. 쓰기 액세스 권한이 없습니다.</p>
-                </div>
-                <a href="https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp-readonly" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">AI 레지스트리에서 보기</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="AEM Cloud Manager">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="https://developer.adobe.com/ai-registry/#/mcp/aem-cloud-manager-mcp" title="AEM Cloud Manager" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="../assets/mcp-aem-card.png" alt="AEM Cloud Manager"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://developer.adobe.com/ai-registry/#/mcp/aem-cloud-manager-mcp" target="_blank" rel="referrer" title="AEM Cloud Manager">AEM Cloud Manager</a>
-                    </p>
-                    <p class="is-size-6">자연어를 사용하여 IDE에서 Cloud Manager 프로그램, 환경, 파이프라인 및 저장소를 관리하는 도구입니다.</p>
-                </div>
-                <a href="https://developer.adobe.com/ai-registry/#/mcp/aem-cloud-manager-mcp" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">AI 레지스트리에서 보기</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
-
-### MCP 서버 엔드포인트
-
-모든 끝점은 [Adobe AI 레지스트리](https://developer.adobe.com/ai-registry/?type=connector)에 나열됩니다. 이 테이블은 필요한 사항을 이미 알고 있는 경우 빠른 참조입니다. 끝점 URL을 선택하고 연결하기 전에 사용 가능한 도구를 스캔합니다.
+모든 끝점은 [Adobe AI 레지스트리](https://developer.adobe.com/ai-registry/?type=connector)에 나열됩니다. 이 테이블은 빠른 참조입니다. 연결하기 전에 끝점 URL을 선택하고 사용 가능한 도구를 스캔합니다.
 
 | 서버 | 엔드포인트 | 도구 |
 | --- | --- | --- |
-| [CX 엔터프라이즈 MCP](#cx-enterprise-mcp) | `https://cx-enterprise.adobe.io/mcp` | · [Adobe Journey Optimizer 도구](https://developer.adobe.com/ai-registry/#/mcp/ajo-mcp-server)<br>· [Customer Journey Analytics 도구](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp)<br>· [Real-Time CDP 도구](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) |
+| [CX 엔터프라이즈 MCP](#adobe-mcp-servers) | `https://cx-enterprise.adobe.io/mcp` | · [Adobe Journey Optimizer 도구](https://developer.adobe.com/ai-registry/#/mcp/ajo-mcp-server)<br>· [Customer Journey Analytics 도구](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp)<br>· [Real-Time CDP 도구](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp)<br>· [Adobe Analytics 도구](https://developer.adobe.com/ai-registry/#/mcp/adobe-analytics-mcp) |
 | [Adobe Analytics](https://developer.adobe.com/analytics-mcp/docs/aa/) | `https://aa-mcp.adobe.io/mcp` | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/adobe-analytics-mcp) |
 | [AEM Cloud Manager](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) | `https://mcp.adobeaemcloud.com/adobe/mcp/cloudmanager` | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/aem-cloud-manager-mcp) |
-| [AEM 컨텐츠](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content` | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp) |
-| [AEM 컨텐츠(읽기 전용)](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly` | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp-readonly) |
+| [AEM 컨텐츠](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content` | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp) |
+| [AEM 컨텐츠(읽기 전용)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly` | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp-readonly) |
+| [AEM(코드 모드)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/aem` | — |
+| [AEM 문서 작성]&#x200B;(TODO: 유효성 검사) | `https://mcp.adobeaemcloud.com/adobe/mcp/da` | — |
+| [AEM Experience Governance](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/experience-governance-mcp-server) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-governance` | — |
+| [AEM Experience Production](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/overview) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-production` | — |
+| [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp) | `https://targetmcp.adobe.io/mcp` | [도구 보기](https://developer.adobe.com/ai-registry/#/mcp/target-mcp) |
+| [Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server) | `https://marketo-mcp.adobe.io/mcp` | TODO: 유효성 검사 |
+| [Adobe Marketing Agent]&#x200B;(TODO: 유효성 검사) | `https://aep-ai-ama.adobe.io/mcp` | TODO: 유효성 검사 |
+| [Adobe Workfront]&#x200B;(TODO: 유효성 검사) | `https://mcp.prod.us-west-2.aws.wfk8s.com/mcp/v1/workfront` | TODO: 유효성 검사 |
 
 ## AI 클라이언트에 연결
 
@@ -590,4 +473,3 @@ CARDS
     </div>
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
-
