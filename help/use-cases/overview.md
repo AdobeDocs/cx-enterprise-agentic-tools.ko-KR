@@ -1,8 +1,9 @@
 ---
 title: 실행 중인 에이전트 도구
 description: 실제 비즈니스 워크플로우에 적용되는 Adobe CX 엔터프라이즈 에이전트 도구를 보여 주는 단계별 연습입니다.
+last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: 689ace21360ceed512cdd5869bd4f972014ff219
+source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 0%
@@ -55,7 +56,7 @@ CARDS
   {title = Manage AEM environments with Cloud Manager}
   {description = Check environment health, review pipeline runs, and manage deployments from your AI client. Uses the AEM Cloud Manager MCP Server.}
   {cta = Start walkthrough}
-  {image = https://video.tv.adobe.com/v/3480349?captions=kor&format=jpeg}
+  {image = https://video.tv.adobe.com/v/3480340?format=jpeg}
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -202,7 +203,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="aem-cloud-manager-mcp.md" title="Cloud Manager을 사용하여 AEM 환경 관리" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3480349?captions=kor&format=jpeg" alt="Cloud Manager을 사용하여 AEM 환경 관리"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3480340?format=jpeg" alt="Cloud Manager을 사용하여 AEM 환경 관리"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

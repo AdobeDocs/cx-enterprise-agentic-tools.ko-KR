@@ -1,8 +1,9 @@
 ---
 title: 고객에게 영향을 미치기 전에 여정 문제 파악
 description: CX Enterprise MCP Gateway를 사용하여 활성 AJO 여정을 모니터링하고, 캠페인 구성을 검토하고, 고객에게 도달하기 전에 운영 문제를 파악할 수 있습니다.
+last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: 135f151c50464461c48fa09d4a7efad20b96cc73
+source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 3%

@@ -1,8 +1,9 @@
 ---
 title: 리소스
 description: 모든 Adobe CX 엔터프라이즈 에이전트 도구 설명서, 레지스트리, API 및 개발자 안내서를 위한 단일 진입점입니다.
+last-substantial-update: 2026-05-08T00:00:00Z
 index: false
-source-git-commit: 63f5958eaa227ea21fa5b193a2ac76a69fd349cb
+source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 16%
@@ -32,7 +33,7 @@ Adobe CX 엔터프라이즈 에이전트 도구 작업을 위한 모든 주요 A
 |---|---|
 | [Analytics MCP 설명서](https://developer.adobe.com/analytics-mcp/docs/) | CJA MCP 서버 설치 안내서 및 도구 참조 |
 | [Analytics MCP 안내서](https://developer.adobe.com/analytics-mcp/docs/guides/) | CJA MCP 서버에 대한 자세한 사용 안내서 |
-| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) | RTCDP MCP 서버 설치 안내서 |
+| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) | RTCDP MCP 서버 설치 안내서 |
 
 ## 에이전트 스킬
 
@@ -73,10 +74,10 @@ Adobe CX 엔터프라이즈 에이전트 도구 작업을 위한 모든 주요 A
 
 | 리소스 | 찾을 내용 |
 |---|---|
-| [Adobe Experience Platform](https://experienceleague.adobe.com/ko/docs/experience-platform/landing/home) | 전체 AEP 애플리케이션 설명서 |
+| [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/home) | 전체 AEP 애플리케이션 설명서 |
 | [Adobe Journey Optimizer](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home) | 전체 AJO 애플리케이션 설명서 |
 | [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) | 전체 Real-Time CDP 애플리케이션 설명서 |
-| [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-landing) | 전체 CJA 애플리케이션 설명서 |
+| [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-landing) | 전체 CJA 애플리케이션 설명서 |
 | [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/landing) | 전체 Adobe Analytics 설명서 |
 | [AEP 대상](https://experienceleague.adobe.com/ko/docs/experience-platform/destinations/home) | 대상 설정 및 관리 |
 | [AJO 자습서](https://experienceleague.adobe.com/ko/docs/journey-optimizer-learn/tutorials/overview) | AJO 비디오 자습서 및 학습 경로 |

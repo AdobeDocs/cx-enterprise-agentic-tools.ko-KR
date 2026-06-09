@@ -1,8 +1,9 @@
 ---
 title: 보고서를 작성하지 않고 캠페인 통찰력 표시
 description: CX 엔터프라이즈 MCP 게이트웨이를 사용하면 Customer Journey Analytics 성능 관련 질문을 일반 언어로 작성하고 Report Builders를 탐색하지 않고도 답변을 얻을 수 있습니다.
+last-substantial-update: 2026-06-02T00:00:00Z
 index: false
-source-git-commit: 14488b494c454ce6d1207e2d21024749d93db669
+source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 0%
@@ -275,4 +276,4 @@ Save this analysis as a Workspace project for executive reporting.
 | [CJA MCP 서버 설명서](https://developer.adobe.com/analytics-mcp/docs/cja/) | 전체 도구 참조 및 설정 안내서 |
 | [CJA MCP 사용 안내서](https://developer.adobe.com/analytics-mcp/docs/guides/) | 자세한 사용 안내서 |
 | [AI 레지스트리의 CJA MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp) | CJA MCP 서버 도구 및 가용성 |
-| [Customer Journey Analytics 설명서](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-landing) | 전체 CJA 애플리케이션 설명서 |
+| [Customer Journey Analytics 설명서](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-landing) | 전체 CJA 애플리케이션 설명서 |

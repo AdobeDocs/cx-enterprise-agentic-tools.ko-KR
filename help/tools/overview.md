@@ -1,8 +1,9 @@
 ---
 title: 무생식 도구
 description: 빌더를 위한 MCP 서버, 에이전트 기술 및 API를 비교하고 Adobe CX 엔터프라이즈 워크플로우에 적합한 에이전트 도구를 선택합니다.
+last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: bb341fa02a8e1e8b3efbf832359846c94441df88
+source-git-commit: 093448ea6a9840d1d2027b76e177b145400a9202
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
@@ -155,7 +156,7 @@ MCP 서버를 AI 클라이언트와 CX 엔터프라이즈 애플리케이션 간
 
 [에이전트 스킬 탐색](agent-skills.md)
 
->[!TAB 빌더용  API]
+>빌더용 [!TAB API]
 
 API는 기본 구성단위입니다. 개발자는 Adobe의 자체 제품을 구동하는 동일한 API를 사용하여 Adobe 데이터 및 작업에 직접 프로그래밍 방식으로 액세스할 수 있습니다. 이를 통해 조직에서 필요로 하는 가드레일을 통해 특정 비즈니스 워크플로를 간소화하는 집중화된 사용자 정의 경험을 구축할 수 있습니다.
 
