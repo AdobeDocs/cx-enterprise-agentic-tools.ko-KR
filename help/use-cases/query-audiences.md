@@ -1,12 +1,12 @@
 ---
 title: 대상자 및 대상자 활성화 위치 이해
-description: CX 엔터프라이즈 MCP 게이트웨이를 사용하여 대상자 활성화 상태를 모니터링하고, 대상 상태를 확인하고, 캠페인에 영향을 미치기 전에 문제를 확인할 수 있습니다.
-last-substantial-update: 2026-06-04T00:00:00Z
+description: CX Enterprise MCP 를 사용하여 대상자 활성화 상태를 모니터링하고, 대상 상태를 확인하고, 문제가 캠페인에 영향을 미치기 전에 문제를 파악할 수 있습니다.
+last-substantial-update: 2026-06-09T00:00:00Z
 index: false
-source-git-commit: 270aed67540f7347850aece70cebddc9b40b9de8
+source-git-commit: 94c7d3c6b0542b6e27d8775f78acf40a1b1cae91
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 2%
+source-wordcount: '900'
+ht-degree: 3%
 
 ---
 
@@ -19,12 +19,12 @@ ht-degree: 2%
 
 활성화된 대상, 유입되는 대상 및 대상이 정상인지 여부를 이해하면 일반적으로 Real-Time CDP을 열고 여러 화면을 탐색할 수 있습니다. 이 연습에서는 RTCDP MCP 서버를 사용하여 AI 클라이언트를 통해 동일한 답변을 얻는 방법을 보여 줍니다. 일반 언어 질문을 통해 대상 구성, 활성화 상태 및 데이터 흐름 상태를 표시합니다.
 
-| | |
+| 시나리오 세부 정보 | |
 | --- | --- |
-| CX 엔터프라이즈 애플리케이션 | Real-Time Customer Data Platform(Real-Time CDP) |
-| 무생식 도구 | CX 엔터프라이즈 MCP 게이트웨이 |
-| 대상자 | 마케터, 분석가, 운영자 |
-| 사전 요구 사항 | MCP 호환 AI 클라이언트, Real-Time CDP 액세스 |
+| **CX 엔터프라이즈 애플리케이션** | [Real-Time Customer Data Platform(Real-Time CDP)](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) |
+| **에이전트 도구** | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers) |
+| **대상자** | 마케터, 분석가, 운영자 |
+| **필수 구성 요소** | MCP 호환 AI 클라이언트, Real-Time CDP 액세스 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **수행할 수 있는 추가** 섹션이 다음과 같습니다.
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 >[!TAB 클라우드.ai]
 
-CX 엔터프라이즈 MCP 게이트웨이를 맞춤형 커넥터로 연결하여 Real-Time CDP 도구에 액세스합니다.
+CX Enterprise MCP 를 사용자 정의 커넥터로 연결하여 Real-Time CDP 도구에 액세스합니다.
 
 1. Cloud.ai의 **설정 > 통합**(으)로 이동합니다.
 2. **사용자 지정 커넥터 추가**&#x200B;를 선택하고 서버 URL을 입력하십시오. `https://cx-enterprise.adobe.io/mcp`
@@ -44,7 +44,7 @@ CX 엔터프라이즈 MCP 게이트웨이를 맞춤형 커넥터로 연결하여
 
 >[!TAB ChatGPT]
 
-ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교육 계획 필요)를 사용하여 CX 엔터프라이즈 MCP 게이트웨이를 연결합니다.
+ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교육 계획 필요)를 사용하여 CX 엔터프라이즈 MCP를 연결합니다.
 
 1. **ChatGPT 설정**&#x200B;에서 **개발자 모드**&#x200B;를 사용하도록 설정합니다.
 2. **설정 > 통합**(으)로 이동하여 **사용자 지정 커넥터 추가 > 원격 MCP 서버**&#x200B;를 선택합니다.
@@ -55,7 +55,7 @@ ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교�
 
 >[!TAB 기타 AI 클라이언트]
 
-Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 CX 엔터프라이즈 MCP 게이트웨이에 연결합니다.
+Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 CX 엔터프라이즈 MCP에 연결:
 
 ```
 https://cx-enterprise.adobe.io/mcp
@@ -116,7 +116,7 @@ Where are our audiences currently being activated and to which destinations?
 
 ## 4단계: 전략적 추천 받기
 
-CX 엔터프라이즈 MCP 게이트웨이의 RTCDP 도구는 읽기 전용이며 활성화 상태, 대상 상태 및 데이터 흐름 데이터를 표시하지만 구성을 수정하지는 않습니다. 문제를 식별하면 애플리케이션에서 수정 사항이 발생합니다.
+CX 엔터프라이즈 MCP 의 RTCDP 툴은 읽기 전용이며 활성화 상태, 대상 상태 및 데이터 흐름 데이터를 표시하지만 구성을 수정하지는 않습니다. 문제를 식별하면 애플리케이션에서 수정 사항이 발생합니다.
 
 ```
 If you were our audience strategist, what would you prioritize next and why?
@@ -131,7 +131,7 @@ If you were our audience strategist, what would you prioritize next and why?
 
 >[!NOTE]
 >
->CX 엔터프라이즈 MCP 게이트웨이의 RTCDP 도구는 대상 및 활성화 데이터를 표시하지만 대상 구성, 세그먼트 정의 또는 데이터 흐름 설정을 수정할 수 없습니다. 수정 단계는 Real-Time CDP 애플리케이션에서 발생합니다.
+>CX Enterprise MCP의 RTCDP 도구는 대상 및 활성화 데이터를 표시하지만 대상 구성, 세그먼트 정의 또는 데이터 흐름 설정을 수정할 수 없습니다. 수정 단계는 Real-Time CDP 애플리케이션에서 발생합니다.
 
 ## 수행한 작업
 
@@ -139,7 +139,7 @@ AI 클라이언트를 Real-Time CDP에 연결하고 4개의 프롬프트에서 �
 
 ## 수행할 수 있는 작업 더 보기
 
-CX 엔터프라이즈 MCP 게이트웨이의 Real-Time CDP 도구는 광범위한 대상 및 활성화 쿼리를 지원합니다. 동일한 세션에서 시도할 수 있는 프롬프트를 보려면 아래 시나리오를 확장하십시오.
+CX 엔터프라이즈 MCP의 Real-Time CDP 도구는 광범위한 대상 및 활성화 쿼리를 지원합니다. 동일한 세션에서 시도할 수 있는 프롬프트를 보려면 아래 시나리오를 확장하십시오.
 
 +++캠페인이 전송되기 전에 어디로 이동하는지 정확히 파악
 
@@ -230,7 +230,7 @@ Are there any audiences using a non-default merge policy that could cause profil
 
 | 리소스 | 찾을 내용 |
 | --- | --- |
-| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) | MCP 서버 설정 및 도구 참조 |
+| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) | MCP 서버 설정 및 도구 참조 |
 | [Adobe AI 레지스트리](https://developer.adobe.com/ai-registry/?type=mcp) | MCP 서버 메타데이터 및 가용성 |
 | [Real-Time CDP 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) | 전체 Real-Time CDP 애플리케이션 설명서 |
 | [AEP 대상 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/destinations/home) | 전체 대상 참조 |

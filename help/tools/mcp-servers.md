@@ -3,9 +3,9 @@ title: MCP 서버
 description: Model Context Protocol 서버를 사용하여 MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로우에 연결합니다.
 index: false
 last-substantial-update: 2026-06-09T00:00:00Z
-source-git-commit: ec08b7ff646519ceb10bd3431e0c0d5db8f3367f
+source-git-commit: 9c62818daecf3c20230457da5b9b8086d954260f
 workflow-type: tm+mt
-source-wordcount: '1970'
+source-wordcount: '2084'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 <!-- last-modified: 2026-06-09 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3491329/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3491320/?learn=on&enablevpops)
 
 Adobe CX Enterprise MCP 서버는 호환되는 AI 클라이언트를 Adobe 데이터 및 워크플로에 직접 제어하고 액세스할 수 있도록 합니다. 한 번 연결하면 AI 환경을 종료하지 않고도 일반 언어로 캠페인 성과를 쿼리하고, 대상을 활성화하고, 여정을 검토하고, 콘텐츠를 관리하는 등의 작업을 수행할 수 있습니다. MCP 서버는 AI 클라이언트와 Adobe의 기본 시스템 사이에 위치하기 때문에 조직의 액세스 제어 및 데이터 거버넌스가 유효한 동안 자연어 유연성을 얻을 수 있습니다.
 
@@ -58,13 +58,13 @@ Adobe Experience Manager에는 다양한 워크플로우에 대한 여러 MCP �
 
 | MCP 서버 | 엔드포인트 | 수행 가능한 작업 |
 | --- | --- | --- |
-| [AEM(코드 모드)](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/aem` | 자연어 조회, 읽기, 쓰기 및 삭제를 통해 AEM에 직접 REST API 액세스 |
+| [AEM(코드 모드)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/aem` | 자연어 조회, 읽기, 쓰기 및 삭제를 통해 AEM에 직접 REST API 액세스 |
 | [AEM Cloud Manager](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) | `https://mcp.adobeaemcloud.com/adobe/mcp/cloudmanager` | 프로그램, 환경, 파이프라인 및 저장소 관리 |
-| [AEM 컨텐츠](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content` | 페이지, 콘텐츠 조각, 에셋 및 론치 관리 |
-| [AEM 컨텐츠(읽기 전용)](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly` | 쓰기 액세스 권한 없이 페이지, 콘텐츠 조각 및 시작 검색 및 쿼리 |
+| [AEM 컨텐츠](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content` | 페이지, 콘텐츠 조각, 에셋 및 론치 관리 |
+| [AEM 컨텐츠(읽기 전용)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly` | 쓰기 액세스 권한 없이 페이지, 콘텐츠 조각 및 시작 검색 및 쿼리 |
 | [AEM 문서 작성]&#x200B;(TODO: 유효성 검사) | `https://mcp.adobeaemcloud.com/adobe/mcp/da` | 문서 작성에서 파일, 버전 내역 및 미디어 참조 관리 |
 | [AEM Experience Governance](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/experience-governance-mcp-server) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-governance` | 브랜드 가이드라인 및 규정 준수 규칙에 따라 컨텐츠 및 이미지 평가 |
-| [AEM Experience Production](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/overview) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-production` | AI 기반의 콘텐츠 브리핑을 사용하여 규모에 맞게 AEM 페이지 변환 및 생성 |
+| [AEM Experience Production](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/overview) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-production` | AI 기반의 콘텐츠 브리핑을 사용하여 규모에 맞게 AEM 페이지 변환 및 생성 |
 
 >[!NOTE]
 >
@@ -84,11 +84,11 @@ Adobe Experience Manager에는 다양한 워크플로우에 대한 여러 MCP �
 
 | MCP 서버 | 엔드포인트 | 수행 가능한 작업 |
 | --- | --- | --- |
-| [Marketo Engage](https://experienceleague.adobe.com/ko/docs/marketo-developer/marketo/mcp-server) | `https://marketo-mcp.adobe.io/mcp` | 프로그램, 캠페인, 리드, 스마트 목록, 이메일 및 양식 관리 |
+| [Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server) | `https://marketo-mcp.adobe.io/mcp` | 프로그램, 캠페인, 리드, 스마트 목록, 이메일 및 양식 관리 |
 
 >[!NOTE]
 >
->Marketo Engage MCP는 Adobe IMS가 아닌 Marketo 기반 서비스 자격 증명을 사용합니다. 인증 설정에 대해서는 [Marketo Engage MCP 서버 설명서](https://experienceleague.adobe.com/ko/docs/marketo-developer/marketo/mcp-server)를 참조하세요. 액세스는 Marketo Engage 구독과 API 사용자의 권한에 따라 다릅니다.
+>Marketo Engage MCP는 Adobe IMS가 아닌 Marketo 기반 서비스 자격 증명을 사용합니다. 인증 설정에 대해서는 [Marketo Engage MCP 서버 설명서](https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server)를 참조하세요. 액세스는 Marketo Engage 구독과 API 사용자의 권한에 따라 다릅니다.
 
 >[!TAB Target]
 
@@ -96,7 +96,7 @@ Adobe Target MCP는 공개 베타 버전입니다. 현재 사용 가능한 모�
 
 | MCP 서버 | 엔드포인트 | 수행 가능한 작업 |
 | --- | --- | --- |
-| [Adobe Target](https://experienceleague.adobe.com/ko/docs/target/using/mcp/target-mcp) | `https://targetmcp.adobe.io/mcp` | 활동, 오퍼, 대상, mbox 및 성과 보고서 검토 |
+| [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp) | `https://targetmcp.adobe.io/mcp` | 활동, 오퍼, 대상, mbox 및 성과 보고서 검토 |
 
 >[!NOTE]
 >
@@ -120,6 +120,8 @@ Adobe Target MCP는 공개 베타 버전입니다. 현재 사용 가능한 모�
 
 수동으로 구성하기 전에 [Adobe AI 레지스트리](https://developer.adobe.com/ai-registry/?type=connector)에서 AI 클라이언트 및 Adobe 응용 프로그램에 대한 관리되는 커넥터를 확인하십시오. 관리되는 커넥터는 인증을 자동으로 처리합니다. 클라이언트와 애플리케이션에 커넥터를 사용할 수 있는 경우 아래 수동 단계 대신 커넥터를 사용하십시오.
 
+아래 단계에서는 CX 엔터프라이즈 MCP 엔드포인트를 예로 사용합니다. 동일한 프로세스가 모든 Adobe MCP 서버에 적용됩니다. — 연결할 서버의 끝점 URL에서 교체합니다.
+
 ![Adobe MCP 서버에 연결하는 AI 에이전트](../assets/hero-connect-mcp-servers.gif)
 
 >[!BEGINTABS]
@@ -136,7 +138,7 @@ Claude.ai는 계정 설정에서 사용자 지정 커넥터를 통해 원격 MCP
 
 1. **설정 > 통합**(으)로 이동합니다.
 2. **사용자 지정 커넥터 추가**&#x200B;를 클릭합니다.
-3. `https://cx-enterprise.adobe.io/mcp`을(를) URL로 입력하고 표시 이름을 `Adobe CX Enterprise`과(와) 같이 입력합니다.
+3. 서버 엔드포인트를 URL(예: CX Enterprise MCP의 경우 `https://cx-enterprise.adobe.io/mcp`)로 입력하고 선택한 표시 이름을 입력합니다.
 4. **연결**&#x200B;을 클릭하고 Adobe ID으로 로그인합니다. 올바른 IMS 조직을 선택합니다.
 
 전체 설정: [Claude.ai 사용자 지정 커넥터 설명서](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)
@@ -145,7 +147,7 @@ Claude.ai는 계정 설정에서 사용자 지정 커넥터를 통해 원격 MCP
 
 ### CLI 사용
 
-`claude mcp add`을(를) 실행하여 CX 엔터프라이즈 MCP를 등록합니다. 하나의 연결을 통해 조직의 라이선스에 따라 AJO, CJA 및 Real-Time CDP에 액세스할 수 있습니다.
+`claude mcp add`을(를) 실행하여 Adobe MCP 서버를 등록합니다. 서버 이름과 URL을 연결할 서버의 값으로 바꿉니다. 이 예에서는 CX 엔터프라이즈 MCP 를 사용합니다.
 
 ```bash
 claude mcp add --transport http adobe-cx-enterprise https://cx-enterprise.adobe.io/mcp
@@ -153,7 +155,7 @@ claude mcp add --transport http adobe-cx-enterprise https://cx-enterprise.adobe.
 
 ### 설정 파일 편집
 
-프로젝트 루트(프로젝트 수준)의 `~/.claude.json`(전역) 또는 `.mcp.json`에 서버 추가:
+프로젝트 루트(프로젝트 수준)의 `~/.claude.json`(전역) 또는 `.mcp.json`에 서버를 추가합니다. 키와 URL을 연결할 서버의 값으로 바꿉니다.
 
 ```json
 {
@@ -172,7 +174,7 @@ Adobe MCP 서버는 OAuth를 사용합니다. 도구를 처음 호출할 때 Ado
 
 >[!TAB 커서]
 
-CX 엔터프라이즈 MCP를 커서 `mcp.json` 구성 파일에 추가한 다음 **설정 > MCP**&#x200B;를 통해 연결합니다.
+Adobe MCP 서버를 커서 `mcp.json` 구성 파일에 추가한 다음 **설정 > MCP**&#x200B;를 통해 연결합니다. 키와 URL을 연결할 서버의 값으로 바꿉니다. 이 예에서는 CX 엔터프라이즈 MCP 를 사용합니다.
 
 - **전역(모든 프로젝트):** `~/.cursor/mcp.json`
 - 프로젝트 루트의 **프로젝트 수준:** `.cursor/mcp.json`
@@ -187,8 +189,6 @@ CX 엔터프라이즈 MCP를 커서 `mcp.json` 구성 파일에 추가한 다음
   }
 }
 ```
-
-하나의 연결을 통해 조직의 라이선스에 따라 AJO, CJA 및 Real-Time CDP에 액세스할 수 있습니다.
 
 추가되면 MCP 서버가 커서 설정의 **설치된 MCP 서버** 아래에 나타납니다. **인증 필요**&#x200B;를 표시하는 서버 옆의 **연결**&#x200B;을 선택하고 Adobe ID으로 로그인합니다. 애플리케이션에 대한 액세스 권한이 있는 IMS 조직을 선택합니다.
 
@@ -209,7 +209,7 @@ ChatGPT는 Pro, Plus, Business, Enterprise 및 Education 플랜에서 사용할 
 1. **ChatGPT 설정**&#x200B;에서 개발자 모드를 사용하도록 설정합니다.
 2. **설정 > 통합**(으)로 이동합니다.
 3. **사용자 지정 커넥터 추가**&#x200B;를 클릭하고 **원격 MCP 서버**&#x200B;를 선택합니다.
-4. URL로 `https://cx-enterprise.adobe.io/mcp`을(를) 입력하고 이름으로 `Adobe CX Enterprise`을(를) 입력합니다.
+4. 서버 엔드포인트를 URL(예: CX Enterprise MCP의 경우 `https://cx-enterprise.adobe.io/mcp`)로 입력하고 선택한 표시 이름을 입력합니다.
 5. 인증을 **OAuth**(으)로 설정합니다.
 6. **연결**&#x200B;을 클릭하고 Adobe ID으로 로그인합니다. 올바른 IMS 조직을 선택합니다.
 
@@ -224,7 +224,7 @@ OpenAI Codex CLI는 TOML 구성을 통해 원격 MCP 서버를 지원합니다.
 - **사용자 수준(모든 프로젝트):** `~/.codex/config.toml`
 - 프로젝트 루트의 **프로젝트 범위:** `.codex/config.toml`
 
-CX 엔터프라이즈 MCP 추가:
+섹션 이름과 URL을 연결할 서버의 값으로 바꿉니다. 이 예에서는 CX 엔터프라이즈 MCP 를 사용합니다.
 
 ```toml
 [mcp_servers.adobe-cx-enterprise]
@@ -243,7 +243,7 @@ Microsoft Copilot Studio는 자동으로 Power Platform 사용자 지정 커넥�
 1. Copilot Studio에서 에이전트를 엽니다.
 2. **도구** 페이지로 이동합니다.
 3. **도구 추가 > 새 도구 > 모델 컨텍스트 프로토콜**&#x200B;을 선택합니다.
-4. MCP 온보딩 마법사에서 다음을 입력합니다.
+4. MCP 온보딩 마법사에서 서버 세부 사항을 입력합니다(예: CX 엔터프라이즈 MCP:
    - **서버 이름:** `Adobe CX Enterprise`
    - **서버 URL:** `https://cx-enterprise.adobe.io/mcp`
 5. 인증을 **OAuth 2.0**(으)로 설정하고 Adobe IMS 인증 및 토큰 URL로 구성합니다.

@@ -3,9 +3,9 @@ title: Adobe CX 엔터프라이즈 에이전트 툴
 description: MCP 서버, 에이전트 기술 및 API를 사용하여 AI 에이전트 및 개발 도구를 Adobe CX Enterprise 기능에 연결합니다.
 last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: ec08b7ff646519ceb10bd3431e0c0d5db8f3367f
+source-git-commit: 94c7d3c6b0542b6e27d8775f78acf40a1b1cae91
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '584'
 ht-degree: 3%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 3%
 
 <!-- last-modified: 2026-06-08 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3491251/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3491235/?learn=on&enablevpops)
 
-AI가 Adobe CX Enterprise의 동료가 되도록 합니다. AI 클라이언트를 캠페인, 대상자, 여정 및 컨텐츠에 연결하고 이미 사용하는 도구에서 일반 언어로 상호 작용합니다. 시작하는 데 필요한 새 인터페이스, 컨텍스트 전환, 코딩이 없습니다.
+AI가 Adobe CX Enterprise의 동료가 되도록 합니다. AI 클라이언트를 캠페인, 대상자, 여정 및 컨텐츠에 연결합니다. 이미 사용하는 도구에서 일반 언어로 사용자와 상호 작용합니다. 시작하는 데 필요한 새 인터페이스, 컨텍스트 전환, 코딩이 없습니다.
 
 >[!TIP]
->**CX Enterprise MCP로 시작** 하나의 연결을 통해 AI 클라이언트는 조직의 라이선스를 기반으로 Adobe Journey Optimizer, Customer Journey Analytics 및 Real-Time CDP에 액세스할 수 있습니다. [지금 연결](tools/mcp-servers.md#cx-enterprise-mcp)
+>**CX Enterprise MCP로 시작** 하나의 연결을 통해 AI 클라이언트는 조직의 라이선스를 기반으로 Adobe Journey Optimizer, Customer Journey Analytics 및 Real-Time CDP에 액세스할 수 있습니다. [지금 연결](tools/mcp-servers.md#cx-enterprise-mcp-servers)
 
 <!--
 CARDS
@@ -123,7 +123,7 @@ CARDS
 
 >[!TAB MCP 서버]
 
-호환되는 모든 AI 클라이언트를 사용하여 코딩이 필요 없는 일반 언어로 CX 엔터프라이즈 애플리케이션에 액세스합니다. AJO, CJA 및 Real-Time CDP에 대한 단일 연결을 위해 CX Enterprise MCP로 시작하거나 AEM 및 기타 애플리케이션에 직접 연결합니다.
+호환되는 AI 클라이언트를 사용하여 CX 엔터프라이즈 애플리케이션에 일반 언어로 액세스합니다. 코딩이 필요하지 않습니다. AJO, CJA 및 Real-Time CDP에 대한 단일 연결을 위해 CX Enterprise MCP로 시작하거나 AEM 및 기타 애플리케이션에 직접 연결합니다.
 
 - Claude, Cursor, ChatGPT 및 기타 MCP 호환 클라이언트에서 몇 분 안에 연결
 - 자연어를 사용하여 캠페인, 대상자 및 여정 데이터 쿼리
@@ -136,12 +136,12 @@ CARDS
 에이전트 스킬은 AI 클라이언트가 수행할 수 있는 지침으로 Adobe 도메인 전문 지식을 인코딩합니다. 에이전트는 즉흥적으로 수행하는 대신 Adobe 모범 사례에 따라 안정적이고 반복적으로 수행할 수 있는 작업을 정확하게 알고 있습니다.
 
 - 반복 가능한 CX 엔터프라이즈 워크플로우에 대한 일관된 결과
-- Adobe을 에이전트에게 설명할 필요가 없습니다. 스킬이 처리합니다.
+- Adobe을 에이전트에게 설명할 필요가 없습니다. 스킬이 처리합니다
 - 에이전트 기술을 지원하는 AI 클라이언트에서 작동합니다
 
 [에이전트 스킬 탐색](tools/agent-skills.md)
 
->[!TAB 빌더용  API]
+>빌더용 [!TAB API]
 
 Adobe 제품을 실행하는 동일한 API에 직접 프로그래밍 방식으로 액세스합니다. 사용자 정의 애플리케이션 및 통합을 구축하여 팀이 특정 CX 엔터프라이즈 워크플로우에 대한 액세스 권한을 집중하고 관리할 수 있도록 합니다.
 

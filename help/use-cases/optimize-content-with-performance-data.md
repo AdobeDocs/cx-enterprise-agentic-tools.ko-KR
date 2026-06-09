@@ -3,9 +3,9 @@ title: 성능 데이터를 기반으로 콘텐츠 최적화
 description: 하나의 AI 세션에서 CJA과 AEM을 함께 사용하면 도구를 전환하지 않고도 전환되지 않는 캠페인을 찾고 원인을 진단하고 콘텐츠를 업데이트할 수 있습니다.
 last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: 270aed67540f7347850aece70cebddc9b40b9de8
+source-git-commit: 94c7d3c6b0542b6e27d8775f78acf40a1b1cae91
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1129'
 ht-degree: 1%
 
 ---
@@ -16,14 +16,14 @@ ht-degree: 1%
 
 ![AI 클라이언트가 원본 페이지와 업데이트된 페이지 콘텐츠를 나란히 비교](../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step5-03-page-compare.png)
 
-캠페인 성과 데이터와 콘텐츠 업데이트 간의 루프를 닫는다는 것은 일반적으로 분석 도구와 CMS 간에 전환하는 것을 의미합니다. 이 연습에서는 동일한 AI 세션에서 Customer Journey Analytics과 AEM을 연결하는 방법을 보여 줍니다. 즉, 전환에 차이가 있는 캠페인을 표시하고, 이러한 캠페인을 유발하는 요소를 진단하고, 콘텐츠를 검사하고, 타깃팅된 추천을 받고, 대화를 종료하지 않고 변경 사항을 적용하는 것입니다.
+캠페인 성과 데이터와 콘텐츠 업데이트 간의 루프를 닫는다는 것은 일반적으로 분석 도구와 CMS 간에 전환하는 것을 의미합니다. 이 연습에서는 동일한 AI 세션에서 Customer Journey Analytics과 AEM을 연결하는 방법을 보여 줍니다. 즉, 전환에 차이가 있는 캠페인을 표시하고, 이러한 캠페인을 유도하는 요소를 진단하고, 콘텐츠를 검사하고, 타깃팅된 추천을 받고, 대화를 종료하지 않고 변경 사항을 적용합니다.
 
-| | |
+| 시나리오 세부 정보 | |
 | --- | --- |
-| CX 엔터프라이즈 애플리케이션 | Customer Journey Analytics, Adobe Experience Manager as a Cloud Service |
-| 무생식 도구 | CX 엔터프라이즈 MCP 게이트웨이, AEM Content MCP 서버 |
-| 대상자 | 캠페인 관리자, 콘텐츠 전략가, 마케팅 운영 |
-| 사전 요구 사항 | MCP 호환 AI 클라이언트, CJA 액세스, AEM as a Cloud Service 액세스 |
+| **CX 엔터프라이즈 애플리케이션** | [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview), [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/introduction) |
+| **에이전트 도구** | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers), [AEM Content MCP 서버](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) |
+| **대상자** | 캠페인 관리자, 콘텐츠 전략가, 마케팅 운영 |
+| **필수 구성 요소** | MCP 호환 AI 클라이언트, CJA 액세스, AEM as a Cloud Service 액세스 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **수행할 수 있는 추가** 섹션이 다음과 같습니다.
 
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 | 서버 | 엔드포인트 |
 | --- | --- |
-| CX 엔터프라이즈 MCP 게이트웨이 | `https://cx-enterprise.adobe.io/mcp` |
+| CX 엔터프라이즈 MCP | `https://cx-enterprise.adobe.io/mcp` |
 | AEM Content MCP 서버 | `https://mcp.adobeaemcloud.com/adobe/mcp/content` |
 
 전체 설정: [Claude.ai 사용자 지정 커넥터 설명서](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)
@@ -58,7 +58,7 @@ ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교�
 
 | 서버 | 엔드포인트 |
 | --- | --- |
-| CX 엔터프라이즈 MCP 게이트웨이 | `https://cx-enterprise.adobe.io/mcp` |
+| CX 엔터프라이즈 MCP | `https://cx-enterprise.adobe.io/mcp` |
 | AEM Content MCP 서버 | `https://mcp.adobeaemcloud.com/adobe/mcp/content` |
 
 전체 설정: [ChatGPT MCP 설명서](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)
@@ -69,7 +69,7 @@ Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경�
 
 | 서버 | 엔드포인트 |
 | --- | --- |
-| CX 엔터프라이즈 MCP 게이트웨이 | `https://cx-enterprise.adobe.io/mcp` |
+| CX 엔터프라이즈 MCP | `https://cx-enterprise.adobe.io/mcp` |
 | AEM Content MCP 서버 | `https://mcp.adobeaemcloud.com/adobe/mcp/content` |
 
 지원되는 모든 클라이언트에 대한 전체 설치 지침: [AI 클라이언트에 연결](../tools/mcp-servers.md)
@@ -87,7 +87,7 @@ Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경�
 
 ## 1단계: 전환 간격이 있는 캠페인 찾기
 
-CJA을 사용하여 클릭스루는 강하지만 전환율이 낮은 캠페인을 표시합니다. 이 패턴(높은 의도의 낮은 완료)은 일반적으로 랜딩 페이지의 콘텐츠 또는 경험 문제를 가리킵니다.
+CJA을 사용하여 클릭스루는 강하지만 전환율이 낮은 캠페인을 표시합니다. 이 패턴(높은 의도, 낮은 완료)은 일반적으로 랜딩 페이지의 콘텐츠 또는 경험 문제를 가리킵니다.
 
 ```
 Which campaigns have strong click-through but low conversion in the last 30 days?
@@ -257,7 +257,7 @@ Publish all confirmed changes and share the updated URLs.
 | 리소스 | 찾을 내용 |
 | --- | --- |
 | [CJA MCP 서버 설명서](https://developer.adobe.com/analytics-mcp/docs/cja/) | CJA MCP 설정 및 도구 참조 |
-| [AEM Content MCP 서버 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | AEM Content MCP 설치 및 사용 안내서 |
+| [AEM Content MCP 서버 설명서](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | AEM Content MCP 설치 및 사용 안내서 |
 | [AI 레지스트리의 CJA MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp) | CJA MCP 서버 도구 및 가용성 |
 | [AI 레지스트리의 AEM Content MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp) | AEM Content MCP 서버 도구 및 가용성 |
 | [MCP 서버](../tools/mcp-servers.md) | AI 클라이언트를 Adobe MCP 서버에 연결 |

@@ -1,11 +1,11 @@
 ---
 title: 고객에게 영향을 미치기 전에 여정 문제 파악
-description: CX Enterprise MCP Gateway를 사용하여 활성 AJO 여정을 모니터링하고, 캠페인 구성을 검토하고, 고객에게 도달하기 전에 운영 문제를 파악할 수 있습니다.
+description: CX Enterprise MCP를 사용하여 활성 AJO 여정을 모니터링하고, 캠페인 구성을 검토하고, 고객에게 도달하기 전에 운영 문제를 파악할 수 있습니다.
 last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: 270aed67540f7347850aece70cebddc9b40b9de8
+source-git-commit: 94c7d3c6b0542b6e27d8775f78acf40a1b1cae91
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1013'
 ht-degree: 3%
 
 ---
@@ -16,14 +16,14 @@ ht-degree: 3%
 
 ![AI 클라이언트가 실행 요약으로 캠페인 및 여정 전략을 요약](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step5-02-exe-summary.png)
 
-활성화된 여정, 해당 변수를 유도하는 조건 및 캠페인이 정상적으로 구성되는 방식에 대한 명확한 그림을 얻는다는 것은 Adobe Journey Optimizer을 열고 해당 인터페이스를 탐색한다는 의미입니다. 이 연습에서는 CX Enterprise MCP Gateway를 사용하여 일반 언어 질문을 통해 AJO 여정 및 캠페인 데이터를 쿼리하여 AI 클라이언트를 통해 동일한 가시성을 얻는 방법을 보여 줍니다.
+활성화된 여정, 해당 변수를 유도하는 조건 및 캠페인이 정상적으로 구성되는 방식에 대한 명확한 그림을 얻는다는 것은 Adobe Journey Optimizer을 열고 해당 인터페이스를 탐색한다는 의미입니다. 이 연습에서는 CX Enterprise MCP를 사용하여 일반 언어 질문을 통해 AJO 여정 및 캠페인 데이터를 쿼리하여 AI 클라이언트를 통해 동일한 가시성을 얻는 방법을 보여 줍니다.
 
-| | |
+| 시나리오 세부 정보 | |
 | --- | --- |
-| CX 엔터프라이즈 애플리케이션 | Adobe Journey Optimizer (AJO) |
-| 무생식 도구 | CX 엔터프라이즈 MCP 게이트웨이 |
-| 대상자 | 캠페인 관리자, 마케터 |
-| 사전 요구 사항 | MCP 호환 AI 클라이언트, AJO 액세스 |
+| **CX 엔터프라이즈 애플리케이션** | [Adobe Journey Optimizer(AJO)](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home) |
+| **에이전트 도구** | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers) |
+| **대상자** | 캠페인 관리자, 마케터 |
+| **필수 구성 요소** | MCP 호환 AI 클라이언트, AJO 액세스 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **수행할 수 있는 추가** 섹션이 다음과 같습니다.
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 >[!TAB 클라우드.ai]
 
-CX 엔터프라이즈 MCP 게이트웨이를 맞춤형 커넥터로 연결하여 Adobe Journey Optimizer 도구에 액세스합니다.
+CX Enterprise MCP 를 사용자 정의 커넥터로 연결하여 Adobe Journey Optimizer 도구에 액세스합니다.
 
 1. Cloud.ai의 **설정 > 통합**(으)로 이동합니다.
 2. **사용자 지정 커넥터 추가**&#x200B;를 선택하고 서버 URL을 입력하십시오. `https://cx-enterprise.adobe.io/mcp`
@@ -44,7 +44,7 @@ CX 엔터프라이즈 MCP 게이트웨이를 맞춤형 커넥터로 연결하여
 
 >[!TAB ChatGPT]
 
-ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교육 계획 필요)를 사용하여 CX 엔터프라이즈 MCP 게이트웨이를 연결합니다.
+ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교육 계획 필요)를 사용하여 CX 엔터프라이즈 MCP를 연결합니다.
 
 1. **ChatGPT 설정**&#x200B;에서 **개발자 모드**&#x200B;를 사용하도록 설정합니다.
 2. **설정 > 통합**(으)로 이동하여 **사용자 지정 커넥터 추가 > 원격 MCP 서버**&#x200B;를 선택합니다.
@@ -55,7 +55,7 @@ ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교�
 
 >[!TAB 기타 AI 클라이언트]
 
-Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 CX 엔터프라이즈 MCP 게이트웨이에 연결합니다.
+Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 CX 엔터프라이즈 MCP에 연결:
 
 ```
 https://cx-enterprise.adobe.io/mcp
@@ -169,7 +169,7 @@ AI 클라이언트를 Adobe Journey Optimizer에 연결하고 5개의 프롬프�
 
 ## 수행할 수 있는 작업 더 보기
 
-CX 엔터프라이즈 MCP 게이트웨이는 광범위한 AJO 여정 및 캠페인 세부 정보를 제공할 수 있습니다. 동일한 세션에서 시도할 수 있는 프롬프트를 보려면 아래 시나리오를 확장하십시오.
+CX 엔터프라이즈 MCP는 광범위한 AJO 여정 및 캠페인 세부 정보를 제공할 수 있습니다. 동일한 세션에서 시도할 수 있는 프롬프트를 보려면 아래 시나리오를 확장하십시오.
 
 +++변경하기 전에 라이브 정보 확인
 
