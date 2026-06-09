@@ -3,9 +3,9 @@ title: 빌더용 API
 description: Adobe CX Enterprise API를 사용하여 맞춤형 애플리케이션 및 통합을 구축할 수 있습니다.
 last-substantial-update: 2026-06-02T00:00:00Z
 index: false
-source-git-commit: 9a3b90f5f1238e780a0f40b082623cd8da0e71a5
+source-git-commit: a130fc470e97f2316e2ea72ebda47b9fc4ad9b33
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '747'
 ht-degree: 11%
 
 ---
@@ -103,11 +103,11 @@ API 프로젝트 설정, 인증 및 자격 증명 관리.
 
 >[!ENDTABS]
 
-## 빌더를 위한 API 시작
+## API를 사용하여 빌드
 
 ![Adobe CX Enterprise API에 연결하는 IDE](../assets/hero-connect-apis.gif)
 
-Adobe CX Enterprise API를 작성하려면 먼저 Adobe Developer Console에서 인증된 자격 증명과 프로젝트에 추가된 API 설명서가 있어야 코딩 에이전트가 Adobe API와 안정적으로 작업할 수 있습니다.
+클라우드 코드, 커서 및 OpenAI 코드와 같은 코딩 에이전트는 Adobe CX Enterprise API를 사용하여 빌드하는 데 적합합니다. 프로젝트에 OpenAPI 사양을 추가하면 에이전트는 끝점을 찾고 요청을 생성하며 수동 배선 없이 API 동작에 대한 이유를 파악할 수 있습니다. 시작하려면 Adobe Developer Console에서 인증된 자격 증명과 프로젝트에 추가된 API 설명서, 이렇게 두 가지가 필요합니다.
 
 ### Adobe Developer Console에서 API 자격 증명 설정
 
@@ -192,15 +192,3 @@ project/
 **현재 사양 유지**
 
 Adobe에서 새 API 버전을 게시할 때 새 스냅숏을 `/specs`에 다운로드하고 날짜를 `README.md`로 업데이트한 다음 인덱스와 `AGENTS.md`을(를) 다시 생성합니다.
-
-## 빌더와 MCP 서버용 API
-
-시스템 통합을 완벽하게 제어해야 하거나 사용자 정의 애플리케이션을 빌드하고 있는 경우 API를 사용하십시오. AI 에이전트가 Adobe 워크플로와 직접 작동하도록 하려면 MCP 서버를 사용합니다.
-
-| | API | MCP 서버 |
-| --- | --- | --- |
-| 직접 시스템 통합 | 예 | 때때로 |
-| 에이전트 친화적인 오케스트레이션 | 제한적 | 예 |
-| 원시 데이터 액세스 | 예 | 보통 추상화 |
-| 사용자 정의 애플리케이션 개발 | 기본 사용 사례 | 보조 |
-| AI 지원 워크플로 | 지원됨 | 기본 사용 사례 |
