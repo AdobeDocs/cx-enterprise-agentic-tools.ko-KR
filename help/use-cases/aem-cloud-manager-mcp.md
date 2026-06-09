@@ -15,7 +15,7 @@ ht-degree: 2%
 
 <!-- last-modified: 2026-05-21 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480349/?captions=kor&learn=on&enablevpops)
 
 Adobe Experience Manager 환경 관리는 일반적으로 Cloud Manager에 로그인하고, 파이프라인 및 환경을 탐색하고, 컨텍스트를 전환하여 배포 상태를 추적하는 것을 의미합니다. 이 연습에서는 개발자와 작업 팀이 AI 환경을 종료하지 않고 상태를 확인하고, 파이프라인을 검토하고, 배포 세부 사항에 대해 작업할 수 있도록 AEM Cloud Manager MCP 서버를 사용하여 AI 클라이언트에서 작업을 처리하는 방법을 보여 줍니다.
 
