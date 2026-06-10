@@ -1,22 +1,22 @@
 ---
-title: 성능 데이터를 기반으로 콘텐츠 최적화
+title: 데이터 기반 업데이트로 컨텐츠 성능 격차 완화
 description: 하나의 AI 세션에서 CJA과 AEM을 함께 사용하면 도구를 전환하지 않고도 전환되지 않는 캠페인을 찾고 원인을 진단하고 콘텐츠를 업데이트할 수 있습니다.
-last-substantial-update: 2026-06-08T00:00:00Z
+last-substantial-update: 2026-06-10T00:00:00Z
 index: false
-source-git-commit: 6a2b8b54eb9fe040f5f9defa9e6681e46a5e65cf
+source-git-commit: 8735d40a6bee547608a3c0efea7f942b813f2d41
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1072'
 ht-degree: 2%
 
 ---
 
 
-# 성능 데이터를 기반으로 콘텐츠 최적화
-<!-- last-modified: 2026-06-08 -->
+# 데이터 기반 업데이트로 컨텐츠 성능 격차 완화
+<!-- last-modified: 2026-06-10 -->
 
 ![AI 클라이언트가 원본 페이지와 업데이트된 페이지 콘텐츠를 나란히 비교](../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step5-03-page-compare.png)
 
-캠페인 성과 데이터와 콘텐츠 업데이트 간의 루프를 닫는다는 것은 일반적으로 분석 도구와 CMS 간에 전환하는 것을 의미합니다. 이 연습에서는 동일한 AI 세션에서 Customer Journey Analytics과 AEM을 연결하는 방법을 보여 줍니다. 즉, 전환에 차이가 있는 캠페인을 표시하고, 이러한 캠페인을 유도하는 요소를 진단하고, 콘텐츠를 검사하고, 타깃팅된 추천을 받고, 대화를 종료하지 않고 변경 사항을 적용합니다.
+컨텐츠 성능의 격차는 캠페인 결과의 비용을 발생시키며, 이러한 격차를 닫는다는 것은 일반적으로 분석 도구와 CMS 간을 전환하는 것을 의미합니다. 이 연습에서는 단일 AI 세션에서 수행하는 방법을 보여 줍니다. Customer Journey Analytics에서 전환 차이가 있는 캠페인을 표면화하고, 원인을 진단하고, AEM에서 성과가 낮은 콘텐츠를 검사하고, 대화를 종료하지 않고 업데이트를 적용합니다.
 
 | 시나리오 세부 정보 | |
 | --- | --- |

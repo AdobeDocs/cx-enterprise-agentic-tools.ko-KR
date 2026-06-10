@@ -1,11 +1,11 @@
 ---
 title: 대상자 및 대상자 활성화 위치 이해
 description: CX Enterprise MCP 를 사용하여 대상자 활성화 상태를 모니터링하고, 대상 상태를 확인하고, 문제가 캠페인에 영향을 미치기 전에 문제를 파악할 수 있습니다.
-last-substantial-update: 2026-06-09T00:00:00Z
+last-substantial-update: 2026-06-10T00:00:00Z
 index: false
-source-git-commit: 6a2b8b54eb9fe040f5f9defa9e6681e46a5e65cf
+source-git-commit: 8735d40a6bee547608a3c0efea7f942b813f2d41
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '864'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![활성화 권장 사항을 통해 우선 순위가 지정된 대상 전략을 제공하는 AI 클라이언트](../assets/use-cases/query-audiences/query-audiences-step4-02-summary.png)
 
-활성화된 대상, 유입되는 대상 및 대상이 정상인지 여부를 이해하면 일반적으로 Real-Time CDP을 열고 여러 화면을 탐색할 수 있습니다. 이 연습에서는 RTCDP MCP 서버를 사용하여 AI 클라이언트를 통해 동일한 답변을 얻는 방법을 보여 줍니다. 일반 언어 질문을 통해 대상 구성, 활성화 상태 및 데이터 흐름 상태를 표시합니다.
+캠페인이 시작되기 전이나 성과가 낮은 경우, 어떤 대상이 라이브인지, 어디에서 오는지, 대상이 정상인지 파악하는 것은 매우 중요합니다. 이 연습에서는 CX Enterprise MCP를 사용하여 Real-Time CDP을 열지 않고도 몇 초 만에 대상 상태 및 대상 상태를 표시할 수 있도록 AI 클라이언트를 통해 전체 활성화 그림을 얻는 방법을 보여 줍니다.
 
 | 시나리오 세부 정보 | |
 | --- | --- |

@@ -1,11 +1,11 @@
 ---
 title: 안심하고 AEM as a Cloud Service에 배포
 description: AI 클라이언트를 종료하지 않고 환경 상태를 확인하고 파이프라인 내역을 검토하고 배포를 트리거하거나 관리합니다.
-last-substantial-update: 2026-06-09T00:00:00Z
+last-substantial-update: 2026-06-10T00:00:00Z
 index: false
-source-git-commit: 6a2b8b54eb9fe040f5f9defa9e6681e46a5e65cf
+source-git-commit: 8735d40a6bee547608a3c0efea7f942b813f2d41
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '938'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3480349/?captions=kor&learn=on&enablevpops)
 
-Adobe Experience Manager 환경 관리는 일반적으로 Cloud Manager에 로그인하고, 파이프라인 및 환경을 탐색하고, 컨텍스트를 전환하여 배포 상태를 추적하는 것을 의미합니다. 이 연습에서는 개발자와 작업 팀이 AI 환경을 종료하지 않고 상태를 확인하고, 파이프라인을 검토하고, 배포 세부 사항에 대해 작업할 수 있도록 AEM Cloud Manager MCP 서버를 사용하여 AI 클라이언트에서 작업을 처리하는 방법을 보여 줍니다.
+배포 신뢰도는 푸시하기 전에 환경이 건강하다는 것에서 비롯됩니다. 이 연습에서는 AEM Cloud Manager MCP 서버를 사용하여 AEM 환경 상태를 확인하고, 파이프라인 내역을 검토하고, AI 클라이언트에서 배포를 트리거하는 방법을 보여 주기 때문에 팀이 가시성을 잃지 않고 빠르게 이동할 수 있습니다.
 
 | 시나리오 세부 정보 | |
 | --- | --- |
