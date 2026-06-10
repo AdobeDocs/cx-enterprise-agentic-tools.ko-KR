@@ -3,9 +3,9 @@ title: 대상자 및 대상자 활성화 위치 이해
 description: CX Enterprise MCP 를 사용하여 대상자 활성화 상태를 모니터링하고, 대상 상태를 확인하고, 문제가 캠페인에 영향을 미치기 전에 문제를 파악할 수 있습니다.
 last-substantial-update: 2026-06-10T00:00:00Z
 index: false
-source-git-commit: 8735d40a6bee547608a3c0efea7f942b813f2d41
+source-git-commit: da8d1eb1dcfef13af5d24ef1fe22ee9977c4e783
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '869'
 ht-degree: 2%
 
 ---
@@ -230,5 +230,5 @@ Are there any audiences using a non-default merge policy that could cause profil
 
 | 리소스 | 찾을 내용 |
 | --- | --- |
-| [Adobe AI 레지스트리](https://developer.adobe.com/ai-registry/?type=mcp){target="_blank"} | MCP 서버 메타데이터 및 가용성 |
+| [Adobe AI 레지스트리](https://developer.adobe.com/ai-registry/?type=mcp){target="_blank"} | 일부 Adobe MCP 서버에 대한 관리되는 커넥터 및 서버 세부 정보 |
 | [Real-Time CDP 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home){target="_blank"} | 전체 Real-Time CDP 애플리케이션 설명서 |

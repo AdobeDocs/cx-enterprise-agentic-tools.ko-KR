@@ -3,9 +3,9 @@ title: Adobe CX 엔터프라이즈 에이전트 툴
 description: MCP 서버, 에이전트 기술 및 API를 사용하여 AI 에이전트 및 개발 도구를 Adobe CX Enterprise 기능에 연결합니다.
 last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: c88de99df4cabf47cce195de1a6a888f4f780fe9
+source-git-commit: da8d1eb1dcfef13af5d24ef1fe22ee9977c4e783
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '594'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 <!-- last-modified: 2026-06-08 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3491251/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3491235/?learn=on&enablevpops)
 
 AI가 Adobe CX Enterprise의 공동 작업자가 되도록 합니다. AI 클라이언트를 캠페인, 대상자, 여정 및 컨텐츠에 연결합니다. 이미 사용하는 도구에서 일반 언어로 사용자와 상호 작용합니다. 시작하는 데 필요한 새 인터페이스, 컨텍스트 전환, 코딩이 없습니다.
 
@@ -141,7 +141,7 @@ CARDS
 
 [에이전트 스킬 탐색](tools/agent-skills.md)
 
->[!TAB 빌더용  API]
+>빌더용 [!TAB API]
 
 Adobe 제품을 실행하는 동일한 API에 직접 프로그래밍 방식으로 액세스합니다. 사용자 정의 애플리케이션 및 통합을 구축하여 팀이 특정 CX 엔터프라이즈 워크플로우에 대한 액세스 권한을 집중하고 관리할 수 있도록 합니다.
 
@@ -228,7 +228,7 @@ CARDS
 
 | 리소스 | 찾을 내용 |
 | --- | --- |
-| [Adobe AI 레지스트리](https://developer.adobe.com/ai-registry/?type=mcp) | MCP 서버의 전체 카탈로그 |
+| [Adobe AI 레지스트리](https://developer.adobe.com/ai-registry/?type=mcp) | 일부 Adobe MCP 서버에 대한 관리되는 커넥터 및 서버 세부 정보 |
 | [Adobe 에이전트 기술](https://github.com/adobe/skills) | CX 엔터프라이즈 워크플로우를 위한 Adobe에서 제공하는 에이전트 기술 |
 | [Adobe API 카탈로그](https://developer.adobe.com/apis) | 전체 Adobe CX Enterprise API 참조 |
 | [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) | API 프로젝트 설정 및 인증 |
