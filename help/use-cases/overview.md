@@ -3,9 +3,9 @@ title: 실행 중인 에이전트 도구
 description: 실제 비즈니스 워크플로우에 적용되는 Adobe CX 엔터프라이즈 에이전트 도구를 보여 주는 단계별 연습입니다.
 last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: 8f499ad7baf1b5d08dfac90511d0c76e8372c08b
+source-git-commit: c88de99df4cabf47cce195de1a6a888f4f780fe9
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -23,44 +23,44 @@ ht-degree: 0%
 CARDS
 
 * analyze-campaign-performance.md
-  {title = Analyze campaign performance}
-  {description = Surface Customer Journey Analytics comparisons and conversion trends through plain-language questions. Uses CX Enterprise MCP.}
-  {cta = Start walkthrough}
+  {title = Campaign insights without reports}
+  {description = Ask performance questions in plain language and get answers from Customer Journey Analytics, without building a single report.}
+  {cta = Surface campaign insights}
 
 * query-audiences.md
-  {title = Query audiences}
-  {description = Check Real-Time CDP audience activation status and destination health without navigating the platform UI. Uses CX Enterprise MCP.}
-  {cta = Start walkthrough}
+  {title = Audience activation at a glance}
+  {description = See which audiences are live, where they are flowing, and whether destinations are healthy, without navigating Real-Time CDP.}
+  {cta = Check audience activation}
 
 * manage-ajo-journeys.md
-  {title = Review AJO journeys}
-  {description = Get full visibility into active AJO journeys and campaign configuration without opening AJO. Uses CX Enterprise MCP.}
-  {cta = Start walkthrough}
+  {title = Catch journey issues early}
+  {description = Monitor active journeys and surface operational issues before they reach your audience.}
+  {cta = Monitor your journeys}
 
 * manage-aem-content.md
-  {title = Manage AEM content with AI}
-  {description = Discover, update, and publish pages and content fragments using natural language. Uses the AEM Content MCP Server.}
-  {cta = Start walkthrough}
+  {title = Ship content updates faster}
+  {description = Find, update, and publish AEM pages and content fragments faster, without switching to the AEM interface.}
+  {cta = Ship content faster}
 
 * optimize-content-with-performance-data.md
-  {title = Optimize content based on performance data}
-  {description = Move from analytics insight to published update in one session, without switching tools. Uses CX Enterprise MCP and AEM Content MCP Server.}
-  {cta = Start walkthrough}
+  {title = Close content performance gaps}
+  {description = Surface conversion gaps in CJA, trace them to underperforming content in AEM, and apply the fix in a single AI session.}
+  {cta = Close performance gaps}
 
 * aem-cloud-manager-mcp.md
-  {title = Manage AEM environments with Cloud Manager}
-  {description = Check environment health, review pipeline runs, and manage deployments from your AI client. Uses the AEM Cloud Manager MCP Server.}
-  {cta = Start walkthrough}
+  {title = Deploy AEM changes with confidence}
+  {description = Check environment health, review pipeline history, and deploy to AEM from your AI client, without switching tools.}
+  {cta = Deploy with confidence}
   {image = ../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step4-01-ai.png}
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Analyze campaign performance">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Campaign insights without reports">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="analyze-campaign-performance.md" title="캠페인 성과 분석">
-                        <img class="is-bordered-r-small" src="../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step5-02-actions.png" alt="캠페인 성과 분석"
+                    <a href="analyze-campaign-performance.md" title="보고서가 없는 Campaign 인사이트">
+                        <img class="is-bordered-r-small" src="../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step5-02-actions.png" alt="보고서가 없는 Campaign 인사이트"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -68,22 +68,22 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="analyze-campaign-performance.md" title="캠페인 성과 분석">캠페인 성과 분석</a>
+                        <a href="analyze-campaign-performance.md" title="보고서가 없는 Campaign 인사이트">보고서가 없는 캠페인 인사이트</a>
                     </p>
-                    <p class="is-size-6">일반 언어 질문을 통해 Customer Journey Analytics 비교 및 전환 트렌드를 표시합니다. CX 엔터프라이즈 MCP 사용</p>
+                    <p class="is-size-6">단일 보고서를 작성하지 않고도 일반 언어로 성능 질문에 답변하고 Customer Journey Analytics에서 답변을 얻을 수 있습니다.</p>
                 </div>
                 <a href="analyze-campaign-performance.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">연습 시작</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Surface Campaign 인사이트</span>
                 </a>
             </div>
         </div>
     </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Query audiences">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Audience activation at a glance">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="query-audiences.md" title="쿼리 대상자">
-                        <img class="is-bordered-r-small" src="../assets/use-cases/query-audiences/query-audiences-step4-02-summary.png" alt="쿼리 대상자"
+                    <a href="query-audiences.md" title="대상 활성화 개요">
+                        <img class="is-bordered-r-small" src="../assets/use-cases/query-audiences/query-audiences-step4-02-summary.png" alt="대상 활성화 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -91,22 +91,22 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="query-audiences.md" title="쿼리 대상자">대상자 쿼리</a>
+                        <a href="query-audiences.md" title="대상 활성화 개요">대상자 활성화 개요</a>
                     </p>
-                    <p class="is-size-6">플랫폼 UI를 탐색하지 않고 Real-Time CDP 대상 활성화 상태 및 대상 상태를 확인합니다. CX 엔터프라이즈 MCP 사용</p>
+                    <p class="is-size-6">Real-Time CDP을 탐색하지 않고도 라이브 대상, 전달 위치 및 대상의 상태 여부를 확인할 수 있습니다.</p>
                 </div>
                 <a href="query-audiences.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">연습 시작</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">대상 활성화 확인</span>
                 </a>
             </div>
         </div>
     </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Review AJO journeys">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Catch journey issues early">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="manage-ajo-journeys.md" title="AJO 여정 검토">
-                        <img class="is-bordered-r-small" src="../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step5-02-exe-summary.png" alt="AJO 여정 검토"
+                    <a href="manage-ajo-journeys.md" title="여정 문제를 조기에 파악">
+                        <img class="is-bordered-r-small" src="../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step5-02-exe-summary.png" alt="여정 문제를 조기에 파악"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -114,22 +114,22 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="manage-ajo-journeys.md" title="AJO 여정 검토">AJO 여정 검토</a>
+                        <a href="manage-ajo-journeys.md" title="여정 문제를 조기에 파악">여정 문제를 조기에 발견</a>
                     </p>
-                    <p class="is-size-6">AJO을 열지 않고도 활성 AJO 여정 및 캠페인 구성에 대한 전체 가시성을 확보할 수 있습니다. CX 엔터프라이즈 MCP 사용</p>
+                    <p class="is-size-6">대상자에게 도달하기 전에 활성 여정 및 표면 운영 문제를 모니터링합니다.</p>
                 </div>
                 <a href="manage-ajo-journeys.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">연습 시작</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">여정 모니터링</span>
                 </a>
             </div>
         </div>
     </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Manage AEM content with AI">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Ship content updates faster">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="manage-aem-content.md" title="AI를 사용하여 AEM 콘텐츠 관리">
-                        <img class="is-bordered-r-small" src="../assets/use-cases/manage-aem-content/manage-aem-content-step4-02-product.png" alt="AI를 사용하여 AEM 콘텐츠 관리"
+                    <a href="manage-aem-content.md" title="더 빠른 콘텐츠 업데이트 배송">
+                        <img class="is-bordered-r-small" src="../assets/use-cases/manage-aem-content/manage-aem-content-step4-02-product.png" alt="더 빠른 콘텐츠 업데이트 배송"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -137,22 +137,22 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="manage-aem-content.md" title="AI를 사용하여 AEM 콘텐츠 관리">AI로 AEM 콘텐츠 관리</a>
+                        <a href="manage-aem-content.md" title="더 빠른 콘텐츠 업데이트 배송">콘텐츠 업데이트 더 빨리 보내기</a>
                     </p>
-                    <p class="is-size-6">자연어를 사용하여 페이지 및 콘텐츠 조각을 검색, 업데이트 및 게시할 수 있습니다. AEM Content MCP 서버를 사용합니다.</p>
+                    <p class="is-size-6">AEM 인터페이스로 전환하지 않고도 AEM 페이지 및 컨텐츠 조각을 보다 빠르게 찾고, 업데이트하고, 게시할 수 있습니다.</p>
                 </div>
                 <a href="manage-aem-content.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">연습 시작</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">더 빠르게 콘텐츠 배송</span>
                 </a>
             </div>
         </div>
     </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Optimize content based on performance data">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Close content performance gaps">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="optimize-content-with-performance-data.md" title="성능 데이터를 기반으로 콘텐츠 최적화">
-                        <img class="is-bordered-r-small" src="../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step5-03-page-compare.png" alt="성능 데이터를 기반으로 콘텐츠 최적화"
+                    <a href="optimize-content-with-performance-data.md" title="컨텐츠 성능 차이 해결">
+                        <img class="is-bordered-r-small" src="../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step5-03-page-compare.png" alt="컨텐츠 성능 차이 해결"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -160,22 +160,22 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="optimize-content-with-performance-data.md" title="성능 데이터를 기반으로 콘텐츠 최적화">성능 데이터를 기반으로 콘텐츠 최적화</a>
+                        <a href="optimize-content-with-performance-data.md" title="컨텐츠 성능 차이 해결">컨텐츠 성능 차이 닫기</a>
                     </p>
-                    <p class="is-size-6">도구를 전환하지 않고 한 세션에서 analytics insight에서 게시된 업데이트로 이동합니다. CX Enterprise MCP 및 AEM Content MCP 서버를 사용합니다.</p>
+                    <p class="is-size-6">CJA에서 전환 격차를 노출하고, 이를 AEM에서 성과가 낮은 콘텐츠로 추적한 다음 단일 AI 세션에서 이 수정 사항을 적용합니다.</p>
                 </div>
                 <a href="optimize-content-with-performance-data.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">연습 시작</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">성능 차이 닫기</span>
                 </a>
             </div>
         </div>
     </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Manage AEM environments with Cloud Manager">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Deploy AEM changes with confidence">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="aem-cloud-manager-mcp.md" title="Cloud Manager을 사용하여 AEM 환경 관리">
-                        <img class="is-bordered-r-small" src="../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step4-01-ai.png" alt="Cloud Manager을 사용하여 AEM 환경 관리"
+                    <a href="aem-cloud-manager-mcp.md" title="안심하고 AEM 변경 사항 배포">
+                        <img class="is-bordered-r-small" src="../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step4-01-ai.png" alt="안심하고 AEM 변경 사항 배포"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -183,12 +183,12 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="aem-cloud-manager-mcp.md" title="Cloud Manager을 사용하여 AEM 환경 관리">Cloud Manager을 사용하여 AEM 환경 관리</a>
+                        <a href="aem-cloud-manager-mcp.md" title="안심하고 AEM 변경 사항 배포">자신 있게 AEM 변경 내용 배포</a>
                     </p>
-                    <p class="is-size-6">AI 클라이언트에서 환경 상태를 확인하고, 파이프라인 실행을 검토하고, 배포를 관리합니다. AEM Cloud Manager MCP 서버를 사용합니다.</p>
+                    <p class="is-size-6">도구를 전환하지 않고도 환경 상태를 확인하고 파이프라인 내역을 검토한 다음 AI 클라이언트에서 AEM으로 배포할 수 있습니다.</p>
                 </div>
                 <a href="aem-cloud-manager-mcp.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">연습 시작</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">안심하고 배포</span>
                 </a>
             </div>
         </div>

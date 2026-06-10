@@ -2,10 +2,10 @@
 title: MCP 서버
 description: Model Context Protocol 서버를 사용하여 MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로우에 연결합니다.
 index: false
-last-substantial-update: 2026-06-09T00:00:00Z
-source-git-commit: 8f499ad7baf1b5d08dfac90511d0c76e8372c08b
+last-substantial-update: 2026-06-10T00:00:00Z
+source-git-commit: c88de99df4cabf47cce195de1a6a888f4f780fe9
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2140'
 ht-degree: 3%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 3%
 
 # MCP 서버
 
-<!-- last-modified: 2026-06-09 -->
+<!-- last-modified: 2026-06-10 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3491329/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3491320/?learn=on&enablevpops)
 
 Adobe CX Enterprise MCP 서버는 호환되는 AI 클라이언트를 Adobe 데이터 및 워크플로에 직접 제어하고 액세스할 수 있도록 합니다. 한 번 연결하면 AI 환경을 종료하지 않고도 일반 언어로 캠페인 성과를 쿼리하고, 대상을 활성화하고, 여정을 검토하고, 콘텐츠를 관리하는 등의 작업을 수행할 수 있습니다. MCP 서버는 AI 클라이언트와 Adobe의 기본 시스템 사이에 위치하기 때문에 조직의 액세스 제어 및 데이터 거버넌스가 유효한 동안 자연어 유연성을 얻을 수 있습니다.
 
@@ -41,12 +41,14 @@ https://cx-enterprise.adobe.io/mcp
 
 | CX 엔터프라이즈 애플리케이션 | 수행 가능한 작업 |
 | --- | --- |
-| Adobe Analytics | 보고서 세트 검색, 세그먼트 작성 및 작업 영역 만들기 |
-| Adobe Experience Platform | 데이터 세트 검색, 스키마 검색 및 샌드박스 관리 |
-| Adobe Journey Optimizer | 여정, 캠페인 및 채널 구성 검토 |
+| [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/analytics-mcp) | 보고서 세트 검색, 세그먼트 작성 및 작업 영역 만들기 |
+| [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/aep-mcp) | 데이터 세트 검색, 스키마 검색 및 샌드박스 관리 |
+| [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/ajo-mcp) | 여정, 캠페인 및 채널 구성 검토 |
 | Adobe Journey Optimizer B2B edition | B2B 여정, 계정 프로그램, 구매 그룹 및 개인화 관리 |
-| Customer Journey Analytics | 보고서 쿼리, 데이터 보기 검색 및 작업 공간 작성 |
-| Real-Time CDP | 대상자 활성화 상태, 대상 상태 및 데이터 흐름 상태 확인 |
+| [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/cja-mcp) | 보고서 쿼리, 데이터 보기 검색 및 작업 공간 작성 |
+| [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) | 대상자 활성화 상태, 대상 상태 및 데이터 흐름 상태 확인 |
+
+전체 설명서는 [CX 엔터프라이즈 MCP](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/overview)를 참조하십시오.
 
 >[!NOTE]
 >
@@ -58,13 +60,13 @@ Adobe Experience Manager에는 다양한 워크플로우에 대한 여러 MCP �
 
 | MCP 서버 | 엔드포인트 | 수행 가능한 작업 |
 | --- | --- | --- |
-| [AEM(코드 모드)](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/aem` | 자연어 조회, 읽기, 쓰기 및 삭제를 통해 AEM에 직접 REST API 액세스 |
+| [AEM(코드 모드)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/aem` | 자연어 조회, 읽기, 쓰기 및 삭제를 통해 AEM에 직접 REST API 액세스 |
 | [AEM Cloud Manager](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) | `https://mcp.adobeaemcloud.com/adobe/mcp/cloudmanager` | 프로그램, 환경, 파이프라인 및 저장소 관리 |
-| [AEM 컨텐츠](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content` | 페이지, 콘텐츠 조각, 에셋 및 론치 관리 |
-| [AEM 컨텐츠(읽기 전용)](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly` | 쓰기 액세스 권한 없이 페이지, 콘텐츠 조각 및 시작 검색 및 쿼리 |
+| [AEM 컨텐츠](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content` | 페이지, 콘텐츠 조각, 에셋 및 론치 관리 |
+| [AEM 컨텐츠(읽기 전용)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly` | 쓰기 액세스 권한 없이 페이지, 콘텐츠 조각 및 시작 검색 및 쿼리 |
 | AEM 문서 작성 | `https://mcp.adobeaemcloud.com/adobe/mcp/da` | 문서 작성에서 파일, 버전 내역 및 미디어 참조 관리 |
 | [AEM Experience Governance](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/experience-governance-mcp-server) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-governance` | 브랜드 가이드라인 및 규정 준수 규칙에 따라 컨텐츠 및 이미지 평가 |
-| [AEM Experience Production](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/overview) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-production` | AI 기반의 콘텐츠 브리핑을 사용하여 규모에 맞게 AEM 페이지 변환 및 생성 |
+| [AEM Experience Production](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/overview) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-production` | AI 기반의 콘텐츠 브리핑을 사용하여 규모에 맞게 AEM 페이지 변환 및 생성 |
 
 >[!NOTE]
 >
@@ -84,11 +86,11 @@ Adobe Experience Manager에는 다양한 워크플로우에 대한 여러 MCP �
 
 | MCP 서버 | 엔드포인트 | 수행 가능한 작업 |
 | --- | --- | --- |
-| [Marketo Engage](https://experienceleague.adobe.com/ko/docs/marketo-developer/marketo/mcp-server) | `https://marketo-mcp.adobe.io/mcp` | 프로그램, 캠페인, 리드, 스마트 목록, 이메일 및 양식 관리 |
+| [Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server) | `https://marketo-mcp.adobe.io/mcp` | 프로그램, 캠페인, 리드, 스마트 목록, 이메일 및 양식 관리 |
 
 >[!NOTE]
 >
->Marketo Engage MCP는 Adobe IMS가 아닌 Marketo 기반 서비스 자격 증명을 사용합니다. 인증 설정에 대해서는 [Marketo Engage MCP 서버 설명서](https://experienceleague.adobe.com/ko/docs/marketo-developer/marketo/mcp-server)를 참조하세요. 액세스는 Marketo Engage 구독과 API 사용자의 권한에 따라 다릅니다.
+>Marketo Engage MCP는 Adobe IMS가 아닌 Marketo 기반 서비스 자격 증명을 사용합니다. 인증 설정에 대해서는 [Marketo Engage MCP 서버 설명서](https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server)를 참조하세요. 액세스는 Marketo Engage 구독과 API 사용자의 권한에 따라 다릅니다.
 
 >[!TAB Target]
 
@@ -96,7 +98,7 @@ Adobe Target MCP는 공개 베타 버전입니다. 현재 사용 가능한 모�
 
 | MCP 서버 | 엔드포인트 | 수행 가능한 작업 |
 | --- | --- | --- |
-| [Adobe Target](https://experienceleague.adobe.com/ko/docs/target/using/mcp/target-mcp) | `https://targetmcp.adobe.io/mcp` | 활동, 오퍼, 대상, mbox 및 성과 보고서 검토 |
+| [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp) | `https://targetmcp.adobe.io/mcp` | 활동, 오퍼, 대상, mbox 및 성과 보고서 검토 |
 
 >[!NOTE]
 >
@@ -106,7 +108,7 @@ Adobe Target MCP는 공개 베타 버전입니다. 현재 사용 가능한 모�
 
 | MCP 서버 | 엔드포인트 | 수행 가능한 작업 |
 | --- | --- | --- |
-| Adobe Workfront | `https://mcp.prod.us-west-2.aws.wfk8s.com/mcp/v1/workfront` | 작업, 프로젝트, 계획 기록, 통찰력 및 콘텐츠 승인 관리 |
+| [Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-overview) | `https://mcp.prod.us-west-2.aws.wfk8s.com/mcp/v1/workfront` | 작업, 프로젝트, 계획 기록, 통찰력 및 콘텐츠 승인 관리 |
 
 >[!NOTE]
 >
@@ -116,13 +118,11 @@ Adobe Target MCP는 공개 베타 버전입니다. 현재 사용 가능한 모�
 
 ## AI 클라이언트에 연결
 
-모든 Adobe MCP 서버는 IMS(Adobe Identity Management Service)와 함께 OAuth를 사용합니다. 메시지가 표시되면 올바른 IMS 조직을 선택합니다. 잘못된 것을 선택하는 것이 인증 오류의 가장 일반적인 원인입니다.
-
-수동으로 구성하기 전에 [Adobe AI 레지스트리](https://developer.adobe.com/ai-registry/?type=connector)에서 AI 클라이언트 및 Adobe 응용 프로그램에 대한 관리되는 커넥터를 확인하십시오. 관리되는 커넥터는 인증을 자동으로 처리합니다. 클라이언트와 애플리케이션에 커넥터를 사용할 수 있는 경우 아래 수동 단계 대신 커넥터를 사용하십시오.
-
-아래 단계에서는 CX 엔터프라이즈 MCP 엔드포인트를 예로 사용합니다. 동일한 프로세스가 모든 Adobe MCP 서버에 적용됩니다. 연결하려는 서버의 끝점 URL에서 교체합니다.
+대부분의 Adobe MCP 서버는 IMS(Adobe Identity Management Service)와 함께 OAuth를 사용합니다. 메시지가 표시되면 올바른 IMS 조직을 선택합니다. 잘못된 것을 선택하는 것이 인증 오류의 가장 일반적인 원인입니다.
 
 ![Adobe MCP 서버에 연결하는 AI 에이전트](../assets/hero-connect-mcp-servers.gif)
+
+아래 단계에서는 CX 엔터프라이즈 MCP 엔드포인트를 예로 사용합니다. 동일한 프로세스가 모든 Adobe MCP 서버에 적용됩니다. 연결하려는 서버의 끝점 URL에서 교체합니다.
 
 >[!BEGINTABS]
 
@@ -265,39 +265,39 @@ Microsoft Copilot Studio는 자동으로 Power Platform 사용자 지정 커넥�
 CARDS
 
 * ../use-cases/analyze-campaign-performance.md
-  {title = Analyze campaign performance}
-  {description = Use CX Enterprise MCP to surface Customer Journey Analytics metrics and insights from any AI client.}
-  {cta = Start walkthrough}
+  {title = Campaign insights without reports}
+  {description = Ask performance questions in plain language and get answers from Customer Journey Analytics, without building a single report.}
+  {cta = Surface campaign insights}
 
 * ../use-cases/query-audiences.md
-  {title = Query audiences}
-  {description = Use CX Enterprise MCP to query Real-Time CDP audience and destination data using plain language prompts.}
-  {cta = Start walkthrough}
+  {title = Audience activation at a glance}
+  {description = See which audiences are live, where they are flowing, and whether destinations are healthy, without navigating Real-Time CDP.}
+  {cta = Check audience activation}
 
 * ../use-cases/manage-ajo-journeys.md
-  {title = Review AJO journeys}
-  {description = Use CX Enterprise MCP to access AJO journeys, campaign status, and journey conditions from your AI client.}
-  {cta = Start walkthrough}
+  {title = Catch journey issues early}
+  {description = Monitor active journeys and surface operational issues before they reach your audience.}
+  {cta = Monitor your journeys}
 
 * ../use-cases/manage-aem-content.md
-  {title = Manage AEM content with AI}
-  {description = Discover, update, and publish pages and content fragments in AEM using natural language.}
-  {cta = Start walkthrough}
+  {title = Ship content updates faster}
+  {description = Find, update, and publish AEM pages and content fragments faster, without switching to the AEM interface.}
+  {cta = Ship content faster}
 
 * ../use-cases/optimize-content-with-performance-data.md
-  {title = Optimize content based on performance data}
-  {description = Combine CX Enterprise MCP and AEM Content MCP Server to find underperforming content and update it in one session.}
-  {cta = Start walkthrough}
+  {title = Close content performance gaps}
+  {description = Surface conversion gaps in CJA, trace them to underperforming content in AEM, and apply the fix in a single AI session.}
+  {cta = Close performance gaps}
 -->
 
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Analyze campaign performance">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Campaign insights without reports">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="../use-cases/analyze-campaign-performance.md" title="캠페인 성과 분석">
-                        <img class="is-bordered-r-small" src="../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step5-02-actions.png" alt="캠페인 성과 분석"
+                    <a href="../use-cases/analyze-campaign-performance.md" title="보고서가 없는 Campaign 인사이트">
+                        <img class="is-bordered-r-small" src="../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step5-02-actions.png" alt="보고서가 없는 Campaign 인사이트"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -305,22 +305,22 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="../use-cases/analyze-campaign-performance.md" title="캠페인 성과 분석">캠페인 성과 분석</a>
+                        <a href="../use-cases/analyze-campaign-performance.md" title="보고서가 없는 Campaign 인사이트">보고서가 없는 캠페인 인사이트</a>
                     </p>
-                    <p class="is-size-6">CX Enterprise MCP 를 사용하여 모든 AI 클라이언트의 Customer Journey Analytics 지표와 통찰력을 제공할 수 있습니다.</p>
+                    <p class="is-size-6">단일 보고서를 작성하지 않고도 일반 언어로 성능 질문에 답변하고 Customer Journey Analytics에서 답변을 얻을 수 있습니다.</p>
                 </div>
                 <a href="../use-cases/analyze-campaign-performance.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">연습 시작</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Surface Campaign 인사이트</span>
                 </a>
             </div>
         </div>
     </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Query audiences">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Audience activation at a glance">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="../use-cases/query-audiences.md" title="쿼리 대상자">
-                        <img class="is-bordered-r-small" src="../assets/use-cases/query-audiences/query-audiences-step4-02-summary.png" alt="쿼리 대상자"
+                    <a href="../use-cases/query-audiences.md" title="대상 활성화 개요">
+                        <img class="is-bordered-r-small" src="../assets/use-cases/query-audiences/query-audiences-step4-02-summary.png" alt="대상 활성화 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -328,22 +328,22 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="../use-cases/query-audiences.md" title="쿼리 대상자">대상자 쿼리</a>
+                        <a href="../use-cases/query-audiences.md" title="대상 활성화 개요">대상자 활성화 개요</a>
                     </p>
-                    <p class="is-size-6">CX 엔터프라이즈 MCP 를 사용하여 일반 언어 프롬프트를 사용하여 Real-Time CDP 대상 및 대상 데이터를 쿼리합니다.</p>
+                    <p class="is-size-6">Real-Time CDP을 탐색하지 않고도 라이브 대상, 전달 위치 및 대상의 상태 여부를 확인할 수 있습니다.</p>
                 </div>
                 <a href="../use-cases/query-audiences.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">연습 시작</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">대상 활성화 확인</span>
                 </a>
             </div>
         </div>
     </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Review AJO journeys">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Catch journey issues early">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="../use-cases/manage-ajo-journeys.md" title="AJO 여정 검토">
-                        <img class="is-bordered-r-small" src="../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step5-02-exe-summary.png" alt="AJO 여정 검토"
+                    <a href="../use-cases/manage-ajo-journeys.md" title="여정 문제를 조기에 파악">
+                        <img class="is-bordered-r-small" src="../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step5-02-exe-summary.png" alt="여정 문제를 조기에 파악"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -351,22 +351,22 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="../use-cases/manage-ajo-journeys.md" title="AJO 여정 검토">AJO 여정 검토</a>
+                        <a href="../use-cases/manage-ajo-journeys.md" title="여정 문제를 조기에 파악">여정 문제를 조기에 발견</a>
                     </p>
-                    <p class="is-size-6">CX Enterprise MCP 를 사용하여 AI 클라이언트에서 AJO 여정, 캠페인 상태 및 여정 조건에 액세스합니다.</p>
+                    <p class="is-size-6">대상자에게 도달하기 전에 활성 여정 및 표면 운영 문제를 모니터링합니다.</p>
                 </div>
                 <a href="../use-cases/manage-ajo-journeys.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">연습 시작</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">여정 모니터링</span>
                 </a>
             </div>
         </div>
     </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Manage AEM content with AI">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Ship content updates faster">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="../use-cases/manage-aem-content.md" title="AI를 사용하여 AEM 콘텐츠 관리">
-                        <img class="is-bordered-r-small" src="../assets/use-cases/manage-aem-content/manage-aem-content-step4-02-product.png" alt="AI를 사용하여 AEM 콘텐츠 관리"
+                    <a href="../use-cases/manage-aem-content.md" title="더 빠른 콘텐츠 업데이트 배송">
+                        <img class="is-bordered-r-small" src="../assets/use-cases/manage-aem-content/manage-aem-content-step4-02-product.png" alt="더 빠른 콘텐츠 업데이트 배송"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -374,22 +374,22 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="../use-cases/manage-aem-content.md" title="AI를 사용하여 AEM 콘텐츠 관리">AI로 AEM 콘텐츠 관리</a>
+                        <a href="../use-cases/manage-aem-content.md" title="더 빠른 콘텐츠 업데이트 배송">콘텐츠 업데이트 더 빨리 보내기</a>
                     </p>
-                    <p class="is-size-6">자연어를 사용하여 AEM에서 페이지 및 콘텐츠 조각을 검색, 업데이트 및 게시할 수 있습니다.</p>
+                    <p class="is-size-6">AEM 인터페이스로 전환하지 않고도 AEM 페이지 및 컨텐츠 조각을 보다 빠르게 찾고, 업데이트하고, 게시할 수 있습니다.</p>
                 </div>
                 <a href="../use-cases/manage-aem-content.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">연습 시작</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">더 빠르게 콘텐츠 배송</span>
                 </a>
             </div>
         </div>
     </div>
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Optimize content based on performance data">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Close content performance gaps">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="../use-cases/optimize-content-with-performance-data.md" title="성능 데이터를 기반으로 콘텐츠 최적화">
-                        <img class="is-bordered-r-small" src="../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step5-03-page-compare.png" alt="성능 데이터를 기반으로 콘텐츠 최적화"
+                    <a href="../use-cases/optimize-content-with-performance-data.md" title="컨텐츠 성능 차이 해결">
+                        <img class="is-bordered-r-small" src="../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step5-03-page-compare.png" alt="컨텐츠 성능 차이 해결"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -397,12 +397,12 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="../use-cases/optimize-content-with-performance-data.md" title="성능 데이터를 기반으로 콘텐츠 최적화">성능 데이터를 기반으로 콘텐츠 최적화</a>
+                        <a href="../use-cases/optimize-content-with-performance-data.md" title="컨텐츠 성능 차이 해결">컨텐츠 성능 차이 닫기</a>
                     </p>
-                    <p class="is-size-6">CX Enterprise MCP와 AEM Content MCP Server를 결합하여 성과가 낮은 콘텐츠를 찾아 한 세션에서 업데이트합니다.</p>
+                    <p class="is-size-6">CJA에서 전환 격차를 노출하고, 이를 AEM에서 성과가 낮은 콘텐츠로 추적한 다음 단일 AI 세션에서 이 수정 사항을 적용합니다.</p>
                 </div>
                 <a href="../use-cases/optimize-content-with-performance-data.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">연습 시작</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">성능 차이 닫기</span>
                 </a>
             </div>
         </div>
