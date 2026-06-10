@@ -3,10 +3,10 @@ title: 빌더용 API
 description: Adobe CX Enterprise API를 사용하여 맞춤형 애플리케이션 및 통합을 구축할 수 있습니다.
 last-substantial-update: 2026-06-02T00:00:00Z
 index: false
-source-git-commit: da8d1eb1dcfef13af5d24ef1fe22ee9977c4e783
+source-git-commit: f7ace53bd5988b5902659c89c6da16448398e0c0
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 10%
+source-wordcount: '886'
+ht-degree: 9%
 
 ---
 
@@ -194,6 +194,8 @@ project/
 Adobe에서 새 API 버전을 게시할 때 새 스냅숏을 `/specs`에 다운로드하고 날짜를 `README.md`로 업데이트한 다음 인덱스와 `AGENTS.md`을(를) 다시 생성합니다.
 
 ## 작동 중인 API
+
+API는 개발 팀에게 특정 CX 엔터프라이즈 워크플로우를 자동화하는 집중 애플리케이션을 빌드하도록 완전한 프로그래밍 방식 제어를 제공합니다. 이 연습에서는 자격 증명 설정부터 조직에서 제공할 수 있는 작업 코드에 이르기까지 구축된 실제 통합을 보여 줍니다.
 
 <!--
 CARDS

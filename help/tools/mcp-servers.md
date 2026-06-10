@@ -3,9 +3,9 @@ title: MCP 서버
 description: Model Context Protocol 서버를 사용하여 MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로우에 연결합니다.
 index: false
 last-substantial-update: 2026-06-10T00:00:00Z
-source-git-commit: c88de99df4cabf47cce195de1a6a888f4f780fe9
+source-git-commit: f7ace53bd5988b5902659c89c6da16448398e0c0
 workflow-type: tm+mt
-source-wordcount: '2140'
+source-wordcount: '2167'
 ht-degree: 3%
 
 ---
@@ -257,9 +257,9 @@ Microsoft Copilot Studio는 자동으로 Power Platform 사용자 지정 커넥�
 
 >[!ENDTABS]
 
-## 실행 중인 무생식 도구
+## MCP 서버 작동 중
 
-실제 비즈니스 워크플로우에 적용되는 Adobe CX Enterprise MCP 서버를 참조하십시오.
+Adobe CX Enterprise MCP 서버가 실제 비즈니스 문제를 해결하는지 확인하십시오. 각 연습에서는 진정한 운영 과제에서 시작하여 AI 클라이언트가 도구를 전환하거나 코드를 작성하지 않고 일반 언어로 해결하는 방법을 보여 줍니다.
 
 <!--
 CARDS
