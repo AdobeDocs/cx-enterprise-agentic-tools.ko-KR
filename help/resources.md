@@ -3,10 +3,10 @@ title: 리소스
 description: 모든 Adobe CX 엔터프라이즈 에이전트 도구 설명서, 레지스트리, API 및 개발자 안내서를 위한 단일 진입점입니다.
 last-substantial-update: 2026-05-08T00:00:00Z
 index: false
-source-git-commit: 8f499ad7baf1b5d08dfac90511d0c76e8372c08b
+source-git-commit: da8d1eb1dcfef13af5d24ef1fe22ee9977c4e783
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 16%
+source-wordcount: '552'
+ht-degree: 17%
 
 ---
 
@@ -23,8 +23,8 @@ Adobe CX 엔터프라이즈 에이전트 도구 작업을 위한 모든 주요 A
 
 | 리소스 | 찾을 내용 |
 |---|---|
-| [Adobe AI 레지스트리: MCP 서버](https://developer.adobe.com/ai-registry/?type=mcp) | 메타데이터, 엔드포인트 및 상태와 함께 사용 가능한 MCP 서버의 전체 카탈로그 |
-| [Adobe AI 레지스트리: 에이전트 기술](https://developer.adobe.com/ai-registry/?type=skill) | 가용성 및 설정 세부 정보와 함께 사용 가능한 에이전트 기술의 전체 카탈로그 |
+| [Adobe AI 레지스트리: MCP 서버](https://developer.adobe.com/ai-registry/?type=mcp) | 일부 Adobe MCP 서버에 대한 관리되는 커넥터 및 서버 세부 정보 |
+| [Adobe AI 레지스트리: 에이전트 기술](https://developer.adobe.com/ai-registry/?type=skill) | 선택한 스킬에 대한 가용성 및 설정 세부 정보가 포함된 에이전트 스킬 목록 |
 | [Adobe API 카탈로그](https://developer.adobe.com/apis) | 전체 Adobe CX Enterprise API 참조 |
 
 ## MCP 서버
@@ -40,7 +40,7 @@ Adobe CX 엔터프라이즈 에이전트 도구 작업을 위한 모든 주요 A
 | 리소스 | 찾을 내용 |
 |---|---|
 | [Adobe 기술 저장소](https://github.com/adobe/skills) | 모든 에이전트 기술, 설치 방법 및 구현 세부 정보에 대한 표준 소스 |
-| [Adobe AI 레지스트리: 에이전트 기술](https://developer.adobe.com/ai-registry/?type=skill) | 메타데이터 및 가용성 상태와 함께 사용 가능한 에이전트 기술의 전체 카탈로그 |
+| [Adobe AI 레지스트리: 에이전트 기술](https://developer.adobe.com/ai-registry/?type=skill) | 선택한 스킬에 대한 가용성 및 메타데이터가 포함된 에이전트 스킬 목록 |
 
 ## 빌더를 위한 API
 

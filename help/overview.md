@@ -3,9 +3,9 @@ title: Adobe CX 엔터프라이즈 에이전트 툴
 description: MCP 서버, 에이전트 기술 및 API를 사용하여 AI 에이전트 및 개발 도구를 Adobe CX Enterprise 기능에 연결합니다.
 last-substantial-update: 2026-06-08T00:00:00Z
 index: false
-source-git-commit: c88de99df4cabf47cce195de1a6a888f4f780fe9
+source-git-commit: da8d1eb1dcfef13af5d24ef1fe22ee9977c4e783
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '594'
 ht-degree: 3%
 
 ---
@@ -228,7 +228,7 @@ CARDS
 
 | 리소스 | 찾을 내용 |
 | --- | --- |
-| [Adobe AI 레지스트리](https://developer.adobe.com/ai-registry/?type=mcp) | MCP 서버의 전체 카탈로그 |
+| [Adobe AI 레지스트리](https://developer.adobe.com/ai-registry/?type=mcp) | 일부 Adobe MCP 서버에 대한 관리되는 커넥터 및 서버 세부 정보 |
 | [Adobe 에이전트 기술](https://github.com/adobe/skills) | CX 엔터프라이즈 워크플로우를 위한 Adobe에서 제공하는 에이전트 기술 |
 | [Adobe API 카탈로그](https://developer.adobe.com/apis) | 전체 Adobe CX Enterprise API 참조 |
 | [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) | API 프로젝트 설정 및 인증 |
