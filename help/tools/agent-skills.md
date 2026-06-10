@@ -3,9 +3,9 @@ title: 에이전트 스킬
 description: AI 에이전트에게 CX 엔터프라이즈 작업을 일관되게 안내하는 Adobe에서 선별된 워크플로 및 지침입니다.
 last-substantial-update: 2026-05-19T00:00:00Z
 index: false
-source-git-commit: da8d1eb1dcfef13af5d24ef1fe22ee9977c4e783
+source-git-commit: f7ace53bd5988b5902659c89c6da16448398e0c0
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '574'
 ht-degree: 1%
 
 ---
@@ -85,10 +85,12 @@ Creative Cloud을 사용한 일괄 사진 편집, 템플릿에서의 디자인, 
 
 ## 에이전트 작업 기술
 
+에이전트 스킬은 Adobe 도메인 전문 지식을 AI 클라이언트 내에서 작동하도록 만들어 에이전트가 즉흥적이지 않고 입증된 워크플로우를 따릅니다. 아래 각 연습에서는 시작부터 출력까지 Adobe 모범 사례에 따라 안정적으로 완료된 특정 비즈니스 작업을 보여 줍니다.
+
 <!--
 CARDS
 
-* https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development
   {title = Develop AEM components with AI}
   {description = Use Claude Code or Cursor with Agent Skills to scaffold, code, and refine AEM components guided by Adobe best practices.}
   {cta = Try with Agent Skills}
@@ -101,7 +103,7 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development" title="AI를 사용하여 AEM 구성 요소 개발" target="_blank" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development" title="AI를 사용하여 AEM 구성 요소 개발" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="../assets/agent-skills-card.png" alt="AI를 사용하여 AEM 구성 요소 개발"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -110,11 +112,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development" target="_blank" rel="referrer" title="AI를 사용하여 AEM 구성 요소 개발">AI를 사용하여 AEM 구성 요소 개발</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development" target="_blank" rel="referrer" title="AI를 사용하여 AEM 구성 요소 개발">AI를 사용하여 AEM 구성 요소 개발</a>
                     </p>
                     <p class="is-size-6">에이전트 기술과 함께 클라우드 코드 또는 커서를 사용하여 Adobe 모범 사례에 따라 AEM 구성 요소를 스캐폴드, 코드 및 세분화합니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">에이전트 기술을 사용해 보세요</span>
                 </a>
             </div>
