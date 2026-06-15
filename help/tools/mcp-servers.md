@@ -46,8 +46,8 @@ https://cx-enterprise.adobe.io/mcp
 | [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/ajo-mcp) | 여정, 캠페인 및 채널 구성 검토 |
 | Adobe Journey Optimizer B2B edition | B2B 여정, 계정 프로그램, 구매 그룹 및 개인화 관리 |
 | [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/cja-mcp) | 보고서 쿼리, 데이터 보기 검색 및 작업 공간 작성 |
-| [Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server) | 프로그램, 캠페인, 리드, 스마트 목록, 이메일 및 양식 관리 |
-| [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) | 대상자 활성화 상태, 대상 상태 및 데이터 흐름 상태 확인 |
+| [Marketo Engage](https://experienceleague.adobe.com/ko/docs/marketo-developer/marketo/mcp-server) | 프로그램, 캠페인, 리드, 스마트 목록, 이메일 및 양식 관리 |
+| [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) | 대상자 활성화 상태, 대상 상태 및 데이터 흐름 상태 확인 |
 
 전체 설명서는 [CX 엔터프라이즈 MCP](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/overview)를 참조하십시오.
 
@@ -61,13 +61,13 @@ Adobe Experience Manager에는 다양한 워크플로우에 대한 여러 MCP �
 
 | MCP 서버 | 엔드포인트 | 수행 가능한 작업 |
 | --- | --- | --- |
-| [AEM(코드 모드)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/aem` | 자연어 조회, 읽기, 쓰기 및 삭제를 통해 AEM에 직접 REST API 액세스 |
+| [AEM(코드 모드)](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/aem` | 자연어 조회, 읽기, 쓰기 및 삭제를 통해 AEM에 직접 REST API 액세스 |
 | [AEM Cloud Manager](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) | `https://mcp.adobeaemcloud.com/adobe/mcp/cloudmanager` | 프로그램, 환경, 파이프라인 및 저장소 관리 |
-| [AEM 컨텐츠](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content` | 페이지, 콘텐츠 조각, 에셋 및 론치 관리 |
-| [AEM 컨텐츠(읽기 전용)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly` | 쓰기 액세스 권한 없이 페이지, 콘텐츠 조각 및 시작 검색 및 쿼리 |
+| [AEM 컨텐츠](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content` | 페이지, 콘텐츠 조각, 에셋 및 론치 관리 |
+| [AEM 컨텐츠(읽기 전용)](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) | `https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly` | 쓰기 액세스 권한 없이 페이지, 콘텐츠 조각 및 시작 검색 및 쿼리 |
 | [AEM 문서 작성](https://docs.da.live/about/early-access/da-mcp) | `https://mcp.adobeaemcloud.com/adobe/mcp/da` | 문서 작성에서 파일, 버전 내역 및 미디어 참조 관리 |
 | [AEM Experience Governance](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/experience-governance-mcp-server) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-governance` | 브랜드 가이드라인 및 규정 준수 규칙에 따라 컨텐츠 및 이미지 평가 |
-| [AEM Experience Production](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/overview) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-production` | AI 기반의 콘텐츠 브리핑을 사용하여 규모에 맞게 AEM 페이지 변환 및 생성 |
+| [AEM Experience Production](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/agents/brand-experience/experience-production/overview) | `https://mcp.adobeaemcloud.com/adobe/mcp/experience-production` | AI 기반의 콘텐츠 브리핑을 사용하여 규모에 맞게 AEM 페이지 변환 및 생성 |
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ Adobe Target MCP는 공개 베타 버전입니다. 현재 사용 가능한 모�
 
 | MCP 서버 | 엔드포인트 | 수행 가능한 작업 |
 | --- | --- | --- |
-| [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp) | `https://targetmcp.adobe.io/mcp` | 활동, 오퍼, 대상, mbox 및 성과 보고서 검토 |
+| [Adobe Target](https://experienceleague.adobe.com/ko/docs/target/using/mcp/target-mcp) | `https://targetmcp.adobe.io/mcp` | 활동, 오퍼, 대상, mbox 및 성과 보고서 검토 |
 
 >[!NOTE]
 >
@@ -99,7 +99,7 @@ Adobe Target MCP는 공개 베타 버전입니다. 현재 사용 가능한 모�
 
 | MCP 서버 | 엔드포인트 | 수행 가능한 작업 |
 | --- | --- | --- |
-| [Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-overview) | `https://mcp.prod.us-west-2.aws.wfk8s.com/mcp/v1/workfront` | 작업, 프로젝트, 계획 기록, 통찰력 및 콘텐츠 승인 관리 |
+| [Adobe Workfront](https://experienceleague.adobe.com/ko/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-overview) | `https://mcp.prod.us-west-2.aws.wfk8s.com/mcp/v1/workfront` | 작업, 프로젝트, 계획 기록, 통찰력 및 콘텐츠 승인 관리 |
 
 >[!NOTE]
 >
