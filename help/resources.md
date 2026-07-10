@@ -32,7 +32,7 @@ Adobe CX 엔터프라이즈 에이전트 도구 작업을 위한 모든 주요 A
 |---|---|
 | [Analytics MCP 설명서](https://developer.adobe.com/analytics-mcp/docs/) | CJA MCP 서버 설치 안내서 및 도구 참조 |
 | [Analytics MCP 안내서](https://developer.adobe.com/analytics-mcp/docs/guides/) | CJA MCP 서버에 대한 자세한 사용 안내서 |
-| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/rtcdp-mcp) | RTCDP MCP 서버 설치 안내서 |
+| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/rtcdp-mcp) | RTCDP MCP 서버 설치 안내서 |
 
 ## 에이전트 스킬
 
