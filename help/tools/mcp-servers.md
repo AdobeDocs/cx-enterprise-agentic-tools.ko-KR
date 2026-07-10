@@ -14,7 +14,7 @@ ht-degree: 6%
 
 <!-- last-modified: 2026-06-11 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3491320/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3491329/?captions=kor&learn=on&enablevpops)
 
 Adobe CX Enterprise MCP 서버는 호환되는 AI 클라이언트를 Adobe 데이터 및 워크플로에 직접 제어하고 액세스할 수 있도록 합니다. 한 번 연결하면 AI 환경을 종료하지 않고도 일반 언어로 캠페인 성과를 쿼리하고, 대상을 활성화하고, 여정을 검토하고, 콘텐츠를 관리하는 등의 작업을 수행할 수 있습니다. MCP 서버는 AI 클라이언트와 Adobe의 기본 시스템 사이에 위치하기 때문에 조직의 액세스 제어 및 데이터 거버넌스가 유효한 동안 자연어 유연성을 얻을 수 있습니다.
 
