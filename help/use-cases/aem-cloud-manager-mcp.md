@@ -2,11 +2,10 @@
 title: 안심하고 AEM as a Cloud Service에 배포
 description: AI 클라이언트를 종료하지 않고 환경 상태를 확인하고 파이프라인 내역을 검토하고 배포를 트리거하거나 관리합니다.
 last-substantial-update: 2026-06-10T00:00:00Z
-index: false
-source-git-commit: 8735d40a6bee547608a3c0efea7f942b813f2d41
+source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 2%
 
 <!-- last-modified: 2026-05-21 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3480349/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480340/?learn=on&enablevpops)
 
 배포 신뢰도는 푸시하기 전에 환경이 건강하다는 것에서 비롯됩니다. 이 연습에서는 AEM Cloud Manager MCP 서버를 사용하여 AEM 환경 상태를 확인하고, 파이프라인 내역을 검토하고, AI 클라이언트에서 배포를 트리거하는 방법을 보여 주기 때문에 팀이 가시성을 잃지 않고 빠르게 이동할 수 있습니다.
 

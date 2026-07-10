@@ -2,8 +2,7 @@
 title: 고객에게 영향을 미치기 전에 여정 문제 파악
 description: CX Enterprise MCP를 사용하여 활성 AJO 여정을 모니터링하고, 캠페인 구성을 검토하고, 고객에게 도달하기 전에 운영 문제를 파악할 수 있습니다.
 last-substantial-update: 2026-06-10T00:00:00Z
-index: false
-source-git-commit: 8735d40a6bee547608a3c0efea7f942b813f2d41
+source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 2%

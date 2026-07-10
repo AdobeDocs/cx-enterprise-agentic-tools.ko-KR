@@ -2,8 +2,7 @@
 title: 대상자 및 대상자 활성화 위치 이해
 description: CX Enterprise MCP 를 사용하여 대상자 활성화 상태를 모니터링하고, 대상 상태를 확인하고, 문제가 캠페인에 영향을 미치기 전에 문제를 파악할 수 있습니다.
 last-substantial-update: 2026-06-10T00:00:00Z
-index: false
-source-git-commit: da8d1eb1dcfef13af5d24ef1fe22ee9977c4e783
+source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 2%

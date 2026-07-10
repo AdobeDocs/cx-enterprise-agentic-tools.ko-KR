@@ -2,10 +2,9 @@
 title: 빌더용 API
 description: Adobe CX Enterprise API를 사용하여 맞춤형 애플리케이션 및 통합을 구축할 수 있습니다.
 last-substantial-update: 2026-06-02T00:00:00Z
-index: false
-source-git-commit: f7ace53bd5988b5902659c89c6da16448398e0c0
+source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '928'
 ht-degree: 9%
 
 ---
@@ -200,7 +199,7 @@ API는 개발 팀에게 특정 CX 엔터프라이즈 워크플로우를 자동�
 <!--
 CARDS
 
-* https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-web-app
+* https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-web-app
   {title = Invoke AEM APIs from a web app}
   {description = Build a web application that authenticates users and calls AEM OpenAPIs using OAuth to deliver governed, programmatic access.}
   {cta = Try with APIs}
@@ -213,7 +212,7 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-web-app" title="웹 앱에서 AEM API 호출" target="_blank" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-web-app" title="웹 앱에서 AEM API 호출" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="../assets/using-api-card.png" alt="웹 앱에서 AEM API 호출"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -222,13 +221,13 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-web-app" target="_blank" rel="referrer" title="웹 앱에서 AEM API 호출">웹 앱에서 AEM API 호출</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-web-app" target="_blank" rel="referrer" title="웹 앱에서 AEM API 호출">웹 앱에서 AEM API 호출</a>
                     </p>
                     <p class="is-size-6">사용자를 인증하고 OAuth를 사용하여 AEM OpenAPI를 호출하여 관리되는 프로그래밍 방식 액세스를 제공하는 웹 애플리케이션을 빌드합니다.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-web-app" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-web-app" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">API로 시도</span>
-                </a>
+                
             </div>
         </div>
     </div>
