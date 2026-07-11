@@ -2,8 +2,7 @@
 title: 데이터 기반 업데이트로 컨텐츠 성능 격차 완화
 description: 하나의 AI 세션에서 CJA과 AEM을 함께 사용하면 도구를 전환하지 않고도 전환되지 않는 캠페인을 찾고 원인을 진단하고 콘텐츠를 업데이트할 수 있습니다.
 last-substantial-update: 2026-06-10T00:00:00Z
-index: false
-source-git-commit: 8735d40a6bee547608a3c0efea7f942b813f2d41
+source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 2%
@@ -42,7 +41,7 @@ ht-degree: 2%
 
 | 서버 | 엔드포인트 |
 | --- | --- |
-| CX 엔터프라이즈 MCP | `https://cx-enterprise.adobe.io/mcp` |
+| CX Enterprise MCP | `https://cx-enterprise.adobe.io/mcp` |
 | AEM Content MCP 서버 | `https://mcp.adobeaemcloud.com/adobe/mcp/content` |
 
 전체 설정: [Claude.ai 사용자 지정 커넥터 설명서](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)
@@ -58,7 +57,7 @@ ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교�
 
 | 서버 | 엔드포인트 |
 | --- | --- |
-| CX 엔터프라이즈 MCP | `https://cx-enterprise.adobe.io/mcp` |
+| CX Enterprise MCP | `https://cx-enterprise.adobe.io/mcp` |
 | AEM Content MCP 서버 | `https://mcp.adobeaemcloud.com/adobe/mcp/content` |
 
 전체 설정: [ChatGPT MCP 설명서](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)
@@ -69,7 +68,7 @@ Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경�
 
 | 서버 | 엔드포인트 |
 | --- | --- |
-| CX 엔터프라이즈 MCP | `https://cx-enterprise.adobe.io/mcp` |
+| CX Enterprise MCP | `https://cx-enterprise.adobe.io/mcp` |
 | AEM Content MCP 서버 | `https://mcp.adobeaemcloud.com/adobe/mcp/content` |
 
 지원되는 모든 클라이언트에 대한 전체 설치 지침: [AI 클라이언트에 연결](../tools/mcp-servers.md)

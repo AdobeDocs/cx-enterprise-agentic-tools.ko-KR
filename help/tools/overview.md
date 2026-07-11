@@ -2,10 +2,9 @@
 title: 무생식 도구
 description: 빌더를 위한 MCP 서버, 에이전트 기술 및 API를 비교하고 Adobe CX 엔터프라이즈 워크플로우에 적합한 에이전트 도구를 선택합니다.
 last-substantial-update: 2026-06-08T00:00:00Z
-index: false
-source-git-commit: c88de99df4cabf47cce195de1a6a888f4f780fe9
+source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '1100'
 ht-degree: 0%
 
 ---
@@ -60,7 +59,7 @@ CARDS
                 </div>
                 <a href="mcp-servers.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">MCP 서버 탐색</span>
-                </a>
+                
             </div>
         </div>
     </div>
@@ -83,7 +82,7 @@ CARDS
                 </div>
                 <a href="agent-skills.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">에이전트 기술 살펴보기</span>
-                </a>
+                
             </div>
         </div>
     </div>
@@ -106,7 +105,7 @@ CARDS
                 </div>
                 <a href="apis.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">빌더를 위한 API 탐색</span>
-                </a>
+                
             </div>
         </div>
     </div>
@@ -221,7 +220,7 @@ CARDS
                 </div>
                 <a href="../use-cases/query-audiences.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">대상 활성화 확인</span>
-                </a>
+                
             </div>
         </div>
     </div>
@@ -244,7 +243,7 @@ CARDS
                 </div>
                 <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">에이전트 기술을 사용해 보세요</span>
-                </a>
+                
             </div>
         </div>
     </div>
@@ -267,7 +266,7 @@ CARDS
                 </div>
                 <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-web-app" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">API로 시도</span>
-                </a>
+                
             </div>
         </div>
     </div>

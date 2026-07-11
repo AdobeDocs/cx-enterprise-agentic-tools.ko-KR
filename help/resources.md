@@ -2,11 +2,10 @@
 title: 리소스
 description: 모든 Adobe CX 엔터프라이즈 에이전트 도구 설명서, 레지스트리, API 및 개발자 안내서를 위한 단일 진입점입니다.
 last-substantial-update: 2026-05-08T00:00:00Z
-index: false
-source-git-commit: da8d1eb1dcfef13af5d24ef1fe22ee9977c4e783
+source-git-commit: 445fd18a2b5a18ec3dcc0ec8e73ec4c020e7b265
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 17%
+source-wordcount: '555'
+ht-degree: 20%
 
 ---
 
@@ -33,7 +32,7 @@ Adobe CX 엔터프라이즈 에이전트 도구 작업을 위한 모든 주요 A
 |---|---|
 | [Analytics MCP 설명서](https://developer.adobe.com/analytics-mcp/docs/) | CJA MCP 서버 설치 안내서 및 도구 참조 |
 | [Analytics MCP 안내서](https://developer.adobe.com/analytics-mcp/docs/guides/) | CJA MCP 서버에 대한 자세한 사용 안내서 |
-| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) | RTCDP MCP 서버 설치 안내서 |
+| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/rtcdp-mcp) | RTCDP MCP 서버 설치 안내서 |
 
 ## 에이전트 스킬
 

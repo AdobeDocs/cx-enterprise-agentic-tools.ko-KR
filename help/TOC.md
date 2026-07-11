@@ -2,8 +2,7 @@
 user-guide-title: Adobe CX 엔터프라이즈 에이전트 툴
 breadcrumb-title: 무생식 도구
 user-guide-description: MCP 서버, 에이전트 기술 및 API를 사용하여 AI 에이전트 및 개발 도구를 Adobe CX Enterprise 기능에 연결합니다.
-index: false
-source-git-commit: 8735d40a6bee547608a3c0efea7f942b813f2d41
+source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 6%

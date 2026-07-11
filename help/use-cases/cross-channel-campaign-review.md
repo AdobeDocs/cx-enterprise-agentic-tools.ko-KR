@@ -2,8 +2,7 @@
 title: 크로스 채널 캠페인 검토 실행
 description: 단일 AI 세션에서 CX 엔터프라이즈 MCP를 사용하여 여정, 대상 및 성능 전반에 걸친 AJO, CJA 및 Real-Time CDP 캠페인 상태를 통합적으로 파악할 수 있습니다.
 last-substantial-update: 2026-06-09T00:00:00Z
-index: false
-source-git-commit: 6a2b8b54eb9fe040f5f9defa9e6681e46a5e65cf
+source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
 workflow-type: tm+mt
 source-wordcount: '1412'
 ht-degree: 5%

@@ -1,11 +1,10 @@
 ---
 title: MCP 서버
 description: Model Context Protocol 서버를 사용하여 MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로우에 연결합니다.
-index: false
 last-substantial-update: 2026-06-17T00:00:00Z
-source-git-commit: 9c5cbca16b2e40e8c3859d84dcb9a8330a3b7d83
+source-git-commit: 445fd18a2b5a18ec3dcc0ec8e73ec4c020e7b265
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2412'
 ht-degree: 6%
 
 ---
@@ -47,17 +46,17 @@ https://cx-enterprise.adobe.io/mcp
 
 | CX 엔터프라이즈 애플리케이션 | 수행 가능한 작업 | 추가 권한 필요 |
 | --- | --- | --- |
-| [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/analytics-mcp) | 보고서 세트 검색, 세그먼트 작성 및 작업 영역 만들기 | 아니오 |
+| [Adobe Analytics](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/analytics-mcp) | 보고서 세트 검색, 세그먼트 작성 및 작업 영역 만들기 | 아니오 |
 | Campaign Classic | Campaign 인스턴스 검색, 스키마 찾아보기, 쿼리 실행, 워크플로우 제어 및 SOAP/JS 실행 | 예 |
-| [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/aep-mcp) | 데이터 세트 검색, 스키마 검색 및 샌드박스 관리 | 아니오 |
+| [Adobe Experience Platform](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/aep-mcp) | 데이터 세트 검색, 스키마 검색 및 샌드박스 관리 | 아니오 |
 | 실험 | A/B, MVT 및 MAB 실험 보고, 지표, 통찰력, 기회 및 샘플 크기 계획 | 아니오 |
 | GenStudio | Advertising 통찰력(지출, CTR, 캠페인, 크리에이티브, 태그 및 사용자 지정 지표) 및 최근 Express 초안 | 예 |
-| [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/ajo-mcp) | 여정, 캠페인 및 채널 구성 검토 | 아니오 |
+| [Adobe Journey Optimizer](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/ajo-mcp) | 여정, 캠페인 및 채널 구성 검토 | 아니오 |
 | Adobe Journey Optimizer B2B edition | B2B 여정, 계정 프로그램, 구매 그룹 및 개인화 관리 | 아니오 |
-| [Adobe Target](https://experienceleague.adobe.com/ko/docs/target/using/mcp/target-mcp) | 활동, 오퍼, 대상, mbox, 성능 보고서 및 미리보기 URL 검토 | 예 |
-| [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/cja-mcp) | 보고서 쿼리, 데이터 보기 검색 및 작업 공간 작성 | 아니오 |
-| [Marketo Engage](https://experienceleague.adobe.com/ko/docs/marketo-developer/marketo/mcp-server) | 프로그램, 캠페인, 리드, 스마트 목록, 이메일 및 양식 관리 | 예 |
-| [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/rtcdp-mcp) | 대상자 활성화 상태, 대상 상태 및 데이터 흐름 상태 확인 | 아니오 |
+| [Adobe Target](https://experienceleague.adobe.com/ko/docs/target/using/mcp/target-mcp) | 활동, 오퍼, 대상, mbox, 성능 보고서 및 미리보기 URL 검토 | [예](https://experienceleague.adobe.com/ko/docs/target/using/mcp/target-mcp-get-started#mcp-security) |
+| [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/cja-mcp) | 보고서 쿼리, 데이터 보기 검색 및 작업 공간 작성 | 아니오 |
+| [Marketo Engage](https://experienceleague.adobe.com/ko/docs/marketo-developer/marketo/mcp-server) | 프로그램, 캠페인, 리드, 스마트 목록, 이메일 및 양식 관리 | [예](https://experienceleague.adobe.com/ko/docs/marketo-developer/marketo/mcp-server#get-marketo-credentials) |
+| [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/rtcdp-mcp) | 대상자 활성화 상태, 대상 상태 및 데이터 흐름 상태 확인 | 아니오 |
 
 전체 설명서는 [CX 엔터프라이즈 MCP](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/overview)를 참조하십시오.
 

@@ -2,8 +2,7 @@
 title: 최신 컨텐츠 유지 및 업데이트 전달 속도 향상
 description: AEM Content MCP 서버를 사용하여 도구 간에 전환하지 않고도 AEM 콘텐츠를 찾고, 검토하고, 업데이트하고, 게시할 수 있습니다.
 last-substantial-update: 2026-06-10T00:00:00Z
-index: false
-source-git-commit: 8735d40a6bee547608a3c0efea7f942b813f2d41
+source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 3%
