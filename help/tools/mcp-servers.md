@@ -2,9 +2,9 @@
 title: MCP 서버
 description: Model Context Protocol 서버를 사용하여 MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로우에 연결합니다.
 last-substantial-update: 2026-06-17T00:00:00Z
-source-git-commit: 445fd18a2b5a18ec3dcc0ec8e73ec4c020e7b265
+source-git-commit: 331736994515eb978ab9f24208d65f05ecd4c0b4
 workflow-type: tm+mt
-source-wordcount: '2412'
+source-wordcount: '2408'
 ht-degree: 6%
 
 ---
@@ -50,7 +50,7 @@ https://cx-enterprise.adobe.io/mcp
 | Campaign Classic | Campaign 인스턴스 검색, 스키마 찾아보기, 쿼리 실행, 워크플로우 제어 및 SOAP/JS 실행 | 예 |
 | [Adobe Experience Platform](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/aep-mcp) | 데이터 세트 검색, 스키마 검색 및 샌드박스 관리 | 아니오 |
 | 실험 | A/B, MVT 및 MAB 실험 보고, 지표, 통찰력, 기회 및 샘플 크기 계획 | 아니오 |
-| GenStudio | Advertising 통찰력(지출, CTR, 캠페인, 크리에이티브, 태그 및 사용자 지정 지표) 및 최근 Express 초안 | 예 |
+| GenStudio for Performance Marketing | 광고 성능 데이터 및 크리에이티브 인사이트 액세스 | 예 |
 | [Adobe Journey Optimizer](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/ajo-mcp) | 여정, 캠페인 및 채널 구성 검토 | 아니오 |
 | Adobe Journey Optimizer B2B edition | B2B 여정, 계정 프로그램, 구매 그룹 및 개인화 관리 | 아니오 |
 | [Adobe Target](https://experienceleague.adobe.com/ko/docs/target/using/mcp/target-mcp) | 활동, 오퍼, 대상, mbox, 성능 보고서 및 미리보기 URL 검토 | [예](https://experienceleague.adobe.com/ko/docs/target/using/mcp/target-mcp-get-started#mcp-security) |
