@@ -2,9 +2,9 @@
 title: 안심하고 AEM as a Cloud Service에 배포
 description: AI 클라이언트를 종료하지 않고 환경 상태를 확인하고 파이프라인 내역을 검토하고 배포를 트리거하거나 관리합니다.
 last-substantial-update: 2026-06-10T00:00:00Z
-source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
+source-git-commit: 937a3189965f3a3551c730bb27ee0592ae6fca92
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '950'
 ht-degree: 3%
 
 ---
@@ -126,7 +126,9 @@ What is the status of the production environment?
 
 +++예제 응답 보기
 
-![Cloud Manager에서 프로덕션 환경 상태를 표시하는 AI 클라이언트](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step1-01-ai.png)
+![Cloud Manager에서 프로덕션 환경 상태를 표시하는 AI 클라이언트](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step1-01-ai.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -141,7 +143,9 @@ Show me the last five pipeline runs for the production pipeline.
 
 +++예제 응답 보기
 
-![프로덕션 파이프라인에 대한 마지막 5개의 파이프라인 실행을 표시하는 AI 클라이언트](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step2-01-ai.png)
+![프로덕션 파이프라인에 대한 마지막 5개의 파이프라인 실행을 표시하는 AI 클라이언트](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step2-01-ai.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -156,7 +160,9 @@ Run the Fullstack pipeline against dev environment of WKND sandbox program.
 
 +++예제 응답 보기
 
-![파이프라인 트리거 확인 및 실행 중인 파이프라인이 반영된 Cloud Manager UI를 표시하는 AI 클라이언트](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step3.gif)
+![파이프라인 트리거 확인 및 실행 중인 파이프라인이 반영된 Cloud Manager UI를 표시하는 AI 클라이언트](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step3.gif){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -175,7 +181,9 @@ What is the status of the triggered pipeline?
 
 +++예제 응답 보기
 
-![트리거된 파이프라인 실행 상태를 표시하는 AI 클라이언트](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step4-01-ai.png)
+![트리거된 파이프라인 실행 상태를 표시하는 AI 클라이언트](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step4-01-ai.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 

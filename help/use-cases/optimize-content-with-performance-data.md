@@ -2,9 +2,9 @@
 title: 데이터 기반 업데이트로 컨텐츠 성능 격차 완화
 description: 하나의 AI 세션에서 CJA과 AEM을 함께 사용하면 도구를 전환하지 않고도 전환되지 않는 캠페인을 찾고 원인을 진단하고 콘텐츠를 업데이트할 수 있습니다.
 last-substantial-update: 2026-06-10T00:00:00Z
-source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
+source-git-commit: 937a3189965f3a3551c730bb27ee0592ae6fca92
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1090'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,9 @@ ht-degree: 2%
 # 데이터 기반 업데이트로 컨텐츠 성능 격차 완화
 <!-- last-modified: 2026-06-10 -->
 
-![AI 클라이언트가 원본 페이지와 업데이트된 페이지 콘텐츠를 나란히 비교](../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step5-03-page-compare.png)
+![AI 클라이언트가 원본 페이지와 업데이트된 페이지 콘텐츠를 나란히 비교](../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step5-03-page-compare.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 컨텐츠 성능의 격차는 캠페인 결과의 비용을 발생시키며, 이러한 격차를 닫는다는 것은 일반적으로 분석 도구와 CMS 간을 전환하는 것을 의미합니다. 이 연습에서는 단일 AI 세션에서 수행하는 방법을 보여 줍니다. Customer Journey Analytics에서 전환 차이가 있는 캠페인을 표면화하고, 원인을 진단하고, AEM에서 성과가 낮은 콘텐츠를 검사하고, 대화를 종료하지 않고 업데이트를 적용합니다.
 
@@ -94,7 +96,9 @@ Which campaigns have strong click-through but low conversion in the last 30 days
 
 +++예제 응답 보기
 
-![CJA에서 클릭스루가 높지만 전환율이 낮은 AI 클라이언트 표시 캠페인](../assets/use-cases/optimize-content-with-performance-data/optimize-content-step1-campaigns.png)
+![CJA에서 클릭스루가 높지만 전환율이 낮은 AI 클라이언트 표시 캠페인](../assets/use-cases/optimize-content-with-performance-data/optimize-content-step1-campaigns.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -110,7 +114,9 @@ What's causing the conversion drop-off, is it device, segment, or content?
 
 +++예제 응답 보기
 
-![AI 클라이언트가 장치, 세그먼트 및 콘텐츠 인자별로 전환 드롭오프를 진단](../assets/use-cases/optimize-content-with-performance-data/optimize-content-step2-diagnosis.png)
+![AI 클라이언트가 장치, 세그먼트 및 콘텐츠 인자별로 전환 드롭오프를 진단](../assets/use-cases/optimize-content-with-performance-data/optimize-content-step2-diagnosis.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -126,7 +132,9 @@ Show me the Bali Surf Camp page.
 
 +++예제 응답 보기
 
-![AEM에서 랜딩 페이지의 현재 콘텐츠를 표시하는 AI 클라이언트](../assets/use-cases/optimize-content-with-performance-data/optimize-content-step3-page-content.png)
+![AEM에서 랜딩 페이지의 현재 콘텐츠를 표시하는 AI 클라이언트](../assets/use-cases/optimize-content-with-performance-data/optimize-content-step3-page-content.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -142,7 +150,9 @@ Which content sections are underperforming, and what changes would you recommend
 
 +++예제 응답 보기
 
-![성과가 낮은 콘텐츠 섹션을 식별하고 특정 변경 사항을 추천하는 AI 클라이언트](../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step4.gif)
+![성과가 낮은 콘텐츠 섹션을 식별하고 특정 변경 사항을 추천하는 AI 클라이언트](../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step4.gif){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -158,7 +168,9 @@ Create an optimized version of the Bali Surf Camp page and summarize the propose
 
 +++예제 응답 보기
 
-![AI 클라이언트가 페이지의 최적화된 버전을 만들고 변경 내용을 요약](../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step5.gif)
+![AI 클라이언트가 페이지의 최적화된 버전을 만들고 변경 내용을 요약](../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step5.gif){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 

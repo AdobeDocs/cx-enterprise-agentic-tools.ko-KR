@@ -2,9 +2,9 @@
 title: 최신 컨텐츠 유지 및 업데이트 전달 속도 향상
 description: AEM Content MCP 서버를 사용하여 도구 간에 전환하지 않고도 AEM 콘텐츠를 찾고, 검토하고, 업데이트하고, 게시할 수 있습니다.
 last-substantial-update: 2026-06-10T00:00:00Z
-source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
+source-git-commit: 937a3189965f3a3551c730bb27ee0592ae6fca92
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1001'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,9 @@ ht-degree: 3%
 
 <!-- last-modified: 2026-05-22 -->
 
-![페이지가 게시되었음을 확인하고 라이브 URL을 반환하는 AI 클라이언트](../assets/use-cases/manage-aem-content/manage-aem-content-step4-02-product.png)
+![페이지가 게시되었음을 확인하고 라이브 URL을 반환하는 AI 클라이언트](../assets/use-cases/manage-aem-content/manage-aem-content-step4-02-product.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 웹 사이트 콘텐츠를 최신 상태로 유지하는 것은 지속적인 운영 부담입니다. 이 연습에서는 콘텐츠 팀이 AEM Content MCP 서버를 사용하여 콘텐츠 결정과 라이브 업데이트 간의 시간을 단축하고, AI 클라이언트를 통해 AEM 페이지 및 콘텐츠 조각을 찾고, 검토하고, 업데이트하고, 게시하는 방법을 보여 줍니다.
 
@@ -84,7 +86,9 @@ From WKND Dev environment, find all ski related content.
 
 +++예제 응답 보기
 
-![AI 클라이언트가 WKND 개발 AEM 환경에서 스키 콘텐츠 검색 결과를 표시함](../assets/use-cases/manage-aem-content/manage-aem-content-step1-find-ski.png)
+![AI 클라이언트가 WKND 개발 AEM 환경에서 스키 콘텐츠 검색 결과를 표시함](../assets/use-cases/manage-aem-content/manage-aem-content-step1-find-ski.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -99,7 +103,9 @@ Show me the US English Home Page.
 
 +++예제 응답 보기
 
-![AEM의 영어 홈 페이지 콘텐츠 구조를 보여 주는 AI 클라이언트](../assets/use-cases/manage-aem-content/manage-aem-content-step2-home-page.png)
+![AEM의 영어 홈 페이지 콘텐츠 구조를 보여 주는 AI 클라이언트](../assets/use-cases/manage-aem-content/manage-aem-content-step2-home-page.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -114,7 +120,9 @@ Improve the Hero CTAs.
 
 +++예제 응답 보기
 
-![변경 내용을 적용하기 전에 확인 프롬프트와 함께 향상된 Hero CTA 복사본을 제안하는 AI 클라이언트](../assets/use-cases/manage-aem-content/manage-aem-content-step3.gif)
+![변경 내용을 적용하기 전에 확인 프롬프트와 함께 향상된 Hero CTA 복사본을 제안하는 AI 클라이언트](../assets/use-cases/manage-aem-content/manage-aem-content-step3.gif){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -133,7 +141,9 @@ Publish the changes and share the URL.
 
 +++예제 응답 보기
 
-![페이지가 게시되었음을 확인하고 라이브 URL을 반환하는 AI 클라이언트](../assets/use-cases/manage-aem-content/manage-aem-content-step4.gif)
+![페이지가 게시되었음을 확인하고 라이브 URL을 반환하는 AI 클라이언트](../assets/use-cases/manage-aem-content/manage-aem-content-step4.gif){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 

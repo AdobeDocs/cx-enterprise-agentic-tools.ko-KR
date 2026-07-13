@@ -2,9 +2,9 @@
 title: 대상자 및 대상자 활성화 위치 이해
 description: CX Enterprise MCP 를 사용하여 대상자 활성화 상태를 모니터링하고, 대상 상태를 확인하고, 문제가 캠페인에 영향을 미치기 전에 문제를 파악할 수 있습니다.
 last-substantial-update: 2026-06-10T00:00:00Z
-source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
+source-git-commit: 937a3189965f3a3551c730bb27ee0592ae6fca92
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '884'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,9 @@ ht-degree: 2%
 
 <!-- last-modified: 2026-06-04 -->
 
-![활성화 권장 사항을 통해 우선 순위가 지정된 대상 전략을 제공하는 AI 클라이언트](../assets/use-cases/query-audiences/query-audiences-step4-02-summary.png)
+![활성화 권장 사항을 통해 우선 순위가 지정된 대상 전략을 제공하는 AI 클라이언트](../assets/use-cases/query-audiences/query-audiences-step4-02-summary.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 캠페인이 시작되기 전이나 성과가 낮은 경우, 어떤 대상이 라이브인지, 어디에서 오는지, 대상이 정상인지 파악하는 것은 매우 중요합니다. 이 연습에서는 CX Enterprise MCP를 사용하여 Real-Time CDP을 열지 않고도 몇 초 만에 대상 상태 및 대상 상태를 표시할 수 있도록 AI 클라이언트를 통해 전체 활성화 그림을 얻는 방법을 보여 줍니다.
 
@@ -78,7 +80,9 @@ What audiences are currently available and what customer behaviors do they repre
 
 +++예제 응답 보기
 
-![AI 클라이언트가 사용 가능한 대상 및 해당 대상이 나타내는 고객 행동을 나열함](../assets/use-cases/query-audiences/query-audiences-step1-audience-list.png)
+![AI 클라이언트가 사용 가능한 대상 및 해당 대상이 나타내는 고객 행동을 나열함](../assets/use-cases/query-audiences/query-audiences-step1-audience-list.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -93,7 +97,9 @@ Which audiences are the largest and what makes them valuable?
 
 +++예제 응답 보기
 
-![가장 큰 대상을 식별하고 무엇이 이러한 대상을 귀중하게 하는지 설명하는 AI 클라이언트](../assets/use-cases/query-audiences/query-audiences-step2.gif)
+![가장 큰 대상을 식별하고 무엇이 이러한 대상을 귀중하게 하는지 설명하는 AI 클라이언트](../assets/use-cases/query-audiences/query-audiences-step2.gif){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -108,7 +114,9 @@ Where are our audiences currently being activated and to which destinations?
 
 +++예제 응답 보기
 
-![대상 활성화 상태 및 대상 매핑을 표시하는 AI 클라이언트](../assets/use-cases/query-audiences/query-audiences-step3.gif)
+![대상 활성화 상태 및 대상 매핑을 표시하는 AI 클라이언트](../assets/use-cases/query-audiences/query-audiences-step3.gif){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -123,7 +131,9 @@ If you were our audience strategist, what would you prioritize next and why?
 
 +++예제 응답 보기
 
-![우선 순위가 지정된 대상 전략 권장 사항을 제공하는 AI 클라이언트](../assets/use-cases/query-audiences/query-audiences-step4.gif)
+![우선 순위가 지정된 대상 전략 권장 사항을 제공하는 AI 클라이언트](../assets/use-cases/query-audiences/query-audiences-step4.gif){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
