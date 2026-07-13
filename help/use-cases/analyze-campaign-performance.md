@@ -2,9 +2,9 @@
 title: 보고서를 작성하지 않고 캠페인 통찰력 표시
 description: CX Enterprise MCP 를 사용하여 Customer Journey Analytics 성능 관련 질문에 대해 일반 언어로 질문하고 Report Builders를 탐색하지 않고도 답변을 얻을 수 있습니다.
 last-substantial-update: 2026-06-09T00:00:00Z
-source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
+source-git-commit: 937a3189965f3a3551c730bb27ee0592ae6fca92
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1025'
 ht-degree: 1%
 
 ---
@@ -14,13 +14,15 @@ ht-degree: 1%
 
 <!-- last-modified: 2026-06-02 -->
 
-![캠페인 성과를 개선하기 위한 권장된 다음 단계를 보여주는 AI 클라이언트](../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step5-02-actions.png)
+![캠페인 성과를 개선하기 위한 권장된 다음 단계를 보여주는 AI 클라이언트](../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step5-02-actions.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 한 때 별도의 도구로 보고서를 작성해야 했던 캠페인 분석이 이제 대화로 바뀌었습니다. 이 연습에서는 AI 클라이언트를 Customer Journey Analytics(CJA)에 연결하고 일반 언어로 성능 질문을 하는 방법을 보여 줍니다. 따라서 수동으로 보고서를 작성할 필요 없이 insight으로 이동하는 시간이 단축됩니다.
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| CX 엔터프라이즈 애플리케이션 | [Customer Journey Analytics(CJA)](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview) |
+| CX 엔터프라이즈 애플리케이션 | [Customer Journey Analytics(CJA)](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
 | 무생식 도구 | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers) |
 | 대상자 | 분석가, 캠페인 관리자 |
 | 사전 요구 사항 | MCP 호환 AI 클라이언트, CJA 액세스 |
@@ -82,7 +84,9 @@ What data views are available in my CJA account?
 
 +++예제 응답 보기
 
-![사용 가능한 CJA 데이터 보기를 나열하는 AI 클라이언트](../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step1-data-views.png)
+![사용 가능한 CJA 데이터 보기를 나열하는 AI 클라이언트](../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step1-data-views.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -97,7 +101,9 @@ For '[data view name]', show me the top campaigns by revenue and conversion rate
 
 +++예제 응답 보기
 
-![옴니채널 - 다중 산업 데이터 보기에서 매출 및 전환율별로 상위 캠페인을 표시하는 AI 클라이언트](../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step2.gif)
+![옴니채널 - 다중 산업 데이터 보기에서 매출 및 전환율별로 상위 캠페인을 표시하는 AI 클라이언트](../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step2.gif){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -116,7 +122,9 @@ What factors are driving the results for these campaign groups?
 
 +++예제 응답 보기
 
-![캠페인 그룹 성과를 유도하는 요소를 설명하는 AI 클라이언트](../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step3.gif)
+![캠페인 그룹 성과를 유도하는 요소를 설명하는 AI 클라이언트](../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step3.gif){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -131,7 +139,9 @@ Break down Promotional Email Campaigns by Customer Segment and explain what's dr
 
 +++예제 응답 보기
 
-![AI 클라이언트가 고객 세그먼트별로 프로모션 이메일 캠페인 성과 분류](../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step4-segment-breakdown.png)
+![AI 클라이언트가 고객 세그먼트별로 프로모션 이메일 캠페인 성과 분류](../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step4-segment-breakdown.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -146,7 +156,9 @@ Based on these findings, recommend the highest-impact actions to increase revenu
 
 +++예제 응답 보기
 
-![비즈니스 가치가 예상되는 우선 순위가 지정된 작업을 추천하는 AI 클라이언트](../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step5.gif)
+![비즈니스 가치가 예상되는 우선 순위가 지정된 작업을 추천하는 AI 클라이언트](../assets/use-cases/analyze-campaign-performance/analyze-campaign-performance-step5.gif){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 

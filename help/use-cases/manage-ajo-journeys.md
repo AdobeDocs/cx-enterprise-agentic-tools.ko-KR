@@ -2,9 +2,9 @@
 title: 고객에게 영향을 미치기 전에 여정 문제 파악
 description: CX Enterprise MCP를 사용하여 활성 AJO 여정을 모니터링하고, 캠페인 구성을 검토하고, 고객에게 도달하기 전에 운영 문제를 파악할 수 있습니다.
 last-substantial-update: 2026-06-10T00:00:00Z
-source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
+source-git-commit: 937a3189965f3a3551c730bb27ee0592ae6fca92
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '997'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,9 @@ ht-degree: 2%
 # 고객에게 영향을 미치기 전에 여정 문제 파악
 <!-- last-modified: 2026-06-08 -->
 
-![AI 클라이언트가 실행 요약으로 캠페인 및 여정 전략을 요약](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step5-02-exe-summary.png)
+![AI 클라이언트가 실행 요약으로 캠페인 및 여정 전략을 요약](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step5-02-exe-summary.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 감지되지 않는 여정 문제는 누구나 인식하기 전에 고객에게 도달할 수 있습니다. 이 연습에서는 CX Enterprise MCP를 사용하여 Adobe Journey Optimizer을 열지 않고도 일반 언어로 답변을 얻을 수 있도록 활성 AJO 여정을 확인하고, 캠페인 구성을 검토하고, AI 클라이언트를 통해 운영 문제를 표시하여 앞서나가는 방법을 보여줍니다.
 
@@ -83,7 +85,9 @@ What customer journeys are currently available and what business objectives do t
 
 +++예제 응답 보기
 
-![사용 가능한 고객 여정 및 비즈니스 목표를 나열하는 AI 클라이언트](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step1.gif)
+![사용 가능한 고객 여정 및 비즈니스 목표를 나열하는 AI 클라이언트](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step1.gif){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -99,7 +103,9 @@ Walk me through the [journey name] journey and explain the customer experience.
 
 +++예제 응답 보기
 
-![새로운 고객 환영 여정 단계 및 고객 경험을 안내하는 AI 클라이언트](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step2-welcome-journey.png)
+![새로운 고객 환영 여정 단계 및 고객 경험을 안내하는 AI 클라이언트](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step2-welcome-journey.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -119,7 +125,9 @@ Show me our campaigns, the audiences they target, and the outcomes they're desig
 
 +++예제 응답 보기
 
-![AI 클라이언트가 대상 타기팅 및 의도한 결과와 함께 활성 캠페인을 나열](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step3.gif)
+![AI 클라이언트가 대상 타기팅 및 의도한 결과와 함께 활성 캠페인을 나열](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step3.gif){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -135,7 +143,9 @@ How do our campaigns and journeys work together to improve customer engagement?
 
 +++예제 응답 보기
 
-![캠페인과 여정 간의 관계를 설명하는 AI 클라이언트](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step4-connection.png)
+![캠페인과 여정 간의 관계를 설명하는 AI 클라이언트](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step4-connection.png){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
@@ -151,7 +161,9 @@ If you were our lifecycle marketing manager, what would you prioritize next and 
 
 +++예제 응답 보기
 
-![우선 순위가 지정된 라이프사이클 마케팅 권장 사항을 제공하는 AI 클라이언트](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step5.gif)
+![우선 순위가 지정된 라이프사이클 마케팅 권장 사항을 제공하는 AI 클라이언트](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step5.gif){zoomable="yes"}
+
+*확대/축소를 선택합니다.*
 
 +++
 
