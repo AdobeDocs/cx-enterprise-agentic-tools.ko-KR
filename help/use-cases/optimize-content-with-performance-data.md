@@ -21,8 +21,8 @@ ht-degree: 2%
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| CX 엔터프라이즈 애플리케이션 | [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview), [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/introduction) |
-| 무생식 도구 | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers), [AEM Content MCP 서버](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) |
+| CX 엔터프라이즈 애플리케이션 | [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview), [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/introduction) |
+| 무생식 도구 | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers), [AEM Content MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) |
 | 대상자 | 캠페인 관리자, 콘텐츠 전략가, 마케팅 운영 |
 | 사전 요구 사항 | MCP 호환 AI 클라이언트, CJA 액세스, AEM as a Cloud Service 액세스 |
 
