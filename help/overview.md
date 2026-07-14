@@ -1,8 +1,8 @@
 ---
 title: Adobe CX 엔터프라이즈 에이전트 툴
 description: MCP 서버, 에이전트 기술 및 API를 사용하여 AI 에이전트 및 개발 도구를 Adobe CX Enterprise 기능에 연결합니다.
-last-substantial-update: 2026-06-08T00:00:00Z
-source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
+last-substantial-update: 2026-07-14T00:00:00Z
+source-git-commit: 4f557937701441bcc34878e3cd13423ce35487ba
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 2%
@@ -14,12 +14,12 @@ ht-degree: 2%
 
 <!-- last-modified: 2026-06-08 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3491251/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3491235/?learn=on&enablevpops)
 
 AI가 Adobe CX Enterprise의 공동 작업자가 되도록 합니다. AI 클라이언트를 캠페인, 대상자, 여정 및 컨텐츠에 연결합니다. 이미 사용하는 도구에서 일반 언어로 사용자와 상호 작용합니다. 시작하는 데 필요한 새 인터페이스, 컨텍스트 전환, 코딩이 없습니다.
 
 >[!TIP]
->**CX Enterprise MCP로 시작** 하나의 연결을 통해 AI 클라이언트는 조직의 라이선스를 기반으로 Adobe Journey Optimizer, Customer Journey Analytics 및 Real-Time CDP에 액세스할 수 있습니다. [지금 연결](tools/mcp-servers.md#cx-enterprise-mcp-servers)
+>**CX Coworker Gateway로 시작** 하나의 연결을 통해 AI 클라이언트는 조직의 라이선스를 기반으로 Adobe Journey Optimizer, Customer Journey Analytics 및 Real-Time CDP에 액세스할 수 있습니다. [지금 연결](tools/mcp-servers.md#cx-coworker-gateway)
 
 <!--
 CARDS
@@ -122,7 +122,7 @@ CARDS
 
 >[!TAB MCP 서버]
 
-호환되는 AI 클라이언트를 사용하여 CX 엔터프라이즈 애플리케이션에 일반 언어로 액세스합니다. 코딩이 필요하지 않습니다. AJO, CJA 및 Real-Time CDP에 대한 단일 연결을 위해 CX Enterprise MCP로 시작하거나 AEM 및 기타 애플리케이션에 직접 연결합니다.
+호환되는 AI 클라이언트를 사용하여 CX 엔터프라이즈 애플리케이션에 일반 언어로 액세스합니다. 코딩이 필요하지 않습니다. AJO, CJA 및 Real-Time CDP에 대한 단일 연결을 위해 CX Coworker Gateway로 시작하거나 AEM 및 기타 애플리케이션에 직접 연결합니다.
 
 - Claude, Cursor, ChatGPT 및 기타 MCP 호환 클라이언트에서 몇 분 안에 연결
 - 자연어를 사용하여 캠페인, 대상자 및 여정 데이터 쿼리
@@ -140,7 +140,7 @@ CARDS
 
 [에이전트 스킬 탐색](tools/agent-skills.md)
 
->[!TAB 빌더용  API]
+>빌더용 [!TAB API]
 
 Adobe 제품을 실행하는 동일한 API에 직접 프로그래밍 방식으로 액세스합니다. 사용자 정의 애플리케이션 및 통합을 구축하여 팀이 특정 CX 엔터프라이즈 워크플로우에 대한 액세스 권한을 집중하고 관리할 수 있도록 합니다.
 

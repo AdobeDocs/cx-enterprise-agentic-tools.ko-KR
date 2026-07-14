@@ -1,8 +1,8 @@
 ---
 title: 데이터 기반 업데이트로 컨텐츠 성능 격차 완화
 description: 하나의 AI 세션에서 CJA과 AEM을 함께 사용하면 도구를 전환하지 않고도 전환되지 않는 캠페인을 찾고 원인을 진단하고 콘텐츠를 업데이트할 수 있습니다.
-last-substantial-update: 2026-06-10T00:00:00Z
-source-git-commit: 937a3189965f3a3551c730bb27ee0592ae6fca92
+last-substantial-update: 2026-07-14T00:00:00Z
+source-git-commit: 4f557937701441bcc34878e3cd13423ce35487ba
 workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 2%
@@ -21,8 +21,8 @@ ht-degree: 2%
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| CX 엔터프라이즈 애플리케이션 | [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview), [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/introduction) |
-| 무생식 도구 | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers), [AEM Content MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) |
+| CX 엔터프라이즈 애플리케이션 | [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview), [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/introduction) |
+| 무생식 도구 | [CX Coworker Gateway](../tools/mcp-servers.md#cx-coworker-gateway), [AEM Content MCP 서버](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) |
 | 대상자 | 캠페인 관리자, 콘텐츠 전략가, 마케팅 운영 |
 | 사전 요구 사항 | MCP 호환 AI 클라이언트, CJA 액세스, AEM as a Cloud Service 액세스 |
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 | 서버 | 엔드포인트 |
 | --- | --- |
-| CX Enterprise MCP | `https://cx-enterprise.adobe.io/mcp` |
+| CX Coworker 게이트웨이 | `https://cx-coworker-gateway.adobe.io/mcp` |
 | AEM Content MCP 서버 | `https://mcp.adobeaemcloud.com/adobe/mcp/content` |
 
 전체 설정: [Claude.ai 사용자 지정 커넥터 설명서](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)
@@ -59,7 +59,7 @@ ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교�
 
 | 서버 | 엔드포인트 |
 | --- | --- |
-| CX Enterprise MCP | `https://cx-enterprise.adobe.io/mcp` |
+| CX Coworker 게이트웨이 | `https://cx-coworker-gateway.adobe.io/mcp` |
 | AEM Content MCP 서버 | `https://mcp.adobeaemcloud.com/adobe/mcp/content` |
 
 전체 설정: [ChatGPT MCP 설명서](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)
@@ -70,7 +70,7 @@ Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경�
 
 | 서버 | 엔드포인트 |
 | --- | --- |
-| CX Enterprise MCP | `https://cx-enterprise.adobe.io/mcp` |
+| CX Coworker 게이트웨이 | `https://cx-coworker-gateway.adobe.io/mcp` |
 | AEM Content MCP 서버 | `https://mcp.adobeaemcloud.com/adobe/mcp/content` |
 
 지원되는 모든 클라이언트에 대한 전체 설치 지침: [AI 클라이언트에 연결](../tools/mcp-servers.md)
