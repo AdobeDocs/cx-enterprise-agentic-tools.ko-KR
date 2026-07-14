@@ -22,7 +22,7 @@ ht-degree: 5%
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| CX 엔터프라이즈 애플리케이션 | [Adobe Journey Optimizer](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home), [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview), [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) |
+| CX 엔터프라이즈 애플리케이션 | [Adobe Journey Optimizer](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home), [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview), [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) |
 | 무생식 도구 | [CX 동료 게이트웨이](../tools/mcp-servers.md#cx-coworker-gateway) |
 | 대상자 | 캠페인 관리자, 마케팅 운영 |
 | 사전 요구 사항 | MCP 호환 AI 클라이언트, AJO, CJA 및 Real-Time CDP 액세스 |
