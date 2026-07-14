@@ -2,9 +2,9 @@
 title: MCP 서버
 description: Model Context Protocol 서버를 사용하여 MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로우에 연결합니다.
 last-substantial-update: 2026-06-17T00:00:00Z
-source-git-commit: 331736994515eb978ab9f24208d65f05ecd4c0b4
+source-git-commit: 49e3c0cdb77cca3ff39f3aea591cc0fe8d4be4c9
 workflow-type: tm+mt
-source-wordcount: '2408'
+source-wordcount: '2404'
 ht-degree: 6%
 
 ---
@@ -38,7 +38,7 @@ Adobe MCP 서버는 개방형 [모델 컨텍스트 프로토콜](https://modelco
 
 **끝점 한 개. 여러 CX 엔터프라이즈 응용 프로그램입니다.**
 
-한 번 연결하면 AI 클라이언트가 조직의 라이센스를 기반으로 CX 엔터프라이즈 애플리케이션에 액세스할 수 있습니다. 조직을 활성화하려면 [cxo-mcp-feedback@adobe.com](mailto:cxo-mcp-feedback@adobe.com)에 전자 메일을 보내 액세스를 요청하세요.
+한 번 연결하면 AI 클라이언트가 조직의 라이센스를 기반으로 CX 엔터프라이즈 애플리케이션에 액세스할 수 있습니다. 조직을 활성화하려면 [adobecxmcp@adobe.com](mailto:adobecxmcp@adobe.com)에 전자 메일을 보내 액세스를 요청하세요.
 
 ```
 https://cx-enterprise.adobe.io/mcp
@@ -62,7 +62,7 @@ https://cx-enterprise.adobe.io/mcp
 
 >[!NOTE]
 >
->각 CX 엔터프라이즈 애플리케이션에 대한 액세스는 조직의 권한 및 Adobe Admin Console에서의 사용자 권한을 기반으로 합니다. 조직에 CX Enterprise MCP를 사용하려면 [cxo-mcp-feedback@adobe.com](mailto:cxo-mcp-feedback@adobe.com)에 전자 메일을 보내십시오.
+>각 CX 엔터프라이즈 애플리케이션에 대한 액세스는 조직의 권한 및 Adobe Admin Console에서의 사용자 권한을 기반으로 합니다. 조직에 CX Enterprise MCP를 사용하려면 [adobecxmcp@adobe.com](mailto:adobecxmcp@adobe.com)에 전자 메일을 보내십시오.
 
 >[!TAB Experience Manager]
 
