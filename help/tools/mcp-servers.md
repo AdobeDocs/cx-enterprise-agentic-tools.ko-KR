@@ -1,11 +1,11 @@
 ---
 title: MCP 서버
 description: Model Context Protocol 서버를 사용하여 MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로우에 연결합니다.
-last-substantial-update: 2026-06-17T00:00:00Z
-source-git-commit: 49e3c0cdb77cca3ff39f3aea591cc0fe8d4be4c9
+last-substantial-update: 2026-07-14T00:00:00Z
+source-git-commit: a619c651d13834f53ecf1dd524aae3e7e5efcca5
 workflow-type: tm+mt
-source-wordcount: '2404'
-ht-degree: 6%
+source-wordcount: '2422'
+ht-degree: 5%
 
 ---
 
@@ -16,32 +16,32 @@ ht-degree: 6%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3491329/?captions=kor&learn=on&enablevpops)
 
-Adobe CX Enterprise MCP 서버는 호환되는 AI 클라이언트를 Adobe 데이터 및 워크플로에 직접 제어하고 액세스할 수 있도록 합니다. 한 번 연결하면 AI 환경을 종료하지 않고도 일반 언어로 캠페인 성과를 쿼리하고, 대상을 활성화하고, 여정을 검토하고, 콘텐츠를 관리하는 등의 작업을 수행할 수 있습니다. MCP 서버는 AI 클라이언트와 Adobe의 기본 시스템 사이에 위치하기 때문에 조직의 액세스 제어 및 데이터 거버넌스가 유효한 동안 자연어 유연성을 얻을 수 있습니다.
+Adobe MCP 서버는 호환되는 AI 클라이언트에 Adobe 데이터 및 워크플로에 대한 직접 제어 액세스를 제공합니다. 한 번 연결하면 AI 환경을 종료하지 않고도 일반 언어로 캠페인 성과를 쿼리하고, 대상을 활성화하고, 여정을 검토하고, 콘텐츠를 관리하는 등의 작업을 수행할 수 있습니다. MCP 서버는 AI 클라이언트와 Adobe의 기본 시스템 사이에 위치하기 때문에 조직의 액세스 제어 및 데이터 거버넌스가 유효한 동안 자연어 유연성을 얻을 수 있습니다.
 
 Adobe MCP 서버는 개방형 [모델 컨텍스트 프로토콜](https://modelcontextprotocol.io/docs/getting-started/intro) 표준을 따릅니다. 모든 MCP 호환 AI 클라이언트는 모든 Adobe MCP 서버에 연결합니다.
 
-## CX Enterprise MCP 서버 {#cx-enterprise-mcp-servers}
+## CX 엔터프라이즈 MCP 서버 {#cx-enterprise-mcp-servers}
 
 >[!CONTEXTUALHELP]
 >id="cx-enterprise-agentic-tools_mcp_servers_cx-enterprise"
->title="CX Enterprise MCP"
+>title="CX Coworker 게이트웨이"
 >abstract="단일 MCP 엔드포인트를 통해 액세스할 수 있는 CX Enterprise 애플리케이션입니다. AI 클라이언트에서 일반 언어로 질문하고, 분석하고, 조치를 취할 수 있습니다."
->additional-url="https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/overview" text="CX Enterprise MCP 설명서"
+>additional-url="https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/overview" text="CX Coworker Gateway 설명서"
 
-![CX 엔터프라이즈 MCP는 AI 클라이언트를 전체 Adobe CX 엔터프라이즈 제품군 내의 도구에 연결합니다](../assets/mcp-gateway-hero.gif)
+![CX Coworker Gateway는 AI 클라이언트를 전체 Adobe CX Enterprise Suite의 도구에 연결합니다](../assets/mcp-gateway-hero.gif)
 
 끝점과 기능을 볼 응용 프로그램을 선택하십시오.
 
 >[!BEGINTABS]
 
->[!TAB CX 엔터프라이즈 MCP]
+>[!TAB CX 동료 게이트웨이]
 
 **끝점 한 개. 여러 CX 엔터프라이즈 응용 프로그램입니다.**
 
-한 번 연결하면 AI 클라이언트가 조직의 라이센스를 기반으로 CX 엔터프라이즈 애플리케이션에 액세스할 수 있습니다. 조직을 활성화하려면 [adobecxmcp@adobe.com](mailto:adobecxmcp@adobe.com)에 전자 메일을 보내 액세스를 요청하세요.
+한 번 연결하면 AI 클라이언트가 조직의 라이센스를 기반으로 CX 엔터프라이즈 애플리케이션에 액세스할 수 있습니다. 조직을 활성화하려면 [cx-coworker-gateway-support@adobe.com](mailto:cx-coworker-gateway-support@adobe.com)에 전자 메일을 보내 액세스를 요청하세요.
 
 ```
-https://cx-enterprise.adobe.io/mcp
+https://cx-coworker-gateway.adobe.io/mcp
 ```
 
 | CX 엔터프라이즈 애플리케이션 | 수행 가능한 작업 | 추가 권한 필요 |
@@ -58,11 +58,11 @@ https://cx-enterprise.adobe.io/mcp
 | [Marketo Engage](https://experienceleague.adobe.com/ko/docs/marketo-developer/marketo/mcp-server) | 프로그램, 캠페인, 리드, 스마트 목록, 이메일 및 양식 관리 | [예](https://experienceleague.adobe.com/ko/docs/marketo-developer/marketo/mcp-server#get-marketo-credentials) |
 | [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/rtcdp-mcp) | 대상자 활성화 상태, 대상 상태 및 데이터 흐름 상태 확인 | 아니오 |
 
-전체 설명서는 [CX 엔터프라이즈 MCP](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/overview)를 참조하십시오.
+전체 문서를 보려면 [CX Coworker Gateway](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/overview)를 참조하십시오.
 
 >[!NOTE]
 >
->각 CX 엔터프라이즈 애플리케이션에 대한 액세스는 조직의 권한 및 Adobe Admin Console에서의 사용자 권한을 기반으로 합니다. 조직에 CX Enterprise MCP를 사용하려면 [adobecxmcp@adobe.com](mailto:adobecxmcp@adobe.com)에 전자 메일을 보내십시오.
+>게이트웨이에 대한 액세스는 조직의 기존 CX 엔터프라이즈 애플리케이션 라이센스와 Adobe Admin Console에서의 사용자 권한을 기반으로 합니다. CX Coworker 라이센스가 필요하지 않습니다. 게이트웨이 뒤의 CX 엔터프라이즈 애플리케이션 중 하나 이상에 대해 활성 라이센스가 필요합니다. 조직에 대해 CX Coworker Gateway를 활성화하려면 [cx-coworker-gateway-support@adobe.com](mailto:cx-coworker-gateway-support@adobe.com)에 전자 메일을 보내십시오.
 
 >[!TAB Experience Manager]
 
@@ -119,7 +119,7 @@ Adobe Target MCP는 공개 베타 버전입니다. 현재 사용 가능한 모�
 
 ![Adobe MCP 서버에 연결하는 AI 에이전트](../assets/hero-connect-mcp-servers.gif)
 
-아래 단계에서는 CX 엔터프라이즈 MCP 엔드포인트를 예로 사용합니다. 동일한 프로세스가 모든 Adobe MCP 서버에 적용됩니다. 연결하려는 서버의 끝점 URL에서 교체합니다.
+아래 단계는 CX Coworker Gateway 엔드포인트를 예로 사용합니다. 동일한 프로세스가 모든 Adobe MCP 서버에 적용됩니다. 연결하려는 서버의 끝점 URL에서 교체합니다.
 
 >[!BEGINTABS]
 
@@ -135,7 +135,7 @@ Claude.ai는 계정 설정에서 사용자 지정 커넥터를 통해 원격 MCP
 
 1. **설정 > 통합**(으)로 이동합니다.
 2. **사용자 지정 커넥터 추가**&#x200B;를 클릭합니다.
-3. 서버 엔드포인트를 URL(예: CX Enterprise MCP의 경우 `https://cx-enterprise.adobe.io/mcp`)로 입력하고 선택한 표시 이름을 입력합니다.
+3. 서버 끝점을 URL(예: CX Coworker Gateway의 경우 `https://cx-coworker-gateway.adobe.io/mcp`)로 입력하고 선택한 표시 이름을 입력합니다.
 4. **연결**&#x200B;을 클릭하고 Adobe ID으로 로그인합니다. 올바른 IMS 조직을 선택합니다.
 
 전체 설정: [Claude.ai 사용자 지정 커넥터 설명서](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)
@@ -144,10 +144,10 @@ Claude.ai는 계정 설정에서 사용자 지정 커넥터를 통해 원격 MCP
 
 ### CLI 사용
 
-`claude mcp add`을(를) 실행하여 Adobe MCP 서버를 등록합니다. 서버 이름과 URL을 연결할 서버의 값으로 바꿉니다. 이 예에서는 CX 엔터프라이즈 MCP 를 사용합니다.
+`claude mcp add`을(를) 실행하여 Adobe MCP 서버를 등록합니다. 서버 이름과 URL을 연결할 서버의 값으로 바꿉니다. 이 예에서는 CX Coworker Gateway 를 사용합니다.
 
 ```bash
-claude mcp add --transport http adobe-cx-enterprise https://cx-enterprise.adobe.io/mcp
+claude mcp add --transport http adobe-cx-coworker-gateway https://cx-coworker-gateway.adobe.io/mcp
 ```
 
 ### 설정 파일 편집
@@ -157,9 +157,9 @@ claude mcp add --transport http adobe-cx-enterprise https://cx-enterprise.adobe.
 ```json
 {
   "mcpServers": {
-    "adobe-cx-enterprise": {
+    "adobe-cx-coworker-gateway": {
       "type": "http",
-      "url": "https://cx-enterprise.adobe.io/mcp"
+      "url": "https://cx-coworker-gateway.adobe.io/mcp"
     }
   }
 }
@@ -171,7 +171,7 @@ Adobe MCP 서버는 OAuth를 사용합니다. 도구를 처음 호출할 때 Ado
 
 >[!TAB 커서]
 
-Adobe MCP 서버를 커서 `mcp.json` 구성 파일에 추가한 다음 **설정 > MCP**&#x200B;를 통해 연결합니다. 키와 URL을 연결할 서버의 값으로 바꿉니다. 이 예에서는 CX 엔터프라이즈 MCP 를 사용합니다.
+Adobe MCP 서버를 커서 `mcp.json` 구성 파일에 추가한 다음 **설정 > MCP**&#x200B;를 통해 연결합니다. 키와 URL을 연결할 서버의 값으로 바꿉니다. 이 예에서는 CX Coworker Gateway 를 사용합니다.
 
 - **전역(모든 프로젝트):** `~/.cursor/mcp.json`
 - 프로젝트 루트의 **프로젝트 수준:** `.cursor/mcp.json`
@@ -179,9 +179,9 @@ Adobe MCP 서버를 커서 `mcp.json` 구성 파일에 추가한 다음 **설정
 ```json
 {
   "mcpServers": {
-    "adobe-cx-enterprise": {
+    "adobe-cx-coworker-gateway": {
       "type": "http",
-      "url": "https://cx-enterprise.adobe.io/mcp"
+      "url": "https://cx-coworker-gateway.adobe.io/mcp"
     }
   }
 }
@@ -206,7 +206,7 @@ ChatGPT는 Pro, Plus, Business, Enterprise 및 Education 플랜에서 사용할 
 1. **ChatGPT 설정**&#x200B;에서 개발자 모드를 사용하도록 설정합니다.
 2. **설정 > 통합**(으)로 이동합니다.
 3. **사용자 지정 커넥터 추가**&#x200B;를 클릭하고 **원격 MCP 서버**&#x200B;를 선택합니다.
-4. 서버 엔드포인트를 URL(예: CX Enterprise MCP의 경우 `https://cx-enterprise.adobe.io/mcp`)로 입력하고 선택한 표시 이름을 입력합니다.
+4. 서버 끝점을 URL(예: CX Coworker Gateway의 경우 `https://cx-coworker-gateway.adobe.io/mcp`)로 입력하고 선택한 표시 이름을 입력합니다.
 5. 인증을 **OAuth**(으)로 설정합니다.
 6. **연결**&#x200B;을 클릭하고 Adobe ID으로 로그인합니다. 올바른 IMS 조직을 선택합니다.
 
@@ -221,11 +221,11 @@ OpenAI Codex CLI는 TOML 구성을 통해 원격 MCP 서버를 지원합니다.
 - **사용자 수준(모든 프로젝트):** `~/.codex/config.toml`
 - 프로젝트 루트의 **프로젝트 범위:** `.codex/config.toml`
 
-섹션 이름과 URL을 연결할 서버의 값으로 바꿉니다. 이 예에서는 CX 엔터프라이즈 MCP 를 사용합니다.
+섹션 이름과 URL을 연결할 서버의 값으로 바꿉니다. 이 예에서는 CX Coworker Gateway 를 사용합니다.
 
 ```toml
-[mcp_servers.adobe-cx-enterprise]
-url = "https://cx-enterprise.adobe.io/mcp"
+[mcp_servers.adobe-cx-coworker-gateway]
+url = "https://cx-coworker-gateway.adobe.io/mcp"
 enabled = true
 ```
 
@@ -240,9 +240,9 @@ Microsoft Copilot Studio는 자동으로 Power Platform 사용자 지정 커넥�
 1. Copilot Studio에서 에이전트를 엽니다.
 2. **도구** 페이지로 이동합니다.
 3. **도구 추가 > 새 도구 > 모델 컨텍스트 프로토콜**&#x200B;을 선택합니다.
-4. MCP 온보딩 마법사에서 서버 세부 사항을 입력합니다. 예를 들어 CX 엔터프라이즈 MCP 의 경우:
-   - **서버 이름:** `Adobe CX Enterprise`
-   - **서버 URL:** `https://cx-enterprise.adobe.io/mcp`
+4. MCP 온보딩 마법사에서 서버 세부 사항을 입력합니다. 예를 들어 CX Coworker Gateway 의 경우
+   - **서버 이름:** `CX Coworker Gateway`
+   - **서버 URL:** `https://cx-coworker-gateway.adobe.io/mcp`
 5. 인증을 **OAuth 2.0**(으)로 설정하고 Adobe IMS 인증 및 토큰 URL로 구성합니다.
 6. **만들기**&#x200B;를 선택한 다음 **에이전트에 추가**&#x200B;를 선택합니다.
 
@@ -256,7 +256,7 @@ Microsoft Copilot Studio는 자동으로 Power Platform 사용자 지정 커넥�
 
 ## MCP 서버 작동 중
 
-Adobe CX Enterprise MCP 서버가 실제 비즈니스 문제를 해결하는지 확인하십시오. 각 연습에서는 진정한 운영 과제에서 시작하여 AI 클라이언트가 도구를 전환하거나 코드를 작성하지 않고 일반 언어로 해결하는 방법을 보여 줍니다.
+CX Coworker Gateway를 통해 실제 비즈니스 문제를 해결할 수 있습니다. 각 연습에서는 진정한 운영 과제에서 시작하여 AI 클라이언트가 도구를 전환하거나 코드를 작성하지 않고 일반 언어로 해결하는 방법을 보여 줍니다.
 
 <!--
 CARDS
@@ -415,15 +415,15 @@ MCP 연결에는 인증, 조직 선택 및 애플리케이션 수준 권한이 �
 
 Adobe 사용자가 여러 IMS 조직에 속해 있고 잘못된 도구 또는 데이터가 표시되는 경우 MCP 서버를 연결 해제하고 브라우저에서 Adobe 세션에서 로그아웃한 다음 다시 연결합니다. 로그인하는 동안 조직을 선택하라는 메시지가 표시됩니다.
 
-Adobe CX Enterprise MCP 서버는 사용자 계정이 둘 이상에 액세스할 수 있는 경우에도 한 번에 하나의 IMS 조직에만 인증할 수 있습니다.
+Adobe MCP 서버는 사용자 계정이 둘 이상에 액세스할 수 있는 경우에도 한 번에 하나의 IMS 조직에만 인증될 수 있습니다.
 
 +++
 
 +++샌드박스, 보고서 세트, 환경 또는 기타 세션 리소스 지정
 
-일부 Adobe CX Enterprise MCP 서버에서는 결과를 반환하기 전에 리소스를 지정해야 합니다. 애플리케이션에 따라 샌드박스, 프로그램, 환경, 보고서 세트 또는 데이터 보기일 수 있습니다.
+일부 Adobe MCP 서버에서는 결과를 반환하기 전에 리소스를 지정해야 합니다. 애플리케이션에 따라 샌드박스, 프로그램, 환경, 보고서 세트 또는 데이터 보기일 수 있습니다.
 
-액세스 권한이 있는 리소스를 잘 모를 경우 AI 클라이언트에 문의하십시오. 예: &quot;사용 가능한 샌드박스를 나열합니다.&quot; 또는 &quot;액세스 권한이 있는 보고서 세트는 무엇입니까?&quot; Adobe CX Enterprise MCP 서버는 종종 사용자가 사용할 수 있는 전체 리소스 목록을 반환할 수 있습니다.
+액세스 권한이 있는 리소스를 잘 모를 경우 AI 클라이언트에 문의하십시오. 예: &quot;사용 가능한 샌드박스를 나열합니다.&quot; 또는 &quot;액세스 권한이 있는 보고서 세트는 무엇입니까?&quot; Adobe MCP 서버는 종종 사용자가 사용할 수 있는 리소스의 전체 목록을 반환할 수 있습니다.
 
 세션 리소스가 설정되면 언제든지 AI 클라이언트에게 어떤 리소스를 사용할지 알려 전환할 수 있습니다.
 
@@ -439,8 +439,8 @@ AI 클라이언트는 OAuth를 사용하여 Adobe 사용자 계정을 대행합�
 
 +++세션이 손실된 후 다시 인증
 
-Adobe CX Enterprise MCP 서버는 OAuth를 사용하여 Adobe 사용자 계정을 인증합니다. 인증 상태가 손실되면 다시 인증할 때까지 추가 도구 호출이 성공하지 못합니다.
+Adobe MCP 서버는 OAuth를 사용하여 Adobe 사용자 계정을 인증합니다. 인증 상태가 손실되면 다시 인증할 때까지 추가 도구 호출이 성공하지 못합니다.
 
-재인증: AI 클라이언트의 MCP 서버 구성을 열고 Adobe CX 엔터프라이즈 MCP 서버 항목을 선택한 다음 다시 연결합니다. Adobe ID으로 다시 로그인하라는 메시지가 표시됩니다.
+재인증: AI 클라이언트의 MCP 서버 구성을 열고 Adobe MCP 서버 항목을 선택한 다음 다시 연결합니다. Adobe ID으로 다시 로그인하라는 메시지가 표시됩니다.
 
 +++

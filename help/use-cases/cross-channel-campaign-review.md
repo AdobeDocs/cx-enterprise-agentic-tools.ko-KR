@@ -1,8 +1,8 @@
 ---
 title: 크로스 채널 캠페인 검토 실행
-description: 단일 AI 세션에서 CX 엔터프라이즈 MCP를 사용하여 여정, 대상 및 성능 전반에 걸친 AJO, CJA 및 Real-Time CDP 캠페인 상태를 통합적으로 파악할 수 있습니다.
-last-substantial-update: 2026-06-09T00:00:00Z
-source-git-commit: 937a3189965f3a3551c730bb27ee0592ae6fca92
+description: 단일 AI 세션에서 CX Coworker Gateway를 사용하면 여정, 대상 및 성능 전반에 걸쳐 AJO, CJA 및 Real-Time CDP 캠페인 상태를 한 눈에 볼 수 있습니다.
+last-substantial-update: 2026-07-14T00:00:00Z
+source-git-commit: 4f557937701441bcc34878e3cd13423ce35487ba
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 5%
@@ -23,7 +23,7 @@ ht-degree: 5%
 | 시나리오 세부 정보 | |
 | --- | --- |
 | CX 엔터프라이즈 애플리케이션 | [Adobe Journey Optimizer](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home), [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview), [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) |
-| 무생식 도구 | [CX 엔터프라이즈 MCP](../tools/mcp-servers.md#cx-enterprise-mcp-servers) |
+| 무생식 도구 | [CX 동료 게이트웨이](../tools/mcp-servers.md#cx-coworker-gateway) |
 | 대상자 | 캠페인 관리자, 마케팅 운영 |
 | 사전 요구 사항 | MCP 호환 AI 클라이언트, AJO, CJA 및 Real-Time CDP 액세스 |
 
@@ -35,31 +35,31 @@ ht-degree: 5%
 
 >[!TAB 클라우드.ai]
 
-CX 엔터프라이즈 MCP 를 사용자 정의 커넥터로 연결합니다. 하나의 연결을 통해 AJO, CJA 및 Real-Time CDP 도구에 액세스할 수 있습니다.
+CX Coworker Gateway 를 사용자 정의 커넥터로 연결합니다. 하나의 연결을 통해 AJO, CJA 및 Real-Time CDP 도구에 액세스할 수 있습니다.
 
 1. Cloud.ai의 **설정 > 통합**(으)로 이동합니다.
-2. **사용자 지정 커넥터 추가**&#x200B;를 선택하고 서버 URL을 입력하십시오. `https://cx-enterprise.adobe.io/mcp`
+2. **사용자 지정 커넥터 추가**&#x200B;를 선택하고 서버 URL을 입력하십시오. `https://cx-coworker-gateway.adobe.io/mcp`
 3. **연결**&#x200B;을 선택하고 Adobe ID으로 로그인하세요.
 
 전체 설정: [Claude.ai 사용자 지정 커넥터 설명서](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)
 
 >[!TAB ChatGPT]
 
-ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교육 계획 필요)를 사용하여 CX 엔터프라이즈 MCP를 연결합니다.
+ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교육 계획 필요)를 사용하여 CX Coworker Gateway를 연결합니다.
 
 1. **ChatGPT 설정**&#x200B;에서 **개발자 모드**&#x200B;를 사용하도록 설정합니다.
 2. **설정 > 통합**(으)로 이동하여 **사용자 지정 커넥터 추가 > 원격 MCP 서버**&#x200B;를 선택합니다.
-3. 서버 URL 입력: `https://cx-enterprise.adobe.io/mcp`
+3. 서버 URL 입력: `https://cx-coworker-gateway.adobe.io/mcp`
 4. **연결**&#x200B;을 선택하고 Adobe ID으로 로그인하세요.
 
 전체 설정: [ChatGPT MCP 설명서](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)
 
 >[!TAB 기타 AI 클라이언트]
 
-Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 CX 엔터프라이즈 MCP에 연결:
+Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 CX Coworker Gateway에 연결합니다.
 
 ```
-https://cx-enterprise.adobe.io/mcp
+https://cx-coworker-gateway.adobe.io/mcp
 ```
 
 지원되는 모든 클라이언트에 대한 전체 설치 지침: [AI 클라이언트에 연결](../tools/mcp-servers.md)
