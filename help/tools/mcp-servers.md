@@ -4,8 +4,8 @@ description: Model Context Protocol 서버를 사용하여 MCP 호환 AI 클라�
 last-substantial-update: 2026-07-14T00:00:00Z
 source-git-commit: a619c651d13834f53ecf1dd524aae3e7e5efcca5
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 5%
+source-wordcount: '2206'
+ht-degree: 6%
 
 ---
 
@@ -20,13 +20,13 @@ Adobe MCP 서버는 호환되는 AI 클라이언트에 Adobe 데이터 및 워�
 
 Adobe MCP 서버는 개방형 [모델 컨텍스트 프로토콜](https://modelcontextprotocol.io/docs/getting-started/intro) 표준을 따릅니다. 모든 MCP 호환 AI 클라이언트는 모든 Adobe MCP 서버에 연결합니다.
 
-## CX 엔터프라이즈 MCP 서버 {#cx-enterprise-mcp-servers}
+## CX Enterprise MCP 서버 {#cx-enterprise-mcp-servers}
 
 >[!CONTEXTUALHELP]
 >id="cx-enterprise-agentic-tools_mcp_servers_cx-enterprise"
 >title="CX Coworker 게이트웨이"
 >abstract="단일 MCP 엔드포인트를 통해 액세스할 수 있는 CX Enterprise 애플리케이션입니다. AI 클라이언트에서 일반 언어로 질문하고, 분석하고, 조치를 취할 수 있습니다."
->additional-url="https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/overview" text="CX Coworker Gateway 설명서"
+>additional-url="https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/overview" text="CX Coworker 게이트웨이 설명서"
 
 ![CX Coworker Gateway는 AI 클라이언트를 전체 Adobe CX Enterprise Suite의 도구에 연결합니다](../assets/mcp-gateway-hero.gif)
 
@@ -308,7 +308,7 @@ CARDS
                 </div>
                 <a href="../use-cases/analyze-campaign-performance.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Surface Campaign 인사이트</span>
-                
+                </a>
             </div>
         </div>
     </div>
@@ -331,7 +331,7 @@ CARDS
                 </div>
                 <a href="../use-cases/query-audiences.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">대상 활성화 확인</span>
-                
+                </a>
             </div>
         </div>
     </div>
@@ -354,7 +354,7 @@ CARDS
                 </div>
                 <a href="../use-cases/manage-ajo-journeys.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">여정 모니터링</span>
-                
+                </a>
             </div>
         </div>
     </div>
@@ -377,7 +377,7 @@ CARDS
                 </div>
                 <a href="../use-cases/manage-aem-content.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">더 빠르게 콘텐츠 배송</span>
-                
+                </a>
             </div>
         </div>
     </div>
@@ -400,7 +400,7 @@ CARDS
                 </div>
                 <a href="../use-cases/optimize-content-with-performance-data.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">성능 차이 닫기</span>
-                
+                </a>
             </div>
         </div>
     </div>
