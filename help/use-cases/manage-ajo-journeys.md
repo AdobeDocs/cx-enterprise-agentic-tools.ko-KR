@@ -1,14 +1,12 @@
 ---
 title: 고객에게 영향을 미치기 전에 여정 문제 파악
-description: CX Coworker Gateway를 사용하여 활성 AJO 여정을 모니터링하고, 캠페인 구성을 검토하고, 대상자에게 도달하기 전에 운영 문제를 파악할 수 있습니다.
-last-substantial-update: 2026-07-14T00:00:00Z
-source-git-commit: 4f557937701441bcc34878e3cd13423ce35487ba
+description: Adobe Journey Optimizer MCP 서버를 사용하여 활성 AJO 여정을 모니터링하고, 캠페인 구성을 검토하고, 대상자에게 도달하기 전에 운영 문제를 노출할 수 있습니다.
+last-substantial-update: 2026-09-16
+source-git-commit: a70eede6e0efe0d1dbdc00c5d9de5aeb3b5d75de
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 2%
-
+source-wordcount: '1071'
+ht-degree: 4%
 ---
-
 
 # 고객에게 영향을 미치기 전에 여정 문제 파악
 <!-- last-modified: 2026-06-08 -->
@@ -17,12 +15,12 @@ ht-degree: 2%
 
 *확대/축소를 선택합니다.*
 
-감지되지 않는 여정 문제는 누구나 인식하기 전에 고객에게 도달할 수 있습니다. 이 연습에서는 CX Coworker Gateway를 사용하여 Adobe Journey Optimizer을 열지 않고도 일반 언어로 답변을 얻을 수 있도록 활성 AJO 여정을 확인하고, 캠페인 구성을 검토하고, AI 클라이언트를 통해 운영 문제를 표시하여 보다 앞서 나가는 방법을 보여 줍니다.
+감지되지 않는 여정 문제는 누구나 인식하기 전에 고객에게 도달할 수 있습니다. 이 연습에서는 Adobe Journey Optimizer MCP 서버를 사용하여 Adobe Journey Optimizer을 열지 않고도 일반 언어로 답변을 얻을 수 있으므로 활성 AJO 여정을 확인하고, 캠페인 구성을 검토하고, AI 클라이언트를 통해 운영 문제를 표시하여 웹 사이트에 보다 앞서 있는 방법을 보여 줍니다.
 
 | 시나리오 세부 정보 | |
 | --- | --- |
 | CX 엔터프라이즈 애플리케이션 | [Adobe Journey Optimizer(AJO)](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home) |
-| 무생식 도구 | [CX 동료 게이트웨이](../tools/mcp-servers.md#cx-coworker-gateway) |
+| 에이전틱 도구 | [CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home) 또는 [Adobe Journey Optimizer MCP 서버](../tools/mcp-servers.md) |
 | 대상자 | 캠페인 관리자, 마케터 |
 | 사전 요구 사항 | MCP 호환 AI 클라이언트, AJO 액세스 |
 
@@ -33,33 +31,39 @@ ht-degree: 2%
 
 >[!BEGINTABS]
 
+>[!TAB CX Enterprise Coworker]
+
+이러한 답을 가장 빨리 얻을 수 있는 방법은 CX Enterprise Coworker으로 서버 설정이나 AI 클라이언트 구성이 필요하지 않습니다. [CX Enterprise Coworker 시도](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)
+
+자체 AI 클라이언트를 Adobe Journey Optimizer에 직접 연결하는 것이 좋다면 아래 탭을 참조하십시오.
+
 >[!TAB 클라우드.ai]
 
-CX Coworker Gateway를 사용자 정의 커넥터로 연결하여 Adobe Journey Optimizer 도구에 액세스합니다.
+Adobe Journey Optimizer MCP 서버를 사용자 지정 커넥터로 연결합니다.
 
 1. Cloud.ai의 **설정 > 통합**(으)로 이동합니다.
-2. **사용자 지정 커넥터 추가**&#x200B;를 선택하고 서버 URL을 입력하십시오. `https://cx-coworker-gateway.adobe.io/mcp`
+2. **사용자 지정 커넥터 추가**&#x200B;를 선택하고 서버 URL을 입력하십시오. `https://ajo-mcp.adobe.io/mcp`
 3. **연결**&#x200B;을 선택하고 Adobe ID으로 로그인하세요.
 
 전체 설정: [Claude.ai 사용자 지정 커넥터 설명서](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)
 
 >[!TAB ChatGPT]
 
-ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교육 계획 필요)를 사용하여 CX Coworker Gateway를 연결합니다.
+ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교육 계획 필요)를 사용하여 Adobe Journey Optimizer MCP 서버를 연결합니다.
 
 1. **ChatGPT 설정**&#x200B;에서 **개발자 모드**&#x200B;를 사용하도록 설정합니다.
 2. **설정 > 통합**(으)로 이동하여 **사용자 지정 커넥터 추가 > 원격 MCP 서버**&#x200B;를 선택합니다.
-3. 서버 URL 입력: `https://cx-coworker-gateway.adobe.io/mcp`
+3. 서버 URL 입력: `https://ajo-mcp.adobe.io/mcp`
 4. **연결**&#x200B;을 선택하고 Adobe ID으로 로그인하세요.
 
 전체 설정: [ChatGPT MCP 설명서](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)
 
 >[!TAB 기타 AI 클라이언트]
 
-Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 CX Coworker Gateway에 연결합니다.
+Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 Adobe Journey Optimizer MCP 서버에 연결합니다.
 
 ```
-https://cx-coworker-gateway.adobe.io/mcp
+https://ajo-mcp.adobe.io/mcp
 ```
 
 지원되는 모든 클라이언트에 대한 전체 설치 지침: [AI 클라이언트에 연결](../tools/mcp-servers.md)
@@ -180,7 +184,7 @@ AI 클라이언트를 Adobe Journey Optimizer에 연결하고 5개의 프롬프�
 
 ## 수행할 수 있는 작업 더 보기
 
-CX Coworker Gateway는 광범위한 AJO 여정 및 캠페인 세부 정보를 표시할 수 있습니다. 동일한 세션에서 시도할 수 있는 프롬프트를 보려면 아래 시나리오를 확장하십시오.
+Adobe Journey Optimizer MCP 서버는 광범위한 AJO 여정 및 캠페인 세부 정보를 제공할 수 있습니다. 동일한 세션에서 시도할 수 있는 프롬프트를 보려면 아래 시나리오를 확장하십시오.
 
 +++변경하기 전에 라이브 정보 확인
 
