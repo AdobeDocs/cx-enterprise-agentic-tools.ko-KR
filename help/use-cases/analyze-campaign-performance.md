@@ -20,7 +20,7 @@ ht-degree: 3%
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| CX 엔터프라이즈 애플리케이션 | [Customer Journey Analytics(CJA)](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) |
+| CX 엔터프라이즈 애플리케이션 | [Customer Journey Analytics(CJA)](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview) |
 | 에이전틱 도구 | [CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home) 또는 [Customer Journey Analytics MCP 서버](../tools/mcp-servers.md) |
 | 대상자 | 분석가, 캠페인 관리자 |
 | 사전 요구 사항 | MCP 호환 AI 클라이언트, CJA 액세스 |
