@@ -1,14 +1,12 @@
 ---
 title: 크로스 채널 캠페인 검토 실행
-description: 단일 AI 세션에서 CX Coworker Gateway를 사용하면 여정, 대상 및 성능 전반에 걸쳐 AJO, CJA 및 Real-Time CDP 캠페인 상태를 한 눈에 볼 수 있습니다.
-last-substantial-update: 2026-07-14T00:00:00Z
-source-git-commit: 4f557937701441bcc34878e3cd13423ce35487ba
+description: 단일 AI 세션에서 여정, 대상자 및 성능 전반에 걸쳐 AJO, CJA 및 Real-Time CDP 캠페인 상태를 통합적으로 볼 수 있습니다.
+last-substantial-update: 2026-09-16
+source-git-commit: a70eede6e0efe0d1dbdc00c5d9de5aeb3b5d75de
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 5%
-
+source-wordcount: '1564'
+ht-degree: 6%
 ---
-
 
 # 크로스 채널 캠페인 검토 실행
 
@@ -18,12 +16,12 @@ ht-degree: 5%
 
 *확대/축소를 선택합니다.*
 
-캠페인 상태에 대한 전체 그림에는 AJO의 활성 여정, Real-Time CDP의 대상 활성화 상태 및 CJA의 성능 지표와 같은 여러 시스템의 데이터가 필요합니다. 이 연습에서는 세 가지 를 단일 AI 세션에서 모두 연결하는 방법을 보여 주기 때문에 세 가지 개별 도구가 아닌 한 대화에서 여정 상태에서 대상 상태로 전환하고 성능 트렌드를 볼 수 있습니다.
+캠페인 상태에 대한 전체 그림에는 AJO의 활성 여정, Real-Time CDP의 대상 활성화 상태 및 CJA의 성능 지표와 같은 여러 시스템의 데이터가 필요합니다. 이 연습에서는 세 가지 모두를 단일 AI 세션으로 가져와 여정 상태에서 대상 상태, 세 가지 개별 도구가 아닌 한 번의 대화로 성능 트렌드로 전환하는 방법을 보여 줍니다.
 
 | 시나리오 세부 정보 | |
 | --- | --- |
 | CX 엔터프라이즈 애플리케이션 | [Adobe Journey Optimizer](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home), [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview), [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) |
-| 무생식 도구 | [CX 동료 게이트웨이](../tools/mcp-servers.md#cx-coworker-gateway) |
+| 에이전틱 도구 | [CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home) 또는 [Adobe Journey Optimizer](../tools/mcp-servers.md), [Customer Journey Analytics](../tools/mcp-servers.md) 및 [Real-Time CDP](../tools/mcp-servers.md) MCP 서버 |
 | 대상자 | 캠페인 관리자, 마케팅 운영 |
 | 사전 요구 사항 | MCP 호환 AI 클라이언트, AJO, CJA 및 Real-Time CDP 액세스 |
 
@@ -33,34 +31,54 @@ ht-degree: 5%
 
 >[!BEGINTABS]
 
+>[!TAB CX Enterprise Coworker]
+
+CX Enterprise Coworker은 서버 설정 또는 AI 클라이언트 구성 없이 AJO, CJA 및 Real-Time CDP을 한 곳에서 연결합니다. [CX Enterprise Coworker 시도](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)
+
+자체 AI 클라이언트를 직접 연결하고 싶다면 아래 탭을 사용하여 세 개의 MCP 서버를 모두 연결합니다. Real-Time CDP MCP 서버는 공개 베타에 있으며 귀사가 허용 목록에추가된으로 제공되어야 합니다.
+
 >[!TAB 클라우드.ai]
 
-CX Coworker Gateway 를 사용자 정의 커넥터로 연결합니다. 하나의 연결을 통해 AJO, CJA 및 Real-Time CDP 도구에 액세스할 수 있습니다.
+세 개의 MCP 서버를 모두 사용자 정의 커넥터로 연결합니다. 각각 하나씩 추가합니다.
 
 1. Cloud.ai의 **설정 > 통합**(으)로 이동합니다.
-2. **사용자 지정 커넥터 추가**&#x200B;를 선택하고 서버 URL을 입력하십시오. `https://cx-coworker-gateway.adobe.io/mcp`
-3. **연결**&#x200B;을 선택하고 Adobe ID으로 로그인하세요.
+2. **사용자 지정 커넥터 추가**&#x200B;를 선택하고 서버 URL을 입력한 다음 **연결**&#x200B;을 선택합니다.
+3. Adobe ID으로 로그인한 다음 나머지 서버에 대해 이 과정을 반복합니다.
+
+| 서버 | 엔드포인트 |
+| --- | --- |
+| Adobe Journey Optimizer 서버 | `https://ajo-mcp.adobe.io/mcp` |
+| Customer Journey Analytics 서버 | `https://cja-mcp.adobe.io/mcp` |
+| Real-Time CDP 서버 | `https://rtcdp-mcp.adobe.io/mcp` |
 
 전체 설정: [Claude.ai 사용자 지정 커넥터 설명서](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)
 
 >[!TAB ChatGPT]
 
-ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교육 계획 필요)를 사용하여 CX Coworker Gateway를 연결합니다.
+ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교육 계획 필요)를 사용하여 세 개의 MCP 서버를 모두 연결합니다. 각 서버를 별도로 추가합니다.
 
 1. **ChatGPT 설정**&#x200B;에서 **개발자 모드**&#x200B;를 사용하도록 설정합니다.
 2. **설정 > 통합**(으)로 이동하여 **사용자 지정 커넥터 추가 > 원격 MCP 서버**&#x200B;를 선택합니다.
-3. 서버 URL 입력: `https://cx-coworker-gateway.adobe.io/mcp`
-4. **연결**&#x200B;을 선택하고 Adobe ID으로 로그인하세요.
+3. 서버 URL을 입력하고 **연결**&#x200B;을 선택한 다음 Adobe ID으로 로그인하세요.
+4. 나머지 서버에 대해 이 작업을 반복합니다.
+
+| 서버 | 엔드포인트 |
+| --- | --- |
+| Adobe Journey Optimizer 서버 | `https://ajo-mcp.adobe.io/mcp` |
+| Customer Journey Analytics 서버 | `https://cja-mcp.adobe.io/mcp` |
+| Real-Time CDP 서버 | `https://rtcdp-mcp.adobe.io/mcp` |
 
 전체 설정: [ChatGPT MCP 설명서](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)
 
 >[!TAB 기타 AI 클라이언트]
 
-Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 CX Coworker Gateway에 연결합니다.
+Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 세 개의 MCP 서버 모두에 연결합니다.
 
-```
-https://cx-coworker-gateway.adobe.io/mcp
-```
+| 서버 | 엔드포인트 |
+| --- | --- |
+| Adobe Journey Optimizer 서버 | `https://ajo-mcp.adobe.io/mcp` |
+| Customer Journey Analytics 서버 | `https://cja-mcp.adobe.io/mcp` |
+| Real-Time CDP 서버 | `https://rtcdp-mcp.adobe.io/mcp` |
 
 지원되는 모든 클라이언트에 대한 전체 설치 지침: [AI 클라이언트에 연결](../tools/mcp-servers.md)
 
@@ -116,8 +134,8 @@ Show me the activation status for the high-value loyalty segment.
 
 | 대상 | 상태 | 마지막으로 성공한 실행 | 대상자 크기 |
 | --- | --- | --- | --- |
-| Google Ads | 활성 | 2026년 5월 21일 오전 02:14 | 48,320 |
-| Meta 광고 | 활성 | 2026년 5월 21일 오전 01:58 | 48,295 |
+| Google Ads | 활성 | 2026년 5월 21일 오전 2:14 | 48,320 |
+| Meta 광고 | 활성 | 2026년 5월 21일 오전 1:58 | 48,295 |
 | Salesforce Marketing Cloud | 활성 | 2026년 5월 20일 오후 11:30 | 47,940 |
 | Adobe Target | 활성 | 2026년 5월 21일 오전 12:00 | 48,320 |
 

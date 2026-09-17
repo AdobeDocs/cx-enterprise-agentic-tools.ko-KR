@@ -1,14 +1,12 @@
 ---
 title: Adobe CX 엔터프라이즈 에이전트 툴
-description: MCP 서버, 에이전트 기술 및 API를 사용하여 AI 에이전트 및 개발 도구를 Adobe CX Enterprise 기능에 연결합니다.
-last-substantial-update: 2026-07-14T00:00:00Z
-source-git-commit: 4f557937701441bcc34878e3cd13423ce35487ba
+description: MCP 서버, 에이전트 기술 및 API를 사용해 AI 에이전트와 개발 도구를 Adobe CX Enterprise 기능에 연결합니다.
+last-substantial-update: 2026-09-16
+source-git-commit: a70eede6e0efe0d1dbdc00c5d9de5aeb3b5d75de
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 2%
-
+source-wordcount: '809'
+ht-degree: 6%
 ---
-
 
 # Adobe CX 엔터프라이즈 에이전트 툴
 
@@ -19,7 +17,7 @@ ht-degree: 2%
 AI가 Adobe CX Enterprise의 공동 작업자가 되도록 합니다. AI 클라이언트를 캠페인, 대상자, 여정 및 컨텐츠에 연결합니다. 이미 사용하는 도구에서 일반 언어로 사용자와 상호 작용합니다. 시작하는 데 필요한 새 인터페이스, 컨텍스트 전환, 코딩이 없습니다.
 
 >[!TIP]
->**CX Coworker Gateway로 시작** 하나의 연결을 통해 AI 클라이언트는 조직의 라이선스를 기반으로 Adobe Journey Optimizer, Customer Journey Analytics 및 Real-Time CDP에 액세스할 수 있습니다. [지금 연결](tools/mcp-servers.md#cx-coworker-gateway)
+>**CX Enterprise Coworker 시작** 서버 설정이나 AI 클라이언트 구성 없이 CX 엔터프라이즈 애플리케이션에 연결됩니다. [CX Enterprise Coworker 시도](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)
 
 <!--
 CARDS
@@ -63,7 +61,7 @@ CARDS
                 </div>
                 <a href="tools/mcp-servers.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">MCP 서버 탐색</span>
-                
+                </a>
             </div>
         </div>
     </div>
@@ -86,7 +84,7 @@ CARDS
                 </div>
                 <a href="tools/agent-skills.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">에이전트 기술 살펴보기</span>
-                
+                </a>
             </div>
         </div>
     </div>
@@ -109,7 +107,7 @@ CARDS
                 </div>
                 <a href="tools/apis.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">빌더를 위한 API 탐색</span>
-                
+                </a>
             </div>
         </div>
     </div>
@@ -122,7 +120,7 @@ CARDS
 
 >[!TAB MCP 서버]
 
-호환되는 AI 클라이언트를 사용하여 CX 엔터프라이즈 애플리케이션에 일반 언어로 액세스합니다. 코딩이 필요하지 않습니다. AJO, CJA 및 Real-Time CDP에 대한 단일 연결을 위해 CX Coworker Gateway로 시작하거나 AEM 및 기타 애플리케이션에 직접 연결합니다.
+호환되는 AI 클라이언트를 사용하여 CX 엔터프라이즈 애플리케이션에 일반 언어로 액세스합니다. 코딩이 필요하지 않습니다. 애플리케이션 전반에서 가장 빠른 경로를 위해 CX Enterprise Coworker으로 시작하거나 자체 MCP 서버를 사용하여 AJO, CJA, AEM 및 기타 애플리케이션에 직접 연결합니다.
 
 - Claude, Cursor, ChatGPT 및 기타 MCP 호환 클라이언트에서 몇 분 안에 연결
 - 자연어를 사용하여 캠페인, 대상자 및 여정 데이터 쿼리
@@ -191,7 +189,7 @@ CARDS
                 </div>
                 <a href="use-cases/analyze-campaign-performance.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Surface Campaign 인사이트</span>
-                
+                </a>
             </div>
         </div>
     </div>
@@ -214,7 +212,7 @@ CARDS
                 </div>
                 <a href="use-cases/manage-aem-content.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">더 빠르게 콘텐츠 배송</span>
-                
+                </a>
             </div>
         </div>
     </div>

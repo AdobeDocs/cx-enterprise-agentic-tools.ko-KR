@@ -1,14 +1,12 @@
 ---
 title: 데이터 기반 업데이트로 컨텐츠 성능 격차 완화
 description: 하나의 AI 세션에서 CJA과 AEM을 함께 사용하면 도구를 전환하지 않고도 전환되지 않는 캠페인을 찾고 원인을 진단하고 콘텐츠를 업데이트할 수 있습니다.
-last-substantial-update: 2026-07-14T00:00:00Z
-source-git-commit: 4f557937701441bcc34878e3cd13423ce35487ba
+last-substantial-update: 2026-09-16
+source-git-commit: a70eede6e0efe0d1dbdc00c5d9de5aeb3b5d75de
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 2%
-
+source-wordcount: '1146'
+ht-degree: 6%
 ---
-
 
 # 데이터 기반 업데이트로 컨텐츠 성능 격차 완화
 <!-- last-modified: 2026-06-10 -->
@@ -22,7 +20,7 @@ ht-degree: 2%
 | 시나리오 세부 정보 | |
 | --- | --- |
 | CX 엔터프라이즈 애플리케이션 | [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview), [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/introduction) |
-| 무생식 도구 | [CX Coworker Gateway](../tools/mcp-servers.md#cx-coworker-gateway), [AEM Content MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) |
+| 에이전틱 도구 | [CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home) 또는 [Customer Journey Analytics MCP 서버](../tools/mcp-servers.md) 및 [AEM MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/overview) |
 | 대상자 | 캠페인 관리자, 콘텐츠 전략가, 마케팅 운영 |
 | 사전 요구 사항 | MCP 호환 AI 클라이언트, CJA 액세스, AEM as a Cloud Service 액세스 |
 
@@ -32,6 +30,12 @@ ht-degree: 2%
 ## 시작하기에 앞서
 
 >[!BEGINTABS]
+
+>[!TAB CX Enterprise Coworker]
+
+CX Enterprise Coworker에서는 서버 설정 없이 이 전체 연습을 다룹니다. [CX Enterprise Coworker 시도](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)
+
+자체 AI 클라이언트를 직접 연결하고 싶다면 아래 탭을 사용하여 두 MCP 서버를 연결합니다.
 
 >[!TAB 클라우드.ai]
 
@@ -43,8 +47,8 @@ ht-degree: 2%
 
 | 서버 | 엔드포인트 |
 | --- | --- |
-| CX Coworker 게이트웨이 | `https://cx-coworker-gateway.adobe.io/mcp` |
-| AEM Content MCP 서버 | `https://mcp.adobeaemcloud.com/adobe/mcp/content` |
+| Customer Journey Analytics 서버 | `https://cja-mcp.adobe.io/mcp` |
+| AEM 서버 | `https://mcp.adobeaemcloud.com/adobe/mcp/aem` |
 
 전체 설정: [Claude.ai 사용자 지정 커넥터 설명서](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)
 
@@ -59,8 +63,8 @@ ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교�
 
 | 서버 | 엔드포인트 |
 | --- | --- |
-| CX Coworker 게이트웨이 | `https://cx-coworker-gateway.adobe.io/mcp` |
-| AEM Content MCP 서버 | `https://mcp.adobeaemcloud.com/adobe/mcp/content` |
+| Customer Journey Analytics 서버 | `https://cja-mcp.adobe.io/mcp` |
+| AEM 서버 | `https://mcp.adobeaemcloud.com/adobe/mcp/aem` |
 
 전체 설정: [ChatGPT MCP 설명서](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)
 
@@ -70,8 +74,8 @@ Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경�
 
 | 서버 | 엔드포인트 |
 | --- | --- |
-| CX Coworker 게이트웨이 | `https://cx-coworker-gateway.adobe.io/mcp` |
-| AEM Content MCP 서버 | `https://mcp.adobeaemcloud.com/adobe/mcp/content` |
+| Customer Journey Analytics 서버 | `https://cja-mcp.adobe.io/mcp` |
+| AEM 서버 | `https://mcp.adobeaemcloud.com/adobe/mcp/aem` |
 
 지원되는 모든 클라이언트에 대한 전체 설치 지침: [AI 클라이언트에 연결](../tools/mcp-servers.md)
 
@@ -177,7 +181,7 @@ Create an optimized version of the Bali Surf Camp page and summarize the propose
 
 >[!CAUTION]
 >
->확인하기 전에 제안된 변경 사항의 전체 요약을 검토하십시오. AEM Content MCP 서버는 AEM 환경에 변경 사항을 기록합니다. 페이지는 명시적으로 다시 게시할 때까지 게시된 상태로 유지됩니다.
+>확인하기 전에 제안된 변경 사항의 전체 요약을 검토하십시오. AEM MCP 서버는 AEM 환경에 대한 변경 사항을 기록합니다. 페이지는 명시적으로 다시 게시할 때까지 게시된 상태로 유지됩니다.
 
 
 ## 수행한 작업
@@ -268,4 +272,4 @@ Publish all confirmed changes and share the updated URLs.
 | 리소스 | 찾을 내용 |
 | --- | --- |
 | [AI 레지스트리의 CJA MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/cja-mcp){target="_blank"} | CJA MCP 서버 도구 및 가용성 |
-| [AI 레지스트리의 AEM Content MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp){target="_blank"} | AEM Content MCP 서버 도구 및 가용성 |
+| [AEM MCP 서버 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/overview){target="_blank"} | AEM MCP 서버 도구 및 가용성 |

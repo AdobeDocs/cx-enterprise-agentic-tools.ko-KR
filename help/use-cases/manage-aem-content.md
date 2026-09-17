@@ -1,14 +1,12 @@
 ---
 title: 최신 컨텐츠 유지 및 업데이트 전달 속도 향상
-description: AEM Content MCP 서버를 사용하여 도구 간에 전환하지 않고도 AEM 콘텐츠를 찾고, 검토하고, 업데이트하고, 게시할 수 있습니다.
-last-substantial-update: 2026-06-10T00:00:00Z
-source-git-commit: 937a3189965f3a3551c730bb27ee0592ae6fca92
+description: AEM MCP 서버를 사용하여 도구 간에 전환하지 않고도 AEM 콘텐츠를 찾고, 검토하고, 업데이트하고, 게시할 수 있습니다.
+last-substantial-update: 2026-09-16
+source-git-commit: a70eede6e0efe0d1dbdc00c5d9de5aeb3b5d75de
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 3%
-
+source-wordcount: '1019'
+ht-degree: 8%
 ---
-
 
 # 최신 컨텐츠 유지 및 업데이트 전달 속도 향상
 
@@ -18,12 +16,12 @@ ht-degree: 3%
 
 *확대/축소를 선택합니다.*
 
-웹 사이트 콘텐츠를 최신 상태로 유지하는 것은 지속적인 운영 부담입니다. 이 연습에서는 콘텐츠 팀이 AEM Content MCP 서버를 사용하여 콘텐츠 결정과 라이브 업데이트 간의 시간을 단축하고, AI 클라이언트를 통해 AEM 페이지 및 콘텐츠 조각을 찾고, 검토하고, 업데이트하고, 게시하는 방법을 보여 줍니다.
+웹 사이트 콘텐츠를 최신 상태로 유지하는 것은 지속적인 운영 부담입니다. 이 연습에서는 콘텐츠 팀이 AEM MCP 서버를 사용하여 콘텐츠 결정과 라이브 업데이트 간의 시간을 단축하고, AI 클라이언트를 통해 AEM 페이지 및 콘텐츠 조각을 찾고, 검토하고, 업데이트하고, 게시하는 방법을 보여 줍니다.
 
 | 시나리오 세부 정보 | |
 | --- | --- |
 | CX 엔터프라이즈 애플리케이션 | [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/introduction) |
-| 무생식 도구 | [AEM 콘텐츠 MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/ai-in-aem/using-mcp-with-aem-as-a-cloud-service) |
+| 에이전틱 도구 | [CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home) 또는 [AEM MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/overview) |
 | 대상자 | 콘텐츠 관리자, 마케팅 팀 |
 | 사전 요구 사항 | MCP 호환 AI 클라이언트, AEM as a Cloud Service 액세스 |
 
@@ -33,33 +31,39 @@ ht-degree: 3%
 
 >[!BEGINTABS]
 
+>[!TAB CX Enterprise Coworker]
+
+이를 수행하는 가장 빠른 방법은 CX Enterprise Coworker으로, 서버 설정이나 AI 클라이언트 구성이 필요하지 않습니다. [CX Enterprise Coworker 시도](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)
+
+자체 AI 클라이언트를 AEM에 직접 연결하는 것이 좋다면 아래 탭을 참조하십시오.
+
 >[!TAB 클라우드.ai]
 
-AEM Content MCP Server를 사용자 지정 커넥터로 연결합니다.
+AEM MCP 서버를 사용자 지정 커넥터로 연결합니다.
 
 1. Cloud.ai의 **설정 > 통합**(으)로 이동합니다.
-2. **사용자 지정 커넥터 추가**&#x200B;를 선택하고 서버 URL을 입력하십시오. `https://mcp.adobeaemcloud.com/adobe/mcp/content`
+2. **사용자 지정 커넥터 추가**&#x200B;를 선택하고 서버 URL을 입력하십시오. `https://mcp.adobeaemcloud.com/adobe/mcp/aem`
 3. **연결**&#x200B;을 선택하고 Adobe ID으로 로그인하세요.
 
 전체 설정: [Claude.ai 사용자 지정 커넥터 설명서](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)
 
 >[!TAB ChatGPT]
 
-ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교육 계획 필요)를 사용하여 AEM Content MCP 서버를 연결합니다.
+ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교육 계획 필요)를 사용하여 AEM MCP 서버를 연결합니다.
 
 1. **ChatGPT 설정**&#x200B;에서 **개발자 모드**&#x200B;를 사용하도록 설정합니다.
 2. **설정 > 통합**(으)로 이동하여 **사용자 지정 커넥터 추가 > 원격 MCP 서버**&#x200B;를 선택합니다.
-3. 서버 URL 입력: `https://mcp.adobeaemcloud.com/adobe/mcp/content`
+3. 서버 URL 입력: `https://mcp.adobeaemcloud.com/adobe/mcp/aem`
 4. **연결**&#x200B;을 선택하고 Adobe ID으로 로그인하세요.
 
 전체 설정: [ChatGPT MCP 설명서](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)
 
 >[!TAB 기타 AI 클라이언트]
 
-Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 AEM Content MCP 서버에 연결합니다.
+Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 AEM MCP 서버에 연결합니다.
 
 ```
-https://mcp.adobeaemcloud.com/adobe/mcp/content
+https://mcp.adobeaemcloud.com/adobe/mcp/aem
 ```
 
 지원되는 모든 클라이언트에 대한 전체 설치 지침: [AI 클라이언트에 연결](../tools/mcp-servers.md)
@@ -69,8 +73,6 @@ https://mcp.adobeaemcloud.com/adobe/mcp/content
 >[!NOTE]
 >
 >메시지가 표시되면 Adobe ID으로 로그인하고 AEM as a Cloud Service 환경에 연결된 IMS 조직을 선택합니다. 권한은 AEM 수준에서 적용됩니다. AI 클라이언트는 계정이 승인된 작업만 수행할 수 있습니다.
->
->변경하지 않고 컨텐츠를 검색하거나 감사하기만 하면 되는 경우 대신 읽기 전용 서버 엔드포인트 `https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly`을(를) 사용하십시오. 이 페이지의 모든 검색 및 검토 프롬프트는 두 서버 모두에서 작동합니다.
 >
 >첫 번째 연결 시 AI 클라이언트가 조직 또는 AEM 환경을 확인하도록 요청할 수 있습니다. 컨텍스트가 설정되면 MCP 서버는 세션의 나머지 부분에 컨텍스트를 사용합니다.
 >
@@ -129,7 +131,7 @@ Improve the Hero CTAs.
 
 >[!CAUTION]
 >
->메시지가 표시되면 각 변경 사항을 확인합니다. AEM Content MCP Server는 콘텐츠를 작성, 업데이트 및 삭제할 수 있습니다. 특히 라이브 페이지에서 승인하기 전에 제안된 변경 사항을 검토하십시오.
+>메시지가 표시되면 각 변경 사항을 확인합니다. AEM MCP 서버는 콘텐츠를 작성, 업데이트 및 삭제할 수 있습니다. 특히 라이브 페이지에서 승인하기 전에 제안된 변경 사항을 검토하십시오.
 
 ## 4단계: 게시 및 공유
 
@@ -150,11 +152,11 @@ Publish the changes and share the URL.
 
 ## 수행한 작업
 
-AEM Content MCP Server를 사용하여 AEM 인터페이스를 열지 않고도 콘텐츠를 찾고, 라이브 페이지를 검토하고, AI가 제안한 개선 사항을 적용하고, 결과를 게시했습니다. 콘텐츠 팀은 단일 AI 세션에서 콘텐츠 검색, 편집 및 게시를 결합함으로써 차이를 식별하던 방식에서 더 적은 수의 컨텍스트 스위치로 업데이트를 더 빨리 전달할 수 있습니다. 동일한 워크플로우가 여러 페이지, 콘텐츠 조각 및 조정된 캠페인 시작으로 확장됩니다.
+AEM MCP 서버를 사용하여 AEM 인터페이스를 열지 않고도 콘텐츠를 찾고, 라이브 페이지를 검토하고, AI가 제안한 개선 사항을 적용하고, 결과를 게시했습니다. 콘텐츠 팀은 단일 AI 세션에서 콘텐츠 검색, 편집 및 게시를 결합함으로써 차이를 식별하던 방식에서 더 적은 수의 컨텍스트 스위치로 업데이트를 더 빨리 전달할 수 있습니다. 동일한 워크플로우가 여러 페이지, 콘텐츠 조각 및 조정된 캠페인 시작으로 확장됩니다.
 
 ## 수행할 수 있는 작업 더 보기
 
-AEM Content MCP Server는 연습 과정에서 다루는 것 이상의 기능을 수행합니다. 동일한 세션에서 시도할 수 있는 프롬프트를 보려면 아래 시나리오를 확장하십시오.
+AEM MCP 서버는 연습 범위보다 훨씬 더 많은 작업을 처리합니다. 동일한 세션에서 시도할 수 있는 프롬프트를 보려면 아래 시나리오를 확장하십시오.
 
 +++사이트 검토 또는 재시작 진행
 
@@ -273,5 +275,5 @@ Promote the May Updates launch to production.
 
 | 리소스 | 찾을 내용 |
 | --- | --- |
-| [AI 레지스트리의 AEM Content MCP 서버](https://developer.adobe.com/ai-registry/#/mcp/aem-content-mcp){target="_blank"} | 도구 목록 및 가용성 |
+| [AEM MCP 서버 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/overview){target="_blank"} | 도구 목록 및 가용성 |
 | [AEM as a Cloud Service 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service){target="_blank"} | 전체 AEM 애플리케이션 설명서 |
