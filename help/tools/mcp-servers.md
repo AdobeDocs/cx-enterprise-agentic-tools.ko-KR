@@ -1,11 +1,11 @@
 ---
 title: MCP 서버
-description: Model Context Protocol 서버를 사용하여 MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로우에 연결합니다.
+description: Model Context Protocol 서버를 사용하여 모든 MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로에 연결합니다.
 last-substantial-update: 2026-09-16
 source-git-commit: a70eede6e0efe0d1dbdc00c5d9de5aeb3b5d75de
 workflow-type: tm+mt
 source-wordcount: '2400'
-ht-degree: 6%
+ht-degree: 8%
 ---
 
 # MCP 서버
@@ -21,7 +21,7 @@ Adobe MCP 서버는 개방형 [모델 컨텍스트 프로토콜](https://modelco
 >[!CONTEXTUALHELP]
 >id="cx-enterprise-agentic-tools_mcp_servers_cx-enterprise"
 >title="CX Enterprise Coworker"
->abstract="서버 설정 없이 일반 언어로 CX 엔터프라이즈 애플리케이션에 대해 질문하고 분석하고 조치를 취하십시오. 자체 MCP 서버가 있는 개별 애플리케이션의 경우 대신 직접 연결합니다."
+>abstract="서버 설정 없이 일반 언어로 CX Enterprise 애플리케이션 전반에서 질문하고 분석하며 조치를 취하십시오. 자체 MCP 서버가 있는 개별 애플리케이션의 경우 대신 직접 연결하십시오."
 >additional-url="https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home" text="CX Enterprise Coworker 설명서"
 
 ![AI 클라이언트를 CX 엔터프라이즈 애플리케이션에 연결하는 CX Enterprise Coworker](../assets/mcp-sub-hero.gif)
@@ -32,16 +32,16 @@ Adobe MCP 서버는 개방형 [모델 컨텍스트 프로토콜](https://modelco
 
 | MCP 서버 | 엔드포인트 | 수행 가능한 작업 | CX Enterprise Coworker을 통해서도 |
 | --- | --- | --- | --- |
-| [Adobe Journey Optimizer](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/ajo-mcp) | `https://ajo-mcp.adobe.io/mcp` | 여정, 캠페인 및 채널 구성 검토 | 예 |
-| [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/cja-mcp) | `https://cja-mcp.adobe.io/mcp` | 보고서 쿼리, 데이터 보기 검색 및 작업 공간 작성 | 예 |
-| [Adobe Analytics](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/analytics-mcp) | `https://aa-mcp.adobe.io/mcp` | 보고서 세트 검색, 세그먼트 작성 및 작업 영역 만들기 | 예 |
-| [Adobe Target](https://experienceleague.adobe.com/ko/docs/target/using/mcp/target-mcp) | `https://targetmcp.adobe.io/mcp` | 활동, 오퍼, 대상, mbox, 성능 보고서 및 미리보기 URL 검토(공개 베타: 도구는 읽기 전용이며, 쓰기 도구는 일반 가용성을 위해 계획됨) | 예 |
-| [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/intro/rtcdp-mcp) | `https://rtcdp-mcp.adobe.io/mcp` | 대상, 대상, 소스 및 흐름 실행을 검색하고 ID 네임스페이스 정책을 검사합니다(공개 베타: 필요한 경우 모든 도구는 읽기 전용). | 예 |
+| [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/ajo-mcp) | `https://ajo-mcp.adobe.io/mcp` | 여정, 캠페인 및 채널 구성 검토 | 예 |
+| [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/cja-mcp) | `https://cja-mcp.adobe.io/mcp` | 보고서 쿼리, 데이터 보기 검색 및 작업 공간 작성 | 예 |
+| [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/analytics-mcp) | `https://aa-mcp.adobe.io/mcp` | 보고서 세트 검색, 세그먼트 작성 및 작업 영역 만들기 | 예 |
+| [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp) | `https://targetmcp.adobe.io/mcp` | 활동, 오퍼, 대상, mbox, 성능 보고서 및 미리보기 URL 검토(공개 베타: 도구는 읽기 전용이며, 쓰기 도구는 일반 가용성을 위해 계획됨) | 예 |
+| [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-mcp) | `https://rtcdp-mcp.adobe.io/mcp` | 대상, 대상, 소스 및 흐름 실행을 검색하고 ID 네임스페이스 정책을 검사합니다(공개 베타: 필요한 경우 모든 도구는 읽기 전용). | 예 |
 | [AEM MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/overview) | `https://mcp.adobeaemcloud.com/adobe/mcp/aem` | 페이지, 콘텐츠 조각, 에셋 및 론치를 관리하고 브랜드 가이드라인 및 규정 준수 규칙에 따라 콘텐츠 및 이미지를 평가합니다. | 예 |
 | [AEM Cloud Manager](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) | `https://mcp.adobeaemcloud.com/adobe/mcp/cloudmanager` | 프로그램, 환경, 파이프라인 및 저장소 관리 | 아니오 |
 | Adobe Marketing Agent | `https://aep-ai-ama.adobe.io/mcp` | AEP 애플리케이션 전반에 걸쳐 대상 분석, AEP 진단 및 AJO B2B 여정 구축 통합 | 아니오 |
-| [Adobe Workfront](https://experienceleague.adobe.com/ko/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-overview) | `https://mcp.prod.us-west-2.aws.wfk8s.com/mcp/v1/workfront` | 작업, 프로젝트, 계획 기록, 통찰력 및 콘텐츠 승인 관리 | 아니오 |
-| [Marketo Engage](https://experienceleague.adobe.com/ko/docs/marketo-developer/marketo/mcp-server) | `https://marketo-mcp.adobe.io/mcp` | 양식, 스마트 캠페인, 리드, 목록, 프로그램, 이메일 및 대량 작업 관리 | 예 |
+| [Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-overview) | `https://mcp.prod.us-west-2.aws.wfk8s.com/mcp/v1/workfront` | 작업, 프로젝트, 계획 기록, 통찰력 및 콘텐츠 승인 관리 | 아니오 |
+| [Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server) | `https://marketo-mcp.adobe.io/mcp` | 양식, 스마트 캠페인, 리드, 목록, 프로그램, 이메일 및 대량 작업 관리 | 예 |
 | Adobe Experience Platform | [CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)을 통해 | 데이터 세트 검색, 스키마 검색 및 샌드박스 관리 | N/A |
 | Campaign Classic | [CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)을 통해 | Campaign 인스턴스 검색, 스키마 찾아보기, 쿼리 실행, 워크플로우 제어 및 SOAP/JS 실행 | N/A |
 | 실험 | [CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)을 통해 | A/B, MVT 및 MAB 실험 보고, 지표, 통찰력, 기회 및 샘플 크기 계획 | N/A |
