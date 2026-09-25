@@ -1,11 +1,11 @@
 ---
 title: MCP 서버
-description: Model Context Protocol 서버를 사용하여 MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로우에 연결합니다.
+description: Model Context Protocol 서버를 사용하여 모든 MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로에 연결합니다.
 last-substantial-update: 2026-09-16
 source-git-commit: a70eede6e0efe0d1dbdc00c5d9de5aeb3b5d75de
 workflow-type: tm+mt
 source-wordcount: '2400'
-ht-degree: 6%
+ht-degree: 8%
 ---
 
 # MCP 서버
@@ -21,7 +21,7 @@ Adobe MCP 서버는 개방형 [모델 컨텍스트 프로토콜](https://modelco
 >[!CONTEXTUALHELP]
 >id="cx-enterprise-agentic-tools_mcp_servers_cx-enterprise"
 >title="CX Enterprise Coworker"
->abstract="서버 설정 없이 일반 언어로 CX 엔터프라이즈 애플리케이션에 대해 질문하고 분석하고 조치를 취하십시오. 자체 MCP 서버가 있는 개별 애플리케이션의 경우 대신 직접 연결합니다."
+>abstract="서버 설정 없이 일반 언어로 CX Enterprise 애플리케이션 전반에서 질문하고 분석하며 조치를 취하십시오. 자체 MCP 서버가 있는 개별 애플리케이션의 경우 대신 직접 연결하십시오."
 >additional-url="https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home" text="CX Enterprise Coworker 설명서"
 
 ![AI 클라이언트를 CX 엔터프라이즈 애플리케이션에 연결하는 CX Enterprise Coworker](../assets/mcp-sub-hero.gif)
