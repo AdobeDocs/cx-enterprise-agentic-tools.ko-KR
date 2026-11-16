@@ -1,14 +1,12 @@
 ---
 title: 실행 중인 에이전트 도구
-description: 실제 비즈니스 워크플로우에 적용되는 Adobe CX 엔터프라이즈 에이전트 도구를 보여 주는 단계별 연습입니다.
-last-substantial-update: 2026-06-08T00:00:00Z
-source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
+description: 실제 비즈니스 워크플로우에 적용되는 Adobe CX Enterprise Agentic 도구를 보여 주는 단계별 연습입니다.
+last-substantial-update: 2026-06-08
+source-git-commit: 9a2fe3165e49fd57c9a76741a77956850b0c0e3b
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%
-
 ---
-
 
 # 실행 중인 무생식 도구
 
@@ -16,7 +14,7 @@ ht-degree: 0%
 
 ![작업 중인 에이전트 도구](../assets/hero-agentic-tools-in-action.png)
 
-실제 Adobe CX Enterprise 워크플로우에 대한 단계별 연습입니다. 각 연습은 도구가 연결되고 실제 워크플로가 완료되어 설치가 끝나는 곳에서 시작됩니다.
+실제 Adobe CX Enterprise 워크플로에 대한 단계별 연습 각 연습은 도구가 연결되고 실제 워크플로가 완료되어 설치가 끝나는 곳에서 시작됩니다.
 
 <!--
 CARDS
@@ -48,7 +46,7 @@ CARDS
 
 * aem-cloud-manager-mcp.md
   {title = Deploy AEM changes with confidence}
-  {description = Check environment health, review pipeline history, and deploy to AEM from your AI client, without switching tools.}
+  {description = Check environment health, review pipeline history, and deploy to AEM from your AI platform, without switching tools.}
   {cta = Deploy with confidence}
   {image = ../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step4-01-ai.png}
 -->
@@ -73,7 +71,7 @@ CARDS
                 </div>
                 <a href="analyze-campaign-performance.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Surface Campaign 인사이트</span>
-                
+                </a>
             </div>
         </div>
     </div>
@@ -96,7 +94,7 @@ CARDS
                 </div>
                 <a href="query-audiences.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">대상 활성화 확인</span>
-                
+                </a>
             </div>
         </div>
     </div>
@@ -119,7 +117,7 @@ CARDS
                 </div>
                 <a href="manage-ajo-journeys.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">여정 모니터링</span>
-                
+                </a>
             </div>
         </div>
     </div>
@@ -142,7 +140,7 @@ CARDS
                 </div>
                 <a href="manage-aem-content.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">더 빠르게 콘텐츠 배송</span>
-                
+                </a>
             </div>
         </div>
     </div>
@@ -165,7 +163,7 @@ CARDS
                 </div>
                 <a href="optimize-content-with-performance-data.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">성능 차이 닫기</span>
-                
+                </a>
             </div>
         </div>
     </div>
@@ -184,11 +182,11 @@ CARDS
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="aem-cloud-manager-mcp.md" title="안심하고 AEM 변경 사항 배포">자신 있게 AEM 변경 내용 배포</a>
                     </p>
-                    <p class="is-size-6">도구를 전환하지 않고도 환경 상태를 확인하고 파이프라인 내역을 검토한 다음 AI 클라이언트에서 AEM으로 배포할 수 있습니다.</p>
+                    <p class="is-size-6">도구를 전환하지 않고도 환경 상태를 확인하고 파이프라인 내역을 검토한 다음 AI 플랫폼에서 AEM으로 배포할 수 있습니다.</p>
                 </div>
                 <a href="aem-cloud-manager-mcp.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">안심하고 배포</span>
-                
+                </a>
             </div>
         </div>
     </div>

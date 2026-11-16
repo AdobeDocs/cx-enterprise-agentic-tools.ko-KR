@@ -1,14 +1,12 @@
 ---
 title: 리소스
-description: 모든 Adobe CX 엔터프라이즈 에이전트 도구 설명서, 레지스트리, API 및 개발자 안내서를 위한 단일 진입점입니다.
-last-substantial-update: 2026-05-08T00:00:00Z
-source-git-commit: 445fd18a2b5a18ec3dcc0ec8e73ec4c020e7b265
+description: 모든 Adobe CX Enterprise Agentic Tools 설명서, 레지스트리, API 및 개발자 안내서를 위한 단일 진입점입니다.
+last-substantial-update: 2026-11-16
+source-git-commit: 9a2fe3165e49fd57c9a76741a77956850b0c0e3b
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 20%
-
+source-wordcount: '591'
+ht-degree: 19%
 ---
-
 
 # 리소스
 
@@ -16,7 +14,7 @@ ht-degree: 20%
 
 ![리소스](https://placehold.co/1600x900?text=Adobe+CX+Enterprise+Resources)
 
-Adobe CX 엔터프라이즈 에이전트 도구 작업을 위한 모든 주요 Adobe 리소스를 한 곳에서 확인할 수 있습니다.
+Adobe CX Enterprise Agentic Tools 작업을 위한 모든 주요 Adobe 리소스를 한 곳에서 확인할 수 있습니다.
 
 ## 레지스트리 및 카탈로그
 
@@ -30,9 +28,10 @@ Adobe CX 엔터프라이즈 에이전트 도구 작업을 위한 모든 주요 A
 
 | 리소스 | 찾을 내용 |
 |---|---|
+| [AI 플랫폼용 Adobe CX Enterprise Coworker](https://experienceleague.adobe.com/en/docs/coworker/content/ai-platforms#set-up-coworker) | Claude, ChatGPT, Microsoft 365 Copilot, Gemini Enterprise 및 기타 AI 플랫폼의 Coworker를 사용하기 위한 사전 요구 사항 및 설정 |
 | [Analytics MCP 설명서](https://developer.adobe.com/analytics-mcp/docs/) | CJA MCP 서버 설치 안내서 및 도구 참조 |
 | [Analytics MCP 안내서](https://developer.adobe.com/analytics-mcp/docs/guides/) | CJA MCP 서버에 대한 자세한 사용 안내서 |
-| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/rtcdp-mcp) | RTCDP MCP 서버 설치 안내서 |
+| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/rtcdp-mcp) | RTCDP MCP 서버 설치 안내서 |
 
 ## 에이전트 스킬
 
@@ -47,7 +46,7 @@ Adobe CX 엔터프라이즈 에이전트 도구 작업을 위한 모든 주요 A
 |---|---|
 | [Adobe Experience Platform API](https://developer.adobe.com/experience-platform-apis/) | AEP API 참조 : 데이터 세트, 스키마, 프로필, 쿼리, 세그멘테이션 |
 | [Adobe Journey Optimizer API](https://developer.adobe.com/journey-optimizer-apis/) | AJO API 참조 : 여정, 캠페인, 컨텐츠, offer decisioning |
-| [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/) | CJA API 참조 : analytics 데이터, 보고, 통찰력 |
+| [Customer Journey Analytics APIs](https://developer.adobe.com/cja-apis/docs/) | CJA API 참조 : analytics 데이터, 보고, 통찰력 |
 | [데이터 수집 API](https://developer.adobe.com/data-collection-apis/docs/) | Edge Network 수집, 실시간 이벤트 수집, 스트리밍 |
 | [Adobe 이벤트 API](https://developer.adobe.com/events/docs/) | 이벤트 기반 통합, 웹후크, 자동화 트리거 |
 | [Adobe 클라이언트 SDK](https://developer.adobe.com/client-sdks/home/) | Mobile SDK, Edge SDK, 인앱 메시지 |
@@ -62,7 +61,7 @@ Adobe CX 엔터프라이즈 에이전트 도구 작업을 위한 모든 주요 A
 | [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) | API 프로젝트 설정, 인증 및 자격 증명 관리 |
 | [개발자 시작 안내서](https://developer.adobe.com/dep/) | Adobe API를 사용한 빌드 소개 |
 
-## AI 클라이언트 설정
+## AI 플랫폼 설정
 
 | 리소스 | 찾을 내용 |
 |---|---|
