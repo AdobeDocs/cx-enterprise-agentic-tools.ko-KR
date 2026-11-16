@@ -1,28 +1,28 @@
 ---
 title: 고객에게 영향을 미치기 전에 여정 문제 파악
 description: Adobe Journey Optimizer MCP 서버를 사용하여 활성 AJO 여정을 모니터링하고, 캠페인 구성을 검토하고, 대상자에게 도달하기 전에 운영 문제를 노출할 수 있습니다.
-last-substantial-update: 2026-09-16
-source-git-commit: a70eede6e0efe0d1dbdc00c5d9de5aeb3b5d75de
+last-substantial-update: 2026-11-16
+source-git-commit: a75d5f3af3077b259da796bd381d605ae826585d
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 4%
+source-wordcount: '1158'
+ht-degree: 3%
 ---
 
 # 고객에게 영향을 미치기 전에 여정 문제 파악
 <!-- last-modified: 2026-06-08 -->
 
-![AI 클라이언트가 실행 요약으로 캠페인 및 여정 전략을 요약](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step5-02-exe-summary.png){zoomable="yes"}
+![실행 요약으로 캠페인 및 여정 전략을 요약하는 AI 플랫폼](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step5-02-exe-summary.png){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
-감지되지 않는 여정 문제는 누구나 인식하기 전에 고객에게 도달할 수 있습니다. 이 연습에서는 Adobe Journey Optimizer MCP 서버를 사용하여 Adobe Journey Optimizer을 열지 않고도 일반 언어로 답변을 얻을 수 있으므로 활성 AJO 여정을 확인하고, 캠페인 구성을 검토하고, AI 클라이언트를 통해 운영 문제를 표시하여 웹 사이트에 보다 앞서 있는 방법을 보여 줍니다.
+감지되지 않는 여정 문제는 누구나 인식하기 전에 고객에게 도달할 수 있습니다. 이 연습에서는 Adobe Journey Optimizer MCP 서버를 사용하여 Adobe Journey Optimizer을 열지 않고도 일반 언어로 답변을 얻을 수 있으므로 활성 AJO 여정을 확인하고, 캠페인 구성을 검토하고, AI 플랫폼을 통해 운영 문제를 표시하여 웹 사이트에 앞서 있는 방법에 대해 설명합니다.
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| CX 엔터프라이즈 애플리케이션 | [Adobe Journey Optimizer(AJO)](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home) |
-| 에이전틱 도구 | [CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home) 또는 [Adobe Journey Optimizer MCP 서버](../tools/mcp-servers.md) |
+| CX Enterprise 애플리케이션 | [Adobe Journey Optimizer(AJO)](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home) |
+| 에이전틱 도구 | [Adobe CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home), [AI 플랫폼용 Adobe CX Enterprise Coworker](../tools/mcp-servers.md#connect-to-your-ai-platform) 또는 [Adobe Journey Optimizer MCP 서버](../tools/mcp-servers.md) |
 | 대상자 | 캠페인 관리자, 마케터 |
-| 사전 요구 사항 | MCP 호환 AI 클라이언트, AJO 액세스 |
+| 사전 요구 사항 | AJO access, Coworker, Coworker for AI 플랫폼이 포함된 AI 플랫폼 또는 MCP 호환 AI 플랫폼 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **수행할 수 있는 추가** 섹션이 다음과 같습니다.
 
@@ -31,11 +31,15 @@ ht-degree: 4%
 
 >[!BEGINTABS]
 
->[!TAB CX Enterprise Coworker]
+>[!TAB Coworker]
 
-이러한 답을 가장 빨리 얻을 수 있는 방법은 CX Enterprise Coworker으로 서버 설정이나 AI 클라이언트 구성이 필요하지 않습니다. [CX Enterprise Coworker 시도](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)
+이러한 답을 가장 빨리 얻을 수 있는 방법은 Coworker로, 서버 설정이나 AI 플랫폼 구성이 필요하지 않습니다. [동료에게 연결](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)
 
-자체 AI 클라이언트를 Adobe Journey Optimizer에 직접 연결하는 것이 좋다면 아래 탭을 참조하십시오.
+Coworker를 직접 사용할 수 없거나 사용하지 않으려면 자체 AI 플랫폼에서 대신 사용하십시오. **AI 플랫폼용 Coworker** 탭을 참조하십시오. 그것도 작동하지 않는 경우 나머지 탭을 사용하여 AI 플랫폼을 Adobe Journey Optimizer MCP 서버에 직접 연결하십시오.
+
+>[!TAB AI 플랫폼용 Coworker]
+
+또한 고유한 AI 플랫폼에서 AI 플랫폼용 Coworker를 사용하여 이 연습을 완료할 수 있습니다. [AI 플랫폼에 대한 동료 설정](../tools/mcp-servers.md#connect-to-your-ai-platform) | [Adobe 설명서](https://experienceleague.adobe.com/en/docs/coworker/content/ai-platforms#set-up-coworker)
 
 >[!TAB 클라우드.ai]
 
@@ -58,7 +62,7 @@ ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교�
 
 전체 설정: [ChatGPT MCP 설명서](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)
 
->[!TAB 기타 AI 클라이언트]
+>[!TAB 기타 AI 플랫폼]
 
 Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 Adobe Journey Optimizer MCP 서버에 연결합니다.
 
@@ -66,7 +70,7 @@ Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경�
 https://ajo-mcp.adobe.io/mcp
 ```
 
-지원되는 모든 클라이언트에 대한 전체 설치 지침: [AI 클라이언트에 연결](../tools/mcp-servers.md)
+지원되는 모든 AI 플랫폼에 대한 전체 설정 지침: [AI 플랫폼에 연결](../tools/mcp-servers.md)
 
 >[!ENDTABS]
 
@@ -74,7 +78,7 @@ https://ajo-mcp.adobe.io/mcp
 >
 >메시지가 표시되면 Adobe ID으로 로그인하고 AJO 환경에 연결된 IMS 조직을 선택합니다. 잘못된 조직을 선택하는 것이 인증 오류의 가장 일반적인 원인입니다.
 >
->첫 번째 연결 시 AI 클라이언트가 IMS 조직을 선택하거나 샌드박스를 지정하도록 요청할 수 있습니다. 컨텍스트가 설정되면 MCP 서버는 세션의 나머지 부분에 컨텍스트를 사용합니다.
+>첫 번째 연결에서 AI 플랫폼은 IMS 조직을 선택하거나 샌드박스를 지정하도록 요청할 수 있습니다. 컨텍스트가 설정되면 MCP 서버는 세션의 나머지 부분에 컨텍스트를 사용합니다.
 >
 >일부 도구는 실행 전에 승인을 묻는 메시지를 표시합니다. 요청을 검토하고 승인 또는 거절합니다. 확인 없이는 아무 작업도 수행되지 않습니다.
 
@@ -89,7 +93,7 @@ What customer journeys are currently available and what business objectives do t
 
 +++예제 응답 보기
 
-![사용 가능한 고객 여정 및 비즈니스 목표를 나열하는 AI 클라이언트](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step1.gif){zoomable="yes"}
+![사용 가능한 고객 여정 및 비즈니스 목표를 나열하는 AI 플랫폼](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step1.gif){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -99,7 +103,7 @@ What customer journeys are currently available and what business objectives do t
 
 ## 2단계: 여정의 단계 및 고객 경험 검토
 
-여정 목록을 볼 때 AI 클라이언트에게 특정 여정의 단계를 안내하고 각 단계에서 고객이 경험하는 것을 설명하도록 요청합니다.
+여정 목록을 볼 때 AI 플랫폼에게 특정 여정의 단계를 안내하고 각 단계에서 고객이 경험하는 것을 설명하십시오.
 
 ```
 Walk me through the [journey name] journey and explain the customer experience.
@@ -107,7 +111,7 @@ Walk me through the [journey name] journey and explain the customer experience.
 
 +++예제 응답 보기
 
-![새로운 고객 환영 여정 단계 및 고객 경험을 안내하는 AI 클라이언트](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step2-welcome-journey.png){zoomable="yes"}
+![새로운 고객 환영 여정 단계 및 고객 경험을 안내하는 AI 플랫폼](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step2-welcome-journey.png){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -129,7 +133,7 @@ Show me our campaigns, the audiences they target, and the outcomes they're desig
 
 +++예제 응답 보기
 
-![AI 클라이언트가 대상 타기팅 및 의도한 결과와 함께 활성 캠페인을 나열](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step3.gif){zoomable="yes"}
+![대상자 타겟팅 및 의도한 결과와 함께 활성 캠페인을 나열하는 AI 플랫폼](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step3.gif){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -139,7 +143,7 @@ Show me our campaigns, the audiences they target, and the outcomes they're desig
 
 ## 4단계: 캠페인과 여정이 연결되는 방식 이해
 
-AI 고객에게 캠페인과 여정 간의 점을 연결하고 공유 참여 목표를 위해 함께 작동하는 방식을 설명합니다.
+AI 플랫폼에 캠페인과 여정 간의 점을 연결하고 공유 참여 목표를 향해 함께 작동하는 방식을 설명합니다.
 
 ```
 How do our campaigns and journeys work together to improve customer engagement?
@@ -147,7 +151,7 @@ How do our campaigns and journeys work together to improve customer engagement?
 
 +++예제 응답 보기
 
-![캠페인과 여정 간의 관계를 설명하는 AI 클라이언트](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step4-connection.png){zoomable="yes"}
+![캠페인과 여정 간의 관계를 설명하는 AI 플랫폼](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step4-connection.png){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -165,7 +169,7 @@ If you were our lifecycle marketing manager, what would you prioritize next and 
 
 +++예제 응답 보기
 
-![우선 순위가 지정된 라이프사이클 마케팅 권장 사항을 제공하는 AI 클라이언트](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step5.gif){zoomable="yes"}
+![우선 순위가 지정된 라이프사이클 마케팅 권장 사항을 제공하는 AI 플랫폼](../assets/use-cases/manage-ajo-journeys/manage-ajo-journeys-step5.gif){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -179,7 +183,7 @@ If you were our lifecycle marketing manager, what would you prioritize next and 
 
 ## 수행한 작업
 
-AI 클라이언트를 Adobe Journey Optimizer에 연결하고 5개의 프롬프트를 통해 여정 및 캠페인 포트폴리오의 전체 그림을 빌드했습니다. 활성 여정 및 해당 비즈니스 목표를 인벤토리하고, 특정 여정에 대한 단계별 고객 경험을 검토하고, 활성 캠페인을 대상과 의도한 결과에 매핑하고, 캠페인과 여정이 함께 작동하는 방식을 이해하고, 다음에 집중할 위치에 대한 우선 순위 추천을 받았습니다. 이를 통해 라이프사이클 마케팅 및 캠페인 관리자는 AJO 인터페이스를 열지 않고도 전략적으로 볼 수 있습니다.
+Coworker 또는 AI 플랫폼과 Adobe Journey Optimizer을 함께 사용하고 5개의 프롬프트를 통해 여정 및 캠페인 포트폴리오의 전체 그림을 빌드했습니다. 활성 여정 및 해당 비즈니스 목표를 인벤토리하고, 특정 여정에 대한 단계별 고객 경험을 검토하고, 활성 캠페인을 대상과 의도한 결과에 매핑하고, 캠페인과 여정이 함께 작동하는 방식을 이해하고, 다음에 집중할 위치에 대한 우선 순위 추천을 받았습니다. 이를 통해 라이프사이클 마케팅 및 캠페인 관리자는 AJO 인터페이스를 열지 않고도 전략적으로 볼 수 있습니다.
 
 
 ## 수행할 수 있는 작업 더 보기

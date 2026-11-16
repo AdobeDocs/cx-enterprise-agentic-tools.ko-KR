@@ -1,17 +1,17 @@
 ---
 title: 데이터 기반 업데이트로 컨텐츠 성능 격차 완화
 description: 하나의 AI 세션에서 CJA과 AEM을 함께 사용하면 도구를 전환하지 않고도 전환되지 않는 캠페인을 찾고 원인을 진단하고 콘텐츠를 업데이트할 수 있습니다.
-last-substantial-update: 2026-09-16
-source-git-commit: a70eede6e0efe0d1dbdc00c5d9de5aeb3b5d75de
+last-substantial-update: 2026-11-16
+source-git-commit: a75d5f3af3077b259da796bd381d605ae826585d
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 6%
+source-wordcount: '1233'
+ht-degree: 5%
 ---
 
 # 데이터 기반 업데이트로 컨텐츠 성능 격차 완화
 <!-- last-modified: 2026-06-10 -->
 
-![AI 클라이언트가 원본 페이지와 업데이트된 페이지 콘텐츠를 나란히 비교](../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step5-03-page-compare.png){zoomable="yes"}
+![AI 플랫폼이 원본 페이지와 업데이트된 페이지 콘텐츠를 나란히 비교](../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step5-03-page-compare.png){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -19,10 +19,10 @@ ht-degree: 6%
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| CX 엔터프라이즈 애플리케이션 | [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview), [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/introduction) |
-| 에이전틱 도구 | [CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home) 또는 [Customer Journey Analytics MCP 서버](../tools/mcp-servers.md) 및 [AEM MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/overview) |
+| CX Enterprise 애플리케이션 | [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview), [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/introduction) |
+| 에이전틱 도구 | [Adobe CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home), [AI 플랫폼용 Adobe CX Enterprise Coworker](../tools/mcp-servers.md#connect-to-your-ai-platform) 또는 [Customer Journey Analytics MCP 서버](../tools/mcp-servers.md) 및 [AEM MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/overview) |
 | 대상자 | 캠페인 관리자, 콘텐츠 전략가, 마케팅 운영 |
-| 사전 요구 사항 | MCP 호환 AI 클라이언트, CJA 액세스, AEM as a Cloud Service 액세스 |
+| 사전 요구 사항 | CJA access, AEM as a Cloud Service access 및 Coworker, Coworker for AI 플랫폼이 포함된 AI 플랫폼 또는 MCP 호환 AI 플랫폼 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **수행할 수 있는 추가** 섹션이 다음과 같습니다.
 
@@ -31,11 +31,15 @@ ht-degree: 6%
 
 >[!BEGINTABS]
 
->[!TAB CX Enterprise Coworker]
+>[!TAB Coworker]
 
-CX Enterprise Coworker에서는 서버 설정 없이 이 전체 연습을 다룹니다. [CX Enterprise Coworker 시도](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)
+Coworker는 서버 설정 없이 이 전체 과정을 다룹니다. [동료에게 연결](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)
 
-자체 AI 클라이언트를 직접 연결하고 싶다면 아래 탭을 사용하여 두 MCP 서버를 연결합니다.
+Coworker를 직접 사용할 수 없거나 사용하지 않으려면 자체 AI 플랫폼에서 대신 사용하십시오. **AI 플랫폼용 Coworker** 탭을 참조하십시오. 그것도 작동하지 않는 경우 나머지 탭을 사용하여 AI 플랫폼을 Customer Journey Analytics 및 AEM MCP 서버에 직접 연결합니다.
+
+>[!TAB AI 플랫폼용 Coworker]
+
+또한 고유한 AI 플랫폼에서 AI 플랫폼용 Coworker를 사용하여 이 연습을 완료할 수 있습니다. [AI 플랫폼에 대한 동료 설정](../tools/mcp-servers.md#connect-to-your-ai-platform) | [Adobe 설명서](https://experienceleague.adobe.com/en/docs/coworker/content/ai-platforms#set-up-coworker)
 
 >[!TAB 클라우드.ai]
 
@@ -68,7 +72,7 @@ ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교�
 
 전체 설정: [ChatGPT MCP 설명서](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)
 
->[!TAB 기타 AI 클라이언트]
+>[!TAB 기타 AI 플랫폼]
 
 Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 두 MCP 서버에 연결합니다.
 
@@ -77,7 +81,7 @@ Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경�
 | Customer Journey Analytics 서버 | `https://cja-mcp.adobe.io/mcp` |
 | AEM 서버 | `https://mcp.adobeaemcloud.com/adobe/mcp/aem` |
 
-지원되는 모든 클라이언트에 대한 전체 설치 지침: [AI 클라이언트에 연결](../tools/mcp-servers.md)
+지원되는 모든 AI 플랫폼에 대한 전체 설정 지침: [AI 플랫폼에 연결](../tools/mcp-servers.md)
 
 >[!ENDTABS]
 
@@ -85,7 +89,7 @@ Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경�
 >
 >메시지가 표시되면 Adobe ID으로 로그인하고 CJA 및 AEM 환경에 연결된 IMS 조직을 선택합니다. 잘못된 조직을 선택하는 것이 인증 오류의 가장 일반적인 원인입니다.
 >
->첫 번째 연결 시 AI 클라이언트가 IMS 조직을 선택하거나 샌드박스를 지정하도록 요청할 수 있습니다. 컨텍스트가 설정되면 MCP 서버는 세션의 나머지 부분에 컨텍스트를 사용합니다.
+>첫 번째 연결에서 AI 플랫폼은 IMS 조직을 선택하거나 샌드박스를 지정하도록 요청할 수 있습니다. 컨텍스트가 설정되면 MCP 서버는 세션의 나머지 부분에 컨텍스트를 사용합니다.
 >
 >일부 도구는 실행 전에 승인을 묻는 메시지를 표시합니다. 요청을 검토하고 승인 또는 거절합니다. 확인 없이는 아무 작업도 수행되지 않습니다.
 
@@ -100,7 +104,7 @@ Which campaigns have strong click-through but low conversion in the last 30 days
 
 +++예제 응답 보기
 
-![CJA에서 클릭스루가 높지만 전환율이 낮은 AI 클라이언트 표시 캠페인](../assets/use-cases/optimize-content-with-performance-data/optimize-content-step1-campaigns.png){zoomable="yes"}
+![CJA에서 클릭스루가 높지만 전환율이 낮은 AI 플랫폼 표시 캠페인](../assets/use-cases/optimize-content-with-performance-data/optimize-content-step1-campaigns.png){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -118,7 +122,7 @@ What's causing the conversion drop-off, is it device, segment, or content?
 
 +++예제 응답 보기
 
-![AI 클라이언트가 장치, 세그먼트 및 콘텐츠 인자별로 전환 드롭오프를 진단](../assets/use-cases/optimize-content-with-performance-data/optimize-content-step2-diagnosis.png){zoomable="yes"}
+![장치, 세그먼트 및 콘텐츠 인자별 전환 드롭오프를 진단하는 AI 플랫폼](../assets/use-cases/optimize-content-with-performance-data/optimize-content-step2-diagnosis.png){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -136,7 +140,7 @@ Show me the Bali Surf Camp page.
 
 +++예제 응답 보기
 
-![AEM에서 랜딩 페이지의 현재 콘텐츠를 표시하는 AI 클라이언트](../assets/use-cases/optimize-content-with-performance-data/optimize-content-step3-page-content.png){zoomable="yes"}
+![AEM 랜딩 페이지의 현재 콘텐츠를 표시하는 AI 플랫폼](../assets/use-cases/optimize-content-with-performance-data/optimize-content-step3-page-content.png){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -146,7 +150,7 @@ Show me the Bali Surf Camp page.
 
 ## 4단계: 타깃팅된 권장 사항 가져오기
 
-데이터에 표시된 내용을 페이지의 내용과 연결하도록 AI 클라이언트에 요청합니다. 두 소스 모두에서 AI가 드롭오프의 원인이 될 수 있는 콘텐츠 섹션과 변경할 콘텐츠를 식별하는 이유입니다.
+데이터가 표시한 내용을 페이지의 내용과 연결하도록 AI 플랫폼에 문의하십시오. 두 소스 모두에서 AI가 드롭오프의 원인이 될 수 있는 콘텐츠 섹션과 변경할 콘텐츠를 식별하는 이유입니다.
 
 ```
 Which content sections are underperforming, and what changes would you recommend?
@@ -154,7 +158,7 @@ Which content sections are underperforming, and what changes would you recommend
 
 +++예제 응답 보기
 
-![성과가 낮은 콘텐츠 섹션을 식별하고 특정 변경 사항을 추천하는 AI 클라이언트](../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step4.gif){zoomable="yes"}
+![성과가 낮은 콘텐츠 섹션을 식별하고 특정 변경 사항을 추천하는 AI 플랫폼](../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step4.gif){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -164,7 +168,7 @@ Which content sections are underperforming, and what changes would you recommend
 
 ## 5단계: 변경 사항 적용 및 검토
 
-AI 클라이언트에게 권장 사항을 기반으로 최적화된 페이지 버전을 제작하도록 요청하고 변경된 사항과 이유를 요약합니다.
+AI 플랫폼에 권장 사항을 기반으로 최적화된 페이지 버전을 만들고 변경된 사항과 이유를 요약하도록 요청합니다.
 
 ```
 Create an optimized version of the Bali Surf Camp page and summarize the proposed changes.
@@ -172,7 +176,7 @@ Create an optimized version of the Bali Surf Camp page and summarize the propose
 
 +++예제 응답 보기
 
-![AI 클라이언트가 페이지의 최적화된 버전을 만들고 변경 내용을 요약](../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step5.gif){zoomable="yes"}
+![AI 플랫폼에서 페이지의 최적화된 버전을 만들고 변경 내용을 요약합니다](../assets/use-cases/optimize-content-with-performance-data/optimize-content-with-performance-data-step5.gif){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 

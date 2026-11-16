@@ -1,22 +1,22 @@
 ---
 title: 대상자 및 대상자 활성화 위치 이해
 description: Real-Time CDP MCP 서버를 사용하여 대상자 활성화 상태를 모니터링하고, 대상 상태를 확인하고, 캠페인에 영향을 미치기 전에 문제를 노출할 수 있습니다.
-last-substantial-update: 2026-09-16
-source-git-commit: a70eede6e0efe0d1dbdc00c5d9de5aeb3b5d75de
+last-substantial-update: 2026-11-16
+source-git-commit: a75d5f3af3077b259da796bd381d605ae826585d
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 4%
+source-wordcount: '1080'
+ht-degree: 3%
 ---
 
 # 대상자 및 대상자 활성화 위치 이해
 
 <!-- last-modified: 2026-06-04 -->
 
-![활성화 권장 사항을 통해 우선 순위가 지정된 대상 전략을 제공하는 AI 클라이언트](../assets/use-cases/query-audiences/query-audiences-step4-02-summary.png){zoomable="yes"}
+![활성화 권장 사항을 통해 우선 순위가 지정된 대상 전략을 제공하는 AI 플랫폼](../assets/use-cases/query-audiences/query-audiences-step4-02-summary.png){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
-캠페인이 시작되기 전이나 성과가 낮은 경우, 어떤 대상이 라이브인지, 어디에서 오는지, 대상이 정상인지 파악하는 것은 매우 중요합니다. 이 연습에서는 Real-Time CDP MCP 서버를 사용하여 Real-Time CDP을 열지 않고도 몇 초 만에 대상 상태 및 대상 상태를 표시할 수 있도록 AI 클라이언트를 통해 전체 활성화 그림을 얻는 방법을 보여 줍니다.
+캠페인이 시작되기 전이나 성과가 낮은 경우, 어떤 대상이 라이브인지, 어디에서 오는지, 대상이 정상인지 파악하는 것은 매우 중요합니다. 이 연습에서는 Real-Time CDP MCP 서버를 사용하여 Real-Time CDP을 열지 않고도 몇 초 만에 대상 상태 및 대상 상태를 표시할 수 있도록 AI 플랫폼을 통해 완전한 활성화 그림을 얻는 방법을 보여 줍니다.
 
 >[!NOTE]
 >
@@ -24,10 +24,10 @@ ht-degree: 4%
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| CX 엔터프라이즈 애플리케이션 | [Real-Time Customer Data Platform(Real-Time CDP)](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) |
-| 에이전틱 도구 | [CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home) 또는 [Real-Time CDP MCP 서버](../tools/mcp-servers.md) |
+| CX Enterprise 애플리케이션 | [Real-Time Customer Data Platform(Real-Time CDP)](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) |
+| 에이전틱 도구 | [Adobe CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home), [AI 플랫폼용 Adobe CX Enterprise Coworker](../tools/mcp-servers.md#connect-to-your-ai-platform) 또는 [Real-Time CDP MCP 서버](../tools/mcp-servers.md) |
 | 대상자 | 마케터, 분석가, 운영자 |
-| 사전 요구 사항 | MCP 호환 AI 클라이언트, Real-Time CDP 액세스 |
+| 사전 요구 사항 | Real-Time CDP access, Coworker, Coworker for AI 플랫폼이 포함된 AI 플랫폼 또는 MCP 호환 AI 플랫폼 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **수행할 수 있는 추가** 섹션이 다음과 같습니다.
 
@@ -35,11 +35,15 @@ ht-degree: 4%
 
 >[!BEGINTABS]
 
->[!TAB CX Enterprise Coworker]
+>[!TAB Coworker]
 
-이 활성화 그림을 얻는 가장 빠른 방법은 CX Enterprise Coworker이며, 서버 설정이나 AI 클라이언트 구성이 필요하지 않습니다. [CX Enterprise Coworker 시도](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)
+이 활성화 그림을 얻는 가장 빠른 방법은 Coworker로, 서버 설정이나 AI 플랫폼 구성이 필요하지 않습니다. [동료에게 연결](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)
 
-자체 AI 클라이언트를 Real-Time CDP에 직접 연결하는 것이 좋다면 아래 탭을 참조하십시오. Real-Time CDP MCP 서버는 공개 베타에 있으며 귀사가 허용 목록에추가된으로 제공되어야 합니다.
+Coworker를 직접 사용할 수 없거나 사용하지 않으려면 자체 AI 플랫폼에서 대신 사용하십시오. **AI 플랫폼용 Coworker** 탭을 참조하십시오. 그것도 작동하지 않는 경우 나머지 탭을 사용하여 AI 플랫폼을 Real-Time CDP MCP 서버에 직접 연결하십시오. Real-Time CDP MCP 서버는 공개 베타에 있으며 귀사가 허용 목록에추가된으로 제공되어야 합니다.
+
+>[!TAB AI 플랫폼용 Coworker]
+
+또한 고유한 AI 플랫폼에서 AI 플랫폼용 Coworker를 사용하여 이 연습을 완료할 수 있습니다. [AI 플랫폼에 대한 동료 설정](../tools/mcp-servers.md#connect-to-your-ai-platform) | [Adobe 설명서](https://experienceleague.adobe.com/en/docs/coworker/content/ai-platforms#set-up-coworker)
 
 >[!TAB 클라우드.ai]
 
@@ -62,7 +66,7 @@ ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교�
 
 전체 설정: [ChatGPT MCP 설명서](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)
 
->[!TAB 기타 AI 클라이언트]
+>[!TAB 기타 AI 플랫폼]
 
 Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 Real-Time CDP MCP 서버에 연결합니다.
 
@@ -70,7 +74,7 @@ Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경�
 https://rtcdp-mcp.adobe.io/mcp
 ```
 
-지원되는 모든 클라이언트에 대한 전체 설치 지침: [AI 클라이언트에 연결](../tools/mcp-servers.md)
+지원되는 모든 AI 플랫폼에 대한 전체 설정 지침: [AI 플랫폼에 연결](../tools/mcp-servers.md)
 
 >[!ENDTABS]
 
@@ -88,7 +92,7 @@ What audiences are currently available and what customer behaviors do they repre
 
 +++예제 응답 보기
 
-![AI 클라이언트가 사용 가능한 대상 및 해당 대상이 나타내는 고객 행동을 나열함](../assets/use-cases/query-audiences/query-audiences-step1-audience-list.png){zoomable="yes"}
+![AI 플랫폼에서 사용 가능한 대상 및 이 대상이 나타내는 고객 행동을 나열합니다.](../assets/use-cases/query-audiences/query-audiences-step1-audience-list.png){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -105,7 +109,7 @@ Which audiences are the largest and what makes them valuable?
 
 +++예제 응답 보기
 
-![가장 큰 대상을 식별하고 무엇이 이러한 대상을 귀중하게 하는지 설명하는 AI 클라이언트](../assets/use-cases/query-audiences/query-audiences-step2.gif){zoomable="yes"}
+![가장 큰 대상을 식별하고 무엇이 그들을 가치 있게 하는지 설명하는 AI 플랫폼](../assets/use-cases/query-audiences/query-audiences-step2.gif){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -122,7 +126,7 @@ Where are our audiences currently being activated and to which destinations?
 
 +++예제 응답 보기
 
-![대상 활성화 상태 및 대상 매핑을 표시하는 AI 클라이언트](../assets/use-cases/query-audiences/query-audiences-step3.gif){zoomable="yes"}
+![대상 활성화 상태 및 대상 매핑을 표시하는 AI 플랫폼](../assets/use-cases/query-audiences/query-audiences-step3.gif){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -139,7 +143,7 @@ If you were our audience strategist, what would you prioritize next and why?
 
 +++예제 응답 보기
 
-![우선 순위가 지정된 대상 전략 권장 사항을 제공하는 AI 클라이언트](../assets/use-cases/query-audiences/query-audiences-step4.gif){zoomable="yes"}
+![우선 순위가 지정된 대상 전략 권장 사항을 제공하는 AI 플랫폼](../assets/use-cases/query-audiences/query-audiences-step4.gif){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -152,7 +156,7 @@ If you were our audience strategist, what would you prioritize next and why?
 
 ## 수행한 작업
 
-AI 클라이언트를 Real-Time CDP에 연결하고 4개의 프롬프트에서 대상 포트폴리오의 전략적 그림을 빌드했습니다. 사용 가능한 대상을 캡처한 고객 행동에 매핑하고, 가장 크고 중요한 세그먼트를 식별하고, 각 대상이 흐르는 위치와 대상을 확인하고, 다음 활성화 시 우선 순위가 지정된 권장 사항을 받았습니다. 이렇게 하면 여러 Real-Time CDP 화면 탐색을 직접적이고 전략적인 대화로 대체합니다.
+Coworker 또는 AI 플랫폼과 Real-Time CDP을 함께 사용하고 4개의 프롬프트에서 대상 포트폴리오의 전략적 그림을 빌드했습니다. 사용 가능한 대상을 캡처한 고객 행동에 매핑하고, 가장 크고 중요한 세그먼트를 식별하고, 각 대상이 흐르는 위치와 대상을 확인하고, 다음 활성화 시 우선 순위가 지정된 권장 사항을 받았습니다. 이렇게 하면 여러 Real-Time CDP 화면 탐색을 직접적이고 전략적인 대화로 대체합니다.
 
 ## 수행할 수 있는 작업 더 보기
 

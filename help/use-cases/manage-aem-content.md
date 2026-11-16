@@ -1,29 +1,29 @@
 ---
 title: 최신 컨텐츠 유지 및 업데이트 전달 속도 향상
 description: AEM MCP 서버를 사용하여 도구 간에 전환하지 않고도 AEM 콘텐츠를 찾고, 검토하고, 업데이트하고, 게시할 수 있습니다.
-last-substantial-update: 2026-09-16
-source-git-commit: a70eede6e0efe0d1dbdc00c5d9de5aeb3b5d75de
+last-substantial-update: 2026-11-16
+source-git-commit: a75d5f3af3077b259da796bd381d605ae826585d
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 8%
+source-wordcount: '1104'
+ht-degree: 7%
 ---
 
 # 최신 컨텐츠 유지 및 업데이트 전달 속도 향상
 
 <!-- last-modified: 2026-05-22 -->
 
-![페이지가 게시되었음을 확인하고 라이브 URL을 반환하는 AI 클라이언트](../assets/use-cases/manage-aem-content/manage-aem-content-step4-02-product.png){zoomable="yes"}
+![페이지가 게시되었음을 확인하고 라이브 URL을 반환하는 AI 플랫폼](../assets/use-cases/manage-aem-content/manage-aem-content-step4-02-product.png){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
-웹 사이트 콘텐츠를 최신 상태로 유지하는 것은 지속적인 운영 부담입니다. 이 연습에서는 콘텐츠 팀이 AEM MCP 서버를 사용하여 콘텐츠 결정과 라이브 업데이트 간의 시간을 단축하고, AI 클라이언트를 통해 AEM 페이지 및 콘텐츠 조각을 찾고, 검토하고, 업데이트하고, 게시하는 방법을 보여 줍니다.
+웹 사이트 콘텐츠를 최신 상태로 유지하는 것은 지속적인 운영 부담입니다. 이 연습에서는 콘텐츠 팀이 AEM MCP 서버를 사용하여 콘텐츠 결정과 라이브 업데이트 간의 시간을 단축하고, AI 플랫폼을 통해 AEM 페이지와 콘텐츠 조각을 찾고, 검토하고, 업데이트하고, 게시하는 방법을 보여 줍니다.
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| CX 엔터프라이즈 애플리케이션 | [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/introduction) |
-| 에이전틱 도구 | [CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home) 또는 [AEM MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/overview) |
+| CX Enterprise 애플리케이션 | [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/introduction) |
+| 에이전틱 도구 | [Adobe CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home), [AI 플랫폼용 Adobe CX Enterprise Coworker](../tools/mcp-servers.md#connect-to-your-ai-platform) 또는 [AEM MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/overview) |
 | 대상자 | 콘텐츠 관리자, 마케팅 팀 |
-| 사전 요구 사항 | MCP 호환 AI 클라이언트, AEM as a Cloud Service 액세스 |
+| 사전 요구 사항 | AEM as a Cloud Service access, Coworker, Coworker for AI 플랫폼이 포함된 AI 플랫폼 또는 MCP 호환 AI 플랫폼 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **수행할 수 있는 추가** 섹션이 다음과 같습니다.
 
@@ -31,11 +31,15 @@ ht-degree: 8%
 
 >[!BEGINTABS]
 
->[!TAB CX Enterprise Coworker]
+>[!TAB Coworker]
 
-이를 수행하는 가장 빠른 방법은 CX Enterprise Coworker으로, 서버 설정이나 AI 클라이언트 구성이 필요하지 않습니다. [CX Enterprise Coworker 시도](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)
+가장 빠른 방법은 Coworker로, 서버 설정이나 AI 플랫폼 구성이 필요 없습니다. [동료에게 연결](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)
 
-자체 AI 클라이언트를 AEM에 직접 연결하는 것이 좋다면 아래 탭을 참조하십시오.
+Coworker를 직접 사용할 수 없거나 사용하지 않으려면 자체 AI 플랫폼에서 대신 사용하십시오. **AI 플랫폼용 Coworker** 탭을 참조하십시오. 그것도 작동하지 않는 경우 나머지 탭을 사용하여 AI 플랫폼을 AEM MCP 서버에 직접 연결하십시오.
+
+>[!TAB AI 플랫폼용 Coworker]
+
+또한 고유한 AI 플랫폼에서 AI 플랫폼용 Coworker를 사용하여 이 연습을 완료할 수 있습니다. [AI 플랫폼에 대한 동료 설정](../tools/mcp-servers.md#connect-to-your-ai-platform) | [Adobe 설명서](https://experienceleague.adobe.com/en/docs/coworker/content/ai-platforms#set-up-coworker)
 
 >[!TAB 클라우드.ai]
 
@@ -58,7 +62,7 @@ ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교�
 
 전체 설정: [ChatGPT MCP 설명서](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)
 
->[!TAB 기타 AI 클라이언트]
+>[!TAB 기타 AI 플랫폼]
 
 Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 AEM MCP 서버에 연결합니다.
 
@@ -66,21 +70,21 @@ Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경�
 https://mcp.adobeaemcloud.com/adobe/mcp/aem
 ```
 
-지원되는 모든 클라이언트에 대한 전체 설치 지침: [AI 클라이언트에 연결](../tools/mcp-servers.md)
+지원되는 모든 AI 플랫폼에 대한 전체 설정 지침: [AI 플랫폼에 연결](../tools/mcp-servers.md)
 
 >[!ENDTABS]
 
 >[!NOTE]
 >
->메시지가 표시되면 Adobe ID으로 로그인하고 AEM as a Cloud Service 환경에 연결된 IMS 조직을 선택합니다. 권한은 AEM 수준에서 적용됩니다. AI 클라이언트는 계정이 승인된 작업만 수행할 수 있습니다.
+>메시지가 표시되면 Adobe ID으로 로그인하고 AEM as a Cloud Service 환경에 연결된 IMS 조직을 선택합니다. 권한은 AEM 수준에서 적용됩니다. AI 플랫폼은 계정에 승인된 작업만 수행할 수 있습니다.
 >
->첫 번째 연결 시 AI 클라이언트가 조직 또는 AEM 환경을 확인하도록 요청할 수 있습니다. 컨텍스트가 설정되면 MCP 서버는 세션의 나머지 부분에 컨텍스트를 사용합니다.
+>첫 번째 연결에서 AI 플랫폼은 조직 또는 AEM 환경을 확인하도록 요청할 수 있습니다. 컨텍스트가 설정되면 MCP 서버는 세션의 나머지 부분에 컨텍스트를 사용합니다.
 >
 >일부 도구는 실행 전에 승인을 묻는 메시지를 표시합니다. 제안된 작업을 검토하고 승인 또는 거부합니다. 확인 없이는 변경 사항이 없습니다.
 
 ## 1단계: AEM 환경에서 컨텐츠 찾기
 
-먼저 AI 클라이언트에게 AEM 환경을 검색하고 콘텐츠를 검색하도록 요청합니다. 정확한 경로를 알지 못하면서 주제, 키워드 또는 콘텐츠 유형별로 검색할 수 있다.
+먼저 AI 플랫폼에 AEM 환경을 검색하고 콘텐츠를 검색하도록 요청하십시오. 정확한 경로를 알지 못하면서 주제, 키워드 또는 콘텐츠 유형별로 검색할 수 있다.
 
 ```
 From WKND Dev environment, find all ski related content.
@@ -88,7 +92,7 @@ From WKND Dev environment, find all ski related content.
 
 +++예제 응답 보기
 
-![AI 클라이언트가 WKND 개발 AEM 환경에서 스키 콘텐츠 검색 결과를 표시함](../assets/use-cases/manage-aem-content/manage-aem-content-step1-find-ski.png){zoomable="yes"}
+![AI 플랫폼에서 WKND 개발 AEM 환경의 스키 콘텐츠 검색 결과를 표시함](../assets/use-cases/manage-aem-content/manage-aem-content-step1-find-ski.png){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -97,7 +101,7 @@ From WKND Dev environment, find all ski related content.
 
 ## 2단계: 특정 페이지 검토
 
-관련 콘텐츠를 찾은 후에는 AI 클라이언트에게 특정 페이지를 보여달라고 요청합니다. 이름이나 경로로 페이지를 참조할 수 있습니다. MCP 서버가 참조를 확인하고 콘텐츠 구조를 반환합니다.
+관련 콘텐츠를 찾은 후에는 AI 플랫폼에 특정 페이지를 표시하도록 요청하십시오. 이름이나 경로로 페이지를 참조할 수 있습니다. MCP 서버가 참조를 확인하고 콘텐츠 구조를 반환합니다.
 
 ```
 Show me the US English Home Page.
@@ -105,7 +109,7 @@ Show me the US English Home Page.
 
 +++예제 응답 보기
 
-![AEM의 영어 홈 페이지 콘텐츠 구조를 보여 주는 AI 클라이언트](../assets/use-cases/manage-aem-content/manage-aem-content-step2-home-page.png){zoomable="yes"}
+![AEM의 미국 영어 홈 페이지 콘텐츠 구조를 보여 주는 AI 플랫폼](../assets/use-cases/manage-aem-content/manage-aem-content-step2-home-page.png){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -114,7 +118,7 @@ Show me the US English Home Page.
 
 ## 3단계: 콘텐츠 개선
 
-페이지 콘텐츠를 볼 때 AI 클라이언트에게 개선 사항을 제안하거나 적용하도록 요청합니다. AI는 현재 페이지가 말하는 내용에 근거한 복사 변경 사항을 제안하고 아무것도 작성하기 전에 확인을 요청할 수 있습니다.
+페이지 콘텐츠를 볼 때 AI 플랫폼에 개선 사항을 제안 또는 적용하도록 요청하십시오. AI는 현재 페이지가 말하는 내용에 근거한 복사 변경 사항을 제안하고 아무것도 작성하기 전에 확인을 요청할 수 있습니다.
 
 ```
 Improve the Hero CTAs.
@@ -122,7 +126,7 @@ Improve the Hero CTAs.
 
 +++예제 응답 보기
 
-![변경 내용을 적용하기 전에 확인 프롬프트와 함께 향상된 Hero CTA 복사본을 제안하는 AI 클라이언트](../assets/use-cases/manage-aem-content/manage-aem-content-step3.gif){zoomable="yes"}
+![AI 플랫폼에서 변경 사항을 적용하기 전에 확인 프롬프트와 함께 향상된 Hero CTA 복사본을 제안합니다](../assets/use-cases/manage-aem-content/manage-aem-content-step3.gif){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -143,7 +147,7 @@ Publish the changes and share the URL.
 
 +++예제 응답 보기
 
-![페이지가 게시되었음을 확인하고 라이브 URL을 반환하는 AI 클라이언트](../assets/use-cases/manage-aem-content/manage-aem-content-step4.gif){zoomable="yes"}
+![페이지가 게시되었음을 확인하고 라이브 URL을 반환하는 AI 플랫폼](../assets/use-cases/manage-aem-content/manage-aem-content-step4.gif){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 

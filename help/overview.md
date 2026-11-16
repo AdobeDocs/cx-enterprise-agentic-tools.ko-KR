@@ -1,30 +1,32 @@
 ---
-title: Adobe CX 엔터프라이즈 에이전트 툴
+title: Adobe CX Enterprise Agentic 도구
 description: MCP 서버, 에이전트 기술 및 API를 사용해 AI 에이전트와 개발 도구를 Adobe CX Enterprise 기능에 연결합니다.
-last-substantial-update: 2026-09-16
-source-git-commit: a70eede6e0efe0d1dbdc00c5d9de5aeb3b5d75de
+last-substantial-update: 2026-11-16
+source-git-commit: a75d5f3af3077b259da796bd381d605ae826585d
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '863'
 ht-degree: 6%
 ---
 
-# Adobe CX 엔터프라이즈 에이전트 툴
+# Adobe CX Enterprise Agentic 도구
 
 <!-- last-modified: 2026-06-08 -->
 
->[!VIDEO](https://video.tv.adobe.com/v/3491251/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3491235/?learn=on&enablevpops)
 
-AI가 Adobe CX Enterprise의 공동 작업자가 되도록 합니다. AI 클라이언트를 캠페인, 대상자, 여정 및 컨텐츠에 연결합니다. 이미 사용하는 도구에서 일반 언어로 사용자와 상호 작용합니다. 시작하는 데 필요한 새 인터페이스, 컨텍스트 전환, 코딩이 없습니다.
+AI가 Adobe CX Enterprise의 공동 작업자가 되도록 합니다. AI 플랫폼을 캠페인, 대상자, 여정 및 콘텐츠에 연결합니다. 이미 사용하는 도구에서 일반 언어로 사용자와 상호 작용합니다. 시작하는 데 필요한 새 인터페이스, 컨텍스트 전환, 코딩이 없습니다.
 
 >[!TIP]
->**CX Enterprise Coworker 시작** 서버 설정이나 AI 클라이언트 구성 없이 CX 엔터프라이즈 애플리케이션에 연결됩니다. [CX Enterprise Coworker 시도](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)
+>**Adobe CX Enterprise Coworker 시작** 서버 설정이나 AI 플랫폼 구성이 필요 없이 CX Enterprise 애플리케이션과 호환됩니다. [동료에게 연결](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)
+>
+>Claude, ChatGPT, Microsoft 365 Copilot 또는 다른 AI 플랫폼에 머무르시겠습니까? AI 플랫폼용 [Adobe CX Enterprise Coworker](tools/mcp-servers.md#connect-to-your-ai-platform)을(를) 사용합니다. 둘 다 작동하지 않는 경우 AI 플랫폼을 [제품 MCP 서버](tools/mcp-servers.md#connect-to-your-ai-platform)에 연결하십시오.
 
 <!--
 CARDS
 
 * tools/mcp-servers.md
   {title = MCP Servers}
-  {description = Connect any MCP-compatible AI client to Adobe CX Enterprise workflows. Query data, analyze campaigns, and access audiences without leaving your AI tool.}
+  {description = Connect any MCP-compatible AI platform to Adobe CX Enterprise workflows. Query data, analyze campaigns, and access audiences without leaving your AI tool.}
   {cta = Explore MCP Servers}
   {image = assets/mcp-servers-card.png}
 
@@ -57,7 +59,7 @@ CARDS
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="tools/mcp-servers.md" title="MCP 서버">MCP 서버</a>
                     </p>
-                    <p class="is-size-6">MCP 호환 AI 클라이언트를 Adobe CX Enterprise 워크플로우에 연결합니다. AI 도구를 종료하지 않고 데이터를 쿼리하고, 캠페인을 분석하고 대상에 액세스합니다.</p>
+                    <p class="is-size-6">MCP 호환 AI 플랫폼을 Adobe CX Enterprise 워크플로에 연결합니다. AI 도구를 종료하지 않고 데이터를 쿼리하고, 캠페인을 분석하고 대상에 액세스합니다.</p>
                 </div>
                 <a href="tools/mcp-servers.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">MCP 서버 탐색</span>
@@ -80,7 +82,7 @@ CARDS
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="tools/agent-skills.md" title="에이전트 스킬">에이전트 기술</a>
                     </p>
-                    <p class="is-size-6">Adobe에서 제공하는 워크플로우로 에이전트에게 CX 엔터프라이즈 작업을 안내합니다. 한 번 인코딩되고 일관되게 적용되는 도메인 전문 지식.</p>
+                    <p class="is-size-6">CX Enterprise 작업을 통해 에이전트를 안내하는 Adobe 조정 워크플로우. 한 번 인코딩되고 일관되게 적용되는 도메인 전문 지식.</p>
                 </div>
                 <a href="tools/agent-skills.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">에이전트 기술 살펴보기</span>
@@ -103,7 +105,7 @@ CARDS
                     <p class="headline is-size-6 has-text-weight-bold">
                         빌더용 <a href="tools/apis.md" title="빌더용 API">API</a>
                     </p>
-                    <p class="is-size-6">클라우드 코드 및 커서와 같은 에이전틱 코딩 툴을 사용하여 맞춤형 Adobe CX 엔터프라이즈 애플리케이션을 구축할 수 있습니다.</p>
+                    <p class="is-size-6">클라우드 코드 및 커서와 같은 의존 코딩 도구를 사용하여 사용자 지정 Adobe CX Enterprise 애플리케이션을 빌드합니다.</p>
                 </div>
                 <a href="tools/apis.md" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">빌더를 위한 API 탐색</span>
@@ -120,9 +122,9 @@ CARDS
 
 >[!TAB MCP 서버]
 
-호환되는 AI 클라이언트를 사용하여 CX 엔터프라이즈 애플리케이션에 일반 언어로 액세스합니다. 코딩이 필요하지 않습니다. 애플리케이션 전반에서 가장 빠른 경로를 위해 CX Enterprise Coworker으로 시작하거나 자체 MCP 서버를 사용하여 AJO, CJA, AEM 및 기타 애플리케이션에 직접 연결합니다.
+호환되는 AI 플랫폼을 사용하여 CX Enterprise 애플리케이션에 일반 언어로 액세스합니다. 코딩이 필요하지 않습니다. Coworker로 시작하여 애플리케이션 전반에서 가장 빠른 경로를 확인하십시오. 자체 AI 플랫폼을 유지하려면 AI 플랫폼용 Coworker를 사용하십시오. 둘 다 작동하지 않는 경우 자체 MCP 서버를 사용하여 AJO, CJA, AEM 및 기타 애플리케이션에 직접 연결합니다.
 
-- Claude, Cursor, ChatGPT 및 기타 MCP 호환 클라이언트에서 몇 분 안에 연결
+- Claude, Cursor, ChatGPT 및 기타 MCP 호환 AI 플랫폼에서 몇 분 안에 연결
 - 자연어를 사용하여 캠페인, 대상자 및 여정 데이터 쿼리
 - 새 인터페이스 또는 교육이 필요하지 않음
 
@@ -130,17 +132,17 @@ CARDS
 
 >[!TAB 에이전트 기술]
 
-에이전트 스킬은 AI 클라이언트가 수행할 수 있는 지침으로 Adobe 도메인 전문 지식을 인코딩합니다. 에이전트는 즉흥적으로 수행하는 대신 Adobe 모범 사례에 따라 안정적이고 반복적으로 수행할 수 있는 작업을 정확하게 알고 있습니다.
+에이전트 스킬은 AI 플랫폼이 따를 수 있는 지침으로 Adobe 도메인 전문 지식을 인코딩합니다. 에이전트는 즉흥적으로 수행하는 대신 Adobe 모범 사례에 따라 안정적이고 반복적으로 수행할 수 있는 작업을 정확하게 알고 있습니다.
 
-- 반복 가능한 CX 엔터프라이즈 워크플로우에 대한 일관된 결과
+- 반복 가능한 CX Enterprise 워크플로에 대한 일관된 결과
 - Adobe을 에이전트에게 설명할 필요가 없습니다. 스킬이 처리합니다
-- 에이전트 기술을 지원하는 AI 클라이언트에서 작동합니다
+- 에이전트 기술을 지원하는 AI 플랫폼 전체에서 작동
 
 [에이전트 스킬 탐색](tools/agent-skills.md)
 
->[!TAB 빌더용  API]
+>빌더용 [!TAB API]
 
-Adobe 제품을 실행하는 동일한 API에 직접 프로그래밍 방식으로 액세스합니다. 사용자 정의 애플리케이션 및 통합을 구축하여 팀이 특정 CX 엔터프라이즈 워크플로우에 대한 액세스 권한을 집중하고 관리할 수 있도록 합니다.
+Adobe 제품을 실행하는 동일한 API에 직접 프로그래밍 방식으로 액세스합니다. 팀이 특정 CX Enterprise 워크플로에 집중하고 통제되는 액세스를 제공하는 사용자 지정 애플리케이션 및 통합을 빌드합니다.
 
 - 한 번 빌드하고 조직 전체에 배포합니다.
 - 팀에 필요한 보호, 승인 및 사용자 지정 논리 추가
@@ -152,7 +154,7 @@ Adobe 제품을 실행하는 동일한 API에 직접 프로그래밍 방식으�
 
 ## 실행 중인 무생식 도구
 
-Adobe CX 엔터프라이즈 에이전트 툴의 실제 모습에 대해 알아보십시오. 각 연습에서는 설정부터 결과까지 실제 비즈니스 시나리오를 다루며 AI 클라이언트를 연결하는 방법, 질문 사항 및 돌아온 사항을 정확하게 보여 줍니다.
+Adobe CX Enterprise 무형성 도구가 실제로 어떻게 보이는지 확인하십시오. 각 연습에서는 설정부터 결과까지 실제 비즈니스 시나리오를 다루며 Coworker 또는 AI 플랫폼으로 시작하는 방법, 질문 사항 및 돌아온 사항을 정확하게 보여 줍니다.
 
 <!--
 CARDS
@@ -226,7 +228,7 @@ CARDS
 | 리소스 | 찾을 내용 |
 | --- | --- |
 | [Adobe AI 레지스트리](https://developer.adobe.com/ai-registry/?type=mcp) | 일부 Adobe MCP 서버에 대한 관리되는 커넥터 및 서버 세부 정보 |
-| [Adobe 에이전트 기술](https://github.com/adobe/skills) | CX 엔터프라이즈 워크플로우를 위한 Adobe에서 제공하는 에이전트 기술 |
+| [Adobe 에이전트 기술](https://github.com/adobe/skills) | CX Enterprise 워크플로를 위한 Adobe 큐레이트된 에이전트 기술 |
 | [Adobe API 카탈로그](https://developer.adobe.com/apis) | 전체 Adobe CX Enterprise API 참조 |
 | [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) | API 프로젝트 설정 및 인증 |
 | [Adobe Admin Console](https://adminconsole.adobe.com) | 사용자 및 제품 액세스 관리 |
