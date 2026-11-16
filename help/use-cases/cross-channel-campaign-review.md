@@ -20,7 +20,7 @@ ht-degree: 6%
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| CX Enterprise 애플리케이션 | [Adobe Journey Optimizer](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home), [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview), [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) |
+| CX Enterprise 애플리케이션 | [Adobe Journey Optimizer](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home), [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview), [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) |
 | 에이전틱 도구 | [Adobe CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home), [AI 플랫폼용 Adobe CX Enterprise Coworker](../tools/mcp-servers.md#connect-to-your-ai-platform) 또는 [Adobe Journey Optimizer](../tools/mcp-servers.md), [Customer Journey Analytics](../tools/mcp-servers.md) 및 [Real-Time CDP](../tools/mcp-servers.md) MCP 서버 |
 | 대상자 | 캠페인 관리자, 마케팅 운영 |
 | 사전 요구 사항 | AJO, CJA 및 Real-Time CDP에 대한 액세스 권한 및 Coworker, Coworker for AI 플랫폼이 포함된 AI 플랫폼 또는 MCP 호환 AI 플랫폼 |
@@ -39,7 +39,7 @@ Coworker를 직접 사용할 수 없거나 사용하지 않으려면 자체 AI �
 
 >[!TAB AI 플랫폼용 Coworker]
 
-또한 고유한 AI 플랫폼에서 AI 플랫폼용 Coworker를 사용하여 이 연습을 완료할 수 있습니다. [AI 플랫폼에 대한 동료 설정](../tools/mcp-servers.md#connect-to-your-ai-platform) | [Adobe 설명서](https://experienceleague.adobe.com/en/docs/coworker/content/ai-platforms#set-up-coworker)
+또한 고유한 AI 플랫폼에서 AI 플랫폼용 Coworker를 사용하여 이 연습을 완료할 수 있습니다. [AI 플랫폼에 대한 동료 설정](../tools/mcp-servers.md#connect-to-your-ai-platform) | [Adobe 설명서](https://experienceleague.adobe.com/ko/docs/coworker/content/ai-platforms#set-up-coworker)
 
 >[!TAB 클라우드.ai]
 

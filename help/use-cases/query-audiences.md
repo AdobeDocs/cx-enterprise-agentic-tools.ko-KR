@@ -43,7 +43,7 @@ Coworker를 직접 사용할 수 없거나 사용하지 않으려면 자체 AI �
 
 >[!TAB AI 플랫폼용 Coworker]
 
-또한 고유한 AI 플랫폼에서 AI 플랫폼용 Coworker를 사용하여 이 연습을 완료할 수 있습니다. [AI 플랫폼에 대한 동료 설정](../tools/mcp-servers.md#connect-to-your-ai-platform) | [Adobe 설명서](https://experienceleague.adobe.com/en/docs/coworker/content/ai-platforms#set-up-coworker)
+또한 고유한 AI 플랫폼에서 AI 플랫폼용 Coworker를 사용하여 이 연습을 완료할 수 있습니다. [AI 플랫폼에 대한 동료 설정](../tools/mcp-servers.md#connect-to-your-ai-platform) | [Adobe 설명서](https://experienceleague.adobe.com/ko/docs/coworker/content/ai-platforms#set-up-coworker)
 
 >[!TAB 클라우드.ai]
 

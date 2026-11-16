@@ -19,7 +19,7 @@ ht-degree: 5%
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| CX Enterprise 애플리케이션 | [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview), [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/introduction) |
+| CX Enterprise 애플리케이션 | [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview), [Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/overview/introduction) |
 | 에이전틱 도구 | [Adobe CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home), [AI 플랫폼용 Adobe CX Enterprise Coworker](../tools/mcp-servers.md#connect-to-your-ai-platform) 또는 [Customer Journey Analytics MCP 서버](../tools/mcp-servers.md) 및 [AEM MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/overview) |
 | 대상자 | 캠페인 관리자, 콘텐츠 전략가, 마케팅 운영 |
 | 사전 요구 사항 | CJA access, AEM as a Cloud Service access 및 Coworker, Coworker for AI 플랫폼이 포함된 AI 플랫폼 또는 MCP 호환 AI 플랫폼 |
@@ -39,7 +39,7 @@ Coworker를 직접 사용할 수 없거나 사용하지 않으려면 자체 AI �
 
 >[!TAB AI 플랫폼용 Coworker]
 
-또한 고유한 AI 플랫폼에서 AI 플랫폼용 Coworker를 사용하여 이 연습을 완료할 수 있습니다. [AI 플랫폼에 대한 동료 설정](../tools/mcp-servers.md#connect-to-your-ai-platform) | [Adobe 설명서](https://experienceleague.adobe.com/en/docs/coworker/content/ai-platforms#set-up-coworker)
+또한 고유한 AI 플랫폼에서 AI 플랫폼용 Coworker를 사용하여 이 연습을 완료할 수 있습니다. [AI 플랫폼에 대한 동료 설정](../tools/mcp-servers.md#connect-to-your-ai-platform) | [Adobe 설명서](https://experienceleague.adobe.com/ko/docs/coworker/content/ai-platforms#set-up-coworker)
 
 >[!TAB 클라우드.ai]
 

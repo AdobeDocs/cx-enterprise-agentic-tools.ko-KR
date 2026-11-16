@@ -22,7 +22,7 @@ Adobe MCP 서버는 개방형 [모델 컨텍스트 프로토콜](https://modelco
 >
 >* **연결 하나, 많지 않음.** 각 Adobe 애플리케이션을 별도로 연결하는 대신 하나의 MCP 서버를 설정합니다.
 >* **액세스, 이월됨** Adobe 자격 증명으로 로그인하면 Coworker가 이미 가지고 있는 액세스 권한을 사용합니다. 별도의 권한 설정은 없습니다.
->* **안전하고 디자인 관리됨** 동료는 각 사용자에게 그 뒤의 CX Enterprise 애플리케이션에 대한 제어 액세스 권한을 부여합니다. 일부 사용자는 사용자 구성 방식과 부여된 액세스 권한에 따라 특정 콘텐츠 또는 데이터에 대해 읽기 전용 액세스 권한을 가질 수 있으며 다른 사용자는 읽기 및 쓰기 액세스 권한을 가질 수 있습니다. [Coworker의 액세스 제어에 대해 자세히 알아보세요](https://experienceleague.adobe.com/en/docs/coworker/content/administration/access-control).
+>* **안전하고 디자인 관리됨** 동료는 각 사용자에게 그 뒤의 CX Enterprise 애플리케이션에 대한 제어 액세스 권한을 부여합니다. 일부 사용자는 사용자 구성 방식과 부여된 액세스 권한에 따라 특정 콘텐츠 또는 데이터에 대해 읽기 전용 액세스 권한을 가질 수 있으며 다른 사용자는 읽기 및 쓰기 액세스 권한을 가질 수 있습니다. [Coworker의 액세스 제어에 대해 자세히 알아보세요](https://experienceleague.adobe.com/ko/docs/coworker/content/administration/access-control).
 >
 >이미 다른 AI 플랫폼에서 작동하고 있으며 이를 기반으로 워크플로를 빌드했습니까? 작업 방식을 변경하지 않고도 해당 플랫폼에서 Coworker의 기능에 액세스할 수 있습니다. [AI 플랫폼에 대한 동료 설정](#connect-to-your-ai-platform)
 >
@@ -48,16 +48,16 @@ AI를 통해 CX Enterprise 애플리케이션을 사용하는 방법에는 세 �
 
 | MCP 서버 | 엔드포인트 | 수행 가능한 작업 | 동료도 통해 |
 | --- | --- | --- | --- |
-| [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/ajo-mcp) | `https://ajo-mcp.adobe.io/mcp` | 여정, 캠페인 및 채널 구성 검토 | 예 |
-| [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/cja-mcp) | `https://cja-mcp.adobe.io/mcp` | 보고서 쿼리, 데이터 보기 검색 및 작업 공간 작성 | 예 |
-| [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/analytics-mcp) | `https://aa-mcp.adobe.io/mcp` | 보고서 세트 검색, 세그먼트 작성 및 작업 영역 만들기 | 예 |
-| [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp) | `https://targetmcp.adobe.io/mcp` | 활동, 오퍼, 대상, mbox, 성능 보고서 및 미리보기 URL 검토(공개 베타: 도구는 읽기 전용이며, 쓰기 도구는 일반 가용성을 위해 계획됨) | 예 |
-| [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-mcp) | `https://rtcdp-mcp.adobe.io/mcp` | 대상, 대상, 소스 및 흐름 실행을 검색하고 ID 네임스페이스 정책을 검사합니다(공개 베타: 필요한 경우 모든 도구는 읽기 전용). | 예 |
+| [Adobe Journey Optimizer](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/ajo-mcp) | `https://ajo-mcp.adobe.io/mcp` | 여정, 캠페인 및 채널 구성 검토 | 예 |
+| [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/cja-mcp) | `https://cja-mcp.adobe.io/mcp` | 보고서 쿼리, 데이터 보기 검색 및 작업 공간 작성 | 예 |
+| [Adobe Analytics](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/analytics-mcp) | `https://aa-mcp.adobe.io/mcp` | 보고서 세트 검색, 세그먼트 작성 및 작업 영역 만들기 | 예 |
+| [Adobe Target](https://experienceleague.adobe.com/ko/docs/target/using/mcp/target-mcp) | `https://targetmcp.adobe.io/mcp` | 활동, 오퍼, 대상, mbox, 성능 보고서 및 미리보기 URL 검토(공개 베타: 도구는 읽기 전용이며, 쓰기 도구는 일반 가용성을 위해 계획됨) | 예 |
+| [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/intro/rtcdp-mcp) | `https://rtcdp-mcp.adobe.io/mcp` | 대상, 대상, 소스 및 흐름 실행을 검색하고 ID 네임스페이스 정책을 검사합니다(공개 베타: 필요한 경우 모든 도구는 읽기 전용). | 예 |
 | [AEM MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/overview) | `https://mcp.adobeaemcloud.com/adobe/mcp/aem` | 페이지, 콘텐츠 조각, 에셋 및 론치를 관리하고 브랜드 가이드라인 및 규정 준수 규칙에 따라 콘텐츠 및 이미지를 평가합니다. | 예 |
 | [AEM Cloud Manager](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) | `https://mcp.adobeaemcloud.com/adobe/mcp/cloudmanager` | 프로그램, 환경, 파이프라인 및 저장소 관리 | 아니오 |
 | Adobe Marketing Agent | `https://aep-ai-ama.adobe.io/mcp` | AEP 애플리케이션 전반에 걸쳐 대상 분석, AEP 진단 및 AJO B2B 여정 구축 통합 | 아니오 |
-| [Adobe Workfront](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-overview) | `https://mcp.prod.us-west-2.aws.wfk8s.com/mcp/v1/workfront` | 작업, 프로젝트, 계획 기록, 통찰력 및 콘텐츠 승인 관리 | 아니오 |
-| [Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server) | `https://marketo-mcp.adobe.io/mcp` | 양식, 스마트 캠페인, 리드, 목록, 프로그램, 이메일 및 대량 작업 관리 | 예 |
+| [Adobe Workfront](https://experienceleague.adobe.com/ko/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-overview) | `https://mcp.prod.us-west-2.aws.wfk8s.com/mcp/v1/workfront` | 작업, 프로젝트, 계획 기록, 통찰력 및 콘텐츠 승인 관리 | 아니오 |
+| [Marketo Engage](https://experienceleague.adobe.com/ko/docs/marketo-developer/marketo/mcp-server) | `https://marketo-mcp.adobe.io/mcp` | 양식, 스마트 캠페인, 리드, 목록, 프로그램, 이메일 및 대량 작업 관리 | 예 |
 | Adobe Experience Platform | [동료](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)을 통해 | 데이터 세트 검색, 스키마 검색 및 샌드박스 관리 | 해당 없음 |
 | Campaign Classic | [동료](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)을 통해 | Campaign 인스턴스 검색, 스키마 찾아보기, 쿼리 실행, 워크플로우 제어 및 SOAP/JS 실행 | 해당 없음 |
 | 실험 | [동료](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)을 통해 | A/B, MVT 및 MAB 실험 보고, 지표, 통찰력, 기회 및 샘플 크기 계획 | 해당 없음 |
@@ -88,7 +88,7 @@ Coworker를 직접 사용하는 경우 아래 사항이 적용되지 않습니�
 
 AI 플랫폼용 Coworker는 AI 플랫폼을 Coworker에 연결하는 MCP 서버입니다. Coworker에서 사용할 수 있는 모든 것은 Coworker를 통해 사용할 수 있습니다. Claude, ChatGPT, Microsoft 365 Copilot 또는 Gemini Enterprise와 같은 AI 플랫폼을 채팅 인터페이스로 사용하며, Coworker는 Coworker를 직접 사용할 때와 동일하게 백그라운드에서 작업을 수행합니다.
 
-Adobe 자격 증명으로 로그인하면 Coworker가 Adobe ID에 연결된 액세스를 사용합니다. 동료는 안전하고 설계가 적용됩니다. 읽거나 변경할 수 있는 내용은 사용자의 구성 방식, Coworker에서 사용자에게 부여된 액세스 권한 및 Coworker가 사용자를 대신하여 사용하는 애플리케이션에서 부여된 액세스 권한에 따라 다릅니다. [Coworker에 대한 액세스 제어](https://experienceleague.adobe.com/en/docs/coworker/content/administration/access-control)를 참조하십시오.
+Adobe 자격 증명으로 로그인하면 Coworker가 Adobe ID에 연결된 액세스를 사용합니다. 동료는 안전하고 설계가 적용됩니다. 읽거나 변경할 수 있는 내용은 사용자의 구성 방식, Coworker에서 사용자에게 부여된 액세스 권한 및 Coworker가 사용자를 대신하여 사용하는 애플리케이션에서 부여된 액세스 권한에 따라 다릅니다. [Coworker에 대한 액세스 제어](https://experienceleague.adobe.com/ko/docs/coworker/content/administration/access-control)를 참조하십시오.
 
 시작하기 전에 다음을 확인하십시오.
 
@@ -96,7 +96,7 @@ Adobe 자격 증명으로 로그인하면 Coworker가 Adobe ID에 연결된 액�
 * 조직에 Adobe Experience Platform과 Adobe Real-Time CDP, Adobe Journey Optimizer 또는 Adobe Customer Journey Analytics 중 하나 이상이 있습니다.
 * 지원되는 AI 플랫폼에 액세스할 수 있습니다.
 
-서버 끝점은 `https://mcp.coworker.experience.adobe.io`입니다. 설정은 AI 플랫폼마다 다르며 일반적으로 관리자가 조직에 대한 Adobe CX Enterprise Coworker을 승인하면 시작됩니다. [AI 플랫폼에 대한 동료 설정](https://experienceleague.adobe.com/en/docs/coworker/content/ai-platforms#set-up-coworker)
+서버 끝점은 `https://mcp.coworker.experience.adobe.io`입니다. 설정은 AI 플랫폼마다 다르며 일반적으로 관리자가 조직에 대한 Adobe CX Enterprise Coworker을 승인하면 시작됩니다. [AI 플랫폼에 대한 동료 설정](https://experienceleague.adobe.com/ko/docs/coworker/content/ai-platforms#set-up-coworker)
 
 >[!TAB 클라우드.ai]
 
