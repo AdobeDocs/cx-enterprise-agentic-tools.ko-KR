@@ -140,7 +140,7 @@ CARDS
 
 [에이전트 스킬 탐색](tools/agent-skills.md)
 
->빌더용 [!TAB API]
+>[!TAB 빌더용  API]
 
 Adobe 제품을 실행하는 동일한 API에 직접 프로그래밍 방식으로 액세스합니다. 팀이 특정 CX Enterprise 워크플로에 집중하고 통제되는 액세스를 제공하는 사용자 지정 애플리케이션 및 통합을 빌드합니다.
 
