@@ -28,10 +28,10 @@ Adobe CX Enterprise Agentic Tools 작업을 위한 모든 주요 Adobe 리소스
 
 | 리소스 | 찾을 내용 |
 |---|---|
-| [AI 플랫폼용 Adobe CX Enterprise Coworker](https://experienceleague.adobe.com/en/docs/coworker/content/ai-platforms#set-up-coworker) | Claude, ChatGPT, Microsoft 365 Copilot, Gemini Enterprise 및 기타 AI 플랫폼의 Coworker를 사용하기 위한 사전 요구 사항 및 설정 |
+| [AI 플랫폼용 Adobe CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/coworker/content/ai-platforms#set-up-coworker) | Claude, ChatGPT, Microsoft 365 Copilot, Gemini Enterprise 및 기타 AI 플랫폼의 Coworker를 사용하기 위한 사전 요구 사항 및 설정 |
 | [Analytics MCP 설명서](https://developer.adobe.com/analytics-mcp/docs/) | CJA MCP 서버 설치 안내서 및 도구 참조 |
 | [Analytics MCP 안내서](https://developer.adobe.com/analytics-mcp/docs/guides/) | CJA MCP 서버에 대한 자세한 사용 안내서 |
-| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/rtcdp-mcp) | RTCDP MCP 서버 설치 안내서 |
+| [Real-Time CDP MCP 설명서](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/mcp/mcp-product-tools/rtcdp-mcp) | RTCDP MCP 서버 설치 안내서 |
 
 ## 에이전트 스킬
 
