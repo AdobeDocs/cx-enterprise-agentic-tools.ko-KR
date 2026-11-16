@@ -1,14 +1,12 @@
 ---
 title: 안심하고 AEM as a Cloud Service에 배포
-description: AI 클라이언트를 종료하지 않고 환경 상태를 확인하고 파이프라인 내역을 검토하고 배포를 트리거하거나 관리합니다.
-last-substantial-update: 2026-06-10T00:00:00Z
-source-git-commit: 937a3189965f3a3551c730bb27ee0592ae6fca92
+description: AI 플랫폼을 종료하지 않고 환경 상태를 확인하고 파이프라인 내역을 검토하고 배포를 트리거하거나 관리합니다.
+last-substantial-update: 2026-06-10
+source-git-commit: 9a2fe3165e49fd57c9a76741a77956850b0c0e3b
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '951'
 ht-degree: 3%
-
 ---
-
 
 # 안심하고 AEM as a Cloud Service에 배포
 
@@ -16,14 +14,14 @@ ht-degree: 3%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3480349/?captions=kor&learn=on&enablevpops)
 
-배포 신뢰도는 푸시하기 전에 환경이 건강하다는 것에서 비롯됩니다. 이 연습에서는 AEM Cloud Manager MCP 서버를 사용하여 AEM 환경 상태를 확인하고, 파이프라인 내역을 검토하고, AI 클라이언트에서 배포를 트리거하는 방법을 보여 주기 때문에 팀이 가시성을 잃지 않고 빠르게 이동할 수 있습니다.
+배포 신뢰도는 푸시하기 전에 환경이 건강하다는 것에서 비롯됩니다. 이 연습에서는 AEM Cloud Manager MCP 서버를 사용하여 AEM 환경 상태를 확인하고, 파이프라인 내역을 검토하고, AI 플랫폼에서 배포를 트리거하여 팀이 가시성을 잃지 않고 빠르게 이동할 수 있는 방법을 보여 줍니다.
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| CX 엔터프라이즈 애플리케이션 | [Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/introduction-to-cloud-manager) |
-| 무생식 도구 | [AEM Cloud Manager MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) |
+| CX Enterprise 애플리케이션 | [Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/introduction-to-cloud-manager) |
+| 에이전틱 도구 | [AEM Cloud Manager MCP 서버](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager) |
 | 대상자 | 개발자, DevOps, 운영 팀 |
-| 사전 요구 사항 | MCP 호환 AI 클라이언트, AEM Cloud Manager 액세스 |
+| 사전 요구 사항 | MCP 호환 AI 플랫폼, AEM Cloud Manager 액세스 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **다시 시도하라는 메시지** 섹션이 표시됩니다.
 
@@ -96,7 +94,7 @@ claude mcp add --transport http adobe-cloud-manager https://mcp.adobeaemcloud.co
 
 전체 설정: [VS 코드 MCP 서버 설명서](https://code.visualstudio.com/docs/copilot/customization/mcp-servers)
 
->[!TAB 기타 AI 클라이언트]
+>[!TAB 기타 AI 플랫폼]
 
 다른 MCP 호환 환경을 사용하고 있습니까? 다음 끝점을 사용하여 Cloud Manager MCP 서버에 연결합니다.
 
@@ -104,15 +102,15 @@ claude mcp add --transport http adobe-cloud-manager https://mcp.adobeaemcloud.co
 https://mcp.adobeaemcloud.com/adobe/mcp/cloudmanager
 ```
 
-지원되는 모든 클라이언트에 대한 전체 설치 지침: [AI 클라이언트에 연결](../tools/mcp-servers.md)
+지원되는 모든 AI 플랫폼에 대한 전체 설정 지침: [AI 플랫폼에 연결](../tools/mcp-servers.md)
 
 >[!ENDTABS]
 
 >[!NOTE]
 >
->메시지가 표시되면 Adobe ID으로 로그인하고 AEM as a Cloud Service 프로그램에 연결된 IMS 조직을 선택합니다. 권한은 Cloud Manager 수준에서 적용됩니다. AI 클라이언트는 계정이 승인된 작업만 수행할 수 있습니다.
+>메시지가 표시되면 Adobe ID으로 로그인하고 AEM as a Cloud Service 프로그램에 연결된 IMS 조직을 선택합니다. 권한은 Cloud Manager 수준에서 적용됩니다. AI 플랫폼은 계정에 승인된 작업만 수행할 수 있습니다.
 >
->첫 번째 연결 시 AI 클라이언트가 조직 또는 AEM 프로그램을 확인하도록 요청할 수 있습니다. 컨텍스트가 설정되면 MCP 서버는 세션의 나머지 부분에 컨텍스트를 사용합니다.
+>첫 번째 연결 시 AI 플랫폼에서 조직 또는 AEM 프로그램을 확인하도록 요청할 수 있습니다. 컨텍스트가 설정되면 MCP 서버는 세션의 나머지 부분에 컨텍스트를 사용합니다.
 >
 >일부 도구는 실행 전에 승인을 묻는 메시지를 표시합니다. 제안된 작업을 검토하고 승인 또는 거부합니다. 확인 없이는 아무 작업도 수행되지 않습니다.
 
@@ -126,7 +124,7 @@ What is the status of the production environment?
 
 +++예제 응답 보기
 
-![Cloud Manager에서 프로덕션 환경 상태를 표시하는 AI 클라이언트](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step1-01-ai.png){zoomable="yes"}
+![Cloud Manager에서 프로덕션 환경 상태를 표시하는 AI 플랫폼](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step1-01-ai.png){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -143,7 +141,7 @@ Show me the last five pipeline runs for the production pipeline.
 
 +++예제 응답 보기
 
-![프로덕션 파이프라인에 대한 마지막 5개의 파이프라인 실행을 표시하는 AI 클라이언트](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step2-01-ai.png){zoomable="yes"}
+![프로덕션 파이프라인에 대한 마지막 5개의 파이프라인 실행을 표시하는 AI 플랫폼](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step2-01-ai.png){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -152,7 +150,7 @@ Show me the last five pipeline runs for the production pipeline.
 
 ## 3단계: 파이프라인 트리거
 
-AI 클라이언트에서 직접 파이프라인 실행을 시작합니다. 서버는 타겟 환경을 확인하고 시작하기 전에 승인을 요청합니다.
+AI 플랫폼에서 직접 파이프라인 실행을 시작합니다. 서버는 타겟 환경을 확인하고 시작하기 전에 승인을 요청합니다.
 
 ```
 Run the Fullstack pipeline against dev environment of WKND sandbox program.
@@ -160,7 +158,7 @@ Run the Fullstack pipeline against dev environment of WKND sandbox program.
 
 +++예제 응답 보기
 
-![파이프라인 트리거 확인 및 실행 중인 파이프라인이 반영된 Cloud Manager UI를 표시하는 AI 클라이언트](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step3.gif){zoomable="yes"}
+![파이프라인 트리거 확인 및 실행 중인 파이프라인이 반영된 Cloud Manager UI를 표시하는 AI 플랫폼](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step3.gif){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 
@@ -169,11 +167,11 @@ Run the Fullstack pipeline against dev environment of WKND sandbox program.
 
 >[!CAUTION]
 >
->AI 클라이언트는 실행을 트리거하기 전에 파이프라인 이름을 확인하라는 메시지를 표시합니다. 진행할 정확한 파이프라인 이름을 입력합니다. 특히 프로덕션에 배포되는 파이프라인의 경우 확인하기 전에 타겟 환경을 주의 깊게 검토하십시오.
+>AI 플랫폼은 실행을 트리거하기 전에 파이프라인 이름을 확인하라는 메시지를 표시합니다. 진행할 정확한 파이프라인 이름을 입력합니다. 특히 프로덕션에 배포되는 파이프라인의 경우 확인하기 전에 타겟 환경을 주의 깊게 검토하십시오.
 
 ## 4단계: 파이프라인 상태 확인
 
-실행을 트리거한 후 Cloud Manager 인터페이스로 전환하지 않고 AI 클라이언트에 상태 업데이트를 요청합니다.
+실행을 트리거한 후 Cloud Manager 인터페이스로 전환하지 않고 AI 플랫폼에 상태 업데이트를 요청하십시오.
 
 ```
 What is the status of the triggered pipeline?
@@ -181,7 +179,7 @@ What is the status of the triggered pipeline?
 
 +++예제 응답 보기
 
-![트리거된 파이프라인 실행 상태를 표시하는 AI 클라이언트](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step4-01-ai.png){zoomable="yes"}
+![트리거된 파이프라인 실행의 상태를 표시하는 AI 플랫폼](../assets/use-cases/aem-cloud-manager-mcp/aem-cloud-manager-mcp-step4-01-ai.png){zoomable="yes"}
 
 *확대/축소를 선택합니다.*
 

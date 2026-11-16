@@ -1,10 +1,10 @@
 ---
 title: 크로스 채널 캠페인 검토 실행
 description: 단일 AI 세션에서 여정, 대상자 및 성능 전반에 걸쳐 AJO, CJA 및 Real-Time CDP 캠페인 상태를 통합적으로 볼 수 있습니다.
-last-substantial-update: 2026-09-16
-source-git-commit: a70eede6e0efe0d1dbdc00c5d9de5aeb3b5d75de
+last-substantial-update: 2026-11-16
+source-git-commit: a75d5f3af3077b259da796bd381d605ae826585d
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1651'
 ht-degree: 6%
 ---
 
@@ -20,10 +20,10 @@ ht-degree: 6%
 
 | 시나리오 세부 정보 | |
 | --- | --- |
-| CX 엔터프라이즈 애플리케이션 | [Adobe Journey Optimizer](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home), [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview), [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) |
-| 에이전틱 도구 | [CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home) 또는 [Adobe Journey Optimizer](../tools/mcp-servers.md), [Customer Journey Analytics](../tools/mcp-servers.md) 및 [Real-Time CDP](../tools/mcp-servers.md) MCP 서버 |
+| CX Enterprise 애플리케이션 | [Adobe Journey Optimizer](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/ajo-home), [Customer Journey Analytics](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview), [Real-Time CDP](https://experienceleague.adobe.com/ko/docs/experience-platform/rtcdp/home) |
+| 에이전틱 도구 | [Adobe CX Enterprise Coworker](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home), [AI 플랫폼용 Adobe CX Enterprise Coworker](../tools/mcp-servers.md#connect-to-your-ai-platform) 또는 [Adobe Journey Optimizer](../tools/mcp-servers.md), [Customer Journey Analytics](../tools/mcp-servers.md) 및 [Real-Time CDP](../tools/mcp-servers.md) MCP 서버 |
 | 대상자 | 캠페인 관리자, 마케팅 운영 |
-| 사전 요구 사항 | MCP 호환 AI 클라이언트, AJO, CJA 및 Real-Time CDP 액세스 |
+| 사전 요구 사항 | AJO, CJA 및 Real-Time CDP에 대한 액세스 권한 및 Coworker, Coworker for AI 플랫폼이 포함된 AI 플랫폼 또는 MCP 호환 AI 플랫폼 |
 
 각 단계에는 하나의 대표적인 프롬프트와 예제 AI 응답이 표시됩니다. 같은 세션에서 추가 탐색을 위해 **수행할 수 있는 추가** 섹션이 다음과 같습니다.
 
@@ -31,11 +31,15 @@ ht-degree: 6%
 
 >[!BEGINTABS]
 
->[!TAB CX Enterprise Coworker]
+>[!TAB Coworker]
 
-CX Enterprise Coworker은 서버 설정 또는 AI 클라이언트 구성 없이 AJO, CJA 및 Real-Time CDP을 한 곳에서 연결합니다. [CX Enterprise Coworker 시도](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)
+Coworker는 서버 설정 또는 AI 플랫폼 구성 없이 AJO, CJA 및 Real-Time CDP을 한 곳에서 연결합니다. [동료에게 연결](https://experienceleague.adobe.com/ko/docs/cx-enterprise-coworker/content/home)
 
-자체 AI 클라이언트를 직접 연결하고 싶다면 아래 탭을 사용하여 세 개의 MCP 서버를 모두 연결합니다. Real-Time CDP MCP 서버는 공개 베타에 있으며 귀사가 허용 목록에추가된으로 제공되어야 합니다.
+Coworker를 직접 사용할 수 없거나 사용하지 않으려면 자체 AI 플랫폼에서 대신 사용하십시오. **AI 플랫폼용 Coworker** 탭을 참조하십시오. 그것도 문제가 발생하면 나머지 탭을 사용하여 AI 플랫폼을 AJO, CJA 및 Real-Time CDP MCP 서버에 직접 연결합니다. Real-Time CDP MCP 서버는 공개 베타에 있으며 귀사가 허용 목록에추가된으로 제공되어야 합니다.
+
+>[!TAB AI 플랫폼용 Coworker]
+
+또한 고유한 AI 플랫폼에서 AI 플랫폼용 Coworker를 사용하여 이 연습을 완료할 수 있습니다. [AI 플랫폼에 대한 동료 설정](../tools/mcp-servers.md#connect-to-your-ai-platform) | [Adobe 설명서](https://experienceleague.adobe.com/ko/docs/coworker/content/ai-platforms#set-up-coworker)
 
 >[!TAB 클라우드.ai]
 
@@ -70,7 +74,7 @@ ChatGPT 개발자 모드(Pro, Plus, 비즈니스, 엔터프라이즈 또는 교�
 
 전체 설정: [ChatGPT MCP 설명서](https://developers.openai.com/api/docs/guides/tools-connectors-mcp)
 
->[!TAB 기타 AI 클라이언트]
+>[!TAB 기타 AI 플랫폼]
 
 Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경을 사용하시겠습니까? 다음 끝점을 사용하여 세 개의 MCP 서버 모두에 연결합니다.
 
@@ -80,7 +84,7 @@ Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경�
 | Customer Journey Analytics 서버 | `https://cja-mcp.adobe.io/mcp` |
 | Real-Time CDP 서버 | `https://rtcdp-mcp.adobe.io/mcp` |
 
-지원되는 모든 클라이언트에 대한 전체 설치 지침: [AI 클라이언트에 연결](../tools/mcp-servers.md)
+지원되는 모든 AI 플랫폼에 대한 전체 설정 지침: [AI 플랫폼에 연결](../tools/mcp-servers.md)
 
 >[!ENDTABS]
 
@@ -88,7 +92,7 @@ Gemini, Microsoft Copilot, Cursor, Claude Code 또는 다른 MCP 호환 환경�
 >
 >메시지가 표시되면 Adobe ID으로 로그인하고 AJO, CJA 및 Real-Time CDP 환경에 연결된 IMS 조직을 선택합니다. 잘못된 조직을 선택하는 것이 인증 오류의 가장 일반적인 원인입니다.
 >
->첫 번째 연결 시 AI 클라이언트가 IMS 조직을 선택하거나 샌드박스를 지정하도록 요청할 수 있습니다. 컨텍스트가 설정되면 MCP 서버는 세션의 나머지 부분에 컨텍스트를 사용합니다.
+>첫 번째 연결에서 AI 플랫폼은 IMS 조직을 선택하거나 샌드박스를 지정하도록 요청할 수 있습니다. 컨텍스트가 설정되면 MCP 서버는 세션의 나머지 부분에 컨텍스트를 사용합니다.
 >
 >일부 도구는 실행 전에 승인을 묻는 메시지를 표시합니다. 요청을 검토하고 승인 또는 거절합니다. 확인 없이는 아무 작업도 수행되지 않습니다.
 
@@ -132,7 +136,7 @@ Show me the activation status for the high-value loyalty segment.
 
 **높은 값 충성도 세그먼트**: 대상 간 활성화 상태:
 
-| 대상 | 상태 | 마지막으로 성공한 실행 | 대상자 크기 |
+| 대상 | 상태 | 마지막으로 성공한 실행 | 대상자 수 |
 | --- | --- | --- | --- |
 | Google Ads | 활성 | 2026년 5월 21일 오전 2:14 | 48,320 |
 | Meta 광고 | 활성 | 2026년 5월 21일 오전 1:58 | 48,295 |
@@ -169,7 +173,7 @@ Show me click-through and conversion rates for the [campaign name] campaign over
 
 ## 4단계: 캠페인 상태 요약 합성
 
-AI 클라이언트에게 세 가지 소스 모두에서 그림을 가져오도록 요청하고 주의가 필요한 모든 것을 표시하십시오.
+AI 플랫폼에 세 가지 소스 모두에서 그림을 통합하고 주의가 필요한 모든 것을 표시하도록 요청하십시오.
 
 ```
 Give me a summary of our campaign health: what is running, which audiences are activated, and how performance looks against last month.
@@ -195,11 +199,11 @@ Give me a summary of our campaign health: what is running, which audiences are a
 +++
 
 
-이 경우 다중 서버 접근 방식이 효과를 발휘합니다. 즉, 단일 대화에서 여정 구성, 대상 상태 및 성능 데이터에 대한 AI 클라이언트 사유가 됩니다.
+이 경우 다중 서버 접근 방식이 효과를 발휘합니다. 즉, 단일 대화에서 여정 구성, 대상 상태 및 성능 데이터에 대한 AI 플랫폼 사유가 됩니다.
 
 ## 5단계: 찾은 항목 실행
 
-리뷰에는 두 가지 항목이 표시되었습니다. AI 클라이언트에게 각 항목에 대한 우선 순위 지정 및 라우팅을 지원하도록 요청합니다.
+리뷰에는 두 가지 항목이 표시되었습니다. AI 플랫폼에 각 우선 순위를 지정하고 라우팅하도록 요청하십시오.
 
 ```
 For each flag you identified, what should I do and where should I go to do it?

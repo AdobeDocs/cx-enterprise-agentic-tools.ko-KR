@@ -1,24 +1,22 @@
 ---
 title: 에이전트 스킬
-description: AI 에이전트에게 CX 엔터프라이즈 작업을 일관되게 안내하는 Adobe에서 선별된 워크플로 및 지침입니다.
-last-substantial-update: 2026-05-19T00:00:00Z
-source-git-commit: 40d93f878ba9f48c9daffd3beccb4bf829113a36
+description: Adobe에서 제공하는 워크플로 및 지침은 AI 에이전트에게 CX Enterprise 작업을 일관되게 안내합니다.
+last-substantial-update: 2026-11-16
+source-git-commit: 9a2fe3165e49fd57c9a76741a77956850b0c0e3b
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '619'
 ht-degree: 1%
-
 ---
-
 
 # 에이전트 스킬
 
 <!-- last-modified: 2026-06-11 -->
 
-![Adobe CX Enterprise용 에이전트 기술](../assets/hero-agent-skills.png)
+Adobe CX Enterprise용 ![에이전트 기술](../assets/hero-agent-skills.png)
 
 에이전트 기술은 Adobe에서 제공하는 워크플로우로, AI 에이전트에게 Adobe CX Enterprise 작업을 안정적으로 완료하기 위한 단계별 지침을 제공합니다. 각 에이전트 스킬은 도메인의 전문 지식 및 모범 사례를 인코딩하여 에이전트가 즉흥할 필요 없이 일관되고 검증된 결과를 생성하도록 합니다. 에이전트 기술은 특히 매번 세부 메시지를 확인해야 하는 작업에 대해 대화 간에 반복 가능하고 안내되는 동작을 원하는 경우 적합합니다. MCP 서버 및 API를 보완합니다. 에이전트 기술은 에이전트 작동 방식을 정의합니다. MCP 서버 및 API는 기본 액세스를 제공합니다.
 
-## Adobe CX 엔터프라이즈 에이전트 기술
+## Adobe CX Enterprise 에이전트 기술
 
 아래 기능 영역을 선택하여 해당 워크플로우에 대한 기술을 살펴보십시오.
 
@@ -64,19 +62,19 @@ Creative Cloud을 사용한 일괄 사진 편집, 템플릿에서의 디자인, 
 
 ### 에이전트 스킬 설치
 
-사용하는 AI 클라이언트를 기반으로 에이전트 스킬이 설치됩니다. 일부 클라이언트는 명령줄에서 직접 설치를 지원합니다.
+사용하는 AI 플랫폼을 기반으로 에이전트 스킬이 설치됩니다. 일부 AI 플랫폼은 명령줄에서 직접 설치를 지원합니다.
 
 - **클라우드 코드**: `/plugin install adobe/skills`
 - **노드 환경**: `npx skills add adobe/skills`
 - **GitHub CLI**: `gh upskill adobe/skills`
 
-다른 클라이언트는 기술 파일을 다운로드하여 AI 클라이언트에 직접 추가해야 합니다. 클라이언트의 전체 설치 지침은 [GitHub의 Adobe 기술 추가 정보](https://github.com/adobe/skills#installation)를 참조하십시오.
+다른 AI 플랫폼에서는 스킬 파일을 다운로드하여 AI 플랫폼에 직접 추가해야 합니다. 클라이언트의 전체 설치 지침은 [GitHub의 Adobe 기술 추가 정보](https://github.com/adobe/skills#installation)를 참조하십시오.
 
 ### 에이전트 스킬 찾기
 
 [Adobe 기술 GitHub 저장소](https://github.com/adobe/skills)에서 사용 가능한 기술의 전체 목록을 찾아봅니다. 각 에이전트 스킬에는 자세한 지침, 참조 및 예가 포함된 `SKILL.md` 파일이 포함되어 있습니다.
 
-`adobe/skills` 패키지를 설치하거나 추가한 후 일부 AI 클라이언트에서 사용 가능한 모든 기술을 직접 나열할 수 있습니다.
+`adobe/skills` 패키지를 설치하거나 추가한 후 일부 AI 플랫폼에서는 사용 가능한 모든 기술을 직접 나열할 수 있습니다.
 
 - **클라우드 코드**: `claude /plugin list`
 - **노드 환경**: `npx skills list`
@@ -84,7 +82,7 @@ Creative Cloud을 사용한 일괄 사진 편집, 템플릿에서의 디자인, 
 
 ## 에이전트 작업 기술
 
-에이전트 스킬은 Adobe 도메인 전문 지식을 AI 클라이언트 내에서 작동하도록 만들어 에이전트가 즉흥적이지 않고 입증된 워크플로우를 따릅니다. 아래 각 연습에서는 시작부터 출력까지 Adobe 모범 사례에 따라 안정적으로 완료된 특정 비즈니스 작업을 보여 줍니다.
+에이전트 스킬은 Adobe 도메인 전문 지식을 AI 플랫폼 내에서 작동하도록 하므로 에이전트가 즉흥적이지 않고 입증된 워크플로우를 따릅니다. 아래 각 연습에서는 시작부터 출력까지 Adobe 모범 사례에 따라 안정적으로 완료된 특정 비즈니스 작업을 보여 줍니다.
 
 <!--
 CARDS
@@ -117,7 +115,7 @@ CARDS
                 </div>
                 <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">에이전트 기술을 사용해 보세요</span>
-                
+                </a>
             </div>
         </div>
     </div>
