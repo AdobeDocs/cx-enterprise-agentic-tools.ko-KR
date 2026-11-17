@@ -88,7 +88,7 @@ Coworker를 직접 사용하는 경우 아래 사항이 적용되지 않습니�
 
 AI 플랫폼용 Coworker는 AI 플랫폼을 Coworker에 연결하는 MCP 서버입니다. Coworker에서 사용할 수 있는 모든 것은 Coworker를 통해 사용할 수 있습니다. Claude, ChatGPT, Microsoft 365 Copilot 또는 Gemini Enterprise와 같은 AI 플랫폼을 채팅 인터페이스로 사용하며, Coworker는 Coworker를 직접 사용할 때와 동일하게 백그라운드에서 작업을 수행합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3508455/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3508460/?captions=kor&learn=on&enablevpops)
 
 Adobe 자격 증명으로 로그인하면 Coworker가 Adobe ID에 연결된 액세스를 사용합니다. 동료는 안전하고 설계가 적용됩니다. 읽거나 변경할 수 있는 내용은 사용자의 구성 방식, Coworker에서 사용자에게 부여된 액세스 권한 및 Coworker가 사용자를 대신하여 사용하는 애플리케이션에서 부여된 액세스 권한에 따라 다릅니다. [Coworker에 대한 액세스 제어](https://experienceleague.adobe.com/ko/docs/coworker/content/administration/access-control)를 참조하십시오.
 
